@@ -1,0 +1,531 @@
+@charset "UTF-8";
+
+#main_img {
+  height: auto; }
+  #main_img img {
+    margin: auto;
+    height: auto;
+    width: 980px; }
+  #main_img .pc {
+    display: block; }
+  #main_img .mb {
+    display: none; }
+
+/* スライドショー */
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100%; }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100% !important;
+  max-width: 100% !important;
+  left: 0;
+  top: 0; }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left; }
+
+.rslides img {
+  height: auto;
+  width: 100%;
+  border: 0; }
+
+#main_img {
+  margin-top: -1px;
+  width: 100%;
+  min-width: 980px;
+  overflow: hidden; }
+
+.rslides a {
+  display: block;
+  margin: 0 auto; }
+
+.rslides a:hover img {
+  opacity: 1;
+  filter: alpha(opacity=100); }
+
+/* endスライドショー */
+section#top {
+  /* overview */
+  /* top_sp_nav */
+  /* top_nav */
+  /* kohoshi */
+  /* saiyo */
+  /* staff_news */
+  /* news */
+  /* reha */ }
+  section#top #overview {
+    padding-top: 60px;
+    text-align: center; }
+    section#top #overview .btn a {
+      width: 380px; }
+    section#top #overview .copy_long {
+      text-align: center;
+      font-size: 95%;
+      line-height: 180%;
+      font-weight: normal; }
+  section#top #top_sp_nav {
+    overflow: hidden;
+    margin: 30px auto 0; }
+    section#top #top_sp_nav li {
+      float: left;
+      width: 50%;
+      box-sizing: border-box;
+      background: #eee;
+      text-align: center;
+      display: table;
+      border-bottom: solid 1px white; }
+      section#top #top_sp_nav li a {
+        display: table-cell;
+        height: 80px;
+        vertical-align: middle;
+        font-size: 100%;
+        padding-left: 30px;
+        line-height: 130%;
+        color: #555;
+        position: relative; }
+        section#top #top_sp_nav li a:after {
+          content: "";
+          display: block;
+          width: 40px;
+          height: 40px;
+          top: 26px;
+          left: 15px;
+          position: absolute;
+          background: no-repeat center;
+          background-size: contain; }
+      section#top #top_sp_nav li:nth-child(even) {
+        border-left: solid 1px white; }
+      section#top #top_sp_nav li:nth-child(1) a:after {
+        background-image: url(../img/top/buss_ico.svg);
+        top: 20px; }
+      section#top #top_sp_nav li:nth-child(2) a:after {
+        width: 30px;
+        height: 30px;
+        background-image: url(../img/top/tel_ico.svg); }
+      section#top #top_sp_nav li:nth-child(3) a:after {
+        background-image: url(../img/top/department_w_ico.svg);
+        top: 21px; }
+      section#top #top_sp_nav li:nth-child(4) a:after {
+        width: 30px;
+        height: 30px;
+        background-image: url(../img/top/time_w_ico.svg); }
+      section#top #top_sp_nav li:nth-child(n+3) {
+        background: #8DB0F1; }
+        section#top #top_sp_nav li:nth-child(n+3) a {
+          color: white; }
+  section#top #top_nav {
+    text-align: center;
+    overflow: hidden;
+    margin: 10px auto 60px; }
+    section#top #top_nav li {
+      float: left;
+      display: table;
+      box-sizing: border-box;
+      position: relative;
+      height: 125px;
+      background: #F5F8FD;
+      margin-left: 20px;
+      margin-bottom: 20px;
+      padding-top: 10px;
+      border: solid 1px #BBBBBB;
+      border-top: none; }
+      section#top #top_nav li:after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 20px;
+        background: blue;
+        vertical-align: middle;
+        z-index: 2; }
+      section#top #top_nav li a {
+        display: table-cell;
+        vertical-align: middle;
+        color: #555;
+        text-decoration: none; }
+      section#top #top_nav li b {
+        display: block;
+        font-size: 120%; }
+      section#top #top_nav li p {
+        margin-top: 15px;
+        font-size: 90%;
+        line-height: 130%; }
+    section#top #top_nav .iryo {
+      background: #E4EDF7; }
+      section#top #top_nav .iryo:after {
+        background: #8DB0F1; }
+      section#top #top_nav .iryo a:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 35px; }
+      section#top #top_nav .iryo:hover {
+        background: #C6D7F8; }
+    section#top #top_nav .iryo + .iryo a {
+      padding-left: 55px; }
+    section#top #top_nav .iryo + .iryo a:before {
+      width: 57px;
+      height: 61px;
+      background: url(../img/top/department_ico.svg) no-repeat center;
+      left: 15px; }
+    section#top #top_nav .iryo + .iryo + .iryo a:before {
+      width: 45px;
+      height: 45px;
+      background: url(../img/top/time_ico.svg) no-repeat center;
+      top: 43px; }
+    section#top #top_nav .kojino {
+      background: #F8F8E9; }
+      section#top #top_nav .kojino:after {
+        background: #BEBE3D; }
+      section#top #top_nav .kojino:hover {
+        background: #DDDD92; }
+    section#top #top_nav .wakakusaen {
+      background: #EFF7E4; }
+      section#top #top_nav .wakakusaen:after {
+        background: #A4D194; }
+      section#top #top_nav .wakakusaen:hover {
+        background: #CFEAC6; }
+    section#top #top_nav .ryoikuen {
+      background: #F7EBDA; }
+      section#top #top_nav .ryoikuen:after {
+        background: #E59D2B; }
+      section#top #top_nav .ryoikuen:hover {
+        background: #F5D6A3; }
+    section#top #top_nav .akebono {
+      background: #F5EFF7; }
+      section#top #top_nav .akebono:after {
+        background: #C193CC; }
+      section#top #top_nav .akebono:hover {
+        background: #E6C9ED; }
+    section#top #top_nav .orizuru {
+      background: #EAF5F5; }
+      section#top #top_nav .orizuru:after {
+        background: #87C1C1; }
+      section#top #top_nav .orizuru:hover {
+        background: #B9DBDB; }
+    section#top #top_nav .nomargin {
+      margin-left: 0; }
+    section#top #top_nav .box1 {
+      width: 220px; }
+    section#top #top_nav .box2 {
+      width: 460px; }
+    section#top #top_nav .box4 {
+      width: 100%; }
+  section#top #kohoshi {
+    padding: 60px 0;
+    text-align: center;
+    background: #DDE3E0; }
+    section#top #kohoshi ul {
+      text-align: left;
+      margin-bottom: 20px;
+      overflow: hidden; }
+    section#top #kohoshi li {
+      float: left;
+      background: white;
+      border-radius: 10px;
+      box-sizing: border-box;
+      margin: 0 0.5% 15px;
+      width: 32.3%;
+      border: solid 1px #bbb; }
+      section#top #kohoshi li a {
+        padding: 13px 10px 7px 42px;
+        text-decoration: none;
+        display: block;
+        color: #555;
+        position: relative; }
+        section#top #kohoshi li a:before, section#top #kohoshi li a:after {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 50%;
+          left: 11px;
+          margin-top: -10px;
+          width: 20px;
+          height: 20px; }
+        section#top #kohoshi li a:hover {
+          border-radius: 10px;
+          background: #F0F0F0; }
+      section#top #kohoshi li .title {
+        margin-bottom: 10px; }
+      section#top #kohoshi li p {
+        font-weight: bold; }
+    section#top #kohoshi li.iryo a:before {
+      background: #8DB0F1; }
+    section#top #kohoshi li.kojino a:before {
+      background: #BEBE3D; }
+    section#top #kohoshi li.wakakusaen a:before {
+      background: #A4D194; }
+    section#top #kohoshi li.wakakusaen a:after {
+      background: #E59D2B;
+      left: 25px;
+      width: 10px; }
+    section#top #kohoshi li.akebono a:before {
+      background: #C193CC; }
+    section#top #kohoshi li.orizuru a:before {
+      background: #87C1C1; }
+  section#top #saiyo {
+    padding: 60px 0;
+    background: #E2E1DC; }
+    section#top #saiyo .center {
+      overflow: hidden; }
+    section#top #saiyo .btn {
+      padding-left: 30px; }
+    section#top #saiyo .text {
+      padding-left: 30px;
+      float: left;
+      width: 400px; }
+    section#top #saiyo .video_area {
+      float: right;
+      width: 510px; }
+    section#top #saiyo p {
+      font-size: 120%;
+      line-height: 150%;
+      margin-bottom: 40px; }
+  section#top #staff_news {
+    text-align: center;
+    padding: 60px 0;
+    background: #F4F4F4; }
+    section#top #staff_news ul {
+      overflow: hidden;
+      margin-top: 40px;
+      margin-bottom: 40px; }
+    section#top #staff_news li {
+      float: left;
+      width: 23%;
+      margin-left: 2.5%; }
+      section#top #staff_news li:first-child {
+        margin-left: 0; }
+    section#top #staff_news a {
+      text-decoration: none; }
+    section#top #staff_news .date {
+      font-weight: bold; }
+    section#top #staff_news .cate {
+      background: pink;
+      width: 50%;
+      display: inline-block;
+      font-size: 90%;
+      margin: 5px auto; }
+    section#top #staff_news .img {
+      width: 100%;
+      padding-bottom: 100%;
+      background: url(../img/top/news_dammy.jpg) no-repeat center;
+      background-size: cover;
+      margin-bottom: 5px; }
+    section#top #staff_news .title {
+      text-decoration: none;
+      color: #1C53CE;
+      font-weight: bold;
+      text-align: left;
+      line-height: 150%; }
+  section#top #news {
+    padding: 0; }
+    section#top #news div ul {
+      margin-bottom: 0;
+      padding: 30px 30px 25px;
+      background: #FDFDFD;
+      margin-bottom: 30px;
+      border: solid 1px #707070; }
+    section#top #news div li p {
+      line-height: 150%; }
+    section#top #news div li .date {
+      font-weight: normal;
+      font-size: 90%;
+      width: 85px; }
+    section#top #news div li .cate {
+      width: 140px;
+      font-size: 80%; }
+    section#top #news div li .title {
+      width: 615px; }
+    section#top #news div li a {
+      display: block;
+      position: relative; }
+      section#top #news div li a:before {
+        content: "";
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        background: pink;
+        margin-right: 10px;
+        margin-top: 2px; }
+    section#top #news .cate {
+      box-sizing: border-box;
+      width: 50%;
+      display: inline-block;
+      font-size: 90%; }
+    section#top #news .reha a:before {
+      background: #44974E; }
+    section#top #news .iryo a:before {
+      background: #8DB0F1; }
+    section#top #news .kojino a:before {
+      background: #BEBE3D; }
+    section#top #news .wakakusaen a:before {
+      background: #A4D194; }
+    section#top #news .ryoikuen a:before {
+      background: #E59D2B; }
+    section#top #news .akebono a:before {
+      background: #C193CC; }
+    section#top #news .orizuru a:before {
+      background: #87C1C1; }
+    section#top #news .saiyo a:before {
+      background: #EFD934; }
+  section#top #reha {
+    text-align: center;
+    padding: 60px 0;
+    background: #8DB0F1; }
+    section#top #reha .img {
+      position: relative;
+      margin-bottom: 30px; }
+      section#top #reha .img p {
+        margin-top: 30px; }
+    section#top #reha p {
+      font-size: 150%;
+      line-height: 150%;
+      margin-bottom: 40px; }
+    section#top #reha h1, section#top #reha p {
+      color: white; }
+    section#top #reha .video_area {
+      margin: 50px auto 0; }
+      section#top #reha .video_area p {
+        font-size: 85%;
+        text-align: left;
+        margin-top: 10px; }
+
+#top + #page_inq {
+  margin-top: 0; }
+
+/* =============================================
+MOBILE
+================================================ */
+@media screen and (max-width: 736px) {
+  /* =============================================
+  top
+  ================================================ */
+  #main_img {
+    min-width: 100%; }
+    #main_img img {
+      width: 100%; }
+    #main_img .pc {
+      display: none; }
+    #main_img .mb {
+      display: block; }
+
+  section#top {
+    /* overview */
+    /* top_nav */
+    /* kohoshi */
+    /* saiyo */
+    /* staff_news */
+    /*#staff_news{
+    	padding: 40px 0;
+    	ul{
+    		margin-top: 20px;
+    		margin-bottom: 30px;
+    	}
+    	li{
+    		width: 48.5%;
+    	}
+    	li:nth-child(n+3){
+    		display: none;
+    	}
+    }*/
+    /* news */
+    /* reha */ }
+    section#top #overview {
+      margin-bottom: 40px;
+      padding-top: 40px; }
+      section#top #overview .btn a {
+        width: 100%; }
+      section#top #overview .copy {
+        font-size: 140%;
+        padding-bottom: 20px; }
+      section#top #overview .copy_long {
+        text-align: left; }
+    section#top #top_nav {
+      margin: 0px auto 40px;
+      			/*li:nth-child(6){
+      				margin-left: 0;
+      
+      			}*/ }
+      section#top #top_nav li {
+        margin-left: 0;
+        margin-bottom: 10px;
+        height: 115px; }
+        section#top #top_nav li b {
+          font-size: 110%; }
+      section#top #top_nav .box1,
+      section#top #top_nav .box2,
+      section#top #top_nav .box4 {
+        width: 100%; }
+      section#top #top_nav li:nth-child(2),
+      section#top #top_nav li:nth-child(3) {
+        display: none; }
+    section#top #kohoshi {
+      padding: 40px 0; }
+      section#top #kohoshi li {
+        float: none;
+        margin: 0 auto 5px;
+        width: 100%; }
+    section#top #saiyo {
+      padding: 40px 0; }
+      section#top #saiyo .text {
+        text-align: center;
+        padding: 0;
+        float: none;
+        width: 100%; }
+      section#top #saiyo .btn {
+        padding: 0;
+        text-align: center; }
+      section#top #saiyo p {
+        font-size: 120%;
+        margin-bottom: 20px; }
+      section#top #saiyo .video_area {
+        float: none;
+        width: 100%;
+        margin-bottom: 20px; }
+    section#top #news div {
+      padding: 0px; }
+      section#top #news div ul {
+        padding-left: 5%;
+        padding-right: 5%; }
+      section#top #news div li a:before {
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: 2px; }
+      section#top #news div li .title {
+        width: 100%;
+        padding-left: 30px;
+        box-sizing: border-box; }
+    section#top #news .date,
+    section#top #news .cate {
+      width: auto !important;
+      display: inline-block; }
+    section#top #news ul {
+      margin: 0;
+      width: 100%; }
+    section#top #news .top_joanr_link {
+      margin-bottom: 30px; }
+    section#top #reha {
+      padding: 40px 0; }
+      section#top #reha img {
+        width: 90%;
+        height: auto; }
+      section#top #reha .img p {
+        position: static; }
+      section#top #reha p {
+        width: 90%;
+        margin: 0 auto 20px;
+        font-size: 130%;
+        text-align: left; } }
