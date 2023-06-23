@@ -1,271 +1,52 @@
 <!DOCTYPE html>
 <html class="no-js" dir="ltr" lang="en-US"
 	prefix="og: https://ogp.me/ns#" >
-<head itemscope itemtype="http://schema.org/WebSite">
+<head>
 	<meta charset="UTF-8">
 
-	 
+	<link rel="profile" href="http://gmpg.org/xfn/11" />
+	  
+         
+            <meta name="msapplication-TileColor" content="#FFFFFF">
+      
                     <meta name="viewport" content="width=device-width, initial-scale=1">
             <meta name="apple-mobile-web-app-capable" content="yes">
             <meta name="apple-mobile-web-app-status-bar-style" content="black">
         
+        
+        <meta itemprop="name" content="我的《炎黄春秋》笔记" />
+        <meta itemprop="url" content="https://yhcqw.github.io/yhcq/" />
 
-	<title>我的《炎黄春秋》笔记 </title>
+      
+	<title>我的《炎黄春秋》笔记</title>
 
+	
 
-		<!-- All in One SEO -->
-
-<script type="text/javascript">document.documentElement.className = document.documentElement.className.replace( /\bno-js\b/,'js' );</script><link rel='dns-prefetch' href='//secure.gravatar.com' />
-<link rel='dns-prefetch' href='//stats.wp.com' />
-<link rel='dns-prefetch' href='//v0.wordpress.com' />
-<link rel='dns-prefetch' href='//i0.wp.com' />
-<link rel='dns-prefetch' href='//jetpack.wordpress.com' />
-<link rel='dns-prefetch' href='//s0.wp.com' />
-<link rel='dns-prefetch' href='//public-api.wordpress.com' />
-<link rel='dns-prefetch' href='//0.gravatar.com' />
-<link rel='dns-prefetch' href='//1.gravatar.com' />
-<link rel='dns-prefetch' href='//2.gravatar.com' />
-
-		<!-- This site uses the Google Analytics by MonsterInsights plugin v8.15 - Using Analytics tracking - https://www.monsterinsights.com/ -->
-							<script src="//www.googletagmanager.com/gtag/js?id=G-SRWB8QYGYF"  data-cfasync="false" data-wpfc-render="false" type="text/javascript" async></script>
-			<script data-cfasync="false" data-wpfc-render="false" type="text/javascript">
-				var mi_version = '8.15';
-				var mi_track_user = true;
-				var mi_no_track_reason = '';
-				
-								var disableStrs = [
-										'ga-disable-G-SRWB8QYGYF',
-														];
-
-				/* Function to detect opted out users */
-				function __gtagTrackerIsOptedOut() {
-					for (var index = 0; index < disableStrs.length; index++) {
-						if (document.cookie.indexOf(disableStrs[index] + '=true') > -1) {
-							return true;
-						}
-					}
-
-					return false;
-				}
-
-				/* Disable tracking if the opt-out cookie exists. */
-				if (__gtagTrackerIsOptedOut()) {
-					for (var index = 0; index < disableStrs.length; index++) {
-						window[disableStrs[index]] = true;
-					}
-				}
-
-				/* Opt-out function */
-				function __gtagTrackerOptout() {
-					for (var index = 0; index < disableStrs.length; index++) {
-						document.cookie = disableStrs[index] + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
-						window[disableStrs[index]] = true;
-					}
-				}
-
-				if ('undefined' === typeof gaOptout) {
-					function gaOptout() {
-						__gtagTrackerOptout();
-					}
-				}
-								window.dataLayer = window.dataLayer || [];
-
-				window.MonsterInsightsDualTracker = {
-					helpers: {},
-					trackers: {},
-				};
-				if (mi_track_user) {
-					function __gtagDataLayer() {
-						dataLayer.push(arguments);
-					}
-
-					function __gtagTracker(type, name, parameters) {
-						if (!parameters) {
-							parameters = {};
-						}
-
-						if (parameters.send_to) {
-							__gtagDataLayer.apply(null, arguments);
-							return;
-						}
-
-						if (type === 'event') {
-														parameters.send_to = monsterinsights_frontend.v4_id;
-							var hookName = name;
-							if (typeof parameters['event_category'] !== 'undefined') {
-								hookName = parameters['event_category'] + ':' + name;
-							}
-
-							if (typeof MonsterInsightsDualTracker.trackers[hookName] !== 'undefined') {
-								MonsterInsightsDualTracker.trackers[hookName](parameters);
-							} else {
-								__gtagDataLayer('event', name, parameters);
-							}
-							
-													} else {
-							__gtagDataLayer.apply(null, arguments);
-						}
-					}
-
-					__gtagTracker('js', new Date());
-					__gtagTracker('set', {
-						'developer_id.dZGIzZG': true,
-											});
-										__gtagTracker('config', 'G-SRWB8QYGYF', {"forceSSL":"true","link_attribution":"true"} );
-															window.gtag = __gtagTracker;										(function () {
-						/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
-						/* ga and __gaTracker compatibility shim. */
-						var noopfn = function () {
-							return null;
-						};
-						var newtracker = function () {
-							return new Tracker();
-						};
-						var Tracker = function () {
-							return null;
-						};
-						var p = Tracker.prototype;
-						p.get = noopfn;
-						p.set = noopfn;
-						p.send = function () {
-							var args = Array.prototype.slice.call(arguments);
-							args.unshift('send');
-							__gaTracker.apply(null, args);
-						};
-						var __gaTracker = function () {
-							var len = arguments.length;
-							if (len === 0) {
-								return;
-							}
-							var f = arguments[len - 1];
-							if (typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function') {
-								if ('send' === arguments[0]) {
-									var hitConverted, hitObject = false, action;
-									if ('event' === arguments[1]) {
-										if ('undefined' !== typeof arguments[3]) {
-											hitObject = {
-												'eventAction': arguments[3],
-												'eventCategory': arguments[2],
-												'eventLabel': arguments[4],
-												'value': arguments[5] ? arguments[5] : 1,
-											}
-										}
-									}
-									if ('pageview' === arguments[1]) {
-										if ('undefined' !== typeof arguments[2]) {
-											hitObject = {
-												'eventAction': 'page_view',
-												'page_path': arguments[2],
-											}
-										}
-									}
-									if (typeof arguments[2] === 'object') {
-										hitObject = arguments[2];
-									}
-									if (typeof arguments[5] === 'object') {
-										Object.assign(hitObject, arguments[5]);
-									}
-									if ('undefined' !== typeof arguments[1].hitType) {
-										hitObject = arguments[1];
-										if ('pageview' === hitObject.hitType) {
-											hitObject.eventAction = 'page_view';
-										}
-									}
-									if (hitObject) {
-										action = 'timing' === arguments[1].hitType ? 'timing_complete' : hitObject.eventAction;
-										hitConverted = mapArgs(hitObject);
-										__gtagTracker('event', action, hitConverted);
-									}
-								}
-								return;
-							}
-
-							function mapArgs(args) {
-								var arg, hit = {};
-								var gaMap = {
-									'eventCategory': 'event_category',
-									'eventAction': 'event_action',
-									'eventLabel': 'event_label',
-									'eventValue': 'event_value',
-									'nonInteraction': 'non_interaction',
-									'timingCategory': 'event_category',
-									'timingVar': 'name',
-									'timingValue': 'value',
-									'timingLabel': 'event_label',
-									'page': 'page_path',
-									'location': 'page_location',
-									'title': 'page_title',
-								};
-								for (arg in args) {
-																		if (!(!args.hasOwnProperty(arg) || !gaMap.hasOwnProperty(arg))) {
-										hit[gaMap[arg]] = args[arg];
-									} else {
-										hit[arg] = args[arg];
-									}
-								}
-								return hit;
-							}
-
-							try {
-								f.hitCallback();
-							} catch (ex) {
-							}
-						};
-						__gaTracker.create = newtracker;
-						__gaTracker.getByName = newtracker;
-						__gaTracker.getAll = function () {
-							return [];
-						};
-						__gaTracker.remove = noopfn;
-						__gaTracker.loaded = true;
-						window['__gaTracker'] = __gaTracker;
-					})();
-									} else {
-										console.log("");
-					(function () {
-						function __gtagTracker() {
-							return null;
-						}
-
-						window['__gtagTracker'] = __gtagTracker;
-						window['gtag'] = __gtagTracker;
-					})();
-									}
-			</script>
-				<!-- / Google Analytics by MonsterInsights -->
-
-<style type="text/css">
-img.wp-smiley,
-img.emoji {
-	display: inline !important;
-	border: none !important;
-	box-shadow: none !important;
-	height: 1em !important;
-	width: 1em !important;
-	margin: 0 0.07em !important;
-	vertical-align: -0.1em !important;
-	background: none !important;
-	padding: 0 !important;
+<script>
+function search_text() {
+    var input, filter, a, i, txtValue;
+    input = document.getElementById("searchbar");
+    filter = input.value.toUpperCase();
+    box1 = document.getElementById("box1");
+    a = box1.getElementsByTagName("a");
+    for (i = 0; i < a.length; i++) {
+        p = a[i].getElementsByTagName("p")[0];
+        txtValue = p.textContent || p.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+        } else {
+            a[i].style.display = "none";
+        }
+    }
 }
-</style>
-	<link rel="stylesheet" href="css/a5ff7.css" media="all" />
+</script>
 
-<style id='wp-block-library-inline-css' type='text/css'>
-.has-text-align-justify{text-align:justify;}
-</style>
-<link rel="stylesheet" href="css/552e1.css" media="all" />
+<link rel="stylesheet" href="css/a5ff7.css" media="all" />
 
-
-
-
-<style id='global-styles-inline-css' type='text/css'>
-body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
-.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
-:where(.wp-block-columns.is-layout-flex){gap: 2em;}
-.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
-</style>
-<!-- frame here-->
-<link rel="stylesheet" href="css/2f422.css" media="all" /> 
+<!--
+    <link rel="stylesheet" href="css/552e1.css" media="all" />-->
+  
+<link rel="stylesheet" href="css/2f422.css" media="all" /><!--related to navigation bar -->
 
 
 <style id='sociallyviral-stylesheet-inline-css' type='text/css'>
@@ -276,20 +57,16 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 
         #searchform .fa-search, .currenttext, .pagination a:hover, .single .pagination a:hover .currenttext, .page-numbers.current, .pagination .nav-previous a:hover, .pagination .nav-next a:hover, .single-prev-next a, .tagcloud a, #commentform input#submit, .contact-form #mtscontact_submit, .woocommerce-product-search input[type='submit'] { background-color: #cc3600; }
 
-        .thecontent a, .post .tags a, #commentform a, .author-posts a:hover, .fn a, a { color: #0069A3; }
+	 .thecontent a, .post .tags a, #commentform a, .author-posts a:hover, .fn a, a { color: #0069A3; }
 
-        .latestPost .title:hover, .latestPost .title a:hover, .post-info a:hover, .single_post .post-info a:hover, .copyrights a:hover, .thecontent a:hover, .breadcrumb a:hover, .sidebar.c-4-12 a:hover, .post .tags a:hover, #commentform a:hover, .author-posts a, .reply a:hover, .ajax-search-results li a:hover, .ajax-search-meta .results-link { color: #cc3600; }
+  .latestPost .title:hover, .latestPost .title a:hover, .post-info a:hover, .single_post .post-info a:hover, .copyrights a:hover, .thecontent a:hover, .breadcrumb a:hover, .sidebar.c-4-12 a:hover, .post .tags a:hover, #commentform a:hover, .author-posts a, .reply a:hover, .ajax-search-results li a:hover, .ajax-search-meta .results-link {
+      color: #cc3600;}
 
-        .wpmm-megamenu-showing.wpmm-light-scheme { background-color:#0069A3!important; }
+   .wpmm-megamenu-showing.wpmm-light-scheme { background-color:#0069A3!important; }
 
-        input#author:hover, input#email:hover, input#url:hover, #comment:hover, .contact-form input:hover, .contact-form textarea:hover, .woocommerce-product-search input[type='submit'] { border-color: #cc3600; }
+   input#author:hover, input#email:hover, input#url:hover, #comment:hover, .contact-form input:hover, .contact-form textarea:hover, .woocommerce-product-search input[type='submit'] { border-color: #cc3600; }
 
-		
-	
-		
-		
-		
-		.sidebar {
+   		.sidebar {
     max-width: 100% !important;
     width: 344px !important;
 }
@@ -308,83 +85,46 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 article img.aligncenter, article img.alignnone {
     margin-top: 0;
 }
-			
+
+	
 </style>
-<!-- no arrow for recipe index and cuisine if changed  -->
-<!--http://www.russianfilipinokitchen.com/wp-content/cache/minify/bee29.css-->
+
 <link rel="stylesheet" href="css/bee29.css" media="all" />
-
-
 <script  src="js/c4d91.js"></script>
 
+<!-- when you load the page, nothing comes up if the following is removed-->
+
 <script data-cfasync="false" data-wpfc-render="false" type="text/javascript" id='monsterinsights-frontend-script-js-extra'>/* <![CDATA[ */
-var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,docx,pptx,xlsx","inbound_paths":"[{\"path\":\"\\\/go\\\/\",\"label\":\"affiliate\"},{\"path\":\"\\\/recommend\\\/\",\"label\":\"affiliate\"}]","home_url":"http:\/\/poonh.github.io/yhcq/","hash_tracking":"false","ua":"","v4_id":"G-SRWB8QYGYF"};/* ]]> */
+var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,docx,pptx,xlsx","inbound_paths":"[{\"path\":\"\\\/go\\\/\",\"label\":\"affiliate\"},{\"path\":\"\\\/recommend\\\/\",\"label\":\"affiliate\"}]","home_url":"https://yhcqw.github.io/yhcq/","hash_tracking":"false","ua":"","v4_id":"G-SRWB8QYGYF"};/* ]]> */
 </script>
-<script  src="js//818c0.js"></script>
 
 
+<script  src="js/818c0.js"></script> <!-- mobile menu does not work without this -->
 <script type='text/javascript' id='customscript-js-extra'>
 /* <![CDATA[ */
 var mts_customscript = {"responsive":"1","nav_menu":"primary"};
 /* ]]> */
 </script>
 <script  src="js/54d6b.js"></script>
-
-
 <script  async src="css/469e5.js"></script>
 
-	<style>img#wpstats{display:none}</style>
-		<style data-context="foundation-flickity-css">/
 
----------------------------------------------- */.flickity-enabled{position:relative}.flickity-enabled:focus{outline:0}.flickity-viewport{overflow:hidden;position:relative;height:100%}.flickity-slider{position:absolute;width:100%;height:100%}.flickity-enabled.is-draggable{-webkit-tap-highlight-color:transparent;tap-highlight-color:transparent;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.flickity-enabled.is-draggable .flickity-viewport{cursor:move;cursor:-webkit-grab;cursor:grab}.flickity-enabled.is-draggable .flickity-viewport.is-pointer-down{cursor:-webkit-grabbing;cursor:grabbing}.flickity-prev-next-button{position:absolute;top:50%;width:44px;height:44px;border:none;border-radius:50%;background:#fff;background:hsla(0,0%,100%,.75);cursor:pointer;-webkit-transform:translateY(-50%);transform:translateY(-50%)}.flickity-prev-next-button:hover{background:#fff}.flickity-prev-next-button:focus{outline:0;box-shadow:0 0 0 5px #09F}.flickity-prev-next-button:active{opacity:.6}.flickity-prev-next-button.previous{left:10px}.flickity-prev-next-button.next{right:10px}.flickity-rtl .flickity-prev-next-button.previous{left:auto;right:10px}.flickity-rtl .flickity-prev-next-button.next{right:auto;left:10px}.flickity-prev-next-button:disabled{opacity:.3;cursor:auto}.flickity-prev-next-button svg{position:absolute;left:20%;top:20%;width:60%;height:60%}.flickity-prev-next-button .arrow{fill:#333}.flickity-page-dots{position:absolute;width:100%;bottom:-25px;padding:0;margin:0;list-style:none;text-align:center;line-height:1}.flickity-rtl .flickity-page-dots{direction:rtl}.flickity-page-dots .dot{display:inline-block;width:10px;height:10px;margin:0 8px;background:#333;border-radius:50%;opacity:.25;cursor:pointer}.flickity-page-dots .dot.is-selected{opacity:1}</style><style data-context="foundation-slideout-css">.slideout-menu{position:fixed;left:0;top:0;bottom:0;right:auto;z-index:0;width:256px;overflow-y:auto;-webkit-overflow-scrolling:touch;display:none}.slideout-menu.pushit-right{left:auto;right:0}.slideout-panel{position:relative;z-index:1;will-change:transform}.slideout-open,.slideout-open .slideout-panel,.slideout-open body{overflow:hidden}.slideout-open .slideout-menu{display:block}.pushit{display:none}</style><link href="//fonts.googleapis.com/css?family=Roboto:normal|Cookie:normal|Roboto:500&amp;subset=latin" rel="stylesheet" type="text/css">
 <style type="text/css">
 #logo a { font-family: Georgia, serif; font-weight: normal; font-size: 36px; color: #33bcf2; }
+
 #primary-navigation li, #primary-navigation li a { font-family: 'Roboto'; font-weight: normal; font-size: 18px; color: #ffffff;text-transform: uppercase; }
 .latestPost .title, .latestPost .title a { font-family: 'Trebuchet MS', Helvetica, sans-serif; font-weight: normal; font-size: 20px; color: #4aa003;line-height: 36px; }
 .single-title { font-family: 'Cookie'; font-weight: normal; font-size: 28px; color: #dd3333;line-height: 53px; }
 body { font-family: 'Roboto'; font-weight: normal; font-size: 16px; color: #000000; }
 .widget .widget-title { font-family: 'Roboto'; font-weight: 500; font-size: 20px; color: #0066bf;text-transform: uppercase; }
-#sidebars .widget { font-family: 'Roboto'; font-weight: normal; font-size: 16px; color: #707070; }
-.footer-widgets { font-family: 'Roboto'; font-weight: normal; font-size: 14px; color: #707070; }
-h1 { font-family: 'Roboto'; font-weight: normal; font-size: 38px; color: #555555; }
-h2 { font-family: 'Roboto'; font-weight: normal; font-size: 25px; color: #3a3a3a; }
-h3 { font-family: 'Roboto'; font-weight: normal; font-size: 25px; color: #555555; }
-h4 { font-family: 'Roboto'; font-weight: normal; font-size: 25px; color: #555555; }
-h5 { font-family: 'Roboto'; font-weight: normal; font-size: 24px; color: #555555; }
-h6 { font-family: 'Roboto'; font-weight: normal; font-size: 20px; color: #555555; }
+
+
 </style>
 <style>.ios7.web-app-mode.has-fixed header{ background-color: rgba(238,238,238,.88);}</style><style type="text/css">
+  
 </style>
 <style id="wpforms-css-vars-root">
-				:root {
-					--wpforms-field-border-radius: 3px;
---wpforms-field-background-color: #ffffff;
---wpforms-field-border-color: rgba( 0, 0, 0, 0.25 );
---wpforms-field-text-color: rgba( 0, 0, 0, 0.7 );
---wpforms-label-color: rgba( 0, 0, 0, 0.85 );
---wpforms-label-sublabel-color: rgba( 0, 0, 0, 0.55 );
---wpforms-label-error-color: #d63637;
---wpforms-button-border-radius: 3px;
---wpforms-button-background-color: #066aab;
---wpforms-button-text-color: #ffffff;
---wpforms-field-size-input-height: 43px;
---wpforms-field-size-input-spacing: 15px;
---wpforms-field-size-font-size: 16px;
---wpforms-field-size-line-height: 19px;
---wpforms-field-size-padding-h: 14px;
---wpforms-field-size-checkbox-size: 16px;
---wpforms-field-size-sublabel-spacing: 5px;
---wpforms-field-size-icon-size: 1;
---wpforms-label-size-font-size: 16px;
---wpforms-label-size-line-height: 19px;
---wpforms-label-size-sublabel-font-size: 14px;
---wpforms-label-size-sublabel-line-height: 17px;
---wpforms-button-size-font-size: 17px;
---wpforms-button-size-height: 41px;
---wpforms-button-size-padding-h: 15px;
---wpforms-button-size-margin-top: 10px;
-
-				}
+				
 </style></head>
 
 
@@ -394,32 +134,35 @@ h6 { font-family: 'Roboto'; font-weight: normal; font-size: 20px; color: #555555
 			<div class="container">
 				<div id="header">
 					<div class="logo-wrap">
-													
-					</div>
+	</div>
 
-					
-<!--replace with https://poonh.github.io/esas_DC/-->
-					<div class="header-search"><form method="get" id="searchform" class="search-form" action="https://poonh.github.io/yhcq/" _lpchecked="1">
+<!--					
+<div class="header-search">
+    <form method="get" id="searchform" class="search-form" action="https://yhcqw.github.io/yhcq/" _lpchecked="1">
+          <fieldset>
+              <input type="text" name="s" id="s" value="" placeholder="搜索本站"/>
+              <button id="search-image" class="sbutton" type="submit" value="">
+                                    <i class="fa fa-search"></i>
+                </button>
+            </fieldset>
+      
+    </form>
 
-					    
-					    <fieldset>
-					      <!-- SEARCH-->
-<!--		<input type="text" name="s" id="s" value="" placeholder="搜索本站"  />
-		<button id="search-image" class="sbutton" type="submit" value="">
-	    		<i class="fa fa-search"></i>-->
-	    	</button>
-	</fieldset>
-</form>
+-->
+</p>
+         </div>
 </div>
+									
 
 
 
-<!--INDEX-->										
-               <div id="primary-navigation" class="primary-navigation" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
 
-                        <nav class="navigation clearfix">
-				
-<ul id="menu-menulayout" class="menu clearfix">
+
+<div id="primary-navigation" class="primary-navigation" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+<a href="#" id="pull" class="toggle-mobile-menu">目录</a>
+<nav class="navigation clearfix">
+  <ul id="menu-menulayout" class="menu clearfix"><li id="menu-item-31314" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-31314">
+      
   <li id="menu-item-31314" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-31314"><a href="https://yhcqw.github.io/yhcq/">主页</a></li>
 
 <li id="menu-item-31315" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31315"><a href="https://yhcqw.github.io/yhcq/wenge.html">文革</a></li>
@@ -429,86 +172,43 @@ h6 { font-family: 'Roboto'; font-weight: normal; font-size: 20px; color: #555555
 <li id="menu-item-31315" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31315"><a href="https://yhcqw.github.io/yhcq/foreignhistory.html">外国历史</a></li>
 <li id="menu-item-31315" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31315"><a href="https://yhcqw.github.io/yhcq/mis.html">其他</a></li>
   <li id="menu-item-31314" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-31314"><a href="https://yhcqw.github.io/yhcq/thissite.html">关于本站</a></li>
-			</ul>						</nav>
-
-<!--for mobile phones-->
-                       <nav class="navigation mobile-only clearfix mobile-menu-wrapper">
-                            <ul id="menu-menulayout-1" class="menu clearfix">
-                                <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-31314">
-                                    <a href="https://yhcqw.github.io/yhcq/">
-                                      <!--  <i class="fa fa-http://www.russianfilipinokitchen.com/wp-content/plugins/wptouch/resources/icons/elegant/Paper.png"></i>-->
-                                         主页
-                                    </a>
-                                </li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31315">
-                                    <a href="https://yhcqw.github.io/yhcq/wenge.html">
-                                     <!--   <i class="fa fa-http://www.russianfilipinokitchen.com/wp-content/plugins/wptouch/resources/icons/elegant/Paper.png"></i>-->
-                                         文革
-                                    </a>
-                                </li>
-
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31315">
-                                    <a href="https://yhcqw.github.io/yhcq/mao.html">
-                                     <!--   <i class="fa fa-http://www.russianfilipinokitchen.com/wp-content/plugins/wptouch/resources/icons/elegant/Paper.png"></i>-->
-                                         毛年代其他
-                                    </a>
-                                </li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31315">
-                                    <a href="https://yhcqw.github.io/yhcq/society.html">
-                                     <!--   <i class="fa fa-http://www.russianfilipinokitchen.com/wp-content/plugins/wptouch/resources/icons/elegant/Paper.png"></i>-->
-                                         社会
-                                    </a>
-                                </li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31315">
-                                    <a href="https://yhcqw.github.io/yhcq/people.html">
-                                     <!--   <i class="fa fa-http://www.russianfilipinokitchen.com/wp-content/plugins/wptouch/resources/icons/elegant/Paper.png"></i>-->
-                                         人物
-                                    </a>
-                                </li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31315">
-                                    <a href="https://yhcqw.github.io/yhcq/foreignhistory.html">
-                                     <!--   <i class="fa fa-http://www.russianfilipinokitchen.com/wp-content/plugins/wptouch/resources/icons/elegant/Paper.png"></i>-->
-                                         外国历史
-                                    </a>
-                                </li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31315">
-                                    <a href="https://yhcqw.github.io/yhcq/mis.html">
-                                     <!--   <i class="fa fa-http://www.russianfilipinokitchen.com/wp-content/plugins/wptouch/resources/icons/elegant/Paper.png"></i>-->
-                                         其他
-                                    </a>
-                                </li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31315">
-                                    <a href="https://yhcqw.github.io/yhcq/thissite.html">
-                                     <!--   <i class="fa fa-http://www.russianfilipinokitchen.com/wp-content/plugins/wptouch/resources/icons/elegant/Paper.png"></i>-->
-                                         关于本站
-                                    </a>
-                                </li>
-                                </ul>
-                            </nav>
-				<!--new-->
+</ul>															</nav>
 
 
+													
+<nav class="navigation mobile-only clearfix mobile-menu-wrapper">
+<ul id="menu-menulayout-1" class="menu clearfix"><li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-31314">
+  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31315">
+   <li id="menu-item-31314" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-31314"><a href="https://yhcqw.github.io/yhcq/">主页</a></li>
+  <li id="menu-item-31315" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31315"><a href="https://yhcqw.github.io/yhcq/wenge.html">文革</a></li>
+<li id="menu-item-31315" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31315"><a href="https://yhcqw.github.io/yhcq/mao.html">毛年代其他</a></li>
+<li id="menu-item-31315" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31315"><a href="https://yhcqw.github.io/yhcq/society.html">社会</a></li>
+<li id="menu-item-31315" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31315"><a href="https://yhcqw.github.io/yhcq/people.html">人物</a></li>
+<li id="menu-item-31315" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31315"><a href="https://yhcqw.github.io/yhcq/foreignhistory.html">外国历史</a></li>
+<li id="menu-item-31315" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31315"><a href="https://yhcqw.github.io/yhcq/mis.html">其他</a></li>
+  <li id="menu-item-31314" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-31314"><a href="https://yhcqw.github.io/yhcq/thissite.html">关于本站</a></li>
 
-											</div>
+
+</ul>
+</li>
+</ul>							</nav>
+			
 					 
 
-				</div><!--#header-->
+			
 			</div><!--.container-->
 		</header>
 		<div id="page" class="home-h2">
-	<div id="content_box">
+		  <div id="content_box">
 
-
+<!--------content begins--------->
 
 <div style="text-align: right;">
 	  
   建站日期：2023年6月1日</br>
   最后更新：2023年6月1日</br></br>
-
-
-
-
 </div>
+
 	  
 	  总目录，本网站《炎黄春秋》文章有以下分类：  </br>  </br>
 	  
@@ -536,18 +236,23 @@ h6 { font-family: 'Roboto'; font-weight: normal; font-size: 20px; color: #555555
          <span style="font-family: arial; sans-serif; font-size: 14pt">
 	 <a href="https://yhcqw.github.io/yhcq/mis.html"> <b><i>其他：  </a> </b></i></br></span>
 	  
+	 
+
+
+
 	  
 
+<!--------content ends----------->
 
 
-</ul>        </nav>
-    </div>
 </div>
-</div>
-<!--end copyrights-->
 		</div> 
-	</div><!--.container-->
-</footer><!--#site-footer-->
-<!--start footer code-->
+	
+		
 
 
+
+
+
+</body>
+</html>
