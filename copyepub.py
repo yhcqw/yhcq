@@ -8,19 +8,25 @@ from sys import*
 import pinyin
 
 
-article_list=['钱学森之问','邢志恒之死','为讲座松绑']
+#article_list=['应该关注什么','我要说话','我的“理论工作者”经历']
+#cate=["society","wenge","wenge"]
 
-cate=["society","wenge","society"]
+
+
+article_list=['赵遐秋']
+cate=["wenge"]
 
 book = epub.read_epub("books/1999-2010.epub")
 items = list(book.get_items_of_type(ebooklib.ITEM_DOCUMENT))
 
 text=open("index1999-2010.txt").readlines()
 
+
 itembegin=2
 
 
 itemnum,Name,Magnum=[],[],[]
+
 
 for i in range(0,len(text)):
     for j in article_list:
@@ -66,6 +72,7 @@ for i,name in enumerate(itemnum):
         
 
 def txtfile(filename):
+    print("working on ",filename)
     template=open("template.html").readlines()
     for i in range(0,len(template)):
         if template[i].find("content begins")>=0:
@@ -85,9 +92,12 @@ def txtfile(filename):
            break
     magnum=titleline.split()[0]
     title=titleline.split()[1].split("·")[0]
-    author=titleline.split("·")[1]
+    if titleline.find("·")>=0:
+       author=titleline.split("·")[1]
+    elif titleline.find("作者：")>=0:
+       author=titleline.split("作者：")[1]
     authorpy=pinyin.get(author,format="strip")
-    if authorpy.find(" ")>=0:
+    if titleline.find(" ")>=0:
        authorpy=authorpy.replace(" ","")
     year=titleline.split("年第")[0]
     mth=titleline.split("年第")[1].split("期")[0]
@@ -164,3 +174,36 @@ indexfile.close()
 
 """
 ###write index ends
+
+
+###check file name
+
+
+"""
+itemlist=[items[2121],items[2272]]
+
+def chapter_to_str(chapter):
+    soup = BeautifulSoup(chapter.get_body_content(), "html.parser")
+#    text = [para.get_text() for para in soup.find_all("p")]
+    text = [para.get_text() for para in soup.find_all()]
+    return " ".join(text)+" \n"
+texts = {}
+
+
+#testfile=open("testfile.txt","w")
+test={}
+
+indexfile=open("index1999-2010.txt","w")
+
+def firstline():
+    check=open("testfile.txt").readlines()
+    print(check[1])
+    
+for c in itemlist:
+    testfile=open("testfile.txt","w")
+    texts[c.get_name()] = chapter_to_str(c)
+    testfile.write(texts[c.get_name()])
+    testfile.close()
+    firstline()
+     
+"""
