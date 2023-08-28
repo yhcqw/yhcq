@@ -1,0 +1,42 @@
+css/2f422.css
+L79:main-container:max-width:1170px --> smaller width to change the content width
+
+css/2f422.css
+.textwidget{
+the size of the blue bar
+
+testtemplate.html
++316:primary-navigation -->#0069A3 current dark blue bar color
+
+
+use copyepub.py if the article is in 1999-2010, check the epub book in books/
+
+update.py
+#if you make any changes in template.html up to the line '<!--------content begins--------->'
+
+pageseparation.py
+#separate index.html into wege.html,people.html,society.html ...etc
+
+
+articles:
+wenge-201110wangyiying.html 作者为10几岁的小孩被教导抽打地主。当年不懂事，多年后内疚至极。“在斗争大会上，她要是不老实，我们贫下中农喊‘她不老实，顽固’时，你们就用竹鞭子用力抽打她，叫她老老实实。如果她再不老实，就再用力抽打她。你们两兄弟如果不打她，打她时，不用力抽，连你们一起斗争”。”
+
+
+
+python3 webscraping_yhcq.py http://caod.oriprobe.com/issues/836406/toc.htm 201112.html
+(tmphtml.csh)-->write all the html files into tmphtml/ from 2011-2015 for extraction of article titles and pages
+
+extracttitle.py -->titles and pages extracted from tmphtml/ and written into allindex.txt
+
+writetest.txt -->201101 extracted text
+
+
+pdfextract.py
+
+
+/Users/china_108/Desktop/gpx/yhcq/books/example/OEBPS/2010/***html
+text files for each article
+
+
+/Users/china_108/Desktop/gpx/yhcq/books/example_test/OEBPS/chapter_template.html
+chapter tempalte
