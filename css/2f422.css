@@ -379,3 +379,17 @@ embed{position:absolute;top:0;left:0;width:100%;height:100%}#parallax{position:r
 15px}.latestPost-review-wrapper .review-total-star{margin:1px
 0}.latestPost-review-wrapper .percentage-icon{top:0;font-size:inherit;font-style:normal}.review-type-circle.review-total-only,.review-type-circle.wp-review-show-total{overflow:hidden}#primary-navigation #wpmm-megamenu{border-top:1px solid rgba(255, 255, 255, 0.22)}#primary-navigation #wpmm-megamenu .wpmm-posts .wpmm-entry-title
 a{font-weight:500}
+
+
+table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+th {
+            background-color: #f2f2f2;
+        }
