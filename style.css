@@ -44,6 +44,13 @@ p, .text, pre {
 pre {
   white-space: pre-wrap; }
 
+
+button {
+    width:100px; 
+    height:44px;
+    font-size: 22px;
+}
+
 input, textarea {
   border: #ccc solid 1px;
   font-size: 110%; }
