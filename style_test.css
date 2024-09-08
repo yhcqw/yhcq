@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('pictures/lightgreen.jpg');
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+ /*   max-width: 500px*/
+}
+
+.text-right {
+    text-align: right;
+}
+
+header {
+    background-image: url('pictures/lightgreen.jpg');
+    background-color: #333;
+    color: #000;
+}
+
+
+main {
+    padding: 20px;
+    max-width: 600px; /* Set a maximum width for the main content */
+    margin: 0 auto;
+    margin-top: 0px
+}
+
+footer {
+    /* Removed the footer styles */
+}
+
+/* Menu with Two Horizontal Rows */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap into two rows */
+    justify-content: center; /* Centers items horizontally */
+    max-width: 800px; /* Optional: Set a max width for the menu */
+}
+
+nav ul li {
+    flex: 1 1 auto; /* Allows items to grow and shrink equally */
+    text-align: center; /* Center align the text in each item */
+    padding: 1px 10px; /* Add padding to space out the items,top and bottom, left and right */
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+}
+
+/* Mobile Menu Styles */
+.mobile-menu {
+    display: none;
+}
+
+.menu-icon {
+    width: 30px;
+    height: 30px;
+    background-image: url('pictures/lightgreen.jpg');
+    cursor: pointer;
+}
+
+.mobile-menu-list {
+    display: none;
+    background-image: url('pictures/lightgreen.jpg');
+}
+
+.mobile-menu-list li {
+    padding: 10px;
+}
+
+nav {
+    height: 30px;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    nav {
+        background-image: url('pictures/lightgreen.jpg');
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .mobile-menu-list {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack items vertically on small screens */
+        max-width: 100%;
+    }
+
+    nav ul li {
+        width: 100%; /* Full width for each item on small screens */
+    }
+}
