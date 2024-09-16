@@ -1,212 +1,120 @@
 <!DOCTYPE html>
-<html class="no-js" dir="ltr" lang="en-US"
-	prefix="og: https://ogp.me/ns#" >
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的炎黄春秋笔记</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 
-	<link rel="profile" href="http://gmpg.org/xfn/11" />
-	  
-         
-            <meta name="msapplication-TileColor" content="#FFFFFF">
-      
-                    <meta name="viewport" content="width=device-width, initial-scale=1">
-            <meta name="apple-mobile-web-app-capable" content="yes">
-            <meta name="apple-mobile-web-app-status-bar-style" content="black">
-        
-        
-        <meta itemprop="name" content="我的《炎黄春秋》笔记" />
-        <meta itemprop="url" content="https://yhcqw.github.io/yhcq/" />
+    <style>
+        /* Add your custom styles here */
 
-      
-	<title>我的《炎黄春秋》笔记</title>
-
-	
-
-<script>
-function search_text() {
-    var input, filter, a, i, txtValue;
-    input = document.getElementById("searchbar");
-    filter = input.value.toUpperCase();
-    box1 = document.getElementById("box1");
-    a = box1.getElementsByTagName("a");
-    for (i = 0; i < a.length; i++) {
-        p = a[i].getElementsByTagName("p")[0];
-        txtValue = p.textContent || p.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            a[i].style.display = "";
-        } else {
-            a[i].style.display = "none";
+        .menu-icon {
+            display: none;
+            cursor: pointer;
         }
+
+        .mobile-menu-list {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 60%; /* Adjust width as needed */
+            background-color: #fff; /* Adjust as needed */
+            padding: 20px;
+            border-right: 1px solid #ccc; /* Adjust as needed */
+            z-index: 1000; /* Ensure it's above other content */
+            flex-direction: column; /* Display items vertically */
+            transition: width 2s;
+        }
+
+        .mobile-menu-list.active {
+            display: block;
+        }
+
+        .mobile-menu {
+            display: none;
+        }
+
+        .menu-title {
+            margin-left: 10px; /* Adjust margin as needed */
+        }
+
+        .menu-icon {
+            margin-right: 10px; /* Adjust margin as needed */
+            cursor: pointer;
+        }
+
+        .mobile-menu-list li {
+            display: block; /* Display list items vertically */a
+        }
+
+  @media only screen and (max-width: 768px) {
+    .menu-icon {
+        display: inline-block;
+        margin-left: 280px; /* Adjust as needed */
+        cursor: pointer;
+    }
+
+    .mobile-menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 10px;
+    }
+
+    .menu-title {
+        margin-right: auto; /* Pushes 目錄 to the far left */
+        margin-left: 10px; /* Adjust margin as needed */
     }
 }
-</script>
+    </style>
+</head>
 
-<link rel="stylesheet" href="css/a5ff7.css" media="all" />
+<body>
+    <header>
+        <div class="container">
+            <!-- Removed the logo div -->
+            <nav>
+              <ul class="menu">          
+                    <li><a href="https://yhcqw.github.io/yhcq/index.html">主页</a></li>
+                    <li><a href="#wenge">文革</a></li>
+                    <li><a href="#mao">毛年代其他</a></li>
+                    <li><a href="#society">社会</a></li>
+                    <li><a href="#people">人物</a></li>
+                    <li><a href="#foreign">外国历史</a></li>
+                    <li><a href="#mis">其他</a></li>
+                    <li><a href="#discussion">明辨是非</a></li>
+		    <li><a href="https://yhcqw.github.io/yhcq/thissite.html">关于本站</a></li>
+		    <li><a href="https://yhcqw.github.io/yhcq/Diary.html">我的日记</a></li>
+		    <li><a href="https://yhcqw.github.io/yhcq/longblog.html">我的长博客</a></li>
+                </ul>
+            </nav>
 
-<!--
-    <link rel="stylesheet" href="css/552e1.css" media="all" />-->
-  
-<link rel="stylesheet" href="css/2f422.css" media="all" /><!--related to navigation bar -->
+            <div class="mobile-menu">
+                <div class="menu-title">目錄</div>
+                <div class="menu-icon" onclick="toggleMobileMenu()">&#9776;</div> <!-- Three horizontal lines -->
+                <!-- Move the ul.mobile-menu-list inside the .mobile-menu div -->
+                <ul class="mobile-menu-list">
+                    <li><a href="https://yhcqw.github.io/yhcq/index.html" onclick="hideMobileMenu()">主页</a></li>
+                    <li><a href="#wenge" onclick="hideMobileMenu()">文革</a></li>
+                    <li><a href="#mao" onclick="hideMobileMenu()">毛年代其他</a></li>
+                    <li><a href="#society" onclick="hideMobileMenu()">社会</a></li>
+                    <li><a href="#people" onclick="hideMobileMenu()">人物</a></li>
+                    <li><a href="#foreign" onclick="hideMobileMenu()">外国历史</a></li>
+                    <li><a href="#mis" onclick="hideMobileMenu()">其他</a></li>
+                    <li><a href="#discussion" onclick="hideMobileMenu()">明辨是非</a></li>
+		    <li><a href="thissite.html" onclick="hideMobileMenu()">关于本站</a></li>
+		    <li><a href="Diary.html" onclick="hideMobileMenu()">我的日记</a></li>
+		    <li><a href="https://yhcqw.github.io/yhcq/longblog.html">我的长博客</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
 
-
-<style id='sociallyviral-stylesheet-inline-css' type='text/css'>
-
-        body, .sidebar.c-4-12, #header #s {background-color:#ffffff;background-image:url(figs/nobg.png);}
-
-        #primary-navigation, .navigation ul ul, .pagination a, .pagination .dots, .latestPost-review-wrapper, .single_post .thecategory, .single-prev-next a:hover, .tagcloud a:hover, #commentform input#submit:hover, .contactform #submit:hover, .post-label, .latestPost .review-type-circle.review-total-only, .latestPost .review-type-circle.wp-review-show-total, .bypostauthor .fn:after, #primary-navigation .navigation.mobile-menu-wrapper, #wpmm-megamenu .review-total-only, .owl-controls .owl-dot.active span, .owl-controls .owl-dot:hover span, .owl-prev, .owl-next, .woocommerce a.button, .woocommerce-page a.button, .woocommerce button.button, .woocommerce-page button.button, .woocommerce input.button, .woocommerce-page input.button, .woocommerce #respond input#submit, .woocommerce-page #respond input#submit, .woocommerce #content input.button, .woocommerce-page #content input.button, .woocommerce nav.woocommerce-pagination ul li a, .woocommerce-page nav.woocommerce-pagination ul li a, .woocommerce #content nav.woocommerce-pagination ul li a, .woocommerce-page #content nav.woocommerce-pagination ul li a, .woocommerce .bypostauthor:after, #searchsubmit, .woocommerce nav.woocommerce-pagination ul li span.current, .woocommerce-page nav.woocommerce-pagination ul li span.current, .woocommerce #content nav.woocommerce-pagination ul li span.current, .woocommerce-page #content nav.woocommerce-pagination ul li span.current, .woocommerce nav.woocommerce-pagination ul li a:hover, .woocommerce-page nav.woocommerce-pagination ul li a:hover, .woocommerce #content nav.woocommerce-pagination ul li a:hover, .woocommerce-page #content nav.woocommerce-pagination ul li a:hover, .woocommerce nav.woocommerce-pagination ul li a:focus, .woocommerce-page nav.woocommerce-pagination ul li a:focus, .woocommerce #content nav.woocommerce-pagination ul li a:focus, .woocommerce-page #content nav.woocommerce-pagination ul li a:focus, .woocommerce a.button, .woocommerce-page a.button, .woocommerce button.button, .woocommerce-page button.button, .woocommerce input.button, .woocommerce-page input.button, .woocommerce #respond input#submit, .woocommerce-page #respond input#submit, .woocommerce #content input.button, .woocommerce-page #content input.button { background-color: #0069A3; color: #fff; }
-
-        #searchform .fa-search, .currenttext, .pagination a:hover, .single .pagination a:hover .currenttext, .page-numbers.current, .pagination .nav-previous a:hover, .pagination .nav-next a:hover, .single-prev-next a, .tagcloud a, #commentform input#submit, .contact-form #mtscontact_submit, .woocommerce-product-search input[type='submit'] { background-color: #cc3600; }
-
-	 .thecontent a, .post .tags a, #commentform a, .author-posts a:hover, .fn a, a { color: #0069A3; }
-
-  .latestPost .title:hover, .latestPost .title a:hover, .post-info a:hover, .single_post .post-info a:hover, .copyrights a:hover, .thecontent a:hover, .breadcrumb a:hover, .sidebar.c-4-12 a:hover, .post .tags a:hover, #commentform a:hover, .author-posts a, .reply a:hover, .ajax-search-results li a:hover, .ajax-search-meta .results-link {
-      color: #cc3600;}
-
-   .wpmm-megamenu-showing.wpmm-light-scheme { background-color:#0069A3!important; }
-
-   input#author:hover, input#email:hover, input#url:hover, #comment:hover, .contact-form input:hover, .contact-form textarea:hover, .woocommerce-product-search input[type='submit'] { border-color: #cc3600; }
-
-   		.sidebar {
-    max-width: 100% !important;
-    width: 344px !important;
-}
-@media screen and (min-width:720px){
-.article {
-    width: calc(100% - 360px);
-}}
-
-.single-post .thecategory, .single-post .single-prev-next {
-    display: none;
-}
-
-.single article header {
-    margin-bottom: 0;
-}
-article img.aligncenter, article img.alignnone {
-    margin-top: 0;
-}
-
-	
-</style>
-
-<link rel="stylesheet" href="css/bee29.css" media="all" />
-<script  src="js/c4d91.js"></script>
-
-<!-- when you load the page, nothing comes up if the following is removed-->
-
-<script data-cfasync="false" data-wpfc-render="false" type="text/javascript" id='monsterinsights-frontend-script-js-extra'>/* <![CDATA[ */
-var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,docx,pptx,xlsx","inbound_paths":"[{\"path\":\"\\\/go\\\/\",\"label\":\"affiliate\"},{\"path\":\"\\\/recommend\\\/\",\"label\":\"affiliate\"}]","home_url":"https://yhcqw.github.io/yhcq/","hash_tracking":"false","ua":"","v4_id":"G-SRWB8QYGYF"};/* ]]> */
-</script>
-
-
-<script  src="js/818c0.js"></script> <!-- mobile menu does not work without this -->
-<script type='text/javascript' id='customscript-js-extra'>
-/* <![CDATA[ */
-var mts_customscript = {"responsive":"1","nav_menu":"primary"};
-/* ]]> */
-</script>
-<script  src="js/54d6b.js"></script>
-<script  async src="css/469e5.js"></script>
-
-
-<style type="text/css">
-#logo a { font-family: Georgia, serif; font-weight: normal; font-size: 36px; color: #33bcf2; }
-
-#primary-navigation li, #primary-navigation li a { font-family: 'Roboto'; font-weight: normal; font-size: 18px; color: #ffffff;text-transform: uppercase; }
-.latestPost .title, .latestPost .title a { font-family: 'Trebuchet MS', Helvetica, sans-serif; font-weight: normal; font-size: 20px; color: #4aa003;line-height: 36px; }
-.single-title { font-family: 'Cookie'; font-weight: normal; font-size: 28px; color: #dd3333;line-height: 53px; }
-body { font-family: 'Roboto'; font-weight: normal; font-size: 16px; color: #000000; }
-.widget .widget-title { font-family: 'Roboto'; font-weight: 500; font-size: 20px; color: #0066bf;text-transform: uppercase; }
-
-
-</style>
-<style>.ios7.web-app-mode.has-fixed header{ background-color: rgba(238,238,238,.88);}</style><style type="text/css">
-  
-</style>
-<style id="wpforms-css-vars-root">
-				
-</style></head>
-
-
-<body id="blog" class="home blog main er-recipe" itemscope itemtype="http://schema.org/WebPage">    
-	<div class="main-container">
-		<header id="site-header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
-			<div class="container">
-				<div id="header">
-					<div class="logo-wrap">
-	</div>
-
-<!--					
-<div class="header-search">
-    <form method="get" id="searchform" class="search-form" action="https://yhcqw.github.io/yhcq/" _lpchecked="1">
-          <fieldset>
-              <input type="text" name="s" id="s" value="" placeholder="搜索本站"/>
-              <button id="search-image" class="sbutton" type="submit" value="">
-                                    <i class="fa fa-search"></i>
-                </button>
-            </fieldset>
-      
-    </form>
-
--->
-</p>
-         </div>
-</div>
-									
-
-
-
-
-
-<div id="primary-navigation" class="primary-navigation" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
-<a href="#" id="pull" class="toggle-mobile-menu">目录</a>
-<nav class="navigation clearfix">
-  <ul id="menu-menulayout" class="menu clearfix"><li id="menu-item-31314" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-31314">
-      
-  <li id="menu-item-31314" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-31314"><a href="https://yhcqw.github.io/yhcq/">主页</a></li>
-
-<li id="menu-item-31315" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31315"><a href="https://yhcqw.github.io/yhcq/wenge.html">文革</a></li>
-<li id="menu-item-31315" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31315"><a href="https://yhcqw.github.io/yhcq/mao.html">毛年代其他</a></li>
-<li id="menu-item-31315" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31315"><a href="https://yhcqw.github.io/yhcq/society.html">社会</a></li>
-<li id="menu-item-31315" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31315"><a href="https://yhcqw.github.io/yhcq/people.html">人物</a></li>
-<li id="menu-item-31315" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31315"><a href="https://yhcqw.github.io/yhcq/foreignhistory.html">外国历史</a></li>
-<li id="menu-item-31315" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31315"><a href="https://yhcqw.github.io/yhcq/mis.html">其他</a></li>
-<li id="menu-item-31315" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31315"><a href="https://yhcqw.github.io/yhcq/discussion.html">明辨是非</a></li>
-  <li id="menu-item-31314" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-31314"><a href="https://yhcqw.github.io/yhcq/thissite.html">关于本站</a></li>
-</ul>															</nav>
-
-
-													
-<nav class="navigation mobile-only clearfix mobile-menu-wrapper">
-<ul id="menu-menulayout-1" class="menu clearfix"><li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-31314">
-  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31315">
-   <li id="menu-item-31314" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-31314"><a href="https://yhcqw.github.io/yhcq/">主页</a></li>
-  <li id="menu-item-31315" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31315"><a href="https://yhcqw.github.io/yhcq/wenge.html">文革</a></li>
-<li id="menu-item-31315" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31315"><a href="https://yhcqw.github.io/yhcq/mao.html">毛年代其他</a></li>
-<li id="menu-item-31315" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31315"><a href="https://yhcqw.github.io/yhcq/society.html">社会</a></li>
-<li id="menu-item-31315" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31315"><a href="https://yhcqw.github.io/yhcq/people.html">人物</a></li>
-<li id="menu-item-31315" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31315"><a href="https://yhcqw.github.io/yhcq/foreignhistory.html">外国历史</a></li>
-<li id="menu-item-31315" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31315"><a href="https://yhcqw.github.io/yhcq/mis.html">其他</a></li>
-<li id="menu-item-31315" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31315"><a href="https://yhcqw.github.io/yhcq/discussion.html">明辨是非</a></li>
-  <li id="menu-item-31314" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-31314"><a href="https://yhcqw.github.io/yhcq/thissite.html">关于本站</a></li>
-
-
-</ul>
-</li>
-</ul>							</nav>
-			
-					 
-
-			
-			</div><!--.container-->
-		</header>
-		<div id="page" class="home-h2">
-		  <div id="content_box">
-
-<!--------content begins--------->
-
-<div style="text-align: right;">
-	  
+    <main>
+ <div style="text-align: right;">
   建站日期：2023年6月1日</br>
 最后更新：2024年5月22日</br></br>
 </div>
@@ -215,48 +123,49 @@ body { font-family: 'Roboto'; font-weight: normal; font-size: 16px; color: #0000
 总目录，本网站《炎黄春秋》文章有以下分类：  </br>  </br>
 
 <!------------------------------------------------------------------ wenge-begins---------------------------------->
-
 <span style="font-family: arial; sans-serif; font-size: 14pt"></br>
-<a href="https://yhcqw.github.io/yhcq/culturalrevolution.html"><b><i>文革： </a> </b></i></span></br>
+   <div class="caption">
+  <a href="https://yhcqw.github.io/yhcq/culturalrevolution.html">
+    <b><a id="wenge">文革：</a></b>
+  </a>
+</div>
 
-<!--year-->200908:</br>
-<a href="https://yhcqw.github.io/yhcq/wenge-200908zhaoxiaqiu.html" target="_blank">跟风整人的懊悔(赵遐秋）</a></br>
+<a href="https://yhcqw.github.io/yhcq/wenge-200908zhaoxiaqiu.html" target="_blank"><i>跟风整人的懊悔(赵遐秋)</i></a>(200908)</br>
 
-作者描述了当年为什么成为党的工具，不明白毛年代洗脑的人从这篇文章可以略知一二。</br>
+作者描述了当年为什么成为党的工具，不明白毛年代洗脑的人从这篇文章可以略知一二。
 
-
-<!--year-->201001:</br>
-<a href="https://yhcqw.github.io/yhcq/wenge-201001gaoyang.html" target="_blank">两次不准革命的经历(高扬）</a></br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/wenge-201001gaoyang.html" target="_blank"><i><b>两次不准革命的经历(高扬)</b></i></a>(201001)</br>
 作者曾经是吉林及河北省书记。第一次革命是1958年反右时代，因为讲真话被相处甚久，彼此了解的同志批斗，感到愤怒，后来下放到工厂锻炼。第二次是文革，当时”坐喷气式飞机“，导致坐骨神经痛，行走困难，多年不愈。1969年，60岁的时候被下放到“五七干校”。经历两次革命后，最后被平反，给他恢复党籍他还不愿意。作者最后点评了自己对“平反“的意见。</br>
 作者在经历不同阶段对当时生活环境描述很细节，如果要拍电影这篇文章可以参考。</br>
 
-自己点评：”喷气式飞机“是一种批斗方式，根据<a href="https://zh.wikipedia.org/zh-hant/喷气式" target="_blank">维基百科</a>，会导致”颈脖勒出血痕，腰酸背痛，血脉不畅，四肢僵直“。这是一种极大的侮辱，很多文革时期的刑法，使人身心受损。经历文革的人很多有身体缺陷，后代可以出一分力在医疗生活等帮助他们，不过前提是要知道。另外，经历过的人我相信很多都患有PTSD（post traumatic stress disorder创伤后遗症），这是可以遗传的。研究这方面心理有什么用？我引用这项研究作者的话<a href="https://www.scientificamerican.com/article/how-parents-rsquo-trauma-leaves-biological-traces-in-children/" target="_blank">How Parents’ Trauma Leaves Biological Traces in Children（Scientific American 2022)</a>：</br>
+自己点评：”喷气式飞机“是一种批斗方式，根据<a href="https://zh.wikipedia.org/zh-hant/喷气式" target="_blank">维基百科</a>，会导致”颈脖勒出血痕，腰酸背痛，血脉不畅，四肢僵直“。这是一种极大的侮辱，很多文革时期的刑法，使人身心受损。经历文革的人很多有身体缺陷，后代可以出一分力在医疗生活等帮助他们，不过前提是要知道。另外，经历过的人我相信很多都患有PTSD(post traumatic stress disorder创伤后遗症)，这是可以遗传的。研究这方面心理有什么用？我引用这项研究作者的话<a href="https://www.scientificamerican.com/article/how-parents-rsquo-trauma-leaves-biological-traces-in-children/" target="_blank">How Parents’ Trauma Leaves Biological Traces in Children(Scientific American 2022)</a>：</br>
 <i>as we learn more about the ways catastrophic experiences have shaped both those who lived through those horrors and their descendants, we will become better equipped to deal with dangers now and in the future, facing them with resolution and resilience.</i></br>
 
-
-
-<!--year-->201003:</br>
-<a href="https://yhcqw.github.io/yhcq/wenge-201003zhangren.html" target="_blank">孩子眼中的文革岁月(张刃)</a></br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/wenge-201003zhangren.html" target="_blank"><i>孩子眼中的文革岁月(张刃)</i></a>(201003)</br>
 当时家在天津十几岁孩子的亲身经历，家里把一切非革命东西烧尽，</br>
 目击有人被打致死的血腥场面，闻到跳河自杀尸体发臭，听到被打者惨叫，还有见证自杀不遂终身致残等。作为孩子，作者和其他朋友自发组织去北京串联，最后无功而还。文章还提到张闻天北斗时不屈服，是真汉子。</br>
 
-<!--year-->201006:</br>
-<a href="https://yhcqw.github.io/yhcq/wenge-201006wangjinping.html" target="_blank">邢志恒之死(王金屏）</a></br>
-此文乃<a href="https://yhcqw.github.io/yhcq/wenge-200908zhaoxiaqiu.html" target="_blank">跟风整人的懊悔(赵遐秋）</a>的回应。作者为北大学生，刑志恒是他的高中同学，后来一同上了北。1959年因富农身份受迫害自杀，留下年轻妻子及一堆儿女。</br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/wenge-201006wangjinping.html" target="_blank"><i>邢志恒之死(王金屏)</i></a>(201006)</br>
+此文乃<a href="https://yhcqw.github.io/yhcq/wenge-200908zhaoxiaqiu.html" target="_blank">跟风整人的懊悔(赵遐秋)</a>的回应。作者为北大学生，刑志恒是他的高中同学，后来一同上了北。1959年因富农身份受迫害自杀，留下年轻妻子及一堆儿女。</br>
 
 
-<!--year-->201007:</br>
-<a href="https://yhcqw.github.io/yhcq/wenge-201007.html" target="_blank">北大附中"文革"初期纪事 陈兵</a></br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/wenge-201007chenbing.html" target="_blank"><i>北大附中"文革"初期纪事(陈兵)</i></a>(201007)</br>
 1966年8月被喻为“红八月”，乃文革史上死人最多的一个月。有水的地方就有人自杀，暴尸岸边。二里沟的一条铁路每天血肉横飞。北大附中校园也是重灾区。很多问询的学生变了杀人狂魔，打人最狠。文章分析其心理原因：大家一直没见过他,但总在议论他,此人为何在“文革”前与“文革”中反差如此大?主要是他的心理变态,过去人们笑话他,他很孤独,“文革”的形势给了他机会,他把出身不好的同学当做靶子来发泄,几乎打出人命。像这样的变态者,当时不在少数。“文革”残害了一代人,难道不该好好总结吗？…把当时的史实记载叙说,使人们记住野蛮、落后、愚昧教训,对历史是一种负责。</br>
 
-<!--year-->201010:</br>
-<a href="https://yhcqw.github.io/yhcq/wenge-201010wangyouqin.html" target="_blank">恐怖的“红八月”(王友琴)</a></br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/wenge-201010wangyouqin.html" target="_blank"><i>恐怖的“红八月”(王友琴)</i></a>(201010)</br>
 了解文革代表作。全文基本是虐待血腥细节，此文并不适合所有人。没有了解过文革的人可能内容是想象不到的恐怖。文章从北大及北大附中打老师开始，红卫兵虐待怀孕老师，孩子出生很快死亡。还有文革出名虐待致死事件 - 北师大附中校长卞仲耘被虐待几小时致死。还有被自杀，真自杀，终身致残等很多案例。把人虐待致死后红卫兵还得浇开水冷水鉴定是否真的死亡，还有其他虐尸情况。其他血腥细节不在此复述。</br>
 
-<a href="https://yhcqw.github.io/yhcq/wenge-201010wangjingyao.html" target="_blank">“关于卞仲耘之死的匿名唁函”(王晶垚)</a></br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/wenge-201010wangjingyao.html" target="_blank"><i>“关于卞仲耘之死的匿名唁函”(王晶垚)</i></a>(201010)</br>
 文革著名打死人事件 - 北师大附属女子中学卞校长被打死一案，目击者披露的一些血腥细节。</br>
 
-<a href="https://yhcqw.github.io/yhcq/wenge-201010wanglianli.html" target="_blank">我们为什么会助纣为虐(王炼利)</a></br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/wenge-201010wanglianli.html" target="_blank"><i>我们为什么会助纣为虐(王炼利)</i></a>(201010)</br>
 当年文革大人红卫兵的反思，分析自己为什么会成为红卫兵。</br>
 “我们怎么会变成了这样?多年以后，我找出的答案是：那时，所有的人都在害怕，所有的人都怀抱着彻骨的恐惧，都担心厄运会降到自己头上，所有的人都想“避险”，甚至不择手段地“避险”。当发现“行恶”能“嫁祸于人”又能使自己“避险”，一些人就选择了行恶。坐观恶行无动于衷，还算是那个年代的“善行”呢!”</br>
 作者害怕自己被定义为牛鬼蛇神，之后就会被鄙视及孤立，所以就参加政治运动。作者最后总结很值得反思，文革到底如何影响到现在呢？</br>
@@ -264,66 +173,78 @@ body { font-family: 'Roboto'; font-weight: normal; font-size: 16px; color: #0000
 现在，造假作假、人骗人、人虐待人的奇闻不绝于耳，造假作假、人骗人、人虐待人已经到了丧尽天良的地步。当丧尽天良的作为也能“普及神州大地”时，作为中国人正该想一想，如果没有1966年开始的那场腰斩了中国传统道德文明的“革命”，如果不是有两代年轻人从小生活在将无知无耻当有趣的社会里，中华民族会遭这样的报应吗?”</br>
 《炎黄春秋》这期把三篇文革血腥文章放在一起，有历史纪实，有肇事者反思，也有吊唁信，不同角度令读者更加深入了解文革的暴力，加强思考。</br>
 
-<!--year-->201011:</br>
-<a href="https://yhcqw.github.io/yhcq/wenge-201011xiechengnian.html" target="_blank">道县“文革”杀人遗留问题处理经过(谢承年)</a></br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/wenge-201011xiechengnian.html" target="_blank"><i>道县“文革”杀人遗留问题处理经过(谢承年)</i></a>(201011)</br>
 1967年湖南道县因文革而死的人接近1万。当中凶残分子为了革命把带大自己的人杀掉。本文关于1980年实行的平反工作，包括经济补偿，处理过失分子，伤口愈合。</br>
 编者按，对于“伤口愈合”一点，民主化转型过程的transitional justice也有很多研究。对于历史伤痛，受害人都含恨。要把他们的恨释放，需要伤口愈合，例如承认他们的痛，追究责任，教育下一代等。只给钱的话，这是“封口费”，并不能愈合伤口的。除了文革，中国还很多类似需要伤口愈合的事件。</br>
 
-<!--year-->201107:</br>
-<a href="https://yhcqw.github.io/yhcq/wenge-201107chengyu.html" target="_blank">我眼中的广西文革（程郁）</a></br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/wenge-201107chengyu.html" target="_blank"><i>我眼中的广西文革(程郁)</i></a>(201107)</br>
 广西文革以曾发生人吃人事件出名。此篇关于一位11小女孩的走难经历。内容并不血腥。虽然是非常悲壮的故事，但里面一个情节实在是看到我疯狂爆笑了出来。</br>
 
 
 
-<!--year-->201110:</br>
-<a href="https://yhcqw.github.io/yhcq/wenge-201110wangyiying.html" target="_blank">我打地主堂曾祖母(王仪瑛）</a></br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/wenge-201110wangyiying.html" target="_blank"><i>我打地主堂曾祖母(王仪瑛)</i></a>(201110)</br>
 作者为10几岁的小孩被教导抽打地主。当年不懂事，多年后内疚至极。</br>“在斗争大会上，她要是不老实，我们贫下中农喊‘她不老实，顽固’时，你们就用竹鞭子用力抽打她，叫她老老实实。如果她再不老实，就再用力抽打她。你们两兄弟如果不打她，打她时，不用力抽，连你们一起斗争”。</br>
 
 
 
 <!------------------------------------------------------------------ wenge-ends---------------------------------->
 <!------------------------------------------------------------------ mao-begins---------------------------------->
-
 <span style="font-family: arial; sans-serif; font-size: 14pt"></br>
-<a href="https://yhcqw.github.io/yhcq/mao.html"> <b><i>  毛年代其他： </a> </b></i> </span></br>
-<!--year-->201001:</br>
-<a href="https://yhcqw.github.io/yhcq/mao-201001yinshusheng.html" target="_blank">公安工作“大跃进”(尹曙生）</a></br>
-作者乃安徽省公安厅原常务副厅长，大跃进期间在青海公安厅。作者简述了学生时期的批斗经验，后来进了公安部门，经历了公安的“大跃进”（58-60年）。当时社会搞无罪运动，办法就是抓人。很多无辜的人被抓，被囚禁甚至死在狱中无人知道，地方政府有抓人指标。后来毛泽东下了命令少抓人，抓的人数变了原来1/10。当时正大饥荒期间，青海发生大量饿死人，甚至人吃人事件，当权者只管搞大跃进。一位14岁孩子因为太饿，割了炉的耳朵来吃，后来被抓，1年半后获释，发现全家已经饿死。作者总结不尊重宪法和法律就得不到宪法和法律的保护。</br>
+    <div class="caption">
+  <a href="https://yhcqw.github.io/yhcq/culturalrevolution.html">
+    <b><a id="mao"> 毛年代其他： <a></b>
+  </a>
+</div>
+
+
+
+<a href="https://yhcqw.github.io/yhcq/mao-201001yinshusheng.html" target="_blank"><i>公安工作“大跃进”(尹曙生)</i></a>(201001)</br>
+作者乃安徽省公安厅原常务副厅长，大跃进期间在青海公安厅。作者简述了学生时期的批斗经验，后来进了公安部门，经历了公安的“大跃进”(58-60年)。当时社会搞无罪运动，办法就是抓人。很多无辜的人被抓，被囚禁甚至死在狱中无人知道，地方政府有抓人指标。后来毛泽东下了命令少抓人，抓的人数变了原来1/10。当时正大饥荒期间，青海发生大量饿死人，甚至人吃人事件，当权者只管搞大跃进。一位14岁孩子因为太饿，割了炉的耳朵来吃，后来被抓，1年半后获释，发现全家已经饿死。作者总结不尊重宪法和法律就得不到宪法和法律的保护。</br>
 自己点评：人都是环境的动物，当时如果领导爱民就一定会被批斗，被搞死，为了自己利益，也就逼着不爱民。毛泽东死后，这些经历过政治运动而埋没良心的人继续当官，社会会是怎样？经历过无故被整甚至家破人亡的人他们怎么看这个社会及政府？经历影响思维，会反映在政策上，影响到整个社会的走向。几十年前中国政治运动的遗留还有多少影响着今天？本篇文章讲到公安执法，因为“大跃进”学会了什么，如何反映在后来的政策上？或者有没有一些遗留没清理好还影响着今天？</br>
 
 
-<a href="https://yhcqw.github.io/yhcq/mao-201001shamo.html" target="_blank">一个妈妈的忏悔(沙漠）</a></br>
-看到极为心痛的文章。50年代反右为背景，在那个年代父母环境原因做了错误的决定，害了儿子心灵及前途，后悔一辈子。值得做父母的看看，自以为是“爱”实际是伤害。当时搞喜剧的父母被定为右派，下放劳改。两名十多岁孩子留在家里没人管。儿子上中学时，因为父母是右派受到压力而逃学，成为流浪儿。当时正值大饥荒时代，原来拾遗不报的儿子竟然头东西去卖。（文章还提到大饥荒时期的黑市市场，这是我以前没听说的）妈妈努力去找儿子，后来儿子终于回家，身心疲累的妈妈见到儿子打了他一巴掌，叫他“滚”。父母后来送儿子去收容所管教，里面是个大染缸，各种犯罪的青少年，而且反右年代，这种“坏分子”受到什么待遇？由于去过收容所，影响了后来报读大学。儿子最后49岁患癌逝世，临死前问他妈为什么要送他去收容所。</br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/mao-201001shamo.html" target="_blank"><i>一个妈妈的忏悔(沙漠)</i></a>(201001)</br>
+看到极为心痛的文章。50年代反右为背景，在那个年代父母环境原因做了错误的决定，害了儿子心灵及前途，后悔一辈子。值得做父母的看看，自以为是“爱”实际是伤害。当时搞喜剧的父母被定为右派，下放劳改。两名十多岁孩子留在家里没人管。儿子上中学时，因为父母是右派受到压力而逃学，成为流浪儿。当时正值大饥荒时代，原来拾遗不报的儿子竟然头东西去卖。(文章还提到大饥荒时期的黑市市场，这是我以前没听说的)妈妈努力去找儿子，后来儿子终于回家，身心疲累的妈妈见到儿子打了他一巴掌，叫他“滚”。父母后来送儿子去收容所管教，里面是个大染缸，各种犯罪的青少年，而且反右年代，这种“坏分子”受到什么待遇？由于去过收容所，影响了后来报读大学。儿子最后49岁患癌逝世，临死前问他妈为什么要送他去收容所。</br>
 
-自己点评：我相信儿子是有PTSD（创伤后遗症），所以死前也要问他妈为什么。这种心理的荼毒需要面对，要治疗。另外，反右期间多少孩子因为父母被拉去改造家庭被毁，造成多少社会问题？这些问题如何影响到现在？</br>
+自己点评：我相信儿子是有PTSD(创伤后遗症)，所以死前也要问他妈为什么。这种心理的荼毒需要面对，要治疗。另外，反右期间多少孩子因为父母被拉去改造家庭被毁，造成多少社会问题？这些问题如何影响到现在？</br>
 
 
 
-<!--year-->201002:</br>
-<a href="https://yhcqw.github.io/yhcq/mao-201002huangyuzhong.html" target="_blank">毛主席的芒果到瓮安(黄育中)</a></br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/mao-201002huangyuzhong.html" target="_blank"><i>毛主席的芒果到瓮安(黄育中)</i></a>(201002)</br>
 在没有芒果的毛年代，毛主席把赠送给他的芒果转增给北京工宣队，然后北京工宣队又把芒果转增给地方工宣队。由于芒果不够，所以部分地方只收到芒果的照片。照片送到瓮安，好像接待大领导的那样接待，还出现抢照片事件。芒果照片最后翻牌放大，送给县内48组工宣队，让他们感受毛主席的恩情。</br>
 
 
-<a href="https://yhcqw.github.io/yhcq/mao-201002hanxiu.html" target="_blank">在中国上学插队的美国人(韩秀)</a></br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/mao-201002hanxiu.html" target="_blank"><i>在中国上学插队的美国人(韩秀)</i></a>(201002)</br>
 1946年出生，父亲为美国人，母亲中国人，成长在中国。这篇记载了很多感人的故事，例如8岁时候被学校带去天安门参加抗议活动之后被拉下，遇到好人送她回家。上山下乡期间去了山西林城，干活干到双手起血泡，受到妇女照顾。当老师教书自行制作练习本及学生，受到很多家长支持。</br>
 
 
 
 
-<a href="https://yhcqw.github.io/yhcq/mao-201002wangkeming.html" target="_blank">还原真相是走向正义的第一步(郭道晖)</a></br>
-借韩国(<a href="https://www.latimes.com/archives/la-xpm-2009-dec-05-la-ed-korea5-2009dec05-story.html" target="_blank">South Korea takes a brave look back</a>)政府杀无辜人民例子引出国外类似调查历史真相的例子，反思自己国家问题。最后作者提出几个例子，证明道德底线超越法律，对于恶法要加以抵制（例如东德警察根据“法律”枪杀逃去西德的人属犯法），否定反右。</br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/society-201002wangkeming.html" target="_blank"><i>《无声的群落》：最后的古代故事(王克明)</i></a>(201002)</br>
 
-引用文章一段话：</br>
-
-
-「国家罪错由国家领导人出面向人民、向受害者作政治道歉，有利于抚慰受伤害者的心灵，获得社会公平感，化解民怨和社会矛盾，促进社会和解。这已成为文明国家的一种政治道德惯例。更根本的目的还在促使领导人反省导致损害的政治经济根源，汲取历史教训，检视制度和具体体制上的问题，加以改革。」</br>
+《无声的群落》(此书zlibrary有)是1967-1968年老知青上山下乡的回忆录，当中有目击22岁青年因为出生不好被枪杀的血腥历史，他们经历了饥饿，恐惧，逃亡，追杀等。记录这些历史重要性在哪？引用文章一段话：</br>
+<i>如果不是这本书，这事儿就永远过去了，没人还能知道这段历史真相。真相是历史的第一要素，坚持真相才有可能坚持真理，掩盖真相不会只是不好意思。制造仇恨和斗争，给人类带来了无尽苦难。了解苦难真相，才能比较出自由思想、社会宽容、民主平等、终结仇怨的社会意义。在这一点上，《无声的群落》这样的书，有重要的作用。从书中可以看见，作者们那些苦难的叙述，是对历史的记忆，但不是对历史的记恨。没有这些记忆，就不会有对极权专制的反思。同时，没有这些记恨，才不会重演仇雠斗争的历史。</i></br>
 
 
-<a href="https://yhcqw.github.io/yhcq/mao-201002wangying.html" target="_blank">反右欠下的良心债(王瑛)</a></br>
+
+
+
+  
+
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/mao-201002wangying.html" target="_blank"><i>反右欠下的良心债(王瑛)</i></a>(201002)</br>
 作者父亲反右时期作为单位领导，需要抓右派，未了达到上级指标，无奈之下冤枉好人，波及家属，女儿成绩原来足以考上北大，因父亲关系最后只能在接到手工作坊上班，婚姻也不愉快。被冤枉的人最后1979年平凡，不过此时肝癌末期。作者父亲良心过意不去，被冤枉好人死后，一直匿名寄钱给家属，离世时眼睛都闭不上。</br>
 
 
-<a href="https://yhcqw.github.io/yhcq/mao-201002zhaotiesuo.html" target="_blank">抗战胜利后中共的地方自治思想(赵铁锁 肖光文)</a></br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/mao-201002zhaotiesuo.html" target="_blank"><i>抗战胜利后中共的地方自治思想(赵铁锁 肖光文)</i></a>(201002)</br>
 夺取政权前，毛泽东经常说民主民主，并且谴责国民党独裁，此文是一例。1945年，国共双方达成《双十协议》，实行地方自治，由下而上的普选。引用此文最后一段：</br>
 
 「地方自治是民主宪政基础，有利于实现政治民主化。抗战胜利之初，中国共产党利用地方自治的有力武器，同国民党展开了激烈的政治斗争。中国共产党是追求民主的党，代表了全民族的利益，在解放区实行有效的民主地方自治，得到了广大民众及各民主党派积极支持和拥护，民主力量不断壮大，政治地位不断上升。反观国民党，借自治之名，行独裁之实，是假自治，扼杀民主政治，其他各阶层党派、团体的利益得不到切实保障，于是它逐渐失去可以依靠的民心，政治上日益处于孤立境地。1946年，当国民党撕毁政协决议，悍然发动内战时，它就已经为全国人民所唾弃。国共两党关于民主政治态度与行动的鲜明对比，昭示了国民党后来失败的历史必然性。」</br>
@@ -333,32 +254,36 @@ body { font-family: 'Roboto'; font-weight: normal; font-size: 16px; color: #0000
 
 
 
-<!--year-->201007:</br>
-<a href="https://yhcqw.github.io/yhcq/mao-201007yinshusheng.html" target="_blank">从批尸闹剧看"四清"运动(尹曙生)</a></br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/mao-201007yinshusheng.html" target="_blank"><i>从批尸闹剧看"四清"运动(尹曙生)</i></a>(201007)</br>
 毛年代搞运动时把人斗死多的事，但少有对尸体进行批斗。死者是自杀的，据说死状恐怖，参加批斗大会的看到都吓怕。</br>
 
-<a href="https://yhcqw.github.io/yhcq/mao-201007xiaolei.html" target="_blank">我所知道的"特殊案件"(肖磊)</a></br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/mao-201007xiaolei.html" target="_blank"><i>我所知道的"特殊案件"(肖磊)</i></a>(201007)</br>
 关于大饥荒时期人吃人事件，包括吃掉四岁男孩。有人专制挖掘尸体当牛肉卖。</br>
 
 
-<!--year-->201104:</br>
-<a href="https://yhcqw.github.io/yhcq/mao-201104yinshusheng.html" target="_blank">“大跃进”前后的社会控制(尹曙生)</a></br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/mao-201104yinshusheng.html" target="_blank"><i>“大跃进”前后的社会控制(尹曙生)</i></a>(201104)</br>
 作者为原安徽省公安厅副厅长。1949年新中国成立后，有200万武装土匪，还有社会上其他恶霸，社会治安非常差。50年代初期，中央开始第二次全国镇压反革命，定下捕人杀人任务。此文主要关于安徽省镇压运动，当时发生多起抢粮事件。政府政策失误以致农民抢粮，然后把他们定位反革命把他们枪毙。这些事件发生时间在大跃进之后，当时全国饥荒饿死了很多人，却没有发生大规模动乱，作者认为和反革命镇压有关。</br>
 
-<a href="https://yhcqw.github.io/yhcq/mao-201104zhangguitao.html" target="_blank">娄烦土改及纠偏(张贵桃)</a></br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/mao-201104zhangguitao.html" target="_blank"><i>娄烦土改及纠偏(张贵桃)</i></a>(201104)</br>
 1947年山西娄烦县土改血腥史纪录。烫人用的包括炭火，火柱等。地主有当场被斗死。年轻的地主女人可能就被分。本文记录了当时娄烦县的情况。中国从毛泽东开始直到他死后1978年第十一届三中全会才废除中国等级制度 - 地主，富农，中农，贫农等。地主富农子女天生被剥夺机会，使农村部分人被摧残。</br>
 编者认为，毛年代这些事情，怎样影响现在中国？最重要是观念，观念驱动一个社会的走向。当时这种不平等的观念到现在有没有留下来，如何影响社会？</br>
 
-<a href="https://yhcqw.github.io/yhcq/mao-201104wuchuandou.html" target="_blank">一个右派的“饥饿改造”(吴传斗)</a></br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/mao-201104wuchuandou.html" target="_blank"><i>一个右派的“饥饿改造”(吴传斗)</i></a>(201104)</br>
 想了解处于极度饥饿的人的心理变化及经历，可以看看此文。</br>
 
-<!--year-->201107:</br>
-<a href="https://yhcqw.github.io/yhcq/mao-201107qinweidong.html" target="_blank">高学兰养鸡到底对不对(秦卫东)</a></br>
-一个关于言论自由重要性的例子。当时四人帮刚粉碎，百姓还没从“姓社姓资”的思想禁锢走出来，私自养鸡被视为罪。甘肃农村妇女高学兰自私养鸡拿去卖，区领导安排记者调查，要求写批判稿。但记者调查期间，发现实在不能不养鸡（当时粮食供应严重不足），最后在省委书记宋平支持下，在《甘肃日报》报道，引起大讨论，赞成反对的都有，形成了一次思想解放。新闻报道还引起了宋平实地调查，推动更深入的讨论。实地调查的人发现她机械化养鸡，收到经济效益，农地也能承担，随着养鸡水平提高，还可以有其他突破成企业发展。调查还了解到政策的不实际（例如不准有副业），导致农村困境，只有大胆思想解放才能突破。宋平分析，如果整体农业都像高学兰这样搞，就能解决农村困境。</br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/mao-201107qinweidong.html" target="_blank"><i>高学兰养鸡到底对不对(秦卫东)</i></a>(201107)</br>
+一个关于言论自由重要性的例子。当时四人帮刚粉碎，百姓还没从“姓社姓资”的思想禁锢走出来，私自养鸡被视为罪。甘肃农村妇女高学兰自私养鸡拿去卖，区领导安排记者调查，要求写批判稿。但记者调查期间，发现实在不能不养鸡(当时粮食供应严重不足)，最后在省委书记宋平支持下，在《甘肃日报》报道，引起大讨论，赞成反对的都有，形成了一次思想解放。新闻报道还引起了宋平实地调查，推动更深入的讨论。实地调查的人发现她机械化养鸡，收到经济效益，农地也能承担，随着养鸡水平提高，还可以有其他突破成企业发展。调查还了解到政策的不实际(例如不准有副业)，导致农村困境，只有大胆思想解放才能突破。宋平分析，如果整体农业都像高学兰这样搞，就能解决农村困境。</br>
 最后大讨论带动了思想解放，推动了农村承包责任制，形成了个体户，专业户，甘肃农村生机勃勃。</br>
 如果一开始领导的思维就是养鸡是错，新闻稿对高学兰批评讨伐，大讨论，思想解放，农业机械化，以致整个甘肃农业改革都不会有。但言论自由才能引起讨论，最后才能推动社会发展。还有，当时领导宋平还是做事的，允许言论自由，自己还去实地调查，提出方案，甘肃农业才能发展。</br>
 
-<a href="https://yhcqw.github.io/yhcq/mao-201107muguangren.html" target="_blank">延安一代和红岩一代的心路历程-兼说他们的两头真(穆广仁)</a></br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/mao-201107muguangren.html" target="_blank"><i>延安一代和红岩一代的心路历程-兼说他们的两头真(穆广仁)</i></a>(201107)</br>
 关于毛年代的青年。很多人不知道探索历史的意义，觉得过去了还提来干嘛，引述这篇文章最后几句说明探索历史的意义：</br>
 “他们得出的广泛的共识，是回归到自由民主平等 人权等普世价值，走民主社会主义之路，宪政之路…参与这场反思的，主要是中国 知识分子的群体;起着领导作用的是李锐、李慎 之、胡绩伟、李普、谢韬等一大批老共产党员。在 这场反思中，原来为抗日救亡、追求民主自由、反 对独裁专制而奋斗的那批知识分子，也就是被称 为“延安一代”、“红岩一代”的一些人，从迷失中 找回真实的自己;有条件的，又在为争取自由民主而呐喊了。尽管他们无权无势，人微言轻，而且正在谢 幕人生，在整个政治改革和伦理重塑的历史进程 中，不过是长途接力中的一代接力棒。但这是无 可代替的一棒。因为他们所经历的大半个世纪， 是中华民族百年史中最复杂、最多难、最丰富的 一段。他们从血和泪中反思，总结出的经验教训， 是可贵的，是中华民族不可或缺的史鉴。没有这 些苦难历史的回忆、记述、反思，探索，人们将忘 记历史;过去走过的弯路、痛苦和灾难，就可能重复。有些人不总是要人们淡忘历史、把记述那段 历史的文字列为“敏感禁区”吗?而走向谢幕的那 一代知识分子，却不计个人得失，顶住压力，勇敢 地讲出些真话。他们，这些被称作“两头真”的人， 正在真诚地做些力所能及的、别人所不能做的事。</br>
 这就是探索这段历史的真实价值”</br>
@@ -366,17 +291,19 @@ body { font-family: 'Roboto'; font-weight: normal; font-size: 16px; color: #0000
 为什么老一代中国人要民主，反而现在这代觉得民主不适合中国？因为经历不同，我相信有经历的老一代更明白什么是民主。</br>
 
 
-<a href="https://yhcqw.github.io/yhcq/mao-201107zhuyan.html" target="_blank">1956年的汉阳一中事件(朱岩)</a></br>
-1957年一位教师上课时，透露了只有5%的学生能上高中，引起学生愤怒（当时上不了高中只能一辈子耕田），直接找领导问话，事件后来被政治化，认为学生反革命，是国民党残余势力策划，最后有三名教师被判死刑，还有学生被监禁。中央到地方报纸和电台都说反革命事件破产而告终，台湾国民党则说被判刑的是“反共义士”，甚至为他们开追悼会。一些国外的青年代表团及记者都访问该校，而假案编造着都吹嘘自己的成果。事件最后于1985年平反。</br>
-1983年大韩航空KAL 007于苏联库页岛被苏联击落（当时冷战时期，韩国航班不能在苏联领空飞行），事件至今仍然很多不解之谜。看过一纪录片Discovery Ch Unsolved History Flight KAL-007，最后几分钟一位当时调查事件的苏联记者说，美国韩国苏联都利用事件获得自己的利益，当时我看不明白，看了这事我明白了。汉阳一中假案肇事者，中国官方，台湾官方都在事件上获得利益，最后受害人根本无人关心。</br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/mao-201107zhuyan.html" target="_blank"><i>1956年的汉阳一中事件(朱岩)</i></a>(201107)</br>
+1957年一位教师上课时，透露了只有5%的学生能上高中，引起学生愤怒(当时上不了高中只能一辈子耕田)，直接找领导问话，事件后来被政治化，认为学生反革命，是国民党残余势力策划，最后有三名教师被判死刑，还有学生被监禁。中央到地方报纸和电台都说反革命事件破产而告终，台湾国民党则说被判刑的是“反共义士”，甚至为他们开追悼会。一些国外的青年代表团及记者都访问该校，而假案编造着都吹嘘自己的成果。事件最后于1985年平反。</br>
+1983年大韩航空KAL 007于苏联库页岛被苏联击落(当时冷战时期，韩国航班不能在苏联领空飞行)，事件至今仍然很多不解之谜。看过一纪录片Discovery Ch Unsolved History Flight KAL-007，最后几分钟一位当时调查事件的苏联记者说，美国韩国苏联都利用事件获得自己的利益，当时我看不明白，看了这事我明白了。汉阳一中假案肇事者，中国官方，台湾官方都在事件上获得利益，最后受害人根本无人关心。</br>
 
-<!--year-->201110:</br>
-<a href="https://yhcqw.github.io/yhcq/mao-201110qinweidong.html" target="_blank">甘肃流陕妇女回归记(秦卫东）</a></br>
-大饥荒时代（～1960年）比较少听说的事情。已婚甘肃妇女因为饥荒去陕西和人“非法同居”甚至生子。当中有原配丈夫寻妻时发生抢妇女，打架等事情。国家发了文件通知动员甘肃妇女返乡。自己点评：是动员是强逼妇女返乡不知道，真实情况需要口述历史。从这篇文章看到，那个时代政府会插手家庭事。</br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/mao-201110qinweidong.html" target="_blank"><i>甘肃流陕妇女回归记(秦卫东)</i></a>(201110)</br>
+大饥荒时代(～1960年)比较少听说的事情。已婚甘肃妇女因为饥荒去陕西和人“非法同居”甚至生子。当中有原配丈夫寻妻时发生抢妇女，打架等事情。国家发了文件通知动员甘肃妇女返乡。自己点评：是动员是强逼妇女返乡不知道，真实情况需要口述历史。从这篇文章看到，那个时代政府会插手家庭事。</br>
 
 
-<a href="https://yhcqw.github.io/yhcq/mao-201110shiguiping.html" target="_blank">饥饿的学生时代(石圭平）</a></br>
-大饥荒时代（～1960年）学生食堂只有稀饭，吃的大家上课时经常上厕所，食堂甚至缺乏的笔者要吃藓苔，草根，树叶。上了大学食堂也只有高粱面干粮。到了最后，毕业前笔者想拿到第一份工资要买的东西 - 油条！</br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/mao-201110shiguiping.html" target="_blank"><i>饥饿的学生时代(石圭平)</i></a>(201110)</br>
+大饥荒时代(～1960年)学生食堂只有稀饭，吃的大家上课时经常上厕所，食堂甚至缺乏的笔者要吃藓苔，草根，树叶。上了大学食堂也只有高粱面干粮。到了最后，毕业前笔者想拿到第一份工资要买的东西 - 油条！</br>
 
 
 
@@ -386,127 +313,156 @@ body { font-family: 'Roboto'; font-weight: normal; font-size: 16px; color: #0000
 
 <!------------------------------------------------------------------ society-begins---------------------------------->
 <span style="font-family: arial; sans-serif; font-size: 14pt"></br>
-<a href="https://yhcqw.github.io/yhcq/society.html"> <b><i> 社会： </a> </b></i></span></br>
+<div class="caption">
+    <b> <a id="society">社会：</a> </b>
+  </a>
+</div>
 
-<!--year-->200806:</br>
-<a href="https://yhcqw.github.io/yhcq/society-200806guxiang.html" target="_blank">“带病提拔”症结何在(谷翔）</a></br>
-文章举了很多“带病提拔”（靠关系，买官等）的例子。有的写地方权利监管完全失控，带病提拔比比皆是，行程严重腐败。文章引用了中国工人出版社的《检察官手册》。</br>
+<a href="https://yhcqw.github.io/yhcq/society-200812xinyu.html" target="_blank"><i>反腐三十年的沉思(辛宇)</i></a>(200812)</br>
+作者表示腐败和制度漏洞有关（编者按，炎黄春秋多篇文章讲到新闻自由的重要性，其中一点是反腐。缺乏舆论监督是一种漏洞。另外政府对经济活动干预也会造成漏洞，参见200510<a href="https://yhcqw.github.io/yhcq/foreign-200510zhanxiaohong.html"target="_blank">政商勾结"：韩国的毒瘤</a>。改革开放以来，经济往前，政治体制赶不上，造成巨大漏洞。作者举了香港的例子说明如何可以压制贪腐 - 从权力结构及监督体制的独立性入手。十六大及十七大都提到民主的发展，作者并且指出全世界反腐成功的地方没有一个不民主。在国内，浙江民主发展较好，腐败也较少。</br>
 
 
-<!--year-->201001:</br>
-<a href="https://yhcqw.github.io/yhcq/society-201001hefang.html" target="_blank">对时代的两种不同判断及其后果（何方）</a></br>
+<hr class="linebreak">
+
+
+
+<a href="https://yhcqw.github.io/yhcq/society-200806guxiang.html" target="_blank"><i>“带病提拔”症结何在(谷翔)</i></a>(200806)</br>
+文章举了很多“带病提拔”(靠关系，买官等)的例子。有的写地方权利监管完全失控，带病提拔比比皆是，行程严重腐败。文章引用了中国工人出版社的《检察官手册》。</br>
+
+
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/society-201001hefang.html" target="_blank"><i>对时代的两种不同判断及其后果(何方)</i></a>(201001)</br>
 文章有错误年代的GDP数据，例如1978年人均GDP全球倒数第二，显示时代错误对社会的影响。作者指出国家制度使得舆论导向和政治文化运动一致，例如中央曾经禁止搞个人崇拜，但现在已经恢复。</br>
 
-<i>"「现在，党中央正号召全国人民落实科学发展观，要把我们各方面的工作都纳入科学发展的轨道。而回避历史教训、着意弄虚作假，却是科学的大敌。用来教育青年，著书立说，还会贻误后代。所以舆论上的这种回潮，实在值得人们重视!」</i></br>
+<i>"现在，党中央正号召全国人民落实科学发展观，要把我们各方面的工作都纳入科学发展的轨道。而回避历史教训、着意弄虚作假，却是科学的大敌。用来教育青年，著书立说，还会贻误后代。所以舆论上的这种回潮，实在值得人们重视!"</i></br>
 
 
-<!--year-->201002:</br>
-<a href="https://yhcqw.github.io/yhcq/society-201002wangliping.html" target="_blank">政治体制改革与社会稳定(王利平)</a></br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/society-201002wangliping.html" target="_blank"><i>政治体制改革与社会稳定(王利平)</i></a>(201002)</br>
 社会保障，义务教育，公共卫生投入过少，比例为主要国家中最低。政策上的寻租行为造成贪污腐败。还有环境污染，全球最严重污染的城市中国占了16个，大城市肺癌死亡人数增加8-10倍。空气污染使慢行呼吸道疾病成为导致死亡的主要疾，看到这些你根本不担心福岛核废水。文章还有很多不太为人知道的社会问题。</br>
 文章引用一篇文章及一片调查也很值得看看：</br>
 
 <a href="https://clb.org.hk/zh-hans/content/2010年：中国的三种可能前景-对98名政府和非政府专家的调查与谘询-一" target="_blank">2010年：中国的三种可能前景--对98名政府和非政府专家的调查与谘询 (一)</a></br>
 <a href="https://www.gongfa.com/html/gongfazhuanti/zhengfaxi/20081128/111.html" target="_blank">范亚峰：治理群体性事件需要宪政新思维</a></br>
 
-<a href="https://yhcqw.github.io/yhcq/society-201002yangjisheng.html" target="_blank">《无声的群落》：最后的古代故事(王克明)</a></br>
-
-《无声的群落》是1967-1968年老知青上山下乡的回忆录，当中有目击22岁青年因为出生不好被枪杀的血腥历史，他们经历了饥饿，恐惧，逃亡，追杀等。记录这些历史重要性在哪？引用文章一段话：</br>
-「如果不是这本书，这事儿就永远过去了，没人还能知道这段历史真相。真相是历史的第一要素，坚持真相才有可能坚持真理，掩盖真相不会只是不好意思。制造仇恨和斗争，给人类带来了无尽苦难。了解苦难真相，才能比较出自由思想、社会宽容、民主平等、终结仇怨的社会意义。在这一点上，《无声的群落》这样的书，有重要的作用。从书中可以看见，作者们那些苦难的叙述，是对历史的记忆，但不是对历史的记恨。没有这些记忆，就不会有对极权专制的反思。同时，没有这些记恨，才不会重演仇雠斗争的历史。」</br>
 
 
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/mao-201002guodaohui.html" target="_blank"><i>还原真相是走向正义的第一步(郭道晖)</i></a>(201002)</br>
+借韩国(<a href="https://www.latimes.com/archives/la-xpm-2009-dec-05-la-ed-korea5-2009dec05-story.html" target="_blank">South Korea takes a brave look back</a>)政府杀无辜人民例子引出国外类似调查历史真相的例子，反思自己国家问题。最后作者提出几个例子，证明道德底线超越法律，对于恶法要加以抵制(例如东德警察根据“法律”枪杀逃去西德的人属犯法)，否定反右。</br>
 
 
-<!--year-->201003:</br>
-<a href="https://yhcqw.github.io/yhcq/society-201003duguang.html" target="_blank">“国进民退”的危害和根源(杜光)</a></br>
-关于中国经济的文章。2010年就预言了疫情后的房地产泡沫。国家的房地产什么时候开始？按文章是2009金融危机之后。政府极度宽松的货币政策贷款给国有企业，使得他们参与毫不相干的房地产。另外，市场自由竞争在法律规范下竞争，造成优胜劣败，但政权介入经济，造成劣胜优败，例子是亏损的国企山东钢铁集团吞并盈利的民企日照钢铁，造成“国进民退”，削弱民有经济，还造成垄断企业（在我看来移动就是）</br>
+<i>"国家罪错由国家领导人出面向人民、向受害者作政治道歉，有利于抚慰受伤害者的心灵，获得社会公平感，化解民怨和社会矛盾，促进社会和解。这已成为文明国家的一种政治道德惯例。更根本的目的还在促使领导人反省导致损害的政治经济根源，汲取历史教训，检视制度和具体体制上的问题，加以改革。"</i>
+</br>
+
+
+
+
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/society-201003duguang.html" target="_blank"><i>“国进民退”的危害和根源(杜光)</i></a>(201003)</br>
+关于中国经济的文章。2010年就预言了疫情后的房地产泡沫。国家的房地产什么时候开始？按文章是2009金融危机之后。政府极度宽松的货币政策贷款给国有企业，使得他们参与毫不相干的房地产。另外，市场自由竞争在法律规范下竞争，造成优胜劣败，但政权介入经济，造成劣胜优败，例子是亏损的国企山东钢铁集团吞并盈利的民企日照钢铁，造成“国进民退”，削弱民有经济，还造成垄断企业(在我看来移动就是)</br>
 此文提到法律规范市场经济，2024年3月8日德国之声中文版刊登了斯坦福大学中国经济专家许成钢的访问，他提到，要挽救中国经济需要司法独立。由于私有财产不能收到法律保障，摧毁企业家的信心，例子为滴滴，美团，阿里巴巴等。</br>
 真正的民主基于法律。从上面两个例子，法律和经济息息相关。认为中国不适合民主的人，是不是认为中国不适合法律呢。</br>
 看完文章的个人理解，“国进”是GDP增加，“民退”是人民少挣了钱，生活质素倒退。</br>
 <a href="https://www.dw.com/zh/專訪許成鋼光靠高科技救不了中國經濟/a-68472008" target="_blank">https://www.dw.com/zh/專訪許成鋼光靠高科技救不了中國經濟/a-68472008</a></br>
-<a href="https://yhcqw.github.io/yhcq/society-201003dongjian.html" target="_blank">个人主义与公民社会(董健 南京大学前副校长)</a></br>
-典型的禁文。作者首先介绍什么是公民社会（注重个人自由）及臣民社会（注重社会和谐，东方社会大概如此）。如果政府机构为百姓服务，而不是把当官的视为官老爷，那就是公民社会。公民社会通过非暴力，民主的方式进行交换，掌权人不用暴力维护自己的权力，但在臣民社会，当权者用暴力夺取权力往往也会用暴力维护权力。例子为毛泽东推翻国民党，建国后一直的阶级争斗（我的看法是，现在的维稳也算）。作者接着谈什么是个人主义，举例说从落后地方到北京开会的人大代表，接受新闻访问时感谢国家感谢党，就没尽人大代表的责任，是臣民而不是公民。文艺作品歌颂感谢党的，也否定了个人主义。压制个人主义，产生扭曲变形，最后就是讲假话，只讲符合党要求的东西。作者认为正当的个性受到压抑，不正当恶欲就容易膨胀，所以可以一方面讲廉洁，一方面贪污。</br>
-我个人看，日本是不是一个典型讲集体主义（在他们的文化里，不是社会制度）的国家以致日本人出了名压抑？中国韩国，社会对“成功”已经给了定义，从小家长按照社会要求培育孩子，个人主义不得伸张。韩国甚至小学就有培养孩子入医学院的补习学校，孩子喜不喜欢学医不重要，最重要学医符合社会要求。不注重个人主义是不是造成中韩严重内卷的原因之一？</br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/society-201003dongjian.html" target="_blank"><i>个人主义与公民社会(董健 南京大学前副校长)</i></a>(201003)</br>
+典型的禁文。作者首先介绍什么是公民社会(注重个人自由)及臣民社会(注重社会和谐，东方社会大概如此)。如果政府机构为百姓服务，而不是把当官的视为官老爷，那就是公民社会。公民社会通过非暴力，民主的方式进行交换，掌权人不用暴力维护自己的权力，但在臣民社会，当权者用暴力夺取权力往往也会用暴力维护权力。例子为毛泽东推翻国民党，建国后一直的阶级争斗(我的看法是，现在的维稳也算)。作者接着谈什么是个人主义，举例说从落后地方到北京开会的人大代表，接受新闻访问时感谢国家感谢党，就没尽人大代表的责任，是臣民而不是公民。文艺作品歌颂感谢党的，也否定了个人主义。压制个人主义，产生扭曲变形，最后就是讲假话，只讲符合党要求的东西。作者认为正当的个性受到压抑，不正当恶欲就容易膨胀，所以可以一方面讲廉洁，一方面贪污。</br>
+我个人看，日本是不是一个典型讲集体主义(在他们的文化里，不是社会制度)的国家以致日本人出了名压抑？中国韩国，社会对“成功”已经给了定义，从小家长按照社会要求培育孩子，个人主义不得伸张。韩国甚至小学就有培养孩子入医学院的补习学校，孩子喜不喜欢学医不重要，最重要学医符合社会要求。不注重个人主义是不是造成中韩严重内卷的原因之一？</br>
 
 
-<!--year-->201006:</br>
-<a href="https://yhcqw.github.io/yhcq/society-201006dudaozheng.html" target="_blank">“扭秧歌”也是在前进（杜导正）</a></br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/society-201006dudaozheng.html" target="_blank"><i>“扭秧歌”也是在前进(杜导正)</i></a>(201006)</br>
 关于温家宝2010年于五四造访北大，提到温家宝纪念胡耀邦的文章。当年胡派他夜访农民好知道真实情况。在北大时，温表示党到基层的安排造假。</br>
 
 
 
-<a href="https://yhcqw.github.io/yhcq/society-201006zhangxushan.html" target="_blank">“钱学森之问”：一个不成问题的问题（张绪山）</a></br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/society-201006zhangxushan.html" target="_blank"><i>“钱学森之问”：一个不成问题的问题(张绪山)</i></a>(201006)</br>
 作者乃清华大学教授。不管是学文还是学理，都是同一土壤出来。于缺乏思想自由，中国出不了民国时期的大师，解决问题需要民主化。</br>
 引用文章其中一段：</br>
 <i>	 “所有高校产出的所谓“学术论文”，有谁敢说“本人研究成果乃自由探索之结晶，非任何教条思想之服赝品”？其三，教育部门的官员每时每刻都在挖空心思地想着出政绩，不断催促教师们填写名目繁多的各种表格，以各种项目下的经济诱惑将教师们的头发折腾得由黑变白的时候，还有多少闲暇用于潜心的研究？既然学者对学问的兴趣被销蚀，学术研究被一些信条束缚而不得自由，独立意志不能自由实现，而学术研究所必须的充足时间，先是被各类以“思想改造”为目标的无休止的政治学习所消耗，现在又被强制性的或充满巨大利益诱惑的没完没了的表格所耗费——概言之，从事学术研究和思想创造所需要的最根本元素均难以具备——那么，怎能指望杰出人才的出现？” </i></br>
-<a href="https://yhcqw.github.io/yhcq/society-201006dingdong.html" target="_blank">为讲座松绑（丁 东）</a></br>
-附和上文<a href="https://yhcqw.github.io/yhcq/society-201006zhangxushan.html" target="_blank">“钱学森之问”：一个不成问题的问题（张绪山）</a>由蔡元培时期，北大有思想自由，促成五四新文化运动及马克思主义传播。文章提到现在高校问题：</br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/society-201006dingdong.html" target="_blank"><i>为讲座松绑(丁 东)</i></a>(201006)</br>
+附和上文<a href="https://yhcqw.github.io/yhcq/society-201006zhangxushan.html" target="_blank">“钱学森之问”：一个不成问题的问题(张绪山)</a>由蔡元培时期，北大有思想自由，促成五四新文化运动及马克思主义传播。文章提到现在高校问题：</br>
 <i>教育主管部门不久前下发文件，对于社会人文学科的讲座，不是着眼于鼓励，而是强调讲座必须坚持马克思主义、毛泽东思想、邓小平理论和“三个代表”重要思想为指导，牢牢把握意识形态工作的主导权，对涉及敏感问题要严格把关。强调贯彻落实谁主管谁负责的原则，加强管理，严格把关，切实负起领导责任。对讲座中传播错误观点的，对相关负责人员，要依据有关规定，视情节轻重，给予批评教育、组织处理或党纪、政纪处分。讲座的校内具体主办单位要严格按照审批程序申报，对拟邀请报告人的情况和报告内容进行认真了解，并征得拟邀请报告人所在单位党组织同意。学校人员被外单位邀请担任讲座报告人的，必须经所在党总支或直属党支部同意，并上报校党委批准。这样的政策，在政治上是足够正确了，但结果很可能让一些大学的管理层对举办讲座心存畏惧，畏首畏尾，不求有功，但求无过，多一事不如少一事。那些思想活跃，擅长研究当前公共领域前沿问题的学者，也会被视为敏感而拒之门外。 </i></br>
 引用文章其中一段：</br>
 <i>“所有高校产出的所谓“学术论文”，有谁敢说“本人研究成果乃自由探索之结晶，非任何教条思想之服赝品”？其三，教育部门的官员每时每刻都在挖空心思地想着出政绩，不断催促教师们填写名目繁多的各种表格，以各种项目下的经济诱惑将教师们的头发折腾得由黑变白的时候，还有多少闲暇用于潜心的研究？既然学者对学问的兴趣被销蚀，学术研究被一些信条束缚而不得自由，独立意志不能自由实现，而学术研究所必须的充足时间，先是被各类以“思想改造”为目标的无休止的政治学习所消耗，现在又被强制性的或充满巨大利益诱惑的没完没了的表格所耗费——概言之，从事学术研究和思想创造所需要的最根本元素均难以具备——那么，怎能指望杰出人才的出现？” </i></br>
 
 
-<!--year-->201011:</br>
-<a href="https://yhcqw.github.io/yhcq/society-201011zhengyongnian.html" target="_blank">中国改革的路径及其走向(郑永年)</a></br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/society-201011zhengyongnian.html" target="_blank"><i>中国改革的路径及其走向(郑永年)</i></a>(201011)</br>
 文章分析中国政治制度的问题及改革的方向，其中一点需要民主化。现行制度所谓的“党内民主”就是集体领导，容易演变成没人负责的局面。要建立当党内责任制必须简历党内民主及选举民主。</br>
 
-<a href="https://yhcqw.github.io/yhcq/society-201011yuguangren.html" target="_blank">上下互动：温总理谈话解读(余广人)</a></br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/society-201011yuguangren.html" target="_blank"><i>上下互动：温总理谈话解读(余广人)</i></a>(201011)</br>
 温家宝曾经说过民主是普世价值。他接受CNN采访时，曾经大谈民主。</br>
 
-<a href="https://yhcqw.github.io/yhcq/society-201011maqingyu.html" target="_blank">市场经济呼唤政治改革(马庆钰)</a></br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/society-201011maqingyu.html" target="_blank"><i>市场经济呼唤政治改革(马庆钰)</i></a>(201011)</br>
 缺乏民主法制容易使得公权使用者滥权，使得市场经济扭曲，一例子为2010年5月山东日照市政府以低价建官宅，公款招待费，用车费，出国考察费等。</br>
 
-<a href="https://yhcqw.github.io/yhcq/society-201011guodaohui.html" target="_blank">舆论监督权与官员名誉权(郭道晖)</a></br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/society-201011guodaohui.html" target="_blank"><i>舆论监督权与官员名誉权(郭道晖)</i></a>(201011)</br>
 关于新闻言论自由的重要性。作者评论今年因为举报官员恶性举报人被告名誉侵权事件。作者引述法国公务员享受个人权利的自由度比一般人少。公民针对官员行为批评应该比针对私人更多保障。即使批评官员有错失之处也应该比公民私人之间名誉权纠纷要轻。作者引用美国一州的例子，诽谤明星罚款200万美元，但诽谤州长只罚1美元。因为批评官员受重罚就无人敢说话。80年代，全国人大甚至拟通过新闻法，但被元老反对，怕他们管不着。</br>
 笔者按：韩国上一任总统文在寅于2021年曾推行“假新闻”法案，如果媒体报道假新闻将给予惩罚。事件出来遭到新闻界工作者强烈反对，认为此政策令到记者不敢发言，目的在打击新闻自由。政府提出此法案的理念看似很好，但实际带来的后果，美国州长的诽谤事件很值得参考。</br>
 
 Media groups up in arms against 'unconstitutional' reform bill</br>
 <a href="https://www.koreatimes.co.kr/www/nation/2024/05/113_313678.html" target="_blank">https://www.koreatimes.co.kr/www/nation/2024/05/113_313678.html</a></br>
-<a href="https://yhcqw.github.io/yhcq/society-201011xiaogongqin.html" target="_blank">专制帝国的改革为何难以成功(萧功秦)</a></br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/society-201011xiaogongqin.html" target="_blank"><i>专制帝国的改革为何难以成功(萧功秦)</i></a>(201011)</br>
 本文剖析清末变革失败的原因，对比日本明治维新。</br>
 
-<!--year-->201012:</br>
-<a href="https://yhcqw.github.io/yhcq/society-201012bixingxing.html" target="_blank">梁中堂和他的计划生育特区(毕星星)</a></br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/society-201012bixingxing.html" target="_blank"><i>梁中堂和他的计划生育特区(毕星星)</i></a>(201012)</br>
 计划生育为人所不知的一段。当年山西省社科院研究员梁中堂反对此政策，主张两胎化，并有具体方案。但计划生育中央定要推行，他就在山西翼城县申请了一个试验区。在这试验区内，允许两胎。30年内，翼城县出生率略高于全国千分之零点四。人口没多生，而且没有一胎化的副作用。本文欣赏梁先生知识分子的担当，不随大流唯唯诺诺。虽持反对意见，但当时中央允许反对意见，允许他试验。此例子很值得现代中国借鉴。</br>
 
-<!--year-->201104:</br>
-<a href="https://yhcqw.github.io/yhcq/society-201104guodaohui.html" target="_blank">人权六十年：从否定到回归(郭道晖)</a></br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/society-201104guodaohui.html" target="_blank"><i>人权六十年：从否定到回归(郭道晖)</i></a>(201104)</br>
 从1949年到现在中国不同阶段的人权状况。文革过后，1982年修改宪法时，确认了公民权利和自由，以前没有的：公民的人格尊严不受侵犯。禁止用任何方法 对公民进行侮辱、诽谤和诬告陷害。”邓小平曾经承认人权是所有人的。文章说了一些中国还存在的人权问题，立法不足等等，要保障人权必须克服观念障碍。80年代中国人权有所进步时因为当时领导人经历过文革。但现在中国形成了利益集团，很难推动人权进步，要靠社会力量。作者最后举例说明群众发动的网络力量对政府的监督，例如三鹿毒奶粉，山西黑砖窑，华南虎照打假等。网络的开放透明使恶人作恶有所顾忌，正义多一个实现渠道。</br>
 
-<a href="https://yhcqw.github.io/yhcq/society-201104zhujiusi.html" target="_blank">我国高校发展的三个问题(朱九思)</a></br>
-1998年后国内高校的两个政策 - 高校合并和扩招，作者都认为是错的。当年四所大学合并为现在的浙大，当时原浙大学长也反对。还有其他学校合并也有不少高校领导反对，但政府行为下面不能提意见。1999年大学扩招在亚洲金融危机之下，通过扩招启动教育消费，从此大学扩招一发不可收拾。结果导致人才培养质量下降。研究生也随之扩招，导致一位导师指导多名学生。新增博士硕士点的地方院校由于合格导师不足，甚至出现论文抄袭，剽窃等，还引致大学生就业困难。（编者按：2024年上半年韩国政府提出增加医科生名额，遭到医院实习生强烈反对，理由之一就是配套不足，导致教育质量下降。截至5月，事件持续超过一个月，双方依然争持不下。这就是民主和不民主的国家区别）</br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/society-201104zhujiusi.html" target="_blank"><i>我国高校发展的三个问题(朱九思)</i></a>(201104)</br>
+1998年后国内高校的两个政策 - 高校合并和扩招，作者都认为是错的。当年四所大学合并为现在的浙大，当时原浙大学长也反对。还有其他学校合并也有不少高校领导反对，但政府行为下面不能提意见。1999年大学扩招在亚洲金融危机之下，通过扩招启动教育消费，从此大学扩招一发不可收拾。结果导致人才培养质量下降。研究生也随之扩招，导致一位导师指导多名学生。新增博士硕士点的地方院校由于合格导师不足，甚至出现论文抄袭，剽窃等，还引致大学生就业困难。(编者按：2024年上半年韩国政府提出增加医科生名额，遭到医院实习生强烈反对，理由之一就是配套不足，导致教育质量下降。截至5月，事件持续超过一个月，双方依然争持不下。这就是民主和不民主的国家区别)</br>
 扩招最终使得大学城崛起，各个新兴漂亮校园，背后却是债务。在现在少子化的趋势下，学生人数减少，大学城可能未来面临闲置。最后作者列出当大学领导应具备的特质，包括维护学术自由。</br>
 
-<a href="https://yhcqw.github.io/yhcq/society-201104caixia.html" target="_blank">民主政治建设需要改变思维(蔡霞)</a></br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/society-201104caixia.html" target="_blank"><i>民主政治建设需要改变思维(蔡霞)</i></a>(201104)</br>
 经常看youtube的大概知道中央党校的蔡霞。什么是民主？很多中国人觉得民主就是投票，听听专家怎么说。作者首先认为民主的一个基本前提是把人当作人。强拆就是没把人当作人的表现。</br>
 
-<a href="https://yhcqw.github.io/yhcq/society-201104gongxikui.html" target="_blank">评地方政府的公司化倾向(宫希魁)</a></br>
-作者给地方政府公司化的定义 ： 以追求自身利益最大化为目标。表现有1）为了追求GDP批准缺乏科学论据的项目，强拆，圈地等。2）增加税收 3）把公用设施向社会招商。这种制度下还使得公务员工资福利存在严重地区反差，而不是按照公共财政来。房价飙升也和此制度有关，市场经济秩序破坏，造成各种违法的事，甚至影响环境治理，牺牲部分人生活。最后作者分析了重构政府转型的有效途径，一个重点是废除GDP崇拜，还有实行民主化，使得公民有知情，参与，表达，监督权等。</br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/society-201104gongxikui.html" target="_blank"><i>评地方政府的公司化倾向(宫希魁)</i></a>(201104)</br>
+作者给地方政府公司化的定义 ： 以追求自身利益最大化为目标。表现有1)为了追求GDP批准缺乏科学论据的项目，强拆，圈地等。2)增加税收 3)把公用设施向社会招商。这种制度下还使得公务员工资福利存在严重地区反差，而不是按照公共财政来。房价飙升也和此制度有关，市场经济秩序破坏，造成各种违法的事，甚至影响环境治理，牺牲部分人生活。最后作者分析了重构政府转型的有效途径，一个重点是废除GDP崇拜，还有实行民主化，使得公民有知情，参与，表达，监督权等。</br>
 编者按，最近看新闻提到中国多个城市的有轨电车项目。投资大，营运成本高但收益低，不知道是不是“公司化”一例？</br>
 耗资三十亿事故频发亏损经营 珠海拆除有轨电车</br>
 <a href="https://www.rfa.org/mandarin/yataibaodao/jingmao/ql1-05092024021658.html" target="_blank">https://www.rfa.org/mandarin/yataibaodao/jingmao/ql1-05092024021658.html</br>
 </a></br>
-<a href="https://yhcqw.github.io/yhcq/society-201104congyaping.html" target="_blank">对主粮转基因的忧虑(丛亚平)</a></br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/society-201104congyaping.html" target="_blank"><i>对主粮转基因的忧虑(丛亚平)</i></a>(201104)</br>
 这篇文章说到中国转基因食品的问题。文章提到中国是全世界唯一一个对自己主粮搞转基因的国家。中国的转基因食品给耗子吃完直接推广给人吃，中间没有在灵长类动物进行实验，更没有在可控人群中进行中小规模实验。绿色和平曾揭示转基因大米已经流入市场，但政府没采取行动。市场上曾经发现转基因玉米，农业部门封锁信息。</br>
 编者认为，到底现在有多少转基因食品在市场，公众健康受到多少影响？这需要媒体配合研究机构调查，最终社会根本问题又出来 - 民主化。</br>
 
-<!--year-->201107:</br>
-<a href="https://yhcqw.github.io/yhcq/society-201107zhangshuguang.html" target="_blank">还权于民，让利于民才能保障民生(张曙光)</a></br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/society-201107zhangshuguang.html" target="_blank"><i>还权于民，让利于民才能保障民生(张曙光)</i></a>(201107)</br>
 现在政府贪污腐败，一个原因是政府与民争利，以致政府无法约束，导致民不聊生。现时政府收入大于政府提供的服务，支出很大一部分用于挥霍，例如“三公”消费。2010年平均人民收入不到六千，可人均纳税六千多。作者认为该为政府首富规定一个最高界限，严格监督。把政府斩断争利之手，能缓解现在社会矛盾，有利于民间社会发展。</br>
 
-<a href="https://yhcqw.github.io/yhcq/society-201107hefang.html" target="_blank">一定要解决好民主化问题(何方)</a></br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/society-201107hefang.html" target="_blank"><i>一定要解决好民主化问题(何方)</i></a>(201107)</br>
 毛泽东上台前经常说民主民主，只是上台后呢？作者分析为什么中国一直没解决好民主化问题，以及认为现在是要兑现民主承诺，实行宪政的时候了。</br>
 
-<a href="https://yhcqw.github.io/yhcq/society-201107guodaohui.html" target="_blank">政治党必须在宪法和法律的范围内活动(郭道晖)</a></br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/society-201107guodaohui.html" target="_blank"><i>政治党必须在宪法和法律的范围内活动(郭道晖)</i></a>(201107)</br>
 作者举例一些党政官员扭曲法治，干预司法，把宪法和法律成为党实现自己主张的工具。执政党要依宪执政，才能提高党的威望及提高执政能力。</br>
 
-<a href="https://yhcqw.github.io/yhcq/society-201107wanghaiguang.html" target="_blank">言论自由关系到党的兴衰(王海光)</a></br>
-言论自由有什么重要？中央党校教授王海光告诉你，几十年来改革开放，“中国制造”的东西遍布世界角落，要把“中国制造”变成“中国创造”，需要全面提升思想力和创造力，出了充分发扬言论自由外，别无他途。例如各种思想学说要自由生长，在交锋中分辨真假。限制言论自由，只让人讲观花，只会降低思想能力和治理水准（我的意见：参考本网站“明辨是非”，要多看不同观点才能形成自己的观点，提高自己明辨是非的能力）。社会没有言论自由，利益得不到伸张，容易造成社会动乱，例如江西抚州市爆炸案（我的意见：没有言论自由就只能维稳，不单止花纳税人钱，还造成生活麻烦，例如坐地铁安检）。</br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/society-201107wanghaiguang.html" target="_blank"><i>言论自由关系到党的兴衰(王海光)</i></a>(201107)</br>
+言论自由有什么重要？中央党校教授王海光告诉你，几十年来改革开放，“中国制造”的东西遍布世界角落，要把“中国制造”变成“中国创造”，需要全面提升思想力和创造力，出了充分发扬言论自由外，别无他途。例如各种思想学说要自由生长，在交锋中分辨真假。限制言论自由，只让人讲观花，只会降低思想能力和治理水准(我的意见：参考本网站“明辨是非”，要多看不同观点才能形成自己的观点，提高自己明辨是非的能力)。社会没有言论自由，利益得不到伸张，容易造成社会动乱，例如江西抚州市爆炸案(我的意见：没有言论自由就只能维稳，不单止花纳税人钱，还造成生活麻烦，例如坐地铁安检)。</br>
 言论自由还有什么重要？我的日记里面引用韩国新闻也写过不少。有言论自由才有新闻自由，很多事情说出来是第一步，之后集结力量才能有望改变，但第一步就被压下去就没法改变，具体例子参见2011年7月<a href="https://yhcqw.github.io/yhcq/mao-201107qinweidong.html" target="_blank">《高学兰养鸡对不对》。</a></br>
 另外，《没有电影的电影节》最后一位艺术家说过：艺术家要有自由的心灵才能创作，最近看新闻一个例子黄小帅的电影《沃土》因为牵涉土改等敏感题材被要求修改，自由亚洲电台引用他的话：「我一直在追求想要在創作上是自由的，可是外部的環境又讓你做不到」。在那里我曾经看过，中国出不了韩国《上流寄生族》，因为没有自由。</br>
 现在中国科技发达，不过一个真正强大国家，是软的硬的都有。</br>
 
-<!--year-->201112:</br>
-<a href="https://yhcqw.github.io/yhcq/society-201112zhangxushan.html" target="_blank">走出权力欲望的恶性果报（张绪山）</a></br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/society-201112zhangxushan.html" target="_blank"><i>走出权力欲望的恶性果报(张绪山)</i></a>(201112)</br>
 关于民主制度对百姓的保障，提到刘少奇被红卫兵斗是“被自己塑造的神坛轧死”</br>
 
 
@@ -518,54 +474,62 @@ Media groups up in arms against 'unconstitutional' reform bill</br>
 
 <!------------------------------------------------------------------ people-begins---------------------------------->
 <span style="font-family: arial; sans-serif; font-size: 14pt">	 </br>
-<a href="https://yhcqw.github.io/yhcq/people.html"> <b><i>人物： </a> </b></i></span> </br>
+    <div class="caption">
+  <a href="https://yhcqw.github.io/yhcq/culturalrevolution.html">
+    <b>  <a id="people">人物：</a> </b>
+  </a>
+</div>
 
-<!--year-->201001:</br>
-<a href="https://yhcqw.github.io/yhcq/people-201001jinfeng.html" target="_blank">傅冬的特殊身份和特殊贡献(金凤）</a></br>
+
+<a href="https://yhcqw.github.io/yhcq/people-201001jinfeng.html" target="_blank"><i>傅冬的特殊身份和特殊贡献(金凤)</i></a>(201001)</br>
 傅冬乃国民党将军傅作义女儿，内容提及到一些比较少知道的历史细节，例如国共内战时美国想支持军阀，分裂中国，还有蒋介石如何打击地方异己部队等。</br>
 
 
-<a href="https://yhcqw.github.io/yhcq/people-201001songqun.html" target="_blank">彭德怀二三事 兼怀王焰同志(宋裙)）</a></br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/people-201001songqun.html" target="_blank"><i>彭德怀二三事 兼怀王焰同志(宋裙))</i></a>(201001)</br>
 真正爱民领导彭德怀，当年要和群众一起坐硬座火车。有街上没得卖的特供茶叶不要，要茶放在市场卖。</br>
 
 
-<!--year-->201002:</br>
-<a href="https://yhcqw.github.io/yhcq/people-201002yangjisheng.html" target="_blank">为国为民心坦荡- 读《李昌传》（杨继绳）</a></br>
-这篇文章罕有的提到六四（文章用“1989年政治风波”）。当时中共几位老人杜润生，李昌，李瑞，于光远支持学生运动，及后遭受批判。</br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/people-201002yangjisheng.html" target="_blank"><i>为国为民心坦荡- 读《李昌传》(杨继绳)</i></a>(201002)</br>
+这篇文章罕有的提到六四(文章用“1989年政治风波”)。当时中共几位老人杜润生，李昌，李瑞，于光远支持学生运动，及后遭受批判。</br>
 
 
 
-<a href="https://yhcqw.github.io/yhcq/people-201002jiangdaya.html" target="_blank"> 胡耀邦救了我一家 (姜达雅)</a></br>
-胡耀邦下属姜达雅，赵维田文革期间受到很大迫害，女儿更患了精神分裂，终生致残，作者一度有轻生念头。胡耀邦帮助一家翻案。文章体现了文革残暴，胡耀邦高尚人格，作者一家虽然经历了大灾难，但永不放弃。父亲赵维田52岁转研究方向（国际法）还出了多部著作，两名孩子虽然因为文革当时受教育有限制，最后通过自己努力成才。</br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/people-201002jiangdaya.html" target="_blank"><i> 胡耀邦救了我一家 (姜达雅)</i></a>(201002)</br>
+胡耀邦下属姜达雅，赵维田文革期间受到很大迫害，女儿更患了精神分裂，终生致残，作者一度有轻生念头。胡耀邦帮助一家翻案。文章体现了文革残暴，胡耀邦高尚人格，作者一家虽然经历了大灾难，但永不放弃。父亲赵维田52岁转研究方向(国际法)还出了多部著作，两名孩子虽然因为文革当时受教育有限制，最后通过自己努力成才。</br>
 
-<!--year-->201003:</br>
-<a href="https://yhcqw.github.io/yhcq/people-201003liuchongwen.html" target="_blank">胡耀邦和我谈下台前后(刘崇文)</a></br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/people-201003liuchongwen.html" target="_blank"><i>胡耀邦和我谈下台前后(刘崇文)</i></a>(201003)</br>
 本文讲述胡耀邦怎样努力推动废除中共终身制，免得中国以后会动乱。</br>
 文章也讲述了他很多为人哲学，例如有意见只在别人面前讲，不琢磨人，只琢磨事。对于中国官员退位后依然保留权力，他觉得是不放心及不放权。对于一些资本主义国家领导退下来后当平民，他认为这制度中国可以参考，觉得这样民主制度保证了国家稳定。现在中国经常说“西方民主不适合中国”，可看《炎黄春秋》，发现老一辈共产党员经常说民主民主，为什么会有对立的观点？大家对民主，对中国国情的理解有什么不同？</br>
 
 
-<!--year-->201010:</br>
-<a href="https://yhcqw.github.io/yhcq/people-201010xietao.html" target="_blank">我们从哪里来，到哪里去？(谢韬 遗作)</a></br>
-生于1922年，曾经为人大副校长的谢韬，经历过国民党独裁统治的谢韬，所以年轻时很向往共产党鼓吹民主，反对一党专政。1949年的《共同纲领》表明了国家保障人民民主权利（参见宪法35及36条）。三年过后，中国风云变色，《共同纲领》被抛弃，变了共产党专政。作者说他们年代的人参与民主活动，但并不知道什么是民主，以为民主就是反独裁，陈独秀甚至一度认为无产阶级专政就是无产阶级民主，晚年才明白实际这是个人独裁。作者认为，民众不具备民主意识，那么打倒独裁者后上来的还是独裁者，英法曾有例子，所以要建立民主国家必须对民众进行民主启蒙教育。</br>
-好些中国人认为“民主不适合中国”，其实他们是否明白什么是民主？我和一些人交流过，认为民主就是投票。中国那么大实行民主就会乱。民主是什么？我在本网站分享的日记（2024年3月15日，2024年4月5日）和长日记有些个人见解，具体看关键词“民主是什么”。</br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/people-201010xietao.html" target="_blank"><i>我们从哪里来，到哪里去？(谢韬 遗作)</i></a>(201010)</br>
+生于1922年，曾经为人大副校长的谢韬，经历过国民党独裁统治的谢韬，所以年轻时很向往共产党鼓吹民主，反对一党专政。1949年的《共同纲领》表明了国家保障人民民主权利(参见宪法35及36条)。三年过后，中国风云变色，《共同纲领》被抛弃，变了共产党专政。作者说他们年代的人参与民主活动，但并不知道什么是民主，以为民主就是反独裁，陈独秀甚至一度认为无产阶级专政就是无产阶级民主，晚年才明白实际这是个人独裁。作者认为，民众不具备民主意识，那么打倒独裁者后上来的还是独裁者，英法曾有例子，所以要建立民主国家必须对民众进行民主启蒙教育。</br>
+好些中国人认为“民主不适合中国”，其实他们是否明白什么是民主？我和一些人交流过，认为民主就是投票。中国那么大实行民主就会乱。民主是什么？我在本网站分享的日记(2024年3月15日，2024年4月5日)和长日记有些个人见解，具体看关键词“民主是什么”。</br>
 
-<!--year-->201107:</br>
-<a href="https://yhcqw.github.io/yhcq/people-201107hanlei.html" target="_blank">李锐的坐牢心得(韩磊)</a></br>
-单独囚禁对人有极大的心理影响，美国法律规定单独囚禁不能超过21日（但不是每个州都严格遵守）。毛年代的中国，就很多长年单独囚禁的例子，毛泽东的秘书李锐就曾经在秦城监狱单独囚禁8年，能熬过实在是非一般的心理强大。文章记录了他坐牢的所见所闻及如何过日子。例如有次摔倒，得到一瓶龙胆紫水及木棉签，就在狱中写起诗来，名为《龙胆紫集》。</br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/people-201107hanlei.html" target="_blank"><i>李锐的坐牢心得(韩磊)</i></a>(201107)</br>
+单独囚禁对人有极大的心理影响，美国法律规定单独囚禁不能超过21日(但不是每个州都严格遵守)。毛年代的中国，就很多长年单独囚禁的例子，毛泽东的秘书李锐就曾经在秦城监狱单独囚禁8年，能熬过实在是非一般的心理强大。文章记录了他坐牢的所见所闻及如何过日子。例如有次摔倒，得到一瓶龙胆紫水及木棉签，就在狱中写起诗来，名为《龙胆紫集》。</br>
 
 </br>
 <!------------------------------------------------------------------ people-ends---------------------------------->
 <!------------------------------------------------------------------ foreign-begins---------------------------------->
-
 <span style="font-family: arial; sans-serif; font-size: 14pt">	   </br>
-<a href="https://yhcqw.github.io/yhcq/foreignhistory.html"> <b><i>外国历史： </a> </b></i></span></br>
+    <div class="caption">
+  <a href="https://yhcqw.github.io/yhcq/culturalrevolution.html">
+    <b>  <a id="foreign">外国历史： </a></b>
+  </a>
+</div>
 
-<!--year-->200510:</br>
-<a href="https://yhcqw.github.io/yhcq/foreign-200510zhanxiaohong.html" target="_blank">"政商勾结"：韩国的毒瘤(詹小洪)</a></br>
+<a href="https://yhcqw.github.io/yhcq/foreign-200510zhanxiaohong.html" target="_blank"><i>"政商勾结"：韩国的毒瘤(詹小洪)</i></a>(200510)</br>
 本文阐述了韩国政商勾结引起的腐败。在民主国家，选举要花钱，胜出的政党可以用权力给人好处。政党的经费可以从企业赞助获得。政党胜出后，往往会投桃报李，行程官商勾结。基本上每个民主国家都有此事，不过韩国腐败特别多，作者分析是因为韩国一直是政府实行主导的经济体系。编者认为，中国也是政府主导经济，中国如果民主化，很有可能走韩国的路，韩国的例子值得中国借鉴。</br>
-<!--year-->201001:</br>
-<a href="https://yhcqw.github.io/yhcq/foreign-201001huangzhong.html" target="_blank">纳粹德国是怎样控制舆论的(黄钟）</a></br>
-含沙射影的文章，完全可以把文章的“德国”换成“中国”。当时德国为了宣传，全国推广收音机，上班时间被逼听两三小时纳粹广播（卢旺达大屠杀前也是用收音机这个宣传手法）。当时举报风严重，收看国外信息犯法，政府制做假新闻，抹黑英国首相。引用一些原文：</br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/foreign-201001huangzhong.html" target="_blank"><i>纳粹德国是怎样控制舆论的(黄钟)</i></a>(201001)</br>
+含沙射影的文章，完全可以把文章的“德国”换成“中国”。当时德国为了宣传，全国推广收音机，上班时间被逼听两三小时纳粹广播(卢旺达大屠杀前也是用收音机这个宣传手法)。当时举报风严重，收看国外信息犯法，政府制做假新闻，抹黑英国首相。引用一些原文：</br>
 
 
 <i>“「哪家报纸公开披露第三帝国的阴暗面，那就是为反对德国的敌人提供宣传资料。当然，人们接受这种论调的原因，恐怕也有希望什么都不知道的心理在作祟，因为这样就可以免去了良心上的不安，免去了真相所带来的心理压力」</br>
@@ -573,36 +537,40 @@ Media groups up in arms against 'unconstitutional' reform bill</br>
 「同样地，面对境外的批评，纳粹的行话称之为“恶意宣传”。于是，第三帝国就出现了这样一种现象，那些并不是纳粹分子的德国人，却在起劲地捍卫纳粹的言行，反对别人的批评。他们认为，对纳粹的抨击就是对德国的抨击。作为一个德国人，他们“感情”上接受不了</br>
 
 「戈培尔(Goebbels)对新闻的管制，细致入微。当过驻德记者的夏伊勒这样写道：“每天早晨，柏林各日报的编辑以及德国其他地方的报纸驻柏「柏林的记者，都聚集在宣传部里，由戈培尔博士或者他的一个助手告诉他们：什么新闻该发布，什么新闻要扣下，什么新闻怎么写和怎么拟标题，什么运动该取消，什么运动要开展，当天需要什么样的社论。」</i></br>
-<!--year-->201002:</br>
-<a href="https://yhcqw.github.io/yhcq/foreign-201002zhanxiaohong.html" target="_blank">韩国腐败文化与廉政建设(詹小洪)</a></br>
-中国和韩国是亲兄弟，相似的地方之一是腐败。送礼，贿赂公务员等等都是两国严重问题。不过韩国为了减少腐败已经进行了一些措施，例如对受贿者进行受贿金额几倍罚款，限制公务员离职后从事相关领域工作，公务员财产申报等，这些措施减低了韩国腐败（虽然比起发达国家还算腐败），值得中国借鉴。</br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/foreign-201002zhanxiaohong.html" target="_blank"><i>韩国腐败文化与廉政建设(詹小洪)</i></a>(201002)</br>
+中国和韩国是亲兄弟，相似的地方之一是腐败。送礼，贿赂公务员等等都是两国严重问题。不过韩国为了减少腐败已经进行了一些措施，例如对受贿者进行受贿金额几倍罚款，限制公务员离职后从事相关领域工作，公务员财产申报等，这些措施减低了韩国腐败(虽然比起发达国家还算腐败)，值得中国借鉴。</br>
 
-<a href="https://yhcqw.github.io/yhcq/foreign-201002siyuan.html" target="_blank">墨西哥奇迹与墨西哥宪政(思源)</a></br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/foreign-201002siyuan.html" target="_blank"><i>墨西哥奇迹与墨西哥宪政(思源)</i></a>(201002)</br>
 曾经听过有人拿印度和中国比较，说现在的印度和中国都是同时成立，一个走民主一个走社会主义，两个都是人口大国，但中国比印度成功多了。此文开头拿墨西哥和俄罗斯比较，两者人口都是一亿多，都在1917年经历过政治变革走上不同的路，俄罗斯走向共产主义，墨西哥经历了宪法改革，确立了三权分立和普选。当时墨西哥是还是农业国家，但40-70年代经历了经济发展，平均每年增长6.8%，被誉为“墨西哥奇迹”。本文认为墨西哥的经济奇迹乃是1917年宪法改革的原因。文章写了墨西哥的近代政治史。所以，到底哪个制度好，不能单看表面，有很多细节考究的。</i></br>
 
 
 <!------------------------------------------------------------------ foreign-ends---------------------------------->
 <!------------------------------------------------------------------ mis-begins---------------------------------->
 <span style="font-family: arial; sans-serif; font-size: 14pt"></br>
-<a href="https://yhcqw.github.io/yhcq/mis.html"> <b><i>其他：  </a> </b></i></span></br>
+    <div class="caption">
+  <a href="https://yhcqw.github.io/yhcq/culturalrevolution.html">
+    <b>  <a id="mis">其他：</a> </b>
+  </a>
+</div>
 
-
-<!--year-->201001:</br>
-<a href="https://yhcqw.github.io/yhcq//mis-201001fengguanyang.html" target="_blank">1978年上访记(冯冠扬）</a></br>
+<a href="https://yhcqw.github.io/yhcq//mis-201001fengguanyang.html" target="_blank"><i>1978年上访记(冯冠扬)</i></a>(201001)</br>
 作者是摘帽右派，但当年判的罪名没有平反。曾经地方上方，但没有人理。最后上访北京，当时以上访为名，买火车票不用钱，公交也不用，吃饭就在饭店检客人吃剩的，睡就在车站。特别提一下，作者在北京最高人民法院上访，虽然接见的人说不能审理地方案件，但写了封信给他带回地方办理。这点很重要，给人很大的安慰作用。但当然，回到地方，人家还是不给你办事。</br>
 
 
 
-<!--year-->201002:</br>
-<a href="https://yhcqw.github.io/yhcq//mis-201002liuxiangshang.html" target="_blank">解放区审判外国人第一案(刘向上)</a></br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq//mis-201002liuxiangshang.html" target="_blank"><i>解放区审判外国人第一案(刘向上)</i></a>(201002)</br>
 1947年在烟台解放区发生来自国际组织美国人因鲁莽驾驶撞死黄包车司机事件，成为中国第一次审讯外国人。这件事件我学习了政治心理。当时群众情绪高涨，但最后如何可以把犯案者轻判，及后缓刑。方法是把抚恤做好，不要计较多付出的一点点，群众满意了，然后犯罪人表达出足够的悔意就什么都好说。</br>
 
-<a href="https://yhcqw.github.io/yhcq/mis-201002.html" target="_blank">读者来信 还历史本来面目</a></br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/mis-201002.html" target="_blank"><i>读者来信 还历史本来面目</i></a>(201002)</br>
 以前听人说过，文革政府已经承认错误发动，为什么还要揪着政府不放？我想经历过历史的人更好回答这个问题。此文是读者来信，80多岁经历过文革的退休基层干部。对于刘少奇之死，虽然已经平凡，但他认为一些细节需要厘清，为什么？</br>
 “刘少奇之死，已有平反结论，似乎不必再翻旧账，但很多细节，尚有待厘清。例如：对生命垂危的刘少奇在抢救中是善待。还是虐待?有没有大小便在病床上，不给换洗衬裤?刘去世后火化，为何要用“刘卫黄”之名?医疗救治中的干预。是谁在指使?等等。这些疑点的澄清，有助于我们更深刻地吸取历史教训，才能深刻地知道“以人为本，依法治国”的重要。我诚恳地希望，凡是接触过刘少奇冤案的有关人员和刘少奇亲属，应该勇敢地站出来，讲实话，让广大读者了解真相。”</br>
 
-<!--year-->201011:</br>
-<a href="https://yhcqw.github.io/yhcq/mis-201011zhuliang.html" target="_blank">周总理于1973年廖承志访日团(朱良)</a></br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/mis-201011zhuliang.html" target="_blank"><i>周总理于1973年廖承志访日团(朱良)</i></a>(201011)</br>
 本文分析了日本经济和中国相似之处，共同遇到的困难，例如经济高速发展引起的问题。</br>
 
 <!------------------------------------------------------------------ mis-ends---------------------------------->
@@ -610,55 +578,74 @@ Media groups up in arms against 'unconstitutional' reform bill</br>
 
 <!------------------------------------------------------------------ discussion-begins----------------------------------></br>
 <span style="font-family: arial; sans-serif; font-size: 14pt"></br>
-<a href="https://yhcqw.github.io/yhcq/discussion.html"> <b><i>明辨是非：  </a> </b></i></span></br>
+      <div class="caption">
+  <a href="https://yhcqw.github.io/yhcq/culturalrevolution.html">
+    <b> <a id="discussion"> 明辨是非：</a> </b>
+  </a>
+      </div>
+      
 用理去辨明真相。这个系列都是对立文章，一篇先发，另一篇用理据反驳。这个系列主要训练独立思考。当你看到第一篇好像很对，很有道理。但当你看到另一家之言发现不是这么一回事。凡事不要看一家之言就下定论。我特别欣赏《炎黄春秋》对不同意见接纳，从这个系列你看到什么是学术素养，不像现在网络社会一不同意就网暴。</br>
-建议大家第一篇先看 <a href="https://yhcqw.github.io/yhcq/society-201111guoyukuan.html" target="_blank">希望工程是否存在“黑幕”的辩论(郭宇宽）</a></br>
+建议大家第一篇先看 <a href="https://yhcqw.github.io/yhcq/society-201111guoyukuan.html" target="_blank">希望工程是否存在“黑幕”的辩论(郭宇宽)</a></br>
 这是颠覆观念的文章，探讨新闻自由的重要性，训练独立思考，批判性思维的文章。经常有中国人说中国人不理性，是乌合之众，不适合民主。理性思维需要看不同方面信息训练，不是在学校学的！当年南方周末爆出希望工程丑闻，全世界都以为负责人徐海光是坏人。但很多事情你从另一个角度去看就是另一回事，关键是从来没有给当事人徐海光说话的机会。这片文章就是给他辩解，而且作者还打算组织一场辩论，邀请徐海光和南方周末记者方进玉进行辩论，但最后叫停。没有辩论，只靠一家之词，何来真相呢？凡事需要多角度去看，才能刺激独立思考。单一角度只会洗脑。我删减一下最后一段附上:</br>
 <i>	 “有些人害怕的其实并不是这件事情的真相，而是我们这样一种追求真相的方式。”有了这种真正符合公民社会和现代法治理念的方式以后，大家再遇到任何有争议的问题，我们就都可以当面对质，并向公众直接发布，同时在网络和微博上直播。这种方式是有些人受不了的。中国政治传统中有太多的台下交易，暗箱操作，当面一团和气，背后各下毒手，像毛泽东对付彭德怀，刘少奇，当面都客客气气，甚至还嘘寒问暖，说你要多读书注意休息啊，背后把人折磨得要死。而那些政治文明的国家，奥巴马和希拉里，要竞争就公开出来辩论一场，让大家看看支持谁？中国政治的不健康气氛也毒化了中国的知识分子，从来没有一次和他的争论对手面对面的坦诚交流，隔空喊话的攻击却非常阴损。今天的互联网时代更近一步，有些网络意见领袖还爱裹挟一大批粉丝，施展话语暴力，占据道德制高点，不给对手辩解机会。这些习气都毒害社会上年轻人的心灵。所以我有一条座右铭是“若辩解不自由，则批判无意义”。</i></br>
 
 其他文章：</br>
 
 1.</br>
+<hr class="linebreak">
 <a href="https://yhcqw.github.io/yhcq/discussion-201108maoyushi.html" target="_blank"> 中国人民是什么时候站起来的？(茅于轼,201108)</a></br>
+<hr class="linebreak">
 <a href="https://yhcqw.github.io/yhcq/discussion-201111huxinmin.html" target="_blank">    抗战胜利后中国并没有站起来(胡新民,201111)</a></br>
 2.</br>
-<a href="https://yhcqw.github.io/yhcq/discussion-200911guyingqi.html" target="_blank"> 文革中抢救刘少奇纪实(顾英奇,200911）</a></br>
-<a href="https://yhcqw.github.io/yhcq/discussion-201001huangjiasheng.html" target="_blank"> 对《文革中抢救刘少奇纪实》一文的批评(黄家生,201001）</a></br>
-<a href="https://yhcqw.github.io/yhcq/discussion-201001lichao.html" target="_blank">刘少奇是被迫害致死的(李超,201001）</a></br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/discussion-200911guyingqi.html" target="_blank"> 文革中抢救刘少奇纪实(顾英奇,200911)</a></br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/discussion-201001huangjiasheng.html" target="_blank"> 对《文革中抢救刘少奇纪实》一文的批评(黄家生,201001)</a></br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/discussion-201001lichao.html" target="_blank">刘少奇是被迫害致死的(李超,201001)</a></br>
 3.</br>
-<a href="https://yhcqw.github.io/yhcq/discussion-200901niuhuilin.html" target="_blank"> 夜半抄家记</a>(牛辉林,200901）</br>
-<a href="https://yhcqw.github.io/yhcq/discussion-201001nieyuanzi.html" target="_blank"> 我对《夜半抄家记》的意见</a>(聂元梓,201001）</br>
-4.<a href="https://yhcqw.github.io/yhcq/discussions-201001zhangjiakang.html" target="_blank">毛泽东领导“三反”运动</a>(张家康，201001)</br>
-此文赞扬毛泽东领导的三反运动（50年代）时反腐倡廉的运动，当时腐败问题严重，运动打击了很多大老虎。“「“三反”已经过去快60年了，回首新中国初建时期的那段斗争经历，它对于树立正气，抵制歪风邪气，在共产党内部防腐拒变，树立共产党的威望，奠定新中国的基石等方面的积极意义，无论给以什么样的积极肯定，都是不过分的。」</br>
-<a href="https://yhcqw.github.io/yhcq/discussions-201003zizhongyun.html" target="_blank"> “三反”运动值得给予积极肯定吗？</a>（资中筠，201003）</br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/discussion-200901niuhuilin.html" target="_blank"> 夜半抄家记(牛辉林,200901)</a></br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/discussion-201001nieyuanzi.html" target="_blank"> 我对《夜半抄家记》的意见(聂元梓,201001)</a></br>
+4.<a href="https://yhcqw.github.io/yhcq/discussion-201001zhangjiakang.html" target="_blank">毛泽东领导“三反”运动(张家康，201001)</a></br>
+此文赞扬毛泽东领导的三反运动(50年代)时反腐倡廉的运动，当时腐败问题严重，运动打击了很多大老虎。
+<i>"三反”已经过去快60年了，回首新中国初建时期的那段斗争经历，它对于树立正气，抵制歪风邪气，在共产党内部防腐拒变，树立共产党的威望，奠定新中国的基石等方面的积极意义，无论给以什么样的积极肯定，都是不过分的。"</i></br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/discussion-201003zizhongyun.html" target="_blank"> '三反'运动值得给予积极肯定吗？(资中筠，201003)</a></br>
 反驳201001对三反运动肯定一文，作者认为是201001一文的作者是受到政治运动的思维影响，所以支持三反运动。三反运动中很多无辜的人被迫害致死，全国大乱。本文重点描述三反的负面影响。</br>
-<a href="https://yhcqw.github.io/yhcq/discussions-201003hefang.html" target="_blank">对资中筠文章几点补充</a>（何方，201003）</br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/discussion-201003hefang.html" target="_blank">对资中筠文章几点补充(何方，201003)</a></br>
   此文补充了作者看三反运动的实质，并且认为搞运动根本除掉不了腐败。作者提到一个有意思的案例，山西曾经为了扫盲把农村老太太吓得上吊自杀，为了不被人消灭。</br>
-5.<a href="https://yhcqw.github.io/yhcq/discussions-200909shaojian.html" target="_blank">民主与专制的百年迷途</a>(邵建，200909)</br>
-<a href="https://yhcqw.github.io/yhcq/discussions-201002huxiang.html" target="_blank">民主的对立面不是专制吗？</a>(胡湘，201002)</br>
-<a href="https://yhcqw.github.io/yhcq/discussions-201005zhoutuo.html" target="_blank">专制的对立面是自由</a>(周拓,201005)</br>
-<a href="https://yhcqw.github.io/yhcq/discussions-201012xuliangying.html" target="_blank">评“专制的对立面”之争</a>(许良英 王来棣，201012)</br>
+5.<a href="https://yhcqw.github.io/yhcq/discussion-200909shaojian.html" target="_blank">民主与专制的百年迷途(邵建，200909)</a></br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/discussion-201002huxiang.html" target="_blank">民主的对立面不是专制吗？(胡湘，201002)</a></br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/discussion-201005zhoutuo.html" target="_blank">专制的对立面是自由(周拓,201005)</a></br>
+<hr class="linebreak">
+<a href="https://yhcqw.github.io/yhcq/discussion-201012xuliangying.html" target="_blank">评“专制的对立面”之争(许良英 王来棣，201012)</a></br>
    这几篇文章都在讲民主和专制。第一篇出来后引起后续几篇反驳。</br>
-6.<a href="https://yhcqw.github.io/yhcq/discussion-201003yanchanggui.html" target="_blank">一则历史传闻的真伪</a>(阎长贵 杨银禄，201003)</br>
-本文引用了一则关于毛泽东1976年立身后常委的传闻，当中也有学者证实过，但作者（江青的秘书）不同意，联系过当事人证实传闻不实。此文反应了对历史求证认真的精神。</br>
+6.<a href="https://yhcqw.github.io/yhcq/discussion-201003yanchanggui.html" target="_blank">一则历史传闻的真伪(阎长贵 杨银禄，201003)</a></br>
+本文引用了一则关于毛泽东1976年立身后常委的传闻，当中也有学者证实过，但作者(江青的秘书)不同意，联系过当事人证实传闻不实。此文反应了对历史求证认真的精神。</br>
 </br>
 </br>
 <!------------------------------------------------------------------ discussion-ends---------------------------------->
 
+ 
+       
+    </main>
 
 
+    <script>
+        function toggleMobileMenu() {
+            var menuList = document.querySelector('.mobile-menu-list');
+            menuList.classList.toggle('active');
+        }
 
-<!--------content ends----------->
-
-
-</div>
-		</div> 
-	
-		
-
-
-
-
-
+        function hideMobileMenu() {
+            var menuList = document.querySelector('.mobile-menu-list');
+            menuList.classList.remove('active');
+        }
+    </script>
 </body>
 </html>
