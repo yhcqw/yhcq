@@ -1,21 +1,5 @@
-css/2f422.css
-L79:main-container:max-width:1170px --> smaller width to change the content width
+(http://beijingspring.com/c7/xw/wlwz/20121203213558.htm)访问</a>，
 
-css/2f422.css
-.textwidget{
-the size of the blue bar
-
-testtemplate.html
-+316:primary-navigation -->#0069A3 current dark blue bar color
-
-
-use copyepub.py if the article is in 1999-2010, check the epub book in books/
-
-update.py
-#if you make any changes in template.html up to the line '<!--------content begins--------->'
-
-pageseparation.py
-#separate index.html into wege.html,people.html,society.html ...etc
 
 
 articles:
@@ -34,9 +18,3 @@ writetest.txt -->201101 extracted text
 pdfextract.py
 
 
-/Users/china_108/Desktop/gpx/yhcq/books/example/OEBPS/2010/***html
-text files for each article
-
-
-/Users/china_108/Desktop/gpx/yhcq/books/example_test/OEBPS/chapter_template.html
-chapter tempalte

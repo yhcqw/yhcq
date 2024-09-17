@@ -14,7 +14,7 @@ import subprocess
 #category:wenge,mao,society,people,mis,foreignhistory,discussion
 
 #compare your article with index199902010.txt and check its location in OEBPS
-
+"""
 
 files = ["html/society-200812xinyu.html"]
 for file in files:
@@ -23,8 +23,7 @@ for file in files:
     file_path = os.path.abspath(new)
     subprocess.run(['open',file_path])
 
-exit()
-
+"""
 #create_art_commands.rewrite_index("index.html")
 #the new index file is index_temp.html, check and change the name to index.html
 
@@ -51,7 +50,6 @@ with open(manual_name,"w") as manual:
           create_art_commands.make_html(main_before,main_after,text,newhtmlname,years[i],titles[i],authors[i])
        value = create_art_commands.check_for_repetition(years[i],titles[i],authors[i],"index_temp.html")
        if value == True:
-          print("true")
           create_art_commands.update_index_file(years[i],categories[i],titles[i],authors[i],contents[i],newhtmlname,"index_temp.html") #add new article to index.html
        else:
           print(f'{years[i]} {titles[i]} {authors[i]} already written')
