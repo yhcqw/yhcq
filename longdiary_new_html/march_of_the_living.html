@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2016 March of the Living之旅</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+
+    <style>
+        /* Add your custom styles here */
+
+        .menu-icon {
+            display: none;
+            cursor: pointer;
+        }
+
+        .mobile-menu-list {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 60%; /* Adjust width as needed */
+            background-color: #fff; /* Adjust as needed */
+            padding: 20px;
+            border-right: 1px solid #ccc; /* Adjust as needed */
+            z-index: 1000; /* Ensure it's above other content */
+            flex-direction: column; /* Display items vertically */
+            transition: width 2s;
+        }
+
+        .mobile-menu-list.active {
+            display: block;
+        }
+
+        .mobile-menu {
+            display: none;
+        }
+
+        .menu-title {
+            margin-left: 10px; /* Adjust margin as needed */
+        }
+
+        .menu-icon {
+            margin-right: 10px; /* Adjust margin as needed */
+            cursor: pointer;
+        }
+
+        .mobile-menu-list li {
+            display: block; /* Display list items vertically */a
+        }
+
+  @media only screen and (max-width: 768px) {
+    .menu-icon {
+        display: inline-block;
+        margin-left: 280px; /* Adjust as needed */
+        cursor: pointer;
+    }
+
+    .mobile-menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 10px;
+    }
+
+    .menu-title {
+        margin-right: auto; /* Pushes 目錄 to the far left */
+        margin-left: 10px; /* Adjust margin as needed */
+    }
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <!-- Removed the logo div -->
+            <nav>
+                <ul class="menu">
+                    <li><a href="https://yhcqw.github.io/yhcq/index.html">主页</a></li>
+                    <li><a href="#wenge">文革</a></li>
+                    <li><a href="#mao">毛年代其他</a></li>
+                    <li><a href="#society">社会</a></li>
+                    <li><a href="#people">人物</a></li>
+                    <li><a href="#foreign">外国历史</a></li>
+                    <li><a href="#mis">其他</a></li>
+                    <li><a href="#discussion">明辨是非</a></li>
+		    <li><a href="https://yhcqw.github.io/yhcq/thissite.html">关于本站</a></li>
+		    <li><a href="https://yhcqw.github.io/yhcq/Diary.html">我的日记</a></li>
+		    <li><a href="https://yhcqw.github.io/yhcq/longblog.html">我的长博客</a></li>
+                </ul>
+            </nav>
+
+            <div class="mobile-menu">
+                <div class="menu-title">目錄</div>
+                <div class="menu-icon" onclick="toggleMobileMenu()">&#9776;</div> <!-- Three horizontal lines -->
+                <!-- Move the ul.mobile-menu-list inside the .mobile-menu div -->
+                <ul class="mobile-menu-list">
+                    <li><a href="https://yhcqw.github.io/yhcq/index.html" onclick="hideMobileMenu()">主页</a></li>
+                    <li><a href="#wenge" onclick="hideMobileMenu()">文革</a></li>
+                    <li><a href="#mao" onclick="hideMobileMenu()">毛年代其他</a></li>
+                    <li><a href="#society" onclick="hideMobileMenu()">社会</a></li>
+                    <li><a href="#people" onclick="hideMobileMenu()">人物</a></li>
+                    <li><a href="#foreign" onclick="hideMobileMenu()">外国历史</a></li>
+                    <li><a href="#mis" onclick="hideMobileMenu()">其他</a></li>
+                    <li><a href="#discussion" onclick="hideMobileMenu()">明辨是非</a></li>
+		    <li><a href="thissite.html" onclick="hideMobileMenu()">关于本站</a></li>
+		    <li><a href="Diary.html" onclick="hideMobileMenu()">我的日记</a></li>
+		    <li><a href="https://yhcqw.github.io/yhcq/longblog.html">我的长博客</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+      
+<h3 style="text-align: center";>2016 March of the Living之旅</h3>
+<div class="separator" style="clear: both; text-align: left;">
+<b><span style="font-weight: normal;"><b>前</b></span>言</b>：</div>
+<div class="separator" style="clear: both; text-align: left;">
+参加这个活动，有一段故事。</div>
+<div class="separator" style="clear: both; text-align: left;">
+2015年年底，看到纽约时报一篇关于纽伦堡的纳粹历史<a href="https://cn.nytimes.com/world/20151103/c03nuremberg/">报道</a>(后来还为这这个报道我答辩完那天跑去纽伦堡看，作为我第一次出“历史差”)。那篇报道有另一<a href="https://cn.nytimes.com/education/20140224/c24holocaust/">链接</a>，关于香港的大屠杀教育，里面有提到香港有大屠杀教育中心（也感谢那篇报道提到日本有大屠杀教育中心，以至我在东京时联系上她们了。），我当时觉得很奇怪，从来没听说过这个中心，所以搜了他们一下，从他们网页看到March of the Living，发了些邮件咨询，后来就参加了。当然在知道活动前，我已经有去集中营看的打算。</div>
+<div class="separator" style="clear: both; text-align: left;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: left;">
+<span style="font-weight: normal;">就是这样，笔者参加了2016年英国代表团的March
+ of the 
+Living。一连六天和一群犹太人一起看大屠杀历史，看他们对自己民族历史的态度，和他们交流期间激发了很多我对自己国家历史的思考，而且这几天也学了很多犹太知识，还有幸和幸存者接触，收获非常多。除了获得知识外，更是认识了新朋友，收获远比想象中多很多很多。</span></div>
+<div class="separator" style="clear: both; text-align: left;">
+英国March of the Living网址：http://marchoftheliving.org.uk</div>
+<br />
+<span style="font-size: small;"><cite class="_Rm"></cite><b>行程简介：</b></span><br />
+<span style="font-size: small;">几天行程都很紧凑，睡眠不太足够。早出晚归。</span><br />
+<span style="font-size: small;">餐饮：犹太餐，从以色列运过来。因为犹太餐肉类和奶不能同时吃，早餐肉类只有吞拿鱼，还有黄瓜，番茄，芝士，鸡蛋等。早餐时候要自己准备午餐带上，没有特定午餐时间，都在车上吃。晚饭较丰富，有五六个菜。</span><br />
+<span style="font-size: small;">住宿：酒店都不错，如果是单身人士会安排单人间 </span><br />
+<span style="font-size: small;">每天晚饭后都有讨论/分享会。</span><br />
+<span style="font-size: small;">去过的地方包括关于犹太人历史的博物馆，集中营，犹太会堂，犹太公墓等等，还有生还者分享时间 </span><br />
+<span style="font-size: small;"><br /></span>
+<b><span style="font-size: small;">参加人士：</span></b><br />
+<span style="font-size: small;">我参加的时候总共6辆车，共200多人，有大学生团体集体参加的。我所在的车都是成年人，当中大部分是中年夫妻，里面有生还者的孩子及孙子。&nbsp; 我们的车大概有30人，当中2人为非犹太人。</span><br />
+<span style="font-size: small;"><br /></span>
+<span style="font-size: small;">每辆车都有一个bus
+ leader及educator。我们的分别是Sheldon Mordsley及Maureen 
+Kendler。他们都是从事犹太教育有关工作的。Educator会全程给我们讲解。每年他们都会自己编辑一本书，里面很多关于大屠杀的背景，尤其是关于我们要去的地方的历史及相关历史人物介绍，还有英国生还者介绍。</span><br />
+<span style="font-size: small;"><br /></span>
+<span style="font-size: small;">他们每年都会邀请生还者参加的，尽量安排一车一人。今年随队的有Arek Hersh， Eve Kugler, Renee Salt及Mala Tribich。这几位生还者都可以google 到。他们在行程里会和大家分享自己的经历，大家可以问问题。 </span><br />
+<span style="font-size: small;"><br /></span>
+<span style="font-size: small;">由于全部都是犹太人，这几天我学了很多很多犹太教知识，还听了很多他们家族关于大屠杀的故事。</span>虽然事情已经过去了那么久，但我在这个营，感觉大屠杀事件就在我眼前。<br />
+<span style="font-size: small;"><br /></span>
+<b><span style="font-size: small;">2015年5月1日周日：</span></b><br />
+<b><span style="font-size: small;">华沙犹太公墓(Jewish Cemetery) - Polin Museum</span></b><br />
+<span style="font-size: small;"><br /></span>
+<span style="font-size: small;">华沙的犹太公墓是全球最大的犹太墓地之一。在19世纪初期建立，在纳粹期间停用。Educator带我们去看一些较重要的人的墓穴及讲解墓穴的设计，那是反映人的身份。纳粹统治期间，这个墓地停用。当时犹太人住在ghetto。由于小朋友较不引起注意，很多时候他们就把食物偷运进去给父母，当时有80%食物都是偷运进去的，最夸张的有试过连一只牛都能投运进去。那些小朋友晚上就睡在墓地里。晚上分享会的时候，有对夫妻就说，自己也有女儿，感同身受。孩子要为父母偷运食物，而不是父母给他们吃，晚上还要睡在墓地里，想到这里他们很心疼。</span><br />
+<span style="font-size: small;"><br /></span>
+<span style="font-size: small;">里面介绍了几个重要人物墓地，包括 Adam Czerniakow。他在Ghetto住的时候负责管理，后来纳粹要他召集ghetto内的犹太人送去Treblinka的死亡营，他做不到就自杀了。为了纪念他，华沙有条街道以他命名。</span><br />
+<div style="text-align: center;">
+<span style="font-size: small;">&nbsp;(下图: Adam Czerniakow墓地）</span></div>
+<span style="font-size: small;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJ_F8wzodPoZSUFSwmEGmKP5oQsM9UiXZ8nYjoJAYmA9GxKctwR_J9KwSW8GbDiHQLaB1uwhLoHBlXacBkvZ9OBq2JxHKf2uFX9IOwpLDfALfawFwV0zjndQXg7IZqzQXBgnX5K9Tn4fw/s1600/20160501_132307.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJ_F8wzodPoZSUFSwmEGmKP5oQsM9UiXZ8nYjoJAYmA9GxKctwR_J9KwSW8GbDiHQLaB1uwhLoHBlXacBkvZ9OBq2JxHKf2uFX9IOwpLDfALfawFwV0zjndQXg7IZqzQXBgnX5K9Tn4fw/s640/20160501_132307.jpg" width="640" /></a></span> <br />
+<span style="font-size: small;">我们还看了一些犹太名人墓地，二战前的，例如世界语创办人Zamenhof,他的墓碑可是用世界语的呢，还有三个著名犹太作家的墓碑，由于是名人，墓前可是有锁的。当年下葬时，华沙市内还有上达10万人送行。</span><br />
+<br />
+<div style="text-align: center;">
+<span style="font-size: small;">（下图：Zamenhof墓碑） </span></div>
+<div style="text-align: center;">
+<span style="font-size: small;">&nbsp;<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEieXiJzM9YmQDicft2IC8LeZEhVj6gtdNy4jV_RjQvBSXryCHAsc4lam4njeWoxjsIzjcNzZlNFriaOwHpJIjYwmXaN3vxF23HIajIB1Af-FwkXGu3gX2ArWnjLDx8udnHhWwvFWvsyIos/s1600/20160501_130853.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEieXiJzM9YmQDicft2IC8LeZEhVj6gtdNy4jV_RjQvBSXryCHAsc4lam4njeWoxjsIzjcNzZlNFriaOwHpJIjYwmXaN3vxF23HIajIB1Af-FwkXGu3gX2ArWnjLDx8udnHhWwvFWvsyIos/s640/20160501_130853.jpg" width="360" />&nbsp;</a></span></div>
+<span style="font-size: small;"><br /></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="font-size: small;">（下图：三位著名犹太作家墓碑，注意坟前的闸，是身份的象征） </span><br />
+<div style="text-align: center;">
+<span style="font-size: small;">&nbsp;<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJ-rz_CZG2U0hGl1kb8uR18Kz26I6vzqCAh0z-d9JUMEUT2cG7sZlpYUVFjEogyUKugzpV5-dXsR8w6Z1Y-z1b76CCERTJoUplM6pIa2JWJQSLrA4V1er8Wie2P2bSJWq_JMqTyM9Fs7w/s1600/20160501_134415.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJ-rz_CZG2U0hGl1kb8uR18Kz26I6vzqCAh0z-d9JUMEUT2cG7sZlpYUVFjEogyUKugzpV5-dXsR8w6Z1Y-z1b76CCERTJoUplM6pIa2JWJQSLrA4V1er8Wie2P2bSJWq_JMqTyM9Fs7w/s640/20160501_134415.jpg" width="360" /></a></span></div>
+<span style="font-size: small;"><br /></span>
+<span style="font-size: small;">由于二战时很多墓碑都被损坏，后人把这些破损的放在下面的墙里。</span><br />
+<span style="font-size: small;"><br /></span>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<span style="font-size: small;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3HJqyhKwLByT9tJg-jTvMAzLDg_ffj9gVPTLo8DeQ-lsSQfTlkrTyVWoAA5xeepBNlBNAqjhp_hBB7f26ZuH-BB6bQD13EiigMbxcb9tMZjFY7hf0v2tKCSki9hFZt2bSVKWILdnt-o4/s1600/20160501_135224.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3HJqyhKwLByT9tJg-jTvMAzLDg_ffj9gVPTLo8DeQ-lsSQfTlkrTyVWoAA5xeepBNlBNAqjhp_hBB7f26ZuH-BB6bQD13EiigMbxcb9tMZjFY7hf0v2tKCSki9hFZt2bSVKWILdnt-o4/s640/20160501_135224.jpg" width="640" />&nbsp;</a></span></div>
+<div class="separator" style="clear: both; text-align: left;">
+<span style="font-size: small;">对于大屠杀死去的人，墓园里面也有专门为他们设立的地方。 </span></div>
+<div style="text-align: left;">
+<span style="font-size: small;"><br /></span></div>
+<div class="separator" style="clear: both; text-align: center;">
+<span style="font-size: small;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDT9FvN3iqxw8sGjt2xJeNc57czG-__JcS6J5dAi_kSpgAanY1kIBFG2zh30KFBS72DI4xDNAWTuBGQcxheRwogUld3oqfccnyTQmkkXdTLV6_KiJ3GeITmFVs_CZsNVlWbBSs9sElw3w/s1600/20160501_140209.jpg" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDT9FvN3iqxw8sGjt2xJeNc57czG-__JcS6J5dAi_kSpgAanY1kIBFG2zh30KFBS72DI4xDNAWTuBGQcxheRwogUld3oqfccnyTQmkkXdTLV6_KiJ3GeITmFVs_CZsNVlWbBSs9sElw3w/s640/20160501_140209.jpg" width="640" /></a></span></div>
+<span style="font-size: small;">还有专门为犹太小孩而设的，下图写了“in memory of one million Jewish children murdered by Nazi German barbarians 1939-1945&nbsp; ” </span><br />
+<span style="font-size: small;"><br /></span>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<span style="font-size: small;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwYGi0LT29qkdcpdSn3s20kRLT_16ujSWOo1QXSO6cO63PcrlprUE9Ughz617dAvmfvKpmsXrx3VgYk21zpv65sPsrEQ0FVpFLYIIHAnM1RamdCSPF_yittCvqNQdspNVh68v5hIDBBMU/s1600/20160501_143924.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwYGi0LT29qkdcpdSn3s20kRLT_16ujSWOo1QXSO6cO63PcrlprUE9Ughz617dAvmfvKpmsXrx3VgYk21zpv65sPsrEQ0FVpFLYIIHAnM1RamdCSPF_yittCvqNQdspNVh68v5hIDBBMU/s640/20160501_143924.jpg" width="640" /></a></span></div>
+<span style="font-size: small;"><br /></span>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<span style="font-size: small;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhi9m0y2cdJg4E4UQtKzoX38WJg70mNu4lqyigReYyeTCybggiQDcASfhvBfXSCtoO7IjaoV-5gwP3mctGPyTuP3nUdxj2GcfGzAInUg4qJdFpis-uEtT2oRPeQ54O9qvExn1SXF84lFJw/s1600/20160501_144009.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhi9m0y2cdJg4E4UQtKzoX38WJg70mNu4lqyigReYyeTCybggiQDcASfhvBfXSCtoO7IjaoV-5gwP3mctGPyTuP3nUdxj2GcfGzAInUg4qJdFpis-uEtT2oRPeQ54O9qvExn1SXF84lFJw/s640/20160501_144009.jpg" width="640" /></a></span></div>
+<div class="separator" style="clear: both; text-align: center;">
+<span style="font-size: small;"><br /></span></div>
+<span style="font-size: small;">去完犹太公墓，我们就去Polin博物馆[1]。"Polin"就是希伯来语“波兰”的意思。这个博物馆于2013年落成，是关于犹太人在波兰的历史，从古代到现代。博物馆很大，可以逛一整天，但我们时间不够，给我们一小时自由时间，之后和博物馆创办人之一Helise
+ Lieberman【2】进行交谈。她属于Taube 
+Foundation，现在在华沙从事关于犹太人教育研究工作。Maureen跟我们说了她的故事，她原来在纽约有很好的工作，20多年前到访华沙，发现有些事情需要去做，就留下来了。她和我们交谈中说到，在做历史工作的时候一直有反思，大屠杀的事情需要教育下一代，只是他们知道之后，回到现实生活中去，这段历史给他们带来什么呢？</span><br />
+<span style="font-size: small;"><br /></span>
+<span style="font-size: small;">周日行程结束，晚上就是分享讨论。当晚和我分享的人问我，是不是在中国学习犹太历史的。我才知道，原来南京大学有犹太文化研究所。大概1000年前，犹太人移民去开封，现在大概还有1000人口，有些人还移民去了以色列呢。在哈尔滨也有来自俄罗斯的犹太侨民，这些中国犹太人，真是很难想象。</span><br />
+<span style="font-size: small;"><br /></span>
+<span style="font-size: small;">
+
+<b><span face="&quot;新細明體&quot; , &quot;serif&quot;" style="mso-bidi-font-family: 新細明體; mso-bidi-font-weight: bold;">20<span face="&quot;新細明體&quot; , &quot;serif&quot;">16年5月2日</span>周<span face="&quot;新細明體&quot; , &quot;serif&quot;">一</span></span><span lang="EN-US" style="mso-bidi-font-weight: bold;"> :</span></b></span><br />
+<span style="font-size: small;"><b><span face="&quot;新細明體&quot; , &quot;serif&quot;" style="mso-bidi-font-family: 新細明體; mso-bidi-font-weight: bold;">早上华沙</span><span lang="EN-US" style="mso-bidi-font-weight: bold;">Ghetto -</span><span face="&quot;新細明體&quot; , &quot;serif&quot;" style="mso-bidi-font-family: 新細明體; mso-bidi-font-weight: bold;">下午</span><span lang="EN-US" style="mso-bidi-font-weight: bold;">Lublin Majdenek集中营</span></b></span><br />
+<span lang="EN-US" style="font-size: small; mso-bidi-font-weight: bold;">Ghetto</span><span face="&quot;新細明體&quot; , &quot;serif&quot;" style="font-size: small; mso-bidi-font-family: 新細明體; mso-bidi-font-weight: bold;">早已被毁，留下只有一道厚厚的墙</span><span style="font-size: small; mso-bidi-font-weight: bold;"> </span><span lang="ZH-CN" style="font-family: &quot;simsun&quot;; font-size: small; mso-ascii-font-family: &quot;Times New Roman&quot;; mso-bidi-font-weight: bold; mso-fareast-language: ZH-CN; mso-hansi-font-family: &quot;Times New Roman&quot;;">，还有一幅地图介绍。令人感动的是，至今依然有人献花。我们团里来自美国的</span><span lang="EN-US" style="font-size: small; mso-bidi-font-weight: bold; mso-fareast-font-family: SimSun; mso-fareast-language: ZH-CN;">Harry</span><span lang="ZH-CN" style="font-family: &quot;simsun&quot;; font-size: small; mso-ascii-font-family: &quot;Times New Roman&quot;; mso-bidi-font-weight: bold; mso-fareast-language: ZH-CN; mso-hansi-font-family: &quot;Times New Roman&quot;;">，他的父母当年成功逃离</span><span lang="EN-US" style="font-size: small; mso-bidi-font-weight: bold; mso-fareast-font-family: SimSun; mso-fareast-language: ZH-CN;">ghetto</span><span lang="ZH-CN" style="font-family: &quot;simsun&quot;; font-size: small; mso-ascii-font-family: &quot;Times New Roman&quot;; mso-bidi-font-weight: bold; mso-fareast-language: ZH-CN; mso-hansi-font-family: &quot;Times New Roman&quot;;">。他妈妈是和朋友一起逃走，他爸爸则是用苏联人给他们的武器和纳粹拼，最后成功逃脱的。他爸爸以前在立陶宛一个村子住，</span><span lang="EN-US" style="font-size: small; mso-bidi-font-weight: bold; mso-fareast-font-family: SimSun; mso-fareast-language: ZH-CN;">25</span><span lang="ZH-CN" style="font-family: &quot;simsun&quot;; font-size: small; mso-ascii-font-family: &quot;Times New Roman&quot;; mso-bidi-font-weight: bold; mso-fareast-language: ZH-CN; mso-hansi-font-family: &quot;Times New Roman&quot;;">年前</span><span lang="EN-US" style="font-size: small; mso-bidi-font-weight: bold; mso-fareast-font-family: SimSun; mso-fareast-language: ZH-CN;">Harry</span><span lang="ZH-CN" style="font-family: &quot;simsun&quot;; font-size: small; mso-ascii-font-family: &quot;Times New Roman&quot;; mso-bidi-font-weight: bold; mso-fareast-language: ZH-CN; mso-hansi-font-family: &quot;Times New Roman&quot;;">去过，并且说当时住在他们房子的立陶宛人还问他们是不是要把房子要回去。今年他和侄子Greg参加这个团，并且带他去当年他爸爸住过的村子</span><span lang="ZH-CN" style="font-family: &quot;simsun&quot;; font-size: small; mso-ascii-font-family: &quot;Times New Roman&quot;; mso-bidi-font-weight: bold; mso-fareast-language: ZH-CN; mso-hansi-font-family: &quot;Times New Roman&quot;;">。</span>现在侄子是搞电影的，这些年来一直收集生还者的资料，希望造成纪录片。<br />
+<div style="text-align: center;">
+<span lang="ZH-CN" style="font-family: &quot;simsun&quot;; font-size: small; mso-ascii-font-family: &quot;Times New Roman&quot;; mso-bidi-font-weight: bold; mso-fareast-language: ZH-CN; mso-hansi-font-family: &quot;Times New Roman&quot;;">(下两图：ghetto遗址) </span></div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMgnY7HNfjexN-vV1ro2l8-cBmDnOmKoJWHZCZGY6WAGRMBjDT7xQOHq7-GGZ07TCLx4Oal__Mi0RmlB7rRTLZVYoKXAR0o6i9CCXeWaWho5oGT7kMLF35aEKybq7eXjAjuL7e97f-_8k/s1600/20160502_084215.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMgnY7HNfjexN-vV1ro2l8-cBmDnOmKoJWHZCZGY6WAGRMBjDT7xQOHq7-GGZ07TCLx4Oal__Mi0RmlB7rRTLZVYoKXAR0o6i9CCXeWaWho5oGT7kMLF35aEKybq7eXjAjuL7e97f-_8k/s640/20160502_084215.jpg" width="640" /></a></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhb-asNn0GwZ_FXjAw5hRg-blYCdnHYdiba0hBihgPYBeSsnqQP9u4hpHMHQYXA-SqRQzBU5eZPacmt7ENJSi2hEZcKvSHiXVNjXKIGbmQL8_hd-85WoZPaR5m4DjNW5GCPSDFiJtIJ2m8/s1600/20160502_085953.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhb-asNn0GwZ_FXjAw5hRg-blYCdnHYdiba0hBihgPYBeSsnqQP9u4hpHMHQYXA-SqRQzBU5eZPacmt7ENJSi2hEZcKvSHiXVNjXKIGbmQL8_hd-85WoZPaR5m4DjNW5GCPSDFiJtIJ2m8/s640/20160502_085953.jpg" width="640" /></a></div>
+<div style="text-align: center;">
+&nbsp;（下图：位于华沙，里面是常见犹太人的名字，用以纪念逝去的人）</div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjczcsY64-3mnz75jV4ASFBxP-_cSYgaYq5ViY7-AVHF2xvnkSUB-Aashv6j77O4r3AjvASLf6b22gAZR0LqzUd9Ue3XMk-AScR9u8V_qViaFcyIKbKzlaAOylR9g-MklCN3KKK10MVpQg/s1600/20160502_094553.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjczcsY64-3mnz75jV4ASFBxP-_cSYgaYq5ViY7-AVHF2xvnkSUB-Aashv6j77O4r3AjvASLf6b22gAZR0LqzUd9Ue3XMk-AScR9u8V_qViaFcyIKbKzlaAOylR9g-MklCN3KKK10MVpQg/s640/20160502_094553.jpg" width="640" /></a></div>
+<br />
+<br />
+<span lang="ZH-CN" style="font-family: &quot;simsun&quot;; font-size: small; mso-ascii-font-family: &quot;Times New Roman&quot;; mso-bidi-font-weight: bold; mso-fareast-language: ZH-CN; mso-hansi-font-family: &quot;Times New Roman&quot;;">随后我们去了市内两个纪念大屠杀的地方。</span><br />
+<span lang="ZH-CN" style="font-family: &quot;simsun&quot;; font-size: small; mso-ascii-font-family: &quot;Times New Roman&quot;; mso-bidi-font-weight: bold; mso-fareast-language: ZH-CN; mso-hansi-font-family: &quot;Times New Roman&quot;;">离开华沙，我们出发去</span><span lang="ZH-CN" style="font-family: &quot;simsun&quot;; font-size: small; mso-ascii-font-family: &quot;Times New Roman&quot;; mso-bidi-font-weight: bold; mso-fareast-language: ZH-CN; mso-hansi-font-family: &quot;Times New Roman&quot;;">Jeszywas
+ Chachmej 
+Lublin，这是个yeshiva，就是犹太人学习Torah（犹太教圣经，即摩西五经）的地方。这和基督教的神学院不一样，犹太人会在不同的yeshiva学习的。我们在里面两个人一组学习，有笔记，那是rabbi（犹太教牧师）的讲道，我一次见识这个，很有意思。里面说到为什么当初上帝只造一个人，那是因为这样我们就不会说你是好人的后裔，或者坏人的后裔，我们都是同一人的后裔。</span><br />
+<span lang="ZH-CN" style="font-family: &quot;simsun&quot;; font-size: small; mso-ascii-font-family: &quot;Times New Roman&quot;; mso-bidi-font-weight: bold; mso-fareast-language: ZH-CN; mso-hansi-font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; （下图：</span><span lang="ZH-CN" style="font-family: &quot;simsun&quot;; font-size: small; mso-ascii-font-family: &quot;Times New Roman&quot;; mso-bidi-font-weight: bold; mso-fareast-language: ZH-CN; mso-hansi-font-family: &quot;Times New Roman&quot;;"><span lang="ZH-CN" style="font-family: &quot;simsun&quot;; font-size: small; mso-ascii-font-family: &quot;Times New Roman&quot;; mso-bidi-font-weight: bold; mso-fareast-language: ZH-CN; mso-hansi-font-family: &quot;Times New Roman&quot;;">Jeszywas Chachmej Lublin</span>）</span><br />
+<div class="separator" style="clear: both; text-align: center;">
+<span lang="ZH-CN" style="font-family: &quot;simsun&quot;; font-size: small; mso-ascii-font-family: &quot;Times New Roman&quot;; mso-bidi-font-weight: bold; mso-fareast-language: ZH-CN; mso-hansi-font-family: &quot;Times New Roman&quot;;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-C6q1coyzaZaaAoCN-46VPttb1RYlvECLcRUyJASjOFQji38UexOxf0byCdVrCsxRKWlv2hDjjW4VTtgIEVLW-oohoqtqUjlAVXkmWU3O0Jqon68qb7rRFh7c3BubqrfE4QmfL8wCsBU/s1600/temp.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-C6q1coyzaZaaAoCN-46VPttb1RYlvECLcRUyJASjOFQji38UexOxf0byCdVrCsxRKWlv2hDjjW4VTtgIEVLW-oohoqtqUjlAVXkmWU3O0Jqon68qb7rRFh7c3BubqrfE4QmfL8wCsBU/s640/temp.jpg" width="526" /></a></span></div>
+<span lang="ZH-CN" style="font-family: &quot;simsun&quot;; font-size: small; mso-ascii-font-family: &quot;Times New Roman&quot;; mso-bidi-font-weight: bold; mso-fareast-language: ZH-CN; mso-hansi-font-family: &quot;Times New Roman&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br />
+<div style="text-align: center;">
+<span lang="ZH-CN" style="font-family: &quot;simsun&quot;; font-size: small; mso-ascii-font-family: &quot;Times New Roman&quot;; mso-bidi-font-weight: bold; mso-fareast-language: ZH-CN; mso-hansi-font-family: &quot;Times New Roman&quot;;">（下两图：</span><span lang="ZH-CN" style="font-family: &quot;simsun&quot;; font-size: small; mso-ascii-font-family: &quot;Times New Roman&quot;; mso-bidi-font-weight: bold; mso-fareast-language: ZH-CN; mso-hansi-font-family: &quot;Times New Roman&quot;;"><span lang="ZH-CN" style="font-family: &quot;simsun&quot;; font-size: small; mso-ascii-font-family: &quot;Times New Roman&quot;; mso-bidi-font-weight: bold; mso-fareast-language: ZH-CN; mso-hansi-font-family: &quot;Times New Roman&quot;;">Jeszywas Chachmej Lublin里面</span>）</span></div>
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhwR1Wf9CoBfhKm8dqbDzH0Ipy5MbIYXD7ZmZbpvlb8Rk6tWObm78WRZn3LXUKk1QBgtWy6Ja2mqT1kUCBqQwAbkWGVCKwNk3K2wiO2KPnJqIhHKkynYT2pXMOf075pOY2XgHco6-7jJIo/s640/20160502_141941.jpg" width="640" /><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiE4v-toXJDEhAMCkR3g2hLxmwvamBeJO2Ai8QHCOIaFBp6j2yTjAL5KOuC48Kj8mmIhqmCJc9y8Ju9gfy4QrEhGibuE9fiAduzYtOnJQzVuPwX0o2yWxwmeF0e-h-xymaU0_g6mdMAjJI/s640/20160502_144512.jpg" width="640" /> <br />
+<div style="text-align: center;">
+&nbsp;（下图：我们的学习笔记）</div>
+<div class="separator" style="clear: both; text-align: center;">
+<span style="font-size: small;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPeOWgMJl5orCA484prVYlQGESfe-lwb5Lj-GqeKPoN1yGrgcLHRUYhM-llAChTEbRQEHTkvGg10QNuf03tzRJjTmzaYBwF0j2bRWOqEmsPvcQkXtFJ2Q5Yu5NKen8UCxy7sJDhgdEXnk/s1600/yeshiva.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPeOWgMJl5orCA484prVYlQGESfe-lwb5Lj-GqeKPoN1yGrgcLHRUYhM-llAChTEbRQEHTkvGg10QNuf03tzRJjTmzaYBwF0j2bRWOqEmsPvcQkXtFJ2Q5Yu5NKen8UCxy7sJDhgdEXnk/s640/yeshiva.jpg" width="360" /></a></span></div>
+<span style="font-size: small;"><br /></span>
+<span style="font-size: small;">离开Yeshiva,我们去此行第一个集中营-Majdenek。这个集中营位于Lublin郊区，当时附近有民居，离得很近。Maureen跟我们介绍的时候就说，那个时候那里的人肯定是知道集中营所发生的事。</span><br />
+<span style="font-size: small;">为了纪念，集中营后来都是重新设计过的。Majdanek的特色是有个很大的陵，里面全是人的骨灰。</span><br />
+<span style="font-size: small;">说句题外话，关于集中营的情况，后来我去伦敦的Imperial War Museum这样介绍过，那些身经百战的士兵把集中营解放时，看到里面情况都马上吐了出来。 </span><br />
+<br />
+&nbsp;（下图上：Majdanek的陵，下图中：陵里面放有集中营死者的骨灰，下图下：陵墓今天的人的献花）<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjnQwxqUWPCvkIcYeA1ac4u5WV9YTx1Z30RJFVPnMjBvd9v7E9XQJWxZ_I4Rfwg-okFe1z164FWvH9N37X5b-rhvJwqJ3Y9y4dd4ZiE5qJRWLzIykCtFGQJzS_mn6lLyzEdIcmErhyq_yw/s1600/20160502_174133.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjnQwxqUWPCvkIcYeA1ac4u5WV9YTx1Z30RJFVPnMjBvd9v7E9XQJWxZ_I4Rfwg-okFe1z164FWvH9N37X5b-rhvJwqJ3Y9y4dd4ZiE5qJRWLzIykCtFGQJzS_mn6lLyzEdIcmErhyq_yw/s640/20160502_174133.jpg" width="640" /></a></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0g7tZNBL2PaxIq2jvr6sZyvSyhOeqst-IcTMnzUipzrGg6pUTzoUXjzrRLA6ZkrRLDrXxGENV4YP8aalnA5WzQ0YFUcOAV1LQ76QDLZQw1ui43P1gFqXJS4eA4IhdPs0_kM1nDecItJ4/s1600/20160502_174958.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0g7tZNBL2PaxIq2jvr6sZyvSyhOeqst-IcTMnzUipzrGg6pUTzoUXjzrRLA6ZkrRLDrXxGENV4YP8aalnA5WzQ0YFUcOAV1LQ76QDLZQw1ui43P1gFqXJS4eA4IhdPs0_kM1nDecItJ4/s640/20160502_174958.jpg" width="640" /></a></div>
+<br />
+<div style="text-align: center;">
+<span style="font-size: small;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyJn_hrBCBBCiCRmaUWQj2KRYFuqRCu88l-rkfF9917WOOxkkp32hVgZ903CXxowCIZndcC_9fKs6D5Fiy9771JKQKFqVLvtM0MS-BlxcmqmqWfF9JgP0q9j30UNIJRO2P0qo4_3KqLnc/s1600/20160502_175008.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyJn_hrBCBBCiCRmaUWQj2KRYFuqRCu88l-rkfF9917WOOxkkp32hVgZ903CXxowCIZndcC_9fKs6D5Fiy9771JKQKFqVLvtM0MS-BlxcmqmqWfF9JgP0q9j30UNIJRO2P0qo4_3KqLnc/s640/20160502_175008.jpg" width="640" /></a></span></div>
+<br />
+<span style="font-size: small;">Majdanek是个死亡营，里面也有毒气室。当时SS就是通过下面的门的空看看毒气室的人死了没有。</span><br />
+<br />
+<div style="text-align: center;">
+<span style="font-size: small;">（下图上：通往毒气室前；下图下：SS就是通过门的洞看看里面的人死了没有） </span></div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWGnjurSnt9hyphenhyphens7QZNEN8En27CBiyUIiWtgtPVFp5Ryq41Dzi7ph52VtTy5R5W4wyRF1IVDwHyUAFAZK1qxsyMdYCJ8_RHikN0-eQoT1Gx3HkVqj450nZUSXGKredvpRIS5K-dkZlvGgs/s1600/20160502_162214.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWGnjurSnt9hyphenhyphens7QZNEN8En27CBiyUIiWtgtPVFp5Ryq41Dzi7ph52VtTy5R5W4wyRF1IVDwHyUAFAZK1qxsyMdYCJ8_RHikN0-eQoT1Gx3HkVqj450nZUSXGKredvpRIS5K-dkZlvGgs/s640/20160502_162214.jpg" width="640" /></a></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEglMEVSsZ-VQsduNCUSHzQRKlXmszCaxJ0jd_p_V1mrO96WmHv1zDNGzYyUtXXaH72mEiGdHPjJ5VpHtrkVxsxFwayKM38c6Dwvn-QxYF6EEO70Ps6cAaWBw9n8K1wWKFXX6GCWD507jXs/s1600/20160502_162041.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEglMEVSsZ-VQsduNCUSHzQRKlXmszCaxJ0jd_p_V1mrO96WmHv1zDNGzYyUtXXaH72mEiGdHPjJ5VpHtrkVxsxFwayKM38c6Dwvn-QxYF6EEO70Ps6cAaWBw9n8K1wWKFXX6GCWD507jXs/s640/20160502_162041.jpg" width="360" /></a></div>
+<br />
+<div style="text-align: center;">
+<span style="font-size: small;">&nbsp;（下两图: 焚化炉）</span></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3mRqjhXPA6CgNgNvKqK3MwfpKfg5yctXn9kAm0fTejbtv5akfIm8B5GneJcBrFBRaIQrj-Gre-TgkVMw709P_VwWEJhe4ZkPAGk5qMgRGwfE9OGfZL9miY3l9k_fb0p2Zqt18rlid_hk/s1600/20160502_173749.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3mRqjhXPA6CgNgNvKqK3MwfpKfg5yctXn9kAm0fTejbtv5akfIm8B5GneJcBrFBRaIQrj-Gre-TgkVMw709P_VwWEJhe4ZkPAGk5qMgRGwfE9OGfZL9miY3l9k_fb0p2Zqt18rlid_hk/s640/20160502_173749.jpg" width="640" /></a></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhi7kdoX_kkiL44976Uaupw0lqO5bItYUpRFowJUrs0ZCd49yWFvLsNpr6UtqVtWGNs47W_WYOWRdVGzPbg8WcymxiWzZlIxzjIBNXRuChpyeWnM2vnGmH2TnYrPmQVUBtb_UyMMj0KvEU/s1600/20160502_173759.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhi7kdoX_kkiL44976Uaupw0lqO5bItYUpRFowJUrs0ZCd49yWFvLsNpr6UtqVtWGNs47W_WYOWRdVGzPbg8WcymxiWzZlIxzjIBNXRuChpyeWnM2vnGmH2TnYrPmQVUBtb_UyMMj0KvEU/s640/20160502_173759.jpg" width="360" /></a></div>
+<div style="text-align: center;">
+<br /></div>
+<br />
+<div style="text-align: center;">
+<span style="font-size: small;">（下几图：Majdanek一景）</span></div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigAsDBv_qPjcBdq9afdOcYk7H1taRZ_CDI5eRQ2jOVfYn5x57_QG6-p9oc8f4lY3BV6v_X1xCCMOjAj9CIrSlkrAuJfr0B4AqPI-5DxSEzZj4dPNcnEQcNKUQZV8AQW7iBIcNIBQYQ-y8/s1600/20160502_164927.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigAsDBv_qPjcBdq9afdOcYk7H1taRZ_CDI5eRQ2jOVfYn5x57_QG6-p9oc8f4lY3BV6v_X1xCCMOjAj9CIrSlkrAuJfr0B4AqPI-5DxSEzZj4dPNcnEQcNKUQZV8AQW7iBIcNIBQYQ-y8/s640/20160502_164927.jpg" width="640" /></a></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjK2UKnB3ytvG1QY9cZHY-NjvxlFe0kgFKyNxatBgcuuiiRV8_Oz6XDo1c8Ww9lOIE1TUrE-njCOBtKDx9BgV1OTfB6oL414-T-8hPnS-vyEG-ahyphenhyphenNI-8_5kOSbEMdPXNUBX3GbeU9JHHQ/s1600/20160502_154046.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjK2UKnB3ytvG1QY9cZHY-NjvxlFe0kgFKyNxatBgcuuiiRV8_Oz6XDo1c8Ww9lOIE1TUrE-njCOBtKDx9BgV1OTfB6oL414-T-8hPnS-vyEG-ahyphenhyphenNI-8_5kOSbEMdPXNUBX3GbeU9JHHQ/s640/20160502_154046.jpg" width="360" /></a></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3jGbyWaBO4qkWYcblb76leaQLPkUkBuZzaaJgkuxnLyd4Gz2G-1wINn65mR2OWUKVGMQEsXz12d27lmRPuHGzb35nhEIBgD3HOaTQ50czw3w7lDaKos10jA4v9uxjtyIWzJTn7WAlVjI/s1600/20160502_153814.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3jGbyWaBO4qkWYcblb76leaQLPkUkBuZzaaJgkuxnLyd4Gz2G-1wINn65mR2OWUKVGMQEsXz12d27lmRPuHGzb35nhEIBgD3HOaTQ50czw3w7lDaKos10jA4v9uxjtyIWzJTn7WAlVjI/s640/20160502_153814.jpg" width="640" /></a></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9SW8VcKZIO1Ydmw1FRByerEL0sDm2wTIk3QdHOeQpQLQ_4GDOqGOqHVkjtVgoq9QRjl8fJJ8RsbJYfNQ4hTh6P_IL1ThB5Ux5p9CGPhL2sIAVDFPZPgCvyB6jSmwkgVnAJGrTqkCphEw/s1600/20160502_174231.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9SW8VcKZIO1Ydmw1FRByerEL0sDm2wTIk3QdHOeQpQLQ_4GDOqGOqHVkjtVgoq9QRjl8fJJ8RsbJYfNQ4hTh6P_IL1ThB5Ux5p9CGPhL2sIAVDFPZPgCvyB6jSmwkgVnAJGrTqkCphEw/s640/20160502_174231.jpg" width="640" /></a></div>
+<span style="font-size: small;"><br /></span>
+<br />
+<div style="text-align: center;">
+<span style="font-size: small;">（下几图：当时营内的人住的地方，挤得不能翻身）</span></div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRBTDJfVpaFBOhWZ-wexAc6Hve4ZjsMfGsbjh7YY38BQxHH1jHIjoU6vSYtXanUzP1IO6H4M685vi0ly4tkdzH1T7feM953c2r4Nqw_r4g5-FxRLb1SC6XDG8GThzDrdFWkB2ir0R_T-M/s1600/20160502_170724.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRBTDJfVpaFBOhWZ-wexAc6Hve4ZjsMfGsbjh7YY38BQxHH1jHIjoU6vSYtXanUzP1IO6H4M685vi0ly4tkdzH1T7feM953c2r4Nqw_r4g5-FxRLb1SC6XDG8GThzDrdFWkB2ir0R_T-M/s640/20160502_170724.jpg" width="640" /></a></div>
+<span style="font-size: small;">&nbsp;鞋子在集中营里面是关乎生死的东西。在寒冬里面没有鞋子走路引起冻疮，有些生还者就是因为太严重在解放后需要截肢。鞋子之前我在华盛顿的大屠杀博物馆也看过，不过没那么多，当时也不知道鞋子的意义，在Majdanek看到的时候，很是震撼。</span><br />
+<span style="font-size: small;"><br /></span>
+<br />
+<div style="text-align: center;">
+<span style="font-size: small;">（下图：死者的鞋）&nbsp;</span></div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhHWB3VVDttfQn4fCt_B2P_W1RUjALjUVBBIxHayUz9GgRGec9ppKf7IdPev7Qk0mfX4vwyN2l9RsgdSrHUQ-nPkbBFNRMdUK7aseFm6EiGGsQJtWB_CUzL8nEx30v4BY_uRIaikPT0_aU/s1600/20160502_165237.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhHWB3VVDttfQn4fCt_B2P_W1RUjALjUVBBIxHayUz9GgRGec9ppKf7IdPev7Qk0mfX4vwyN2l9RsgdSrHUQ-nPkbBFNRMdUK7aseFm6EiGGsQJtWB_CUzL8nEx30v4BY_uRIaikPT0_aU/s640/20160502_165237.jpg" width="640" /></a></div>
+<span style="font-size: small;"><br /></span>
+<span style="font-size: small;">&nbsp;在集中营内，我们一起读了一首诗。诗就在随团送的那本书，是个营里生还者，在多年后重访集中营时，写给她妈妈的。当时有人感动得哭了出来。诗的名字She
+ waited for me,于1986年由Halina Birnebaum所写。原文参考【3】，我这里节录一段出来。</span><br />
+<br />
+She waited for me there, near the pathway.<br />
+She did know one day I would come<br />
+And would perceive her with all my senses –<br />
+My mother, beautiful and young<br />
+She waited for me there, near the pathway in Majdanek<br />
+Across from the "disinfection" barrack – the crematorium's ovens<br />
+After forty years I have come here from afar<br />
+And see her standing like Then – despite Death<br />
+Like on that night we were separated forever:<br />
+<span style="font-size: small;">...</span><br />
+I have come here again<br />
+From another country,<br />
+A grownup woman<br />
+Yet the same girl I was Then<br />
+Whom she did love so much<br />
+And over whose fate she agonized.<br />
+....<br />
+今天晚上也有讨论，大家讨论后还在酒吧聊天。<br />
+<br />
+<b><span style="font-size: small;">2015年5月3日周二：</span></b><br />
+<b><span style="font-size: small;">Belzec死亡营 - Lancut犹太会堂-Krakow犹太社区中心</span></b><br />
+<br />
+Belzec死亡营是被毁坏得很彻底的一个，现在已经没有当时的痕迹了,估计当时死亡人数达到50万。这个死亡营的生还者只有几个，所以能找到的记录甚少。现在死亡营纪念墙上有当时住在附近犹太人的姓和名。进去后可以从两边颓垣败瓦走下去，上面有德国及波兰所有有犹太人被送去Belzec的地方名。现在Belzec还有个小博物馆，关于这个地方的介绍。<br />
+<div style="text-align: center;">
+（下图：取自圣经约伯记）</div>
+<br />
+<div style="text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoYR6o2W600aZJOhCv1PnPx8JYsQHFRJVtxwYYgn54lcaup3CU-Y0LabiP-QxHYxe17B3GvSF9H9JNecAdLQ5IgtNOVTkIUr3Dv9cMPskBH5y16bE2CoyZnaH_KzC7TzA-Dhne_cba18E/s1600/20160503_101037.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoYR6o2W600aZJOhCv1PnPx8JYsQHFRJVtxwYYgn54lcaup3CU-Y0LabiP-QxHYxe17B3GvSF9H9JNecAdLQ5IgtNOVTkIUr3Dv9cMPskBH5y16bE2CoyZnaH_KzC7TzA-Dhne_cba18E/s640/20160503_101037.jpg" width="640" /></a></div>
+<div style="text-align: center;">
+&nbsp;（下图：现在Belzec设计是游客从颓垣败挖中走下去）</div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihaQGgM3aymkG1eO1UR4k8Tz_JlUnXQoFG8jP6aZ9XVptn51I-oXpQuq0mRqLtIDZNlr8ovE_Ozf3gmCMe6smSD9Gk8mBVvdjJxiytbdLbeCRIHL9QHhcztp-rlyf8D5bF1tFuOndd7ec/s1600/20160503_102226.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihaQGgM3aymkG1eO1UR4k8Tz_JlUnXQoFG8jP6aZ9XVptn51I-oXpQuq0mRqLtIDZNlr8ovE_Ozf3gmCMe6smSD9Gk8mBVvdjJxiytbdLbeCRIHL9QHhcztp-rlyf8D5bF1tFuOndd7ec/s640/20160503_102226.jpg" width="640" /></a></div>
+<div style="text-align: center;">
+&nbsp;（下图：写了犹太人姓和名的纪念墙）</div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixuynXX3vfbn1T3GvutjzuetyxVWsXn043WvWDgBrRTHVBxJWOkHW0U26rwfnuwY1QaFJUqZPP3BID3KXszpUdzbF-fblfA41xiRDDoMdUZHgKQrrewCKZWkhn66S0an2sJ4FcR7cfxs4/s1600/20160503_105157.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixuynXX3vfbn1T3GvutjzuetyxVWsXn043WvWDgBrRTHVBxJWOkHW0U26rwfnuwY1QaFJUqZPP3BID3KXszpUdzbF-fblfA41xiRDDoMdUZHgKQrrewCKZWkhn66S0an2sJ4FcR7cfxs4/s640/20160503_105157.jpg" width="640" /></a></div>
+<div style="text-align: center;">
+&nbsp;（下图：博物馆）</div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgtyQzqilP-iythRS-iJ1ZqRDodVNWQmCDfcFzwVHe6UfTjTEeaI-uK5AKRmVdv3D04PwXpfnHtflCrpt0kwQjxlglNrU8281OGDGDsL3hdIr2ne4KBfIMHDXkgQjdl59wDoZtHZRm6HRM/s1600/20160503_112641.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgtyQzqilP-iythRS-iJ1ZqRDodVNWQmCDfcFzwVHe6UfTjTEeaI-uK5AKRmVdv3D04PwXpfnHtflCrpt0kwQjxlglNrU8281OGDGDsL3hdIr2ne4KBfIMHDXkgQjdl59wDoZtHZRm6HRM/s640/20160503_112641.jpg" width="360" /></a></div>
+<br />
+中午时候，我们去Lancut的犹太会堂(Synagogue
+ Lancut)，车上Maureen说她的奶奶原来就来自这个地方，是个大美女，后来被送了去英国。 
+这个犹太会堂是没有被毁坏的，但今天已经没有犹太人使用。里面有个陈列室，放有犹太历史物品及宗教物品tefillin。Tefillin是犹太成年男子早祷的时候用的。摩西五经有说，带上tefillin是作为上帝带以色列人出埃及的标记及纪念。<br />
+其实看博物馆的时候，大家就发现那些犹太物品并没有说明是什么，犹太人一看就明白，我当时是因为和他们去，他们解释给我听的。后来Maureen说现在犹太会堂的看门人不是犹太人，所以对里面的陈留物品也没有标注。<br />
+<div style="text-align: center;">
+<br /></div>
+<div style="text-align: center;">
+（下几图：Synagogue Lancut）</div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg00bnmD19bfxefkgHmhD3MFH6l2h2uXDeDgK3jKwMtcNEyMdo2QBkE5reCP0RuEGJ_PjBknGWd8G1KB5-GdOlwqpHBydwtCU3c5VifQXDhVBeCZchdQBIkatInM_zmt1F68f3DGX4CenI/s1600/20160503_135031.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg00bnmD19bfxefkgHmhD3MFH6l2h2uXDeDgK3jKwMtcNEyMdo2QBkE5reCP0RuEGJ_PjBknGWd8G1KB5-GdOlwqpHBydwtCU3c5VifQXDhVBeCZchdQBIkatInM_zmt1F68f3DGX4CenI/s640/20160503_135031.jpg" width="360" /></a></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYHuwcQfkPhDjbiULQ8ubw8o5kURDYFmBrLScmz2AZL0AozHLkqOyj-2l8wuK1kOCfREaYUV3oz731p05W5BdMJRRxdpn15TEAavwv9XqpYI3zomLbh0uNLmRFr2LGelveMvN4qM9Ihy8/s1600/20160503_135040.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYHuwcQfkPhDjbiULQ8ubw8o5kURDYFmBrLScmz2AZL0AozHLkqOyj-2l8wuK1kOCfREaYUV3oz731p05W5BdMJRRxdpn15TEAavwv9XqpYI3zomLbh0uNLmRFr2LGelveMvN4qM9Ihy8/s640/20160503_135040.jpg" width="640" /></a></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoafwl39zcfsSj6bS6kbHw83OTsKtV5P5Y0CfdihprZjOcmdfBV69XtZqrc7mtU6FyL8pn3Ar0uHxVmrDIm03Tlrdmm70TERKWSwBTxUgjDvKrqMPb2WJkjQetzO9il9WGOq4OtBUeqZs/s1600/20160503_135101.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoafwl39zcfsSj6bS6kbHw83OTsKtV5P5Y0CfdihprZjOcmdfBV69XtZqrc7mtU6FyL8pn3Ar0uHxVmrDIm03Tlrdmm70TERKWSwBTxUgjDvKrqMPb2WJkjQetzO9il9WGOq4OtBUeqZs/s640/20160503_135101.jpg" width="360" /></a></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjcWrcRpVIgMrb48WsJDZyrHBSAk6URcctKZChozAAJGDAQ8pYpKAV8ijGu_qD8M89WBzMuZL__2OzR4OFEwsxlxaGHgjfmS0hyphenhyphenbvT5I-py1tUkG8oGKdJjcWMAtlr6cR8fICODdi3DnvI/s1600/20160503_140224.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjcWrcRpVIgMrb48WsJDZyrHBSAk6URcctKZChozAAJGDAQ8pYpKAV8ijGu_qD8M89WBzMuZL__2OzR4OFEwsxlxaGHgjfmS0hyphenhyphenbvT5I-py1tUkG8oGKdJjcWMAtlr6cR8fICODdi3DnvI/s640/20160503_140224.jpg" width="360" />&nbsp;</a></div>
+<div class="separator" style="clear: both; text-align: center;">
+(下两图：犹太宗教用品） </div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgIvykLs4k9SArtaBtQvIkjUIDYsLcEwqWrabh4zK-v_2aKpBMipBGqLOJNBT1nHr2nKth-HhW264Z8xYdg7Je3zXt4jnVRb6AuIccfT23UmSM0KzEhw6kwYaklnfHSAuYu7z36W4P-cIk/s1600/20160503_141104.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgIvykLs4k9SArtaBtQvIkjUIDYsLcEwqWrabh4zK-v_2aKpBMipBGqLOJNBT1nHr2nKth-HhW264Z8xYdg7Je3zXt4jnVRb6AuIccfT23UmSM0KzEhw6kwYaklnfHSAuYu7z36W4P-cIk/s640/20160503_141104.jpg" width="640" /></a></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgU5EgWXfOO8jLuU_aRRM7sIlwmIYO9H6szGP0YJuvF1dsEsQ9Xs_sLC3UEkxuaNWIeo_60YFmBSSxCZQBnfdrRsLbPBk8Iw2l5LLmi-1oTbvD8P6jXYtwVMKLk4JvAQh5Bf5pTz4wi0gM/s1600/20160503_141124.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgU5EgWXfOO8jLuU_aRRM7sIlwmIYO9H6szGP0YJuvF1dsEsQ9Xs_sLC3UEkxuaNWIeo_60YFmBSSxCZQBnfdrRsLbPBk8Iw2l5LLmi-1oTbvD8P6jXYtwVMKLk4JvAQh5Bf5pTz4wi0gM/s640/20160503_141124.jpg" width="360" /></a></div>
+<div style="text-align: center;">
+（ 下图：最右边的是tefillin）</div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0gN39R2zlzawZ0QITMcqVfDQ98WZcfpskC-MVUQInsLA9b2N4CeZbQ05_u11mIjfgrpGqx_JQFdH6fSnqJFqYjTaoq3JbtyqzIAGRIADSMbs2ZdOkO-DVMALQX2_OhiCbK1r7UUEyqkM/s1600/20160503_141309.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0gN39R2zlzawZ0QITMcqVfDQ98WZcfpskC-MVUQInsLA9b2N4CeZbQ05_u11mIjfgrpGqx_JQFdH6fSnqJFqYjTaoq3JbtyqzIAGRIADSMbs2ZdOkO-DVMALQX2_OhiCbK1r7UUEyqkM/s640/20160503_141309.jpg" width="640" /></a></div>
+<br />
+<br />
+晚上我们到了Krakow,今晚安排是去当地的犹太社区(Jewish Community Centre[4])，听英国团里其他生还者的故事分享及会见当地的犹太和非犹太年轻人。<br />
+<br />
+我们今晚听的分享是Arek
+ 
+Hersh，生于1929年的波兰。他说小时候虽然他生于波兰，也说波兰语，但也是受到波兰人的歧视的。战争刚开始时，村内的男人被拉去做苦工，当中也有死亡的。当时只有十一二岁的他，后来被释放回家，邻居问他其他人如何，还是小孩的他就想着要撒谎瞒他们，说那些男人都很好。后来他被拉去奥斯维辛（Auschwits）集中营，这个营内每个人都有个编号，纹身在手上。说到这点，他当时强而有力的拉高右手衬衣的袖子，把纹身给我们看。在集中营里面，他负责种菜，用人的骨灰施肥。<br />
+<br />
+战后他幸存下来，但父母都去世了，当时他大概17岁。当时和他差不多年纪的孩子大概有300人被送去了英国的湖区(Lake
+ 
+District)。他的太太当时引述了当年照顾这批孩子的人的一个小故事，我印象很深刻。这些孩子每个人床垫下都有很多面包，那是因为他们每当在桌上看到有面包时，就会马上顺走。这是在集中营因为过度饥饿落下的心理病。听到这个故事后，本来就不浪费食物的我就更加严格了，那怕是一口面包也不浪费。说到这些孤儿，他太太说了一句我很深刻的话，"Nobody
+ was looking for them, and they weren't looking for anybody."<br />
+<br />
+虽然他经历过极大的困难，他分享时是很有力， 但并没有愤怒，很温和的一个老人。<br />
+<br />
+分享过后就是问答时间，当时有人问他会不会原谅德国人，他表示是不能原谅，但只是那个时代的德国人，不是现在的。他并且提到这次March
+ of the Living活动前不久一个德国博物馆开幕，请他过去，他当时不愿意，但对方非常有诚意，他最终去了。在德国，他说那些学生对他非常的尊敬，人家对待他如贵宾。<br />
+<br />
+他写了一本书名为，A detail of history,当时也拿去现场卖了，亲笔签名的。<br />
+<div style="text-align: center;">
+(下图：A detail of history) </div>
+<div class="separator" style="clear: both; text-align: center;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgneuiLtFG2zLjzkcbP0L9gQzLeVlYYxj7LytRI4cxJ9_ogJvWmhsGLxSq3EVVR2p9j-u_2eUkvhclqWvvQo8oZXbKl6X0W5Ub7Mj20GJZLBcw7AkNWFSTw2amPRYc185Jhg0dGQsiH9mI/s1600/book1.JPG" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="320" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgneuiLtFG2zLjzkcbP0L9gQzLeVlYYxj7LytRI4cxJ9_ogJvWmhsGLxSq3EVVR2p9j-u_2eUkvhclqWvvQo8oZXbKl6X0W5Ub7Mj20GJZLBcw7AkNWFSTw2amPRYc185Jhg0dGQsiH9mI/s320/book1.JPG" width="240" /></a><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3JypJSfRH2pw8Dsx20cb4o1cu0rdHEemSHDHcazxDTBANBfdClboIW4mhcCs4F1n5_TnPgnqUb5Ew4nl-NFLArIxR_PD7gREH7kOzHhkEcF8H4wryESFljzwEYEIvr_oIl_trTkIunls/s1600/book2.JPG" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="320" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3JypJSfRH2pw8Dsx20cb4o1cu0rdHEemSHDHcazxDTBANBfdClboIW4mhcCs4F1n5_TnPgnqUb5Ew4nl-NFLArIxR_PD7gREH7kOzHhkEcF8H4wryESFljzwEYEIvr_oIl_trTkIunls/s320/book2.JPG" width="240" /></a></div>
+分享会后，组织方请了4个年轻人来，他们都是中心的义工，两个是犹太人，两个不是。波兰在二战后，很多人因为心理恐惧选择离开，但也有很少部分留下来。年轻人分享他们对今天犹太人的看法，非犹太裔的都说不会歧视犹太人，犹太裔的也说一般没觉得受到歧视。也有人问他们家里会不会说二战的事情，当中一位说家里的老人不太愿意说。犹太裔青年也说到他认识一位战后的犹太老太太，和一个非犹太人结婚。丈夫必须她隐瞒犹太人的身份，她的孩子也不知道母亲的犹太背景。<br />
+<br />
+另外在中心得知，现在波兰一些学校这样教这段历史，让学生到自己的村子寻找那里的犹太历史。这个活动很有意义，可以让学生主动的去发掘历史。<br />
+<br />
+今晚这个活动大家都很喜欢，一来可以听Arek Hersh的分享，二来请了几位年轻人过来带来很多活力。<br />
+<br />
+<br />
+<b>2016年5月4日</b><br />
+<b>Krakow犹太墓地-奥斯维辛集中营&nbsp;</b><br />
+<br />
+Krakow现在有个专门的犹太区，商业性质的，里面吃的犹太餐，但其实并不正宗。当时Maureen给我们介绍时，说的对于这个犹太区有两方面的意见，一方面就觉得商业成分重，卖的犹太餐不正宗，但另一方面就认为，我们设立这个区来纪念犹太人，你们还想怎样呢？<br />
+<br />
+<div style="text-align: center;">
+（下图：Krakow犹太区随拍）</div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhajB8A_BohImCkJiZnVtsAzM8VC5g7q9rsKRQIw1Wc60okaqqadQqlbD1u5zCgGMcfanvoivVLMBAfCcvXkVJPYkQ_XztFXPJttnAzjizjCK64LPgvMThYgsMBkMl1xE9h35gF876HjI4/s1600/20160504_082931.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhajB8A_BohImCkJiZnVtsAzM8VC5g7q9rsKRQIw1Wc60okaqqadQqlbD1u5zCgGMcfanvoivVLMBAfCcvXkVJPYkQ_XztFXPJttnAzjizjCK64LPgvMThYgsMBkMl1xE9h35gF876HjI4/s640/20160504_082931.jpg" width="640" /></a></div>
+&nbsp;早上我们去了一个犹太墓地，二战时这里被破坏的很严重，是个垃圾坑。我们去的时候还有一些穿了犹太服的犹太人来参拜。据Maureen介绍，战后墓地的石头是乱七八糟的，人们凭记忆把它们尽量复原。有些坟墓上有小石头，据犹太人习俗，去墓地的时候把一块石头放在上面，表示敬意（这也是团里的人告诉我的）。<br />
+<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+（下几图：墓地随拍）</div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9oEP0EfBdECfT5MfgvqtJSujNEFupMHT4DqzUGWNMS11e_VoKM4WGGDBl9l9161z59rQLdPRG3WIUy4kK0SQltMRQH7XjrG6bicyXNHbD00eUb29hM_aEleBC-UHOc8fflEAQ7TmYZsM/s1600/20160504_084731.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="356" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9oEP0EfBdECfT5MfgvqtJSujNEFupMHT4DqzUGWNMS11e_VoKM4WGGDBl9l9161z59rQLdPRG3WIUy4kK0SQltMRQH7XjrG6bicyXNHbD00eUb29hM_aEleBC-UHOc8fflEAQ7TmYZsM/s640/20160504_084731.jpg" width="640" /></a></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiN9AwPzYFbnxykhUbDzBcXmAFuqFu1HxUqs9UBE_zrP1EEusAzmTPQ3QgHQMMetvfnsL4Xp7gASMY55No4FSTHJeiJnBrWa4C8mBWDmTHwAqHejYORARXvJv3fjVyUUCABvHSJxDj0kuI/s1600/20160504_084927.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiN9AwPzYFbnxykhUbDzBcXmAFuqFu1HxUqs9UBE_zrP1EEusAzmTPQ3QgHQMMetvfnsL4Xp7gASMY55No4FSTHJeiJnBrWa4C8mBWDmTHwAqHejYORARXvJv3fjVyUUCABvHSJxDj0kuI/s640/20160504_084927.jpg" width="640" /></a></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhZfPci-3zFoFjHv4FGbrU2adDXqjjRXcsBsBAZqgZU4FujvWctoYyESkOrCO2-YOyGgWnNmxdtF1RiSm0eeDY0CW3H2nk3ndieNTaAVUKiuAZPz_gsCX1hiIOtUoxzkFBYxJjAGn3mt8/s1600/20160504_085138.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhZfPci-3zFoFjHv4FGbrU2adDXqjjRXcsBsBAZqgZU4FujvWctoYyESkOrCO2-YOyGgWnNmxdtF1RiSm0eeDY0CW3H2nk3ndieNTaAVUKiuAZPz_gsCX1hiIOtUoxzkFBYxJjAGn3mt8/s640/20160504_085138.jpg" width="360" /></a></div>
+<br />
+<div class="separator" style="clear: both; text-align: left;">
+下午，我们去了奥斯维辛集中营，这是这段历史最出名的一个集中营。今天主要去参观，6号就是和各国的人一同参加活动。去奥斯维辛，生还者Renee
+ 
+Salt陪我们一起的。她生于波兰，在集中营时和她妈妈一起度过。最后虽然两个人都活了下来，但她妈妈不久就离世。她说当时因为有她妈妈在她才能熬过去。</div>
+<div class="separator" style="clear: both; text-align: left;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: left;">
+她表达，其实自己没想过会再来的。</div>
+<div class="separator" style="clear: both; text-align: left;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: left;">
+我们去当日受害人住的营房，Renee陪我们进去，并且跟我们说了她当日的经历。原来是给8只马住的地方给20个人住，挤得没地方睡的，她们就日夜在那里坐着，不允许睡觉，不可以和别人说话。要是和别人说话就会马上被抽打。或者军官心情不好的时候也会随便抽打别人。她说了一句话，“You
+ don't even treat animals like 
+this.”每隔两三日纳粹军官就要她们集合在外面点名，如果有人不在的话他们就要在那里站好几小时。经常有人站着站着就倒地死去了。她今日再来这里，向我们说当日的事，需要多大的勇气啊！(【6】有当日她陪我们去的讲话)</div>
+<div class="separator" style="clear: both; text-align: left;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: left;">
+集中营现在除了有当时受害人住的地方，还有博物馆，有死者进营拍的照片，也有生活照作为纪念。这里有个很大的公共墓地，我们走到那里时，团里几位犹太男士拿出祷告经文来（注：犹太教和基督教不一样，是有固定经文的），一同念kaddish，那是专门在犹太丧礼上说的祷告经文。犹太人念经文的时候好像唱歌那样，我当时也不知道他们在干什么，后来有女性团友告诉我他们在祷告。当时一下我的心被感动到融化了。那些逝去的人，也许和他们没直接关系，而且已经过了70年了，他们依然为他们祷告，当他们是自己亲人一样。</div>
+<div class="separator" style="clear: both; text-align: left;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: left;">
+除了死者的鞋外，这里有个很毛骨刺然的展品，就是用死者的头发编制出来的，由于不许拍照，我就没拍了。</div>
+<div class="separator" style="clear: both; text-align: left;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: left;">
+今晚分享会的时候有人哭了出来。作为犹太人，他们看着的感受很深。今天在墓地有个团友跟我说她的祖先就是波兰的，说不定可能有人安葬在这。 </div>
+<div class="separator" style="clear: both; text-align: left;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: center;">
+&nbsp;（下图：Renee Salt在她当日在集中营住的地方向我们说她当日的经历）</div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjj0hlQ3ugKdFkvc_drgUkYIxZMWJp9STEgesn1EQgivg4am7dqWIwh_bViwqvo377OME5tWA6HAawNDAb0hsjX-SNwzPIsqhH-Zkt6kSqDZuuCoZsWHgv_zG7GLHtBLXIgjQwabd4zbv0/s1600/20160504_153838_%25E5%2589%25AF%25E6%259C%25AC.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjj0hlQ3ugKdFkvc_drgUkYIxZMWJp9STEgesn1EQgivg4am7dqWIwh_bViwqvo377OME5tWA6HAawNDAb0hsjX-SNwzPIsqhH-Zkt6kSqDZuuCoZsWHgv_zG7GLHtBLXIgjQwabd4zbv0/s640/20160504_153838_%25E5%2589%25AF%25E6%259C%25AC.jpg" width="360" /></a></div>
+<div class="separator" style="clear: both; text-align: center;">
+&nbsp;(下图: Arbeit macht Free,work makes you free,是奥斯维辛集中营标记照片之一)</div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgPdY4Mw7E-Bk9F_f-x7ZcdicRgoiJdnta1VR2_qs8brlHYY5rm44CVyrmN-nBA-vN8SXb2x0NhfR5agHNQnPsk-zMLTWDXd_7zTbbRILx2Be0ZZBytYNqMFu4jiT4x9FUAxpi4agvJvbc/s1600/20160504_122659.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgPdY4Mw7E-Bk9F_f-x7ZcdicRgoiJdnta1VR2_qs8brlHYY5rm44CVyrmN-nBA-vN8SXb2x0NhfR5agHNQnPsk-zMLTWDXd_7zTbbRILx2Be0ZZBytYNqMFu4jiT4x9FUAxpi4agvJvbc/s640/20160504_122659.jpg" width="640" /></a></div>
+<div style="text-align: center;">
+&nbsp;(下图：奥斯维辛也有死者的鞋)</div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8emG_xuquxEF_lpywQi0lMEguCNkWkqLwVuE2X1SLcWi8sB8awhbCwHwTlh_lhXlc-utGULJ936xdukWAJbeoEgPPowGB-RJt6uLx1qqRcwQXhtWHFph__OY2Z6ELgxef2hYARHzzW1Y/s1600/20160504_131909.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8emG_xuquxEF_lpywQi0lMEguCNkWkqLwVuE2X1SLcWi8sB8awhbCwHwTlh_lhXlc-utGULJ936xdukWAJbeoEgPPowGB-RJt6uLx1qqRcwQXhtWHFph__OY2Z6ELgxef2hYARHzzW1Y/s640/20160504_131909.jpg" width="640" /></a></div>
+<br />
+<div style="text-align: center;">
+（下几图：受害人生活的地方） </div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh2utvNlxZLvICOE5XQlI5lDWV9Jk2xcCwp3LG3Lk6lqCEPF6B0M7Q4OwLEZFA3Kjw0R1ryFiX2FgG6CLl5wCNWlOwnCEqW_gZ_5TT1lOaEMuyblskogYme5UKhU0eNzag0dSwFQNkUNcM/s1600/20160504_132521.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh2utvNlxZLvICOE5XQlI5lDWV9Jk2xcCwp3LG3Lk6lqCEPF6B0M7Q4OwLEZFA3Kjw0R1ryFiX2FgG6CLl5wCNWlOwnCEqW_gZ_5TT1lOaEMuyblskogYme5UKhU0eNzag0dSwFQNkUNcM/s640/20160504_132521.jpg" width="360" />&nbsp;</a></div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-9e6xRxh3uoTFNTJXqRRhcPvMeGeIsrOtmjcMeF3DNqXW8cgdQeNqxfrGbOm9JcZjdWxQ4g3Gsp7Wtvj7B_J4IraNgSlAcqtevgWs7Et-R0uHEo1BLGHZGNnxQ8FNg2mr-ZH29F1lFpY/s1600/20160504_133146.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-9e6xRxh3uoTFNTJXqRRhcPvMeGeIsrOtmjcMeF3DNqXW8cgdQeNqxfrGbOm9JcZjdWxQ4g3Gsp7Wtvj7B_J4IraNgSlAcqtevgWs7Et-R0uHEo1BLGHZGNnxQ8FNg2mr-ZH29F1lFpY/s640/20160504_133146.jpg" width="360" /></a> </div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTNwHFHJBShBDEYCdfIMBJr8ga4DvazXEgj1maekE5lem7542_5401TdVhIOOAj7T1athlZZZCoPEv_UdAT0sT9EYlKiACfSfKIZHcXYe6VDy2c3LWjgVHF8AXMwMqFlz9aStz6XEHcbM/s1600/20160504_132739.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTNwHFHJBShBDEYCdfIMBJr8ga4DvazXEgj1maekE5lem7542_5401TdVhIOOAj7T1athlZZZCoPEv_UdAT0sT9EYlKiACfSfKIZHcXYe6VDy2c3LWjgVHF8AXMwMqFlz9aStz6XEHcbM/s640/20160504_132739.jpg" width="640" /></a></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_6Jx70ccFVa89S2ksbEsaoqpUbCUpu8ar1Tjt3aaO3RH-OyGwBzjUk0vFC5OgEAvg__P1DJFkF2PpbPgeSAXS27V4MN-iGmR269xjuTYezXQIFKLZFkF0G_rpGozgGZq6Mc9cl97m4Y8/s1600/20160504_132800.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_6Jx70ccFVa89S2ksbEsaoqpUbCUpu8ar1Tjt3aaO3RH-OyGwBzjUk0vFC5OgEAvg__P1DJFkF2PpbPgeSAXS27V4MN-iGmR269xjuTYezXQIFKLZFkF0G_rpGozgGZq6Mc9cl97m4Y8/s640/20160504_132800.jpg" width="640" /></a></div>
+<div style="text-align: center;">
+&nbsp;(下图：营里双胞胎)</div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj_tlkceveryiNcAeAKw7msTjqyIMyjpQojJggnPaL247Oc68AEf7Iw0Nk5Hs4ZTHkDOkxcirgZxURjBEYpTqdY3_41D1RG_CvpxSp0zjEXeq-XAtCSlv73tmBiVLWu-zuJz3PCP7Q6iVs/s1600/20160504_132955.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj_tlkceveryiNcAeAKw7msTjqyIMyjpQojJggnPaL247Oc68AEf7Iw0Nk5Hs4ZTHkDOkxcirgZxURjBEYpTqdY3_41D1RG_CvpxSp0zjEXeq-XAtCSlv73tmBiVLWu-zuJz3PCP7Q6iVs/s640/20160504_132955.jpg" width="640" /></a></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+（下图：奥斯维辛另一标志照片-铁路）</div>
+&nbsp;&nbsp; <br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgolb_KgR4kks0qtqRkzpGL4h3tNUYfVIaJ4eWf_Qptbwxfpg3sBwSeZ4w2I-CnWUPAkEa8ggVnps2nHNUkpfu9E6aru2i0kDN5fkd7P5hl07uZTFCvSKzZGhNFycEc0XUlmiqrKX0nRpQ/s1600/20160504_150547.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgolb_KgR4kks0qtqRkzpGL4h3tNUYfVIaJ4eWf_Qptbwxfpg3sBwSeZ4w2I-CnWUPAkEa8ggVnps2nHNUkpfu9E6aru2i0kDN5fkd7P5hl07uZTFCvSKzZGhNFycEc0XUlmiqrKX0nRpQ/s640/20160504_150547.jpg" width="640" /></a></div>
+<div style="text-align: center;">
+&nbsp; （下图：死者一些遗物）</div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-0nB6j1VmzDycTiZQqVUTgBP2f4T667ihu73jW9vOI3tSDeqQHTbJRl2-G1MiPyT-nak-epXhR7RgsbDJ0D4hS9q7b_qlCaC44Y3MxcZ6RZXT4r8efkxp-ykTm2wx9ifulSBba2ylklg/s1600/20160504_163347.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-0nB6j1VmzDycTiZQqVUTgBP2f4T667ihu73jW9vOI3tSDeqQHTbJRl2-G1MiPyT-nak-epXhR7RgsbDJ0D4hS9q7b_qlCaC44Y3MxcZ6RZXT4r8efkxp-ykTm2wx9ifulSBba2ylklg/s640/20160504_163347.jpg" width="640" /></a></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+（下图：为纪念死者而设的生活照）</div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEguZ-0AlTNePY6BXizGJEc9iA2NAjrBRTofW1R4rBF8Z4e_Tsg1mJj4qEJuUmGyi-L8dkoEIG0_BIvD5Ym9HeGka5c7SO8wOzliKN2W1OhcKWV6L66ja16WEZnrbJL3weWYy4FBBUe2xYc/s1600/20160504_163924.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEguZ-0AlTNePY6BXizGJEc9iA2NAjrBRTofW1R4rBF8Z4e_Tsg1mJj4qEJuUmGyi-L8dkoEIG0_BIvD5Ym9HeGka5c7SO8wOzliKN2W1OhcKWV6L66ja16WEZnrbJL3weWYy4FBBUe2xYc/s640/20160504_163924.jpg" width="360" /></a></div>
+<div style="text-align: center;">
+&nbsp;(下图：奥斯维辛的墓地)</div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfZuDtF5dLh7irTbJ9Lute4EIlki1CLoNpI_AsOsZaPTJU8YzWhM8OF9iJoPM4NPe-h-6e42Mcxxxdj5k0aI_3KFcXpgZEfKK6sBlJlDbmYHmQTkgeC0U1UCTJNZf9MInhZvn5uJDBt9U/s1600/20160504_170128.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfZuDtF5dLh7irTbJ9Lute4EIlki1CLoNpI_AsOsZaPTJU8YzWhM8OF9iJoPM4NPe-h-6e42Mcxxxdj5k0aI_3KFcXpgZEfKK6sBlJlDbmYHmQTkgeC0U1UCTJNZf9MInhZvn5uJDBt9U/s640/20160504_170128.jpg" width="360" /></a></div>
+<div class="separator" style="clear: both; text-align: left;">
+<br /></div>
+在此我插叙一下和我们同车的生还者Eve
+ 
+Kugler的故事。她生于德国，母语是德语。她还有一个姐姐和一个妹妹。当时她和姐姐很幸运拿到签证被送去美国，当时她大概8岁。在美国，她和姐姐分别住在不同寄样家庭，中间也没有联系。她说在寄样家庭感觉就像外人一样。当时她一家五口，战时在五个不同地方。很幸运他们五人都活下来，最后在美国团聚，但分开了八年，当时Eve已经不会说德语了，她妈妈又不会英语，见面时母女根本无法沟通。她妈妈战后还一直做噩梦。在她老年的时候她出版了一本书叫The
+ shattered crystals【5】，讲述她战时的经历。她说出版的时候，她的美国老同学才知道她的事情。<br />
+<br />
+<br />
+<b>2016年5月5日</b><br />
+<b>Krakow ghetto的药店-辛特拉名单的工厂-奥斯维辛March of the Living</b><br />
+<br />
+药店的名称是Muzeum Historyczne Miasta Krakowa Apteka Pod Ortem，网址：<br />
+http://www.mhk.pl/oddzialy/apteka-pod-orlem<br />
+&nbsp;<b><br /></b><br />
+由于是活动最后一天，全球参加March of the Living的人都聚集在Krakow。今天参观药店的人非常多。这个药店位于Krakow的ghetto，是非犹太人开的，当时店主<span class="_ZCm" data-ved="0ahUKEwiylrKxkYLQAhULe7wKHd7UCE0QrTUImQEoADAN">Tadeusz Pankiewicz</span>为了帮助犹太人，坚持不撤离药店，为里面生病的犹太人提供免费药品。<br />
+<div style="text-align: center;">
+&nbsp;(下几图：药店门口及内部）<b><br /></b></div>
+<div class="separator" style="clear: both; text-align: center;">
+<b>&nbsp;</b><b><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhPI9DxXTIhoqX0c5UkO9F74qPmpaY2UZQs9focVCLy1MGxWipngS93VOZ38FivgtVgF0RsIvGYy06UkyTX9axEV5aW66Ve_BX5w-nKIfEupwglONkmcUq9JgF-iEDoUEIkBChoRoaaDvA/s1600/20160505_091518.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhPI9DxXTIhoqX0c5UkO9F74qPmpaY2UZQs9focVCLy1MGxWipngS93VOZ38FivgtVgF0RsIvGYy06UkyTX9axEV5aW66Ve_BX5w-nKIfEupwglONkmcUq9JgF-iEDoUEIkBChoRoaaDvA/s640/20160505_091518.jpg" width="640" /></a></b><img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhOFbnYn-8ToXTJOJqvW-Ria3h41fOyzDI5fffNzXTw28uSWxpYhCx3WP-ne2Z-8RgQ-9D46gnp-jMoPDDI8kAyqaw_ceRFUGDn9piCJZO705uz20sgIuAEKM2QZC8vTYafF14CTMUBosc/s640/20160505_091211.jpg" width="640" /></div>
+<br />
+<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<b><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGwcT-j4p5hAvtjF6E1R8_ozuSdpTXkGZo1Vrw2lHUyI1gQjIfOO2UsbffkGOOD-Ods4XAEhaMb70f3Xhqmmo551m_AWYCGZy9vd1Ys2xDiC1549l-8R-43r8OQzBG42-6ohplot5iTDo/s1600/20160505_091442.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGwcT-j4p5hAvtjF6E1R8_ozuSdpTXkGZo1Vrw2lHUyI1gQjIfOO2UsbffkGOOD-Ods4XAEhaMb70f3Xhqmmo551m_AWYCGZy9vd1Ys2xDiC1549l-8R-43r8OQzBG42-6ohplot5iTDo/s640/20160505_091442.jpg" width="640" /></a></b></div>
+<b>
+</b>
+<br />
+<div class="separator" style="clear: both; text-align: left;">
+看完药店，我们就去著名辛特拉名单(Schindler's list）的工厂了。这个工厂今天还在用，所以不能进去参观，只能在外面看看。</div>
+<br />
+<div style="text-align: center;">
+&nbsp;（下两图：辛特拉名单的工厂）</div>
+<div class="separator" style="clear: both; text-align: center;">
+<b><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4LtxHUK9tfLux2zJdZxRPXRqVUuLC0HgrJwtfR4TrrUblPEvoMVTncmtYBmeEQGrYc9mVxfO1X0Uy1KLvqPSWWaRB3aqThOv0xDFvDLPbABknp-W_c1dtv6Q4s3a2UfexeGcxOZQ6r2g/s1600/20160505_093723.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4LtxHUK9tfLux2zJdZxRPXRqVUuLC0HgrJwtfR4TrrUblPEvoMVTncmtYBmeEQGrYc9mVxfO1X0Uy1KLvqPSWWaRB3aqThOv0xDFvDLPbABknp-W_c1dtv6Q4s3a2UfexeGcxOZQ6r2g/s640/20160505_093723.jpg" width="640" /></a></b></div>
+<b>
+<br />
+</b><br />
+<div class="separator" style="clear: both; text-align: center;">
+<b><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMb5thNx0o_k5EtaT6hErNiuVgAnqfv6NlrSkKGMg_8G3EjsP_r8hHnp3-mlXYpn0-aNSAhRPxHmjqCtX21U-3ZpKMNmZmKqVvyuk52xEaKJzpdPdibuWKeIGzLG-lSw6Vt1N6lsmkjd0/s1600/20160505_094329.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMb5thNx0o_k5EtaT6hErNiuVgAnqfv6NlrSkKGMg_8G3EjsP_r8hHnp3-mlXYpn0-aNSAhRPxHmjqCtX21U-3ZpKMNmZmKqVvyuk52xEaKJzpdPdibuWKeIGzLG-lSw6Vt1N6lsmkjd0/s640/20160505_094329.jpg" width="360" /></a></b></div>
+<b>
+</b>
+<br />
+<div class="separator" style="clear: both; text-align: left;">
+<b><span style="font-weight: normal;">&nbsp;下午就是行程的高潮，在奥斯维辛集中营进行March
+ of the 
+Living了。二战后期，当时德国大势而去，盟军逼到前线，纳粹就把前线集中营的人撤离，搬到内陆的集中营，当中很多人是步行撤离的，</span></b><span style="font-weight: normal;">这个过程就是</span><b><span style="font-weight: normal;">march。撤离过程中，由于缺乏食物，衣物，天气<b>，</b>本身疾病及走得慢被纳粹军官杀等等原因，很多人在途中死去,所以这个过程叫death
+ march。今天，犹太人再到他们祖先遭受惨痛的地方，再进行一次march，所以这就叫March of the 
+Living了。参加者按国家分批出发，步行三公里到典礼会场，大家都穿同一件衣服，有些人会带上以色列国旗<b>。</b>之后会有音乐演出，以色列官员发表讲话。</span></b></div>
+<div class="separator" style="clear: both; text-align: left;">
+<br /></div>
+<b>
+</b>
+<br />
+<div class="separator" style="clear: both; text-align: left;">
+<b><span style="font-weight: normal;">这个活动一年一次，不知道每年的这天奥斯维辛集中营会不会关，因为里面有超过一万名参加者。按惯例不同国家的人会交换徽章，当时Sheldon给了我们每人两个英国的，和其他国家的人交换。在正式进行march之前，大家会集合在一起，可以随意走动和其他国家的人交流。我当时和墨西哥的及阿根廷的人交换了。在正式出发时，我和一些英国老人交流过，一个表示自己不会买德国车，也有另一位老人表示对德国没有好感<b>。</b></span></b><span style="font-weight: normal;">后来，团里有个中年人说，德国的孩子应该都去集中营看看。</span><span style="font-weight: normal;">可见有些人对德国还是有情绪的，不过在年轻一代该不常见。</span><b><span style="font-weight: normal;"><b><br /></b></span></b></div>
+<div class="separator" style="clear: both; text-align: left;">
+<br /></div>
+<b>
+</b>
+<br />
+<div class="separator" style="clear: both; text-align: left;">
+<b><span style="font-weight: normal;">全球各地参加活动的人是年轻人为主，毕竟这个活动的主要目的是教育下一代这段历史。美国是最大的代表团，其他远方的国家包括南美，中美，南非也有。</span></b></div>
+<b>
+</b>
+<br />
+<div class="separator" style="clear: both; text-align: left;">
+<b><br /></b></div>
+<b>
+</b>
+<br />
+<div class="separator" style="clear: both; text-align: left;">
+<b><span style="font-weight: normal;">经历3公里的march之后就到典礼中心。波兰天气多变，路上有几天都是一时出太阳，一时下雨，今天也是。到典礼时刚下过雨，凳子都湿了。有个团友分享他们乱打乱撞之下去了VIP区，当时一个90多岁生还者坐在他的身边。他年纪大，不能说话，但手上写了张纸，说了自己被解放的日期，递给身边的人看。可以感受到这个生还者对经历极大痛苦后被释放的感受。</span></b></div>
+<b>
+</b>
+<br />
+<div class="separator" style="clear: both; text-align: left;">
+<b><br /></b></div>
+<b>
+</b>
+<br />
+<div class="separator" style="clear: both; text-align: left;">
+<b><span style="font-weight: normal;">典礼可能每次主办的国家都不一样，所以风格安排也不一样的。今年大家普遍觉得太长，音乐表演太多，有点喧宾夺主。另外就是虽然请了很多生还者出席，但没请他们上台（除了请了一位演讲），我们觉得参加者很多没见过生还者的，可以请他们上台坐。</span></b></div>
+<b>
+</b>
+<br />
+<div class="separator" style="clear: both; text-align: left;">
+<b><br /></b></div>
+<b>
+</b>
+<br />
+<div class="separator" style="clear: both; text-align: left;">
+<b><span style="font-weight: normal;">典礼有很多人讲话，还有以色列官员现场视频讲话，值得一提的是生还者Edward Mosberg。他和太太都是集中营走过来的。他多次被邀请出席演讲，都穿着当年的囚衣。今年他太太身体不好，由他的孙女儿穿着他太太的囚衣陪他出席。</span></b></div>
+<b>
+</b>
+<br />
+<div class="separator" style="clear: both; text-align: left;">
+<br /></div>
+<b>
+</b>
+<br />
+<div class="separator" style="clear: both; text-align: left;">
+<b><span style="font-weight: normal;">Edward Mosberg的演讲令在场所有人都震撼。他用非常激动的态度叙述了当年的惨况，他一大家子十几人很多都死了。他越说越激动，大家都以为他快要心脏病发。他说了不能原谅。他的愤怒在他的表情神态，说话语气都表露无遗。</span><span style="font-weight: normal;"><span style="font-family: &quot;simsun&quot;; font-size: 11pt; line-height: 115%;">那种恨即使<span lang="ZH-CN">70</span>年已经过去，依然放不开。 (他及其他人演讲的<span lang="ZH-CN">youtube</span>视频链接在<b>【6】)</b>。当时还有主持典礼的人想把他拉下来，不过观众都一同反对。</span></span></b></div>
+<b>
+</b>
+<br />
+<div class="separator" style="clear: both; text-align: left;">
+<b><br /></b></div>
+<b>
+</b>
+<br />
+<div class="separator" style="clear: both; text-align: left;">
+<b><span style="font-weight: normal;"><span style="font-family: &quot;simsun&quot;; font-size: 11pt; line-height: 115%;">后来Maureen和在英国大屠杀博物馆工作的Lynda(她的博物馆在后记有述）分享了她们见过的生还者演讲。曾经也有遇到过极端相反，原来说好会出来分享，但真的要说的时候却什么都说不出来。她们遇到大部分的人都是平静的，事前也会和家属沟通好，以防演讲期间有事发生。她们有遇到过生还者是不结婚的，因为情感被严重摧毁了。每个生还者都有不同故事，经历大屠杀后有很多不同感觉<b>。</b>也有特别乐观积极的，例如后记里说到在集中营生孩子的Anka，当时我们在英国大屠杀博物馆听了她女儿Eva Clarke的分享。&nbsp;</span></span></b></div>
+<b>
+</b>
+<br />
+<div class="separator" style="clear: both; text-align: left;">
+<b><br /></b></div>
+<b>
+</b>
+<b>
+</b>
+<br />
+<div class="separator" style="clear: both; text-align: left;">
+<b><span style="font-weight: normal;"><span style="font-family: &quot;simsun&quot;; font-size: 11pt; line-height: 115%;">这个march原来的意义是为了纪念当日受苦的人，只是现实这个活动却有太多的欢乐气氛。当时大家都穿一样衣服，到处自拍，交朋友，感觉就像跑马拉松一样。</span></span></b></div>
+<b>
+</b>
+<br />
+<div class="separator" style="clear: both; text-align: left;">
+<b><br /></b></div>
+<b>
+</b>
+<br />
+<div style="text-align: center;">
+<br />
+<div class="separator" style="clear: both; text-align: left;">
+<b><span style="font-weight: normal;"><span style="font-family: &quot;simsun&quot;; font-size: 11pt; line-height: 115%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; （下几图：活动当日现场参加者）</span></span></b></div>
+<b>
+</b></div>
+<br />
+<b>
+</b>
+<b><span style="font-weight: normal;">
+</span>
+</b><br />
+<div class="separator" style="clear: both; text-align: left;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: left;">
+<b><br /></b></div>
+<b>
+</b>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<b><b><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0Uz0QGX_nGB-CXuc_WZ-sJsGICX-J2iMtQ9PVJMtpVH9EjgFTQUKWFpGRK-6iO6VnRWdPYPUIap5BDIRUNNvj-BZvKCnjW_Da2n5z5W47x-yEkXKA2iXoU3PSYA6z2Vcea0LItFV7xBE/s1600/20160505_120033.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0Uz0QGX_nGB-CXuc_WZ-sJsGICX-J2iMtQ9PVJMtpVH9EjgFTQUKWFpGRK-6iO6VnRWdPYPUIap5BDIRUNNvj-BZvKCnjW_Da2n5z5W47x-yEkXKA2iXoU3PSYA6z2Vcea0LItFV7xBE/s640/20160505_120033.jpg" width="360" /></a></b></b></div>
+<b>
+<br />
+</b><br />
+<div class="separator" style="clear: both; text-align: center;">
+<b><b><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiStl_Y931tgNEHJMk-uRBw08JXer84hcLQD8ODlwAuChxncVY6DM_BIwJu3ybsKx421ptPjN__WmdgFYpE1OWDRM94enPEb1bRN4y1t5CFv-4gTlWGFRN9GGCwwcH3HsiyTx57AdOWczY/s1600/20160505_120648.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiStl_Y931tgNEHJMk-uRBw08JXer84hcLQD8ODlwAuChxncVY6DM_BIwJu3ybsKx421ptPjN__WmdgFYpE1OWDRM94enPEb1bRN4y1t5CFv-4gTlWGFRN9GGCwwcH3HsiyTx57AdOWczY/s640/20160505_120648.jpg" width="360" /></a></b></b></div>
+<b>
+<br />
+</b><br />
+<div class="separator" style="clear: both; text-align: center;">
+<b><b><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiziLGx1MQ7VZJvi5YyzJEydzJimPxKNso3pM7TvMj4Y3zcyfveuxusn7mL306K1kytSxVfG4IOuqjM2D0Zy8e9egqVWc6An-KaWNEime2eABjz-DewKe_9TF_kFCBlMXENJocF8rMXGBg/s1600/20160505_121016.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiziLGx1MQ7VZJvi5YyzJEydzJimPxKNso3pM7TvMj4Y3zcyfveuxusn7mL306K1kytSxVfG4IOuqjM2D0Zy8e9egqVWc6An-KaWNEime2eABjz-DewKe_9TF_kFCBlMXENJocF8rMXGBg/s640/20160505_121016.jpg" width="640" /></a></b></b></div>
+<b>
+<br />
+</b><br />
+<div class="separator" style="clear: both; text-align: center;">
+<b><img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjp2ZGIisLeAz3Ie-82i5hOsupxANh-D-IPgebeh6-qKNRZKQfikDO-_irqyG4aQPirnHfSK9Fj89DUKRYxpoeV-3AUI_H9zlC_9Z6LLm6qM-YAiy5fBs4kg5EzuF55rPbe2VWRgiCkDXU/s640/20160505_122852.jpg" width="640" /><span style="font-weight: normal;">&nbsp;</span></b></div>
+<b>
+</b>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<b><span style="font-weight: normal;"><b><b><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhaU4fRTNHhDe8Hj7s-RoeeeWzFg4r-wBS8FOF3V710jgoxrZYH9Q6AsyzNXCp1C065SGc2wsvj4tHp5UbqTj_W9x0mc0fbBkkzQEt-Q3EN4GbsOOKJNq1nsyEgLNg93iI0b5uFc_CJykQ/s1600/20160505_142812.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhaU4fRTNHhDe8Hj7s-RoeeeWzFg4r-wBS8FOF3V710jgoxrZYH9Q6AsyzNXCp1C065SGc2wsvj4tHp5UbqTj_W9x0mc0fbBkkzQEt-Q3EN4GbsOOKJNq1nsyEgLNg93iI0b5uFc_CJykQ/s640/20160505_142812.jpg" width="360" /></a></b></b> </span></b></div>
+<b>
+</b>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<b><b><b><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYuKYmuZDezhc6mmW8Pir-dDVzE7jmyexbURbfjudEGkPrBE_lo6jOs61Ce9rS0htCkpQK4AmKliRd1ib1C8gwb2vhGL8MJhsND6W4yGfJVttoM9UVTNflanRCf11c1GGZQO9rdqoCQq0/s1600/20160505_144440.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYuKYmuZDezhc6mmW8Pir-dDVzE7jmyexbURbfjudEGkPrBE_lo6jOs61Ce9rS0htCkpQK4AmKliRd1ib1C8gwb2vhGL8MJhsND6W4yGfJVttoM9UVTNflanRCf11c1GGZQO9rdqoCQq0/s640/20160505_144440.jpg" width="640" /></a></b></b></b></div>
+<b>
+</b>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<b><span style="font-weight: normal;">（下图：地上的卡是参加者插上的）</span></b></div>
+<b>
+</b>
+<br />
+<div style="text-align: center;">
+<b>
+</b></div>
+<div style="text-align: center;">
+<b><b><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRbb75wEMnQSmYVl5_tejdf9yg_gbscV4hB0fNAP3WG4Wg0NzFq_vuIMQp8V-fkNezP2izahV73DH8-FXcdEufLOR49fXCzrK08LWLeY_H2IduG3PwE21yU1MUIZtThY1o3CmLNanammM/s1600/20160505_145538.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRbb75wEMnQSmYVl5_tejdf9yg_gbscV4hB0fNAP3WG4Wg0NzFq_vuIMQp8V-fkNezP2izahV73DH8-FXcdEufLOR49fXCzrK08LWLeY_H2IduG3PwE21yU1MUIZtThY1o3CmLNanammM/s640/20160505_145538.jpg" width="360" /> </a></b></b></div>
+<div style="text-align: center;">
+（下两图：以色列号角）<b><b> </b></b></div>
+<div style="text-align: center;">
+<b><b><b><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjcRN43y3v_HtRxmWp3oxTLwY7QVmc2rc_T1PjFG9R13EKfrGhXbu6clB7f5BCUhXXz5aMbcwyWO_R-9OUJ-JIw6J1ohdPqBcC3lucr02QprTjbPzk89PU8rmoG0v9Uo3PdFLq4TYl1B-w/s1600/20160505_140308.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjcRN43y3v_HtRxmWp3oxTLwY7QVmc2rc_T1PjFG9R13EKfrGhXbu6clB7f5BCUhXXz5aMbcwyWO_R-9OUJ-JIw6J1ohdPqBcC3lucr02QprTjbPzk89PU8rmoG0v9Uo3PdFLq4TYl1B-w/s640/20160505_140308.jpg" width="360" />&nbsp;</a></b></b></b></div>
+<div style="text-align: center;">
+<b><b><b><b><b><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9VRmSnta3cRJwEL5sRb2mMCtPxFlPrAbUbDyyHBu8gdEHxNkYGo8AgvPGsSVQGXf0ndLkwKOk151FaJGAwPPzPKRFPd_UKb3H7Ks9qNgTZdQ1iXhg_tQYJRZCDB1mp71__TB2Ai9dnqQ/s1600/20160505_140350.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9VRmSnta3cRJwEL5sRb2mMCtPxFlPrAbUbDyyHBu8gdEHxNkYGo8AgvPGsSVQGXf0ndLkwKOk151FaJGAwPPzPKRFPd_UKb3H7Ks9qNgTZdQ1iXhg_tQYJRZCDB1mp71__TB2Ai9dnqQ/s640/20160505_140350.jpg" width="640" /></a></b></b> </b></b></b>(下图：墨西哥人，估计参加过活动多次，和别人交换了很多徽章)<b>
+</b></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<b><b><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-tyKg79UbVNnNUm_6Lx9DrxDly9nNq0yhMCpBeEbJefRpcH26M1mS30giP64gxI5CbXlC1waU8Z-Yp8GMQGoAZm-BgTAY3D1_fZvJ0yCQqaux0GAsjBKCYxwH4SJVKYboi3Ilf67OIoM/s1600/20160505_125255.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-tyKg79UbVNnNUm_6Lx9DrxDly9nNq0yhMCpBeEbJefRpcH26M1mS30giP64gxI5CbXlC1waU8Z-Yp8GMQGoAZm-BgTAY3D1_fZvJ0yCQqaux0GAsjBKCYxwH4SJVKYboi3Ilf67OIoM/s640/20160505_125255.jpg" width="360" /></a></b></b></div>
+<b>
+</b>
+<br />
+<div style="text-align: center;">
+<b>
+</b>(下图：上图墨西哥人某年和香港交换的徽章)<br />
+<b>
+</b></div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMzt8tNVDHlzm7Cdk_fJZhb3BUOmWFvJGFhenZyRY5AZwPUQhUCbcwdbsIjVlhUU9w2mqK_icEwCzFWEqTqSN9h5Li1rRcP1293shqcJg7gQC1riZr2lzEGN_KP0wgRWVqRPyUC6taHUk/s1600/20160505_125344.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMzt8tNVDHlzm7Cdk_fJZhb3BUOmWFvJGFhenZyRY5AZwPUQhUCbcwdbsIjVlhUU9w2mqK_icEwCzFWEqTqSN9h5Li1rRcP1293shqcJg7gQC1riZr2lzEGN_KP0wgRWVqRPyUC6taHUk/s640/20160505_125344.jpg" width="640" /></a></div>
+<div style="text-align: center;">
+(下图：我和别人交换的阿根廷和墨西哥徽章)</div>
+<div style="text-align: center;">
+<b><b><b><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4S5hw2WMyGwFiGmpmZpHGI_t7jXPHnJeiD_eTDibLEgNW8oV-bSF8zW1RhNO2NOmiQoaG3LnrMbfxhyphenhyphenesjSn-4RGdzB3i533LoNghnu9iANjc78mus7Pkzok4gq5iiQHyx6yTazqKzJY/s1600/20160904_091052_%25E5%2589%25AF%25E6%259C%25AC.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="313" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4S5hw2WMyGwFiGmpmZpHGI_t7jXPHnJeiD_eTDibLEgNW8oV-bSF8zW1RhNO2NOmiQoaG3LnrMbfxhyphenhyphenesjSn-4RGdzB3i533LoNghnu9iANjc78mus7Pkzok4gq5iiQHyx6yTazqKzJY/s320/20160904_091052_%25E5%2589%25AF%25E6%259C%25AC.jpg" width="320" /></a></b></b>
+</b></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<b><br /></b></div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (下图：典礼)<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<b><b><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi-yrrzuPpYxIjYoU44Lt1xrqdigkv3zR0Bk1yR-sVQl01bm754MFjvXP_o6Nm9IDVEvtVcdTjS096sAQB-UT5hF03V910bEm5O30iKU3QkglOjGaQb6vOyLXMCmr1GLFjDdPRHMpBdzQE/s1600/20160505_165902.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi-yrrzuPpYxIjYoU44Lt1xrqdigkv3zR0Bk1yR-sVQl01bm754MFjvXP_o6Nm9IDVEvtVcdTjS096sAQB-UT5hF03V910bEm5O30iKU3QkglOjGaQb6vOyLXMCmr1GLFjDdPRHMpBdzQE/s640/20160505_165902.jpg" width="640" /></a></b></b></div>
+<b>
+<br />
+
+</b><br />
+<div class="separator" style="clear: both; text-align: center;">
+<b><br /></b></div>
+<b>
+</b>&nbsp;这个活动就此结束，晚上还有分享会。有天我们讨论到这个行程安排，我们去了3个集中营，另外还有犹太会堂，博物馆等等，问问我们觉得是否合适。我们都觉得这个行程是安排的很好，虽然我们看的是大屠杀，但犹太会堂也是犹太人文化一部分，也该去看一下。还有就是去Krakow的犹太社区会堂听生还者分享及会见当地年轻人我们也觉得很有获得。<br />
+<br />
+整体来说，这个活动是比我想象中能获得的更多。我是本着了解这段历史的心去看，然而最后获得的除了历史以外还有很多很多。首先没想到在这里会交朋友，所以还有后记。我后来同年7月份去英国时其中有个在伦敦的团友接待我，我们还和其他几个人一同去Lynda所在的大屠杀博物馆参观。<b><br /></b><br />
+<br />
+其次，因为我和犹太人一起，他们跟我说了很多犹太人的历史，习俗等等。我之前去过以色列，对犹太教的了解远没有这几天多。在耶路撒冷，犹太人是很严格的，安息日不用任何电器，但英国犹太人虽然他们遵守安息日，但未至于手机也不用。而团里也有世俗的犹太人（即什么都吃），也有很传统的。犹太人每天三次祷告，虔诚的成年男子会去犹太会堂一同祷告，规定一定要最少10人。我在酒店的时候天天也看到了。这个知识是在这个团学到的。
+ <br />
+<br />
+整个团里我感受最深是犹太人对历史的态度，这激发了我作为中国人对自己族人历史的很多思考。今年已经是战后第71年了，全世界各地的犹太人，尤其是年轻人还能聚集一起去走他们先人所走过的路，整个团里经常看到的字词是"Never
+ 
+again"。我看到犹太人付出很大的努力去记录这段历史，很努力的去教育下一代不要忘记。而每个国家的负责人都会拉赞助的，年轻人不用付高额的团费。英国方面，今年是第六年办这个团，第一年据说只有10来人参加，现在一年比一年多，今年是200多人。组织者也是付出很大努力拉赞助的。另外，很多生还者很活跃的去分享经历。其实绝大部分的人都是老了以后才走出来说的，他们要把这段经历夸过去并且说出来需要极大的勇气。他们这样做，都有一个共同目的，就是避免历史再次发生。<br />
+<br />
+对比起犹太人，我的感觉远没有那么深。虽然他们不一定有直接亲属在大屠杀期间身亡，但他们真是感同身受。我还听说过有犹太人不敢参加这个团，因为觉得太难面对。Maureen也说曾经有人想一个人去，被她极力劝止，因为情感上太难受，必须要家人扶持才行。而我作为一个外人，我只觉得恐怖，毛骨刺然，他们那种深刻的感情我是感受不到的。但从他们的态度，我看到他们在乎，知道是他们族人一段很悲痛的历史，要去了解而不是随着时间过去而忘记。不在乎的话，根本连看都不想看的。从这点我看到犹太人的民族性很强，我也明白到爱国表现有什么，最基本是关心，了解，然后再进一步看看可以做什么（这点后记还有感受）。<br />
+<br />
+这个旅程大家都非常难忘，March
+ of the Living英国官方网页说是"life-changing 
+journey",对犹太人说他们很多人是这么认为，参加过这个团后就觉得不一样了。我个人是毕生难忘，激发很多思考。他们旅程完结回家之后，都向身边的人介绍这个团。
+ <br />
+<br />
+<b>后记</b><br />
+我们团里的Lynda是英国大屠杀博物馆职员【7】。这博物馆诺丁汉附近一个小村子Laxton，叫Beth
+ Shalom，意思是house of 
+peace,是个私人博物馆，这个大屠杀博物馆就连英国犹太人很多都不知道。他们定期会邀请生还者去分享，当时他们还在发展一个高科技项目，就是把生还者造成一个三维投影，预先给他们录好上千条问题，以便他们那天不在，后人看着三维投影仪，对他们问问题，他们会回答，就好像他们还在世一样。大家对她的博物馆很感兴趣。我当时就说，我7月底会去英国，到时候大家一起去。<br />
+<br />
+7月底的时候我去了英国，在伦敦时，在团里认识的M让我住她的家里，非常感谢她。我们约好一同去博物馆，那个地方没有公交车，只能自己开车。当时我们总共5个人。Lynda知道我们去还跟她的上司说，她的上司联系我们并给我们专门安排了一天的行程，当时感觉我们像贵宾一样。因为他们博物馆要自负盈亏，我们有人去博物馆时就马上捐款了。后来我们知道他们制作三维投影成本很高，就想着帮他们筹款，也联系上面所说在美国搞电影的Greg看看知不知道有没有其他办法。看到这个，我明白什么叫真正的“爱国”。你爱第一步是了解，了解后看到自己有什么能做就尽力去做。<br />
+<br />
+介绍一下博物馆，这里原来是一家基督徒的家里。家里孩子知道大屠杀的事情，很想做些事，就问他们父母要这个房子，改装成博物馆了，所以在这么一个偏远的地方。这里外面是个纪念花园，上面刻有捐款者想纪念的人的名字。里面有礼堂，给生还者分享用。来这里参观的有很多学校团体，Lynda说有些学校离得很远，甚至曾经有过大清早5点就出发过来的。<br />
+在博物馆一个很重要要传递的信息就是欺凌，她分享曾经有学生听到犹太人被欺凌的事后，马上站起来说自己一定不会欺凌，这就是学习历史的意义了。<br />
+<br />
+今天的分享者是在集中营出生的Eva
+ Clarke，2016年刚有本书叫Born Survivor,里面是关于三个在集中营出生的婴儿的故事，当中一个是她。她妈妈在进行death 
+march的时候生她的。当时她在火车上已经三周，完全没有食物及只有少量水。他们最后到达Mauthausen集中营（位于奥地利）时，她开始作动,当时她的体重只有80磅。作动的时候，她独自一人从火车爬到大卡车上，而大卡车是载满了尸体，还有患有伤寒等疾病的人。在大卡车上她根本不能动，就在那里生产。当时婴儿没有呼吸，动也不动的，也只有报纸裹着。很快她们母女到达集中营，另一个同时囚犯的医生替她剪脐带及拍婴儿，她才开始呼吸。她们没有一送到集中营就被毒死，那是因为1945年4月28日时集中营已经没有毒气了，她在29日生。要是她们早些被送去也不能活下来。另外还有两个在集中营生孩子的女人，整个怀孕过程都是自己面对，而且每天都做长时间苦工，在严重营养不良情况下都没有流产，真是奇迹。<br />
+<br />
+Eva Clarke说到一个故事也是令我很深刻的。在death march的路上一个农夫看见她妈妈那么可怜给了她一碗牛奶，当时纳粹军官也看到不过没有禁止。她觉得是那杯牛奶救了她的命。自从这个故事后，我觉得那怕是一滴水也是救命的，不能随便浪费。<br />
+<br />
+现在介绍一下博物馆主体，是关于纳粹期间的儿童的被送往国外的故事，叫The
+ 
+Journey。故事主人翁是Leo,是个在德国柏林生活的10岁犹太男孩。故事从他的家里开始，到学校，商店，火车等，直到他坐儿童火车到英国。当中每一过程展出纳粹宣传的攻势，反犹太的政策及反犹太主义。每一步的设计都是还原原来的，看着就好像真实的一样。例如学校就是还原一个原来的教室，里面的桌子还是当时在柏林用过的。此外，还有孩子的玩具和行李箱，都是真实的。当时那些孩子离开家里去外国都是没有家长陪同的，陪着他们的就只有玩具。我当时看到那些玩具和行李箱感受真是非常深。就简简单单的一个玩具，一个行李箱，多少的回忆，多大的历史任务。尤其看到玩具主人对玩具的介绍时，我是非常感动的。<br />
+<br />
+<div style="text-align: center;">
+（下几图：博物馆的纪念花圃） </div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihiimdYVRvz9UvFaVWkIqHk8XFyGC6qwWfx55os5KzS8g5quunXe5EzLHcKClHd-GpxQ3sWAZLQwMaLLUmx2h5rJbHP2iLDd3UDUxAH0DOeaso0IPR5xI2133ZW_T4NxEX-R0QjPDm_84/s1600/20160725_105249.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihiimdYVRvz9UvFaVWkIqHk8XFyGC6qwWfx55os5KzS8g5quunXe5EzLHcKClHd-GpxQ3sWAZLQwMaLLUmx2h5rJbHP2iLDd3UDUxAH0DOeaso0IPR5xI2133ZW_T4NxEX-R0QjPDm_84/s640/20160725_105249.jpg" width="640" /></a></div>
+&nbsp; <br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbxnZ1AhvxhBhZaTqRSCkmGhmiwLKr7M4Xnv87Xr_u1pMHMo9JETZ9bUySdGQ1PXP3_octyiP330pXVtgqqBbcKndyevaCxxVQDM7KQKZgVLuDtqRsBDZmp-PV9ZlcMjVYIJzMIl9Kkyw/s1600/20160725_105429.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbxnZ1AhvxhBhZaTqRSCkmGhmiwLKr7M4Xnv87Xr_u1pMHMo9JETZ9bUySdGQ1PXP3_octyiP330pXVtgqqBbcKndyevaCxxVQDM7KQKZgVLuDtqRsBDZmp-PV9ZlcMjVYIJzMIl9Kkyw/s640/20160725_105429.jpg" width="640" /></a></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGrYgurFn5_41ioXC1H4e2PBgcO5HqzIiqv3L2z2Jll2s-dvcFsaR2YbzxH5s_5yJlPGlGUU8EI5eTB2BhC9q69xsHWS1087twWMQ6rIE0649d501JedVHeIriP5so9RIUqSWXsDNL9AU/s1600/20160725_105623.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGrYgurFn5_41ioXC1H4e2PBgcO5HqzIiqv3L2z2Jll2s-dvcFsaR2YbzxH5s_5yJlPGlGUU8EI5eTB2BhC9q69xsHWS1087twWMQ6rIE0649d501JedVHeIriP5so9RIUqSWXsDNL9AU/s1600/20160725_105623.jpg" /></a></div>
+<div style="text-align: center;">
+&nbsp;<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgprvodQ3J2hfOKcF4YhqrlUrSlMicmzKlDMmxCDeBxa_2t3ZSpbpKTBLfeHEtqunRePmXsITtzb0Stmndj7GC1SNvPFWaAdjg94b63NB61Gv0EN9qAe9wSowkAalS6iYm5-4afsIV_Of8/s1600/20160725_123829.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgprvodQ3J2hfOKcF4YhqrlUrSlMicmzKlDMmxCDeBxa_2t3ZSpbpKTBLfeHEtqunRePmXsITtzb0Stmndj7GC1SNvPFWaAdjg94b63NB61Gv0EN9qAe9wSowkAalS6iYm5-4afsIV_Of8/s640/20160725_123829.jpg" width="360" />&nbsp;</a></div>
+<div style="text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQ9dJyH0ILq_kAMbPz0GWpCnu6DJzWH4ochz4KwhGo_Q5Vf6vRJtzUP9KwL27c95Pm32N9xNW8Crx96NrjiW0IOXpkPsOoVhpNXDAjlmiX6VQP-vZus1t3smin_IkAa3mGHjwg4Gf9X5U/s1600/20160725_123953.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQ9dJyH0ILq_kAMbPz0GWpCnu6DJzWH4ochz4KwhGo_Q5Vf6vRJtzUP9KwL27c95Pm32N9xNW8Crx96NrjiW0IOXpkPsOoVhpNXDAjlmiX6VQP-vZus1t3smin_IkAa3mGHjwg4Gf9X5U/s640/20160725_123953.jpg" width="360" />&nbsp;</a></div>
+<div style="text-align: center;">
+&nbsp;<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvjVFs1AH1tlSOj6mgs7QWDuDK9goVLKew5JHsBjfT1BDxcHEY_Y1wXg6x5Emw84QVdLDZ06EkrNkU1RYbnibzKrwPZU_1wgsRFIchTin43jjtdRX3OPbuM7WqaMzMx1_izbovgGXoIww/s1600/20160725_135033.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvjVFs1AH1tlSOj6mgs7QWDuDK9goVLKew5JHsBjfT1BDxcHEY_Y1wXg6x5Emw84QVdLDZ06EkrNkU1RYbnibzKrwPZU_1wgsRFIchTin43jjtdRX3OPbuM7WqaMzMx1_izbovgGXoIww/s640/20160725_135033.jpg" width="640" /></a> </div>
+<div style="text-align: center;">
+（下图:到博物馆分享的英国生还者的照片） </div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfFlTxFAbCQqfMONyVYRMWJ9ENfHNHBBxZl1w2NTUiMXKexLECZk5U7SJjQJZh-vC9xTWVYfL8ORTeV0gKAPuqGtSaCyV_gQrp1aKpuqCPfJtI2WcPJLwImX-rRh1BXrOCf6yx_l2-joE/s1600/20160725_122922.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfFlTxFAbCQqfMONyVYRMWJ9ENfHNHBBxZl1w2NTUiMXKexLECZk5U7SJjQJZh-vC9xTWVYfL8ORTeV0gKAPuqGtSaCyV_gQrp1aKpuqCPfJtI2WcPJLwImX-rRh1BXrOCf6yx_l2-joE/s640/20160725_122922.jpg" width="640" /></a></div>
+<br />
+<div style="text-align: center;">
+（下图：博物馆大楼） </div>
+&nbsp;&nbsp; <br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhC4SgRqhpnLqR-FVJzRqS7jB4HQ5m5ig6N6gn2vNDR_EKj58_00Jen_l3aKpAg9uoPBF1KCyPprO48ST_Xl7xVIaFtr_nVpNAChY1vxKBOjiPN8XloFWzJ0f3JGbi1vgXlkLF0vqoszAk/s1600/20160725_135036.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhC4SgRqhpnLqR-FVJzRqS7jB4HQ5m5ig6N6gn2vNDR_EKj58_00Jen_l3aKpAg9uoPBF1KCyPprO48ST_Xl7xVIaFtr_nVpNAChY1vxKBOjiPN8XloFWzJ0f3JGbi1vgXlkLF0vqoszAk/s640/20160725_135036.jpg" width="640" /></a></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+（下三图：The journey开始，首先我们去到Leo的家里）</div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMfFMEExQll06cv1KIYmhnaiSfPfJcLwx2yexABvyNsUaqsQav69t0Jz497axlB3I3Bq4wImJl8eLf7ogPTw60rNRriL7VYCGF4eRRuQTK5rcQ7n9ccrJjSk7vvwVBF_hopd9vGSu_vnk/s1600/20160725_135724.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMfFMEExQll06cv1KIYmhnaiSfPfJcLwx2yexABvyNsUaqsQav69t0Jz497axlB3I3Bq4wImJl8eLf7ogPTw60rNRriL7VYCGF4eRRuQTK5rcQ7n9ccrJjSk7vvwVBF_hopd9vGSu_vnk/s640/20160725_135724.jpg" width="640" /></a></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhmXLUfAI97FrAqYgf9PSlVkaIz8bf1CMaPfZNObrHt2VErSDs2GpgTGc0QmTQEJ9Xk8Q-FBgOs4NcvTE4BoW6DvvmtERRUffXS6HyxyzvnVODYy3jsU2wuKNfagHy7l0A45MY6p-u_1w/s1600/20160725_135911.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhmXLUfAI97FrAqYgf9PSlVkaIz8bf1CMaPfZNObrHt2VErSDs2GpgTGc0QmTQEJ9Xk8Q-FBgOs4NcvTE4BoW6DvvmtERRUffXS6HyxyzvnVODYy3jsU2wuKNfagHy7l0A45MY6p-u_1w/s640/20160725_135911.jpg" width="640" /></a></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1R0uUKTAqewvIOv_GK3CoUvI3ovbMEGzcCe6EONfXDRAaerG3ya2p6TGDispa-3TjFxIRGLiPjHSgMddtYqlZQLEYoEMj-fSIqGDCe0Reg-9kyBX4wXltjrKGGLFHF41JLuRbzpkR1lQ/s1600/20160725_140308.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1R0uUKTAqewvIOv_GK3CoUvI3ovbMEGzcCe6EONfXDRAaerG3ya2p6TGDispa-3TjFxIRGLiPjHSgMddtYqlZQLEYoEMj-fSIqGDCe0Reg-9kyBX4wXltjrKGGLFHF41JLuRbzpkR1lQ/s640/20160725_140308.jpg" width="360" />&nbsp;</a></div>
+<br />
+&nbsp;（下三图：我们到了Leo的学校，图里是Lynda为我们讲解。由于没经本人同意，照片做过处理）<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAgaiyGKvIFaX3NNVax2Wum0XnkmmA_zEp4LQvYpvU5I6ZGW3Rm3E7SqUA9xUD9nhQxxE8GKFbcQT_pRISieY9vq6OqZwj7Rpirr-ucXvQi4xlA9JMHs7Zzu4waqDpyZCeTg2WL4JRzQw/s1600/20160725_140423_%25E5%2589%25AF%25E6%259C%25AC.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAgaiyGKvIFaX3NNVax2Wum0XnkmmA_zEp4LQvYpvU5I6ZGW3Rm3E7SqUA9xUD9nhQxxE8GKFbcQT_pRISieY9vq6OqZwj7Rpirr-ucXvQi4xlA9JMHs7Zzu4waqDpyZCeTg2WL4JRzQw/s640/20160725_140423_%25E5%2589%25AF%25E6%259C%25AC.jpg" width="640" /></a></div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDHR-WNWMVWbs23JeS3TdJZQ8xs1SoadRnGP2nZuKjo1D6PH70HFAp1QYP35-dZdX3BLmNqvkmacENxZT41FRxowr3pJKrZskF88_Defk9t4V2LFnOT4pn5jCByBAtOB1t0PYfOWgHbZc/s1600/20160725_140415_%25E5%2589%25AF%25E6%259C%25AC.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDHR-WNWMVWbs23JeS3TdJZQ8xs1SoadRnGP2nZuKjo1D6PH70HFAp1QYP35-dZdX3BLmNqvkmacENxZT41FRxowr3pJKrZskF88_Defk9t4V2LFnOT4pn5jCByBAtOB1t0PYfOWgHbZc/s640/20160725_140415_%25E5%2589%25AF%25E6%259C%25AC.jpg" width="640" /></a></div>
+<div class="separator" style="clear: both; text-align: center;">
+<br /></div>
+<div style="text-align: center;">
+（下图：这些桌子确实是当年在柏林用过的）</div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhv0pMDh3EajJbC0ZFz-VOOZbStWX5oMFcAH-t3WHSVA2TdfJ_PhQhfNwTFsFv47lXOReExh1slCOcdhpDYbeGRR6ESO1ReuLJXoquaOXOFg0e8C6Te4Hu7Lrl7ikV8zamL54eEGWQQZpE/s1600/20160725_140455.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhv0pMDh3EajJbC0ZFz-VOOZbStWX5oMFcAH-t3WHSVA2TdfJ_PhQhfNwTFsFv47lXOReExh1slCOcdhpDYbeGRR6ESO1ReuLJXoquaOXOFg0e8C6Te4Hu7Lrl7ikV8zamL54eEGWQQZpE/s640/20160725_140455.jpg" width="640" /></a></div>
+<br />
+<div style="text-align: center;">
+（下几图：当时的商店，有反犹太标语）</div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9a2_tg2IopLBpsHDrJI9uU77qC1z_X3jzktYvUwFN81hyphenhyphengBQF5W5aAhWsgY24H62q7goA-OpOila14iChjwJujKSa-qUw3esGxxXm-BNIfx3OHuqm3UCNa74_l7oWFaxnH6ErVewn7Us/s1600/20160725_142047.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9a2_tg2IopLBpsHDrJI9uU77qC1z_X3jzktYvUwFN81hyphenhyphengBQF5W5aAhWsgY24H62q7goA-OpOila14iChjwJujKSa-qUw3esGxxXm-BNIfx3OHuqm3UCNa74_l7oWFaxnH6ErVewn7Us/s640/20160725_142047.jpg" width="360" /></a></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiByXcNV0JQ20Gl3pGodNsUZVaZF0OtqbqCjgMRNU2z7nop8qUR7eHNAjuVJbaAoykgmvnppR_EalO9GQ22TNximNJ8zYIPmrDINhSFQYM8R1X8L1CxBxfBdTnEba-N1wyuBdNZziqVq0c/s1600/20160725_142117.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiByXcNV0JQ20Gl3pGodNsUZVaZF0OtqbqCjgMRNU2z7nop8qUR7eHNAjuVJbaAoykgmvnppR_EalO9GQ22TNximNJ8zYIPmrDINhSFQYM8R1X8L1CxBxfBdTnEba-N1wyuBdNZziqVq0c/s640/20160725_142117.jpg" width="360" /></a></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifTJ7uKIRI217zYw6DYqVvnvV_XnK5ztrN_cZha4j1tnLMNKN6RFLicE2-0Q1Bn_Wq4qIfeNDgVPFR2vnU5phlP8EZ6eDmwHL8atOXUtFowccTExgHTkjq9CHdRnk2RCI1ZkC-ndrMdz8/s1600/20160725_142609.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifTJ7uKIRI217zYw6DYqVvnvV_XnK5ztrN_cZha4j1tnLMNKN6RFLicE2-0Q1Bn_Wq4qIfeNDgVPFR2vnU5phlP8EZ6eDmwHL8atOXUtFowccTExgHTkjq9CHdRnk2RCI1ZkC-ndrMdz8/s640/20160725_142609.jpg" width="360" /></a></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLHhnUXFtJpzw6zsS14UH2yOVPloSoqjnmLJfj6EzUq_QW_gYEPPK0N5J2CUJ3UAfBjQg_kQ8pKst7OP51xgMY4hNu-yBlrcJyku4Qvai2LmTzBnXc39J3TYxACFIfTZEx_5TvMM-frHQ/s1600/20160725_142630.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLHhnUXFtJpzw6zsS14UH2yOVPloSoqjnmLJfj6EzUq_QW_gYEPPK0N5J2CUJ3UAfBjQg_kQ8pKst7OP51xgMY4hNu-yBlrcJyku4Qvai2LmTzBnXc39J3TYxACFIfTZEx_5TvMM-frHQ/s640/20160725_142630.jpg" width="360" /></a></div>
+（下两图；当时很多小孩就秘密藏在家里的柜子，第二张图就是他们藏身的地方，照片拍的不清楚）<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgLsub4cUwjVnIycpo4yD-raE-7kV2GNk8BjONNpiKlsW2g5o3WU-AJ5R-0LSzwpGStm7vFiwppSo4dITZrfH2xF4yKw9HzwHGfTTOCyYIgNSLRMaJnGG0bzn-QO0hCyQlsXlhFH0FRlaU/s1600/20160725_143301.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgLsub4cUwjVnIycpo4yD-raE-7kV2GNk8BjONNpiKlsW2g5o3WU-AJ5R-0LSzwpGStm7vFiwppSo4dITZrfH2xF4yKw9HzwHGfTTOCyYIgNSLRMaJnGG0bzn-QO0hCyQlsXlhFH0FRlaU/s640/20160725_143301.jpg" width="640" /></a></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwQm-eozHcUFxmg9eYV6qA-JxxzsK3Bg1nddLWQLn82dAT5EFJMUFkbDcOyOqjj0iaWQoDLBWFdFPBq8o9azKMoair18jUyqCBl9LrAVGZd8vKPKTbmVRdQUBQxv2PeiyWPQKtIoWVlr8/s1600/20160725_143305.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwQm-eozHcUFxmg9eYV6qA-JxxzsK3Bg1nddLWQLn82dAT5EFJMUFkbDcOyOqjj0iaWQoDLBWFdFPBq8o9azKMoair18jUyqCBl9LrAVGZd8vKPKTbmVRdQUBQxv2PeiyWPQKtIoWVlr8/s640/20160725_143305.jpg" width="640" /></a></div>
+<div class="separator" style="clear: both; text-align: center;">
+（下图：火车，当时有专门的儿童签证给他们逃去安全的地方，所有小孩都没有大人陪同的） </div>
+<br />
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgspZB9IixbuZ0Xq8GoaBEREu0Fc76rfDVyn7c4lXS4PKNlNuH0j24Wp_EBCn95bmaCk1M8CulTPq4QxJ2plJE5FzkxLZ4cb1LPkfRuSl-V3jv-4RwWYfzI6_TU7XC32b8rhDiR5tG9QWo/s1600/20160725_145103.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgspZB9IixbuZ0Xq8GoaBEREu0Fc76rfDVyn7c4lXS4PKNlNuH0j24Wp_EBCn95bmaCk1M8CulTPq4QxJ2plJE5FzkxLZ4cb1LPkfRuSl-V3jv-4RwWYfzI6_TU7XC32b8rhDiR5tG9QWo/s640/20160725_145103.jpg" width="640" /></a><br />
+<div style="text-align: center;">
+（下图：为了识别犹太人，当年纳粹逼他们外出一定要带的黄星） </div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbbM-wYVRjklhWxb0M2XYwfv_YjJoYDf9iAmWfbv3E3NbcVhDo2ZLsOftDVxEn7H4o-z_QzJ-Gttq0jblcyCl8XXMow7VEmq1vyJG5COl-Vr7n0Ia4KiSCPDDrwbsGmZMP0Z8JzV2_zxs/s1600/20160725_145903.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbbM-wYVRjklhWxb0M2XYwfv_YjJoYDf9iAmWfbv3E3NbcVhDo2ZLsOftDVxEn7H4o-z_QzJ-Gttq0jblcyCl8XXMow7VEmq1vyJG5COl-Vr7n0Ia4KiSCPDDrwbsGmZMP0Z8JzV2_zxs/s640/20160725_145903.jpg" width="360" /></a></div>
+<div class="separator" style="clear: both; text-align: center;">
+（下几图：看到令我感动得不得了的玩具）</div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhy5i5ONoPZrPUD-ORIQkah-ih9yAaDp53YrBVQzz4dQfMfmElR1vGKCiGu0E2K-GoKscR-6WI0b1O0NY-9AV9goNiHuN8ibOtGTEjx0BJtg47bDtTWeWOlyO5SFk2lI6pyztDi6K5g7tA/s1600/20160725_143556.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhy5i5ONoPZrPUD-ORIQkah-ih9yAaDp53YrBVQzz4dQfMfmElR1vGKCiGu0E2K-GoKscR-6WI0b1O0NY-9AV9goNiHuN8ibOtGTEjx0BJtg47bDtTWeWOlyO5SFk2lI6pyztDi6K5g7tA/s640/20160725_143556.jpg" width="360" />&nbsp;</a></div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgnW30_rqYwMNwQ35sQFf7QWhztG3Lokji8TJx7xOPYrf5ncxoo2J0u8lz2H6QoUp49fCjex6QBxClTMZ3Soqb7cIWF5f4AQl0r8AwY0EkCKsi50mUFRN40tDo8hCFlrtUXPlsS-GHR5CQ/s1600/20160725_145337.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgnW30_rqYwMNwQ35sQFf7QWhztG3Lokji8TJx7xOPYrf5ncxoo2J0u8lz2H6QoUp49fCjex6QBxClTMZ3Soqb7cIWF5f4AQl0r8AwY0EkCKsi50mUFRN40tDo8hCFlrtUXPlsS-GHR5CQ/s640/20160725_145337.jpg" width="360" /></a> </div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgIj9ZUwU6OBYsjl1zH5Rpq3DuxSeU2cERkg9-2EZ6EkZpQeS9h-ERfsHVfUsnL94gzLaDh4QkUy_9iFayOCEWTJHVHnRpuHsmLUAnFX8d5ZWj1qHK_xKT7FGBAz2Mb4U7Mf__CTe0uoKk/s1600/20160725_143601.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgIj9ZUwU6OBYsjl1zH5Rpq3DuxSeU2cERkg9-2EZ6EkZpQeS9h-ERfsHVfUsnL94gzLaDh4QkUy_9iFayOCEWTJHVHnRpuHsmLUAnFX8d5ZWj1qHK_xKT7FGBAz2Mb4U7Mf__CTe0uoKk/s640/20160725_143601.jpg" width="640" />&nbsp;</a></div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgKB3nw6gMM1iVBE1mFPvMoSPSo2CR-tEGhVUsC-X8JkUhyW-PQzO6OpTQkO9U15T9Zoyatro46VAly103uGudN9d7TWId1696aWL6Wft8KrJtEMkXhxJfvXnbtWLzKiQqxIDWhg1DJO-M/s1600/20160725_145430.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="320" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgKB3nw6gMM1iVBE1mFPvMoSPSo2CR-tEGhVUsC-X8JkUhyW-PQzO6OpTQkO9U15T9Zoyatro46VAly103uGudN9d7TWId1696aWL6Wft8KrJtEMkXhxJfvXnbtWLzKiQqxIDWhg1DJO-M/s320/20160725_145430.jpg" width="180" /></a>&nbsp;</div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjS53Q2RxysG46BwdLxzlUnDy8put9AbM-_WCidlahbGN_HAlGQMNHBhjyVXgTKPZPYxZdjFu78vSEo9xRIRcFHhToTGZwrXRRh-mxGAk1heUEweY52fj3EUsmV-BNB1RKkkmKTsI18LOE/s1600/20160725_145523.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="180" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjS53Q2RxysG46BwdLxzlUnDy8put9AbM-_WCidlahbGN_HAlGQMNHBhjyVXgTKPZPYxZdjFu78vSEo9xRIRcFHhToTGZwrXRRh-mxGAk1heUEweY52fj3EUsmV-BNB1RKkkmKTsI18LOE/s320/20160725_145523.jpg" width="320" /></a><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhk8m9Q8ZPmHuPFWUrwF1PwEbp6oJWlF3BtedOl6dEDavA5-cCxQN_PghQTsCXoWntzTuYuTtwQldMLe5uV6-vh9W-Ra7LsTJu9KchpCBOg_l6kKnbiUXzTlNURNykDsnDRKjLZedMGuos/s1600/20160725_145517.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="180" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhk8m9Q8ZPmHuPFWUrwF1PwEbp6oJWlF3BtedOl6dEDavA5-cCxQN_PghQTsCXoWntzTuYuTtwQldMLe5uV6-vh9W-Ra7LsTJu9KchpCBOg_l6kKnbiUXzTlNURNykDsnDRKjLZedMGuos/s320/20160725_145517.jpg" width="320" /></a> </div>
+<div class="separator" style="clear: both; text-align: center;">
+（下图:曾经在收容所帮助孩子的人） </div>
+<div style="text-align: center;">
+&nbsp;<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivomxWUdDj_rUvQz4N_9m3eiyKSB_QfspeYXAXKsayPanYotyZbBCIyfhp6LyxY3D6egXmfIQTNrvwuS0ic3ZdVml3JEEII9WssafPc6GF6uhzHJ6PY1gx51_b5ObF1n1Bus1eFDs-pHY/s1600/20160725_145416.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivomxWUdDj_rUvQz4N_9m3eiyKSB_QfspeYXAXKsayPanYotyZbBCIyfhp6LyxY3D6egXmfIQTNrvwuS0ic3ZdVml3JEEII9WssafPc6GF6uhzHJ6PY1gx51_b5ObF1n1Bus1eFDs-pHY/s640/20160725_145416.jpg" width="360" />&nbsp;</a></div>
+<div style="text-align: center;">
+（下两图：当年孩子们用过的箱子） </div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgeqTNvhAwk0Ill_ehgDjJuTrP6iNTJWYJvEwTOWxWo_SrdRX-Yfj8ZYBqe8BDwymmsCJGDuU97LDjmaQ7EGasHZp_8FJqKz9qSZLsygo0Q8Oll9aWQ5EWhUJQutrutggqmslhlplH7kUQ/s1600/20160725_145130.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgeqTNvhAwk0Ill_ehgDjJuTrP6iNTJWYJvEwTOWxWo_SrdRX-Yfj8ZYBqe8BDwymmsCJGDuU97LDjmaQ7EGasHZp_8FJqKz9qSZLsygo0Q8Oll9aWQ5EWhUJQutrutggqmslhlplH7kUQ/s640/20160725_145130.jpg" width="640" />&nbsp;</a></div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEVTD-EChIa8RL5xc7o47ofUELk_pl8KomX0sAOPXOAK_o2wRiPxtNuun-alkP3ZiImT-2AKgavpkAuW6NGbwlh58k5QZX9GBZRgjzw5LYIQUYbO_Dvu7EdqorQt1DIg2DWAjOQdIMR6I/s1600/20160725_145302.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEVTD-EChIa8RL5xc7o47ofUELk_pl8KomX0sAOPXOAK_o2wRiPxtNuun-alkP3ZiImT-2AKgavpkAuW6NGbwlh58k5QZX9GBZRgjzw5LYIQUYbO_Dvu7EdqorQt1DIg2DWAjOQdIMR6I/s640/20160725_145302.jpg" width="640" /></a> </div>
+<div style="text-align: center;">
+&nbsp;（下两图：当年逃难的孩子们的照片）</div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWGiEHTvZ17krbPTQo5nE8eHZ_HA0LuoZnKoQ216QZ38M0h6W5zqTq_Qm2fP1TU28NwL2hH0thZQ6-cNZ_VIK4z9T9AtmtRCI6nx7BD6A2zXFzCPNN_7XtbuNKb9NLOSz6siwnop7HK2o/s1600/20160725_145121.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWGiEHTvZ17krbPTQo5nE8eHZ_HA0LuoZnKoQ216QZ38M0h6W5zqTq_Qm2fP1TU28NwL2hH0thZQ6-cNZ_VIK4z9T9AtmtRCI6nx7BD6A2zXFzCPNN_7XtbuNKb9NLOSz6siwnop7HK2o/s640/20160725_145121.jpg" width="640" /></a></div>
+<div style="text-align: center;">
+&nbsp;<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgo1CeWa4Gzar9QKolf8uKY-Cs1NAM4jYx7HvhTdXbFqZo09NQXkpmge1oE5YlZgQzBWOjBesT4RFVrX7uMivHef5G7Aj1-ZAyMsHnJgmQaltag-ZQuCBLOtfY4W147NQX9SDGIEztL248/s1600/20160725_150544.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgo1CeWa4Gzar9QKolf8uKY-Cs1NAM4jYx7HvhTdXbFqZo09NQXkpmge1oE5YlZgQzBWOjBesT4RFVrX7uMivHef5G7Aj1-ZAyMsHnJgmQaltag-ZQuCBLOtfY4W147NQX9SDGIEztL248/s640/20160725_150544.jpg" width="640" /></a></div>
+<div class="separator" style="clear: both; text-align: center;">
+（下图 ：当年在湖区的孩子，右一站着的是Arek Hersh）</div>
+<div class="separator" style="clear: both; text-align: center;">
+&nbsp;<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi6OOnIbgVg4kv07emIyUYKEZ9Kx4V9jcLZCRW18dtjrDh_jq2JBc1hq4UtLpKUa0UFjMzkI6YdxGJhC8rweOatxyGWJxpYrB_pL-7GrGbn1KUqFxCbfT6NEHzq6zBCWn5MrHevy6nfUgs/s1600/20160725_150229.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi6OOnIbgVg4kv07emIyUYKEZ9Kx4V9jcLZCRW18dtjrDh_jq2JBc1hq4UtLpKUa0UFjMzkI6YdxGJhC8rweOatxyGWJxpYrB_pL-7GrGbn1KUqFxCbfT6NEHzq6zBCWn5MrHevy6nfUgs/s640/20160725_150229.jpg" width="640" /></a></div>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjaiF6avpRDQc4ySEFxGvAkejaTtDvlJB_YphuIoBB0AeAKr13nj_kcj_AZGVKNBZGa1Y-N8mw6GnPfIjFwth773-6NeqqzhZhrShmisX4lbwrnD-H4RVkEDqsAo5YMSetmELvFkvcSazQ/s1600/20160725_150235.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjaiF6avpRDQc4ySEFxGvAkejaTtDvlJB_YphuIoBB0AeAKr13nj_kcj_AZGVKNBZGa1Y-N8mw6GnPfIjFwth773-6NeqqzhZhrShmisX4lbwrnD-H4RVkEDqsAo5YMSetmELvFkvcSazQ/s640/20160725_150235.jpg" width="640" /></a></div>
+<br />
+March of the Living和我们同车的生还者Eve Kugler当年也是上面孩子之一，她说其实当时她很害怕的，不知道前路如何。<br />
+<br />
+据Lynda分享，有一个生还者分享，自己当年被人家藏在柜子里，纳粹的人过来搜查的步伐声，像噩梦一样多年不能忘记，看过多次心理医生也没用，后来把事情说了出来，她就好了。<br />
+<br />
+<br />
+参观这个博物馆这段就是我March of the Living的额外收获，是意料不到的。<br />
+<br />
+离开伦敦，后来我去了湖区(Lake
+ District),当时发现Windermere图书馆有个小小纪念花园，是纪念当年而那里开展新生活的犹太孤儿，当时一下子想到Arek 
+Hersh了。他们这个项目是2015年才开始的。我看到下面纪念碑，心再一次感动得融化了。已经70年了，他们依然记得。当年的孤儿很多已经去世，但他们还记得他们。<br />
+<br />
+<div style="text-align: center;">
+(下图：位于Windermere图书馆前的纪念碑)</div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFSmJZUAUndKP-Z2Hfmla4s_Ca3zzVpGZhFoCc-r-tlhyjVXnHi-dVgDx3FBK4k_pdBlNWjRAZEARUH90vOMscRzOY3H-FUY_YbVoqYRYPXddf7REzqj45ycOm_obOVxnS_iIz_kCIkS8/s1600/20160803_101139.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="640" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFSmJZUAUndKP-Z2Hfmla4s_Ca3zzVpGZhFoCc-r-tlhyjVXnHi-dVgDx3FBK4k_pdBlNWjRAZEARUH90vOMscRzOY3H-FUY_YbVoqYRYPXddf7REzqj45ycOm_obOVxnS_iIz_kCIkS8/s640/20160803_101139.jpg" width="360" /></a></div>
+<div style="text-align: center;">
+&nbsp;（下图:位于Windermere图书馆前的纪念花圃）</div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhjPHqXxX0Ea40v2t446exb0dPfzl6WZzU9swK-fQk1B9XcPDJegKoVUASUrD4N0q-ikxhhp7UzkiIoqT8hCHe51IojaoB9CsUJ0UXeVbPnhU1g5SxzwAye5XTf3_PIu-HubQ6Rl7eiL1U/s1600/20160801_182645.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="360" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhjPHqXxX0Ea40v2t446exb0dPfzl6WZzU9swK-fQk1B9XcPDJegKoVUASUrD4N0q-ikxhhp7UzkiIoqT8hCHe51IojaoB9CsUJ0UXeVbPnhU1g5SxzwAye5XTf3_PIu-HubQ6Rl7eiL1U/s640/20160801_182645.jpg" width="640" /></a></div>
+<br />
+总括而言，这个旅程给我一生宝贵的收获，期间感动时刻好几个。听说过无数的小故事，除了触动了我的心外，当中还有对我有影响的。<br />
+<br />
+<span style="font-size: small;"><br /></span>
+<br />
+<div style="background-color: white; border: medium; color: black; overflow: hidden; text-align: left; text-decoration: none;">
+<div style="background-color: white; border: medium; color: black; overflow: hidden; text-align: left; text-decoration: none;">
+<span style="font-size: small;">【1】Polin博物馆：http://www.polin.pl/en</span></div>
+<div style="background-color: white; border: medium; color: black; overflow: hidden; text-align: left; text-decoration: none;">
+【2】Helise Lieberman介绍：<span style="font-size: small;">http://www.centrumtaubego.org.pl/personnel</span><br />
+<div style="background-color: white; border: medium; color: black; overflow: hidden; text-align: left; text-decoration: none;">
+<div style="background-color: white; border: medium; color: black; overflow: hidden; text-align: left; text-decoration: none;">
+<div style="background-color: white; border: medium; color: black; overflow: hidden; text-align: left; text-decoration: none;">
+<br />
+<span style="font-size: small;">【3】She waited for me: http://www.zwoje-scrolls.com/shoah/halina.html</span><br />
+【4】Krakow犹太社区会堂：<span style="font-size: small;">http://www.jcckrakow.org/en/</span><br />
+<span style="font-size: small;">【5】The shattered crytals ：http://www.shatteredcrystals.net/</span><br />
+<span style="font-size: small;">【6】2016 March of the Living典礼：https://www.youtube.com/watch?v=bulKW1nPp1k&amp;list=PLiDsKsm12xwD4A0Fzb4AcO9O2moD_vnJQ</span><br />
+<br />
+<span style="font-size: small;">如果只想看Edward
+ 
+Mosberg的演讲,9:30开始他变得激动：https://www.youtube.com/watch?v=SA-w8vyMPvc&amp;index=16&amp;list=PLiDsKsm12xwD4A0Fzb4AcO9O2moD_vnJQ</span><br />
+<br />
+<span style="font-size: small;">&nbsp;这是我们团里的人制作，关于整个行程点滴，包括Renee
+ 
+Salt在奥斯维辛的讲话:https://www.youtube.com/watch?v=uE389VMCvSI&amp;list=PLVl8m98T66b4_qzov-nhzSCMlH7goSQMX</span><br />
+<span style="font-size: small;">【7】英国大屠杀博物馆</span><span style="font-weight: normal;">The National Holocaust Centre and Museum</span><span style="font-weight: normal;">https://www.nationalholocaustcentre.net/</span></div>
+</div>
+</div>
+</div>
+</div>
+
+    
+    <a href="https://yhcqw.github.io/yhcq/">返回主目录</a></br></br></br>
+    </main>
+  
+
+    <script>
+        function toggleMobileMenu() {
+            var menuList = document.querySelector('.mobile-menu-list');
+            menuList.classList.toggle('active');
+        }
+
+        function hideMobileMenu() {
+            var menuList = document.querySelector('.mobile-menu-list');
+            menuList.classList.remove('active');
+        }
+    </script>
+</body>
+</html>
