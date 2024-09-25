@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中国的科研</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+
+    <style>
+        /* Add your custom styles here */
+
+        .menu-icon {
+            display: none;
+            cursor: pointer;
+        }
+
+        .mobile-menu-list {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 60%; /* Adjust width as needed */
+            background-color: #fff; /* Adjust as needed */
+            padding: 20px;
+            border-right: 1px solid #ccc; /* Adjust as needed */
+            z-index: 1000; /* Ensure it's above other content */
+            flex-direction: column; /* Display items vertically */
+            transition: width 2s;
+        }
+
+        .mobile-menu-list.active {
+            display: block;
+        }
+
+        .mobile-menu {
+            display: none;
+        }
+
+        .menu-title {
+            margin-left: 10px; /* Adjust margin as needed */
+        }
+
+        .menu-icon {
+            margin-right: 10px; /* Adjust margin as needed */
+            cursor: pointer;
+        }
+
+        .mobile-menu-list li {
+            display: block; /* Display list items vertically */a
+        }
+
+  @media only screen and (max-width: 768px) {
+    .menu-icon {
+        display: inline-block;
+        margin-left: 280px; /* Adjust as needed */
+        cursor: pointer;
+    }
+
+    .mobile-menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 10px;
+    }
+
+    .menu-title {
+        margin-right: auto; /* Pushes 目錄 to the far left */
+        margin-left: 10px; /* Adjust margin as needed */
+    }
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <!-- Removed the logo div -->
+            <nav>
+                <ul class="menu">
+                    <li><a href="https://yhcqw.github.io/yhcq/index.html">主页</a></li>
+                    <li><a href="#wenge">文革</a></li>
+                    <li><a href="#mao">毛年代其他</a></li>
+                    <li><a href="#society">社会</a></li>
+                    <li><a href="#people">人物</a></li>
+                    <li><a href="#foreign">外国历史</a></li>
+                    <li><a href="#mis">其他</a></li>
+                    <li><a href="#discussion">明辨是非</a></li>
+		    <li><a href="https://yhcqw.github.io/yhcq/thissite.html">关于本站</a></li>
+		    <li><a href="https://yhcqw.github.io/yhcq/Diary.html">我的日记</a></li>
+		    <li><a href="https://yhcqw.github.io/yhcq/longblog.html">我的长博客</a></li>
+                </ul>
+            </nav>
+
+            <div class="mobile-menu">
+                <div class="menu-title">目錄</div>
+                <div class="menu-icon" onclick="toggleMobileMenu()">&#9776;</div> <!-- Three horizontal lines -->
+                <!-- Move the ul.mobile-menu-list inside the .mobile-menu div -->
+                <ul class="mobile-menu-list">
+                    <li><a href="https://yhcqw.github.io/yhcq/index.html" onclick="hideMobileMenu()">主页</a></li>
+                    <li><a href="#wenge" onclick="hideMobileMenu()">文革</a></li>
+                    <li><a href="#mao" onclick="hideMobileMenu()">毛年代其他</a></li>
+                    <li><a href="#society" onclick="hideMobileMenu()">社会</a></li>
+                    <li><a href="#people" onclick="hideMobileMenu()">人物</a></li>
+                    <li><a href="#foreign" onclick="hideMobileMenu()">外国历史</a></li>
+                    <li><a href="#mis" onclick="hideMobileMenu()">其他</a></li>
+                    <li><a href="#discussion" onclick="hideMobileMenu()">明辨是非</a></li>
+		    <li><a href="thissite.html" onclick="hideMobileMenu()">关于本站</a></li>
+		    <li><a href="Diary.html" onclick="hideMobileMenu()">我的日记</a></li>
+		    <li><a href="https://yhcqw.github.io/yhcq/longblog.html">我的长博客</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+      
+<h3 style="text-align: center";>中国的科研</h3>
+
+ 
+
+    
+
+
+<span style="font-size: small;">去年和今年回国一趟，走访了好些单位做了好几个报告。当中和人交流和饭桌上听到很多不会从正规途径知道的事情，深有感触，结合我的政治科学知识，记下此文。</span>
+<br/>
+
+
+<span style="font-size: small;"><br/></span>
+
+
+<span style="font-size: small;">虽然文章是写给自己看，不过网络公开，以防万一，一些事情不能太明说。</span>
+<br/>
+
+
+<span style="font-size: small;"><br/></span>
+
+
+<span style="font-size: small;">去年去了一个地方政府大力支持的单位，该单位拿到了一个几十亿项目（称之为项目A），但同时又另一个项目在竞争（称之为项目B）。项目A和项目B最终中央政府只会选一个，现在只是前期发展，项目A为了修路已经花了1亿。</span>
+<br/>
+
+
+<span style="font-size: small;"><br/></span>
+
+
+<span style="font-size: small;">曾经去过项目A办公室和有关人士了解，项目B都是花钱买回来的技术，项目A多项是自己研发。说起来很好听，自己研发，可以借助这个项目把中国技术提高。不过现在多项技术都达不到指标，差的最远的现有技术和项目想要的达到5个量级。他也引用了一个例子，有一项激光技术美国人于70年代已经研发出来，但中国到2017年才拥有那个技术。中国的科技比人落后了40年。人家已经研究出来的事情，你再研究也没什么意义，只有第一次研发才能出好文章，但是你就需要这个技术，最终还是得研究出来。</span>
+<br/>
+
+
+<span style="font-size: small;"><br/></span>
+
+
+<span style="font-size: small;">我听了他所说，觉得这个项目很不靠谱，技术的东西不是一二十年间就能提升的。落后了几十年的技术，然后一下子就要做世界同类型项目的带头，我觉得很不踏实，最后做出来的质量如何，我很怀疑。实际上和同领域的专家谈过，他说项目A和项目B都不支持，觉得很扯。对了，开头说了这个项目地方政府大力支持，听说当初批这个项目的其中一个人是我认识的,属于市政府财政部，当年认识的他就是一个“积极分子“，出了名会拍马屁，非常适合当官的。</span>
+<br/>
+
+
+<span style="font-size: small;"><br/></span>
+
+
+<span style="font-size: small;">我去另一个研究所做报告，他们研发项目很多，但是很多东西都是买的，所以很受限。他们现在有个大项目，其中一个重要的配件国内能提供，但质量不到位，那就只能买别人的技术。但这个技术太高级，别人又不卖给你，现在这个项目还没有很好的解决方案。另外，据他们说，国内的东西因为便宜，也有外国人买，但都没做过测试，质量没有保证，买了自己负责。测试意思是，例如产品能承受最低温是20度，但你希望在10度用，但产品没有做过测试，你买回来要不自己做，要不用错了就自己负责。想起来这次国内坐出租车时，一位司机说过，他用过日本的螺丝刀，是很贵，但质量很好，一辈子都不用换。中国的便宜但质量差，中国人的思路就是，坏了你花钱再买，要不然你只买一次他们就不能挣钱了。中国出产的东西，难道就上不了档次么？</span>
+<br/>
+
+
+<span style="font-size: small;"><br/></span>
+
+
+<span style="font-size: small;">去另一个研究所作报告，他们有很多研发项目，但很多零件都是买回来的，有些东西不好买，会很受限。他们现在有个大项目就遇到这个问题，国内能提供的技术不是他们想要的，也就只能买了，但这个东西外国人不愿意卖，现在还在寻求解决办法。</span>
+<br/>
+
+
+<span style="font-size: small;"><br/></span>
+<span style="font-size: small;">
+<span style="font-size: small;">不久之前，我所在领域，国家要发展一个超大项目，国内有激烈讨论，一帮是国内帮，支持全部用国内的技术(该技术都由单位A提供)，一帮是国外帮，建议买外国的，因为人家技术成熟。实际上国内那套也是出过问题，所以有人不支持，后来国内帮获胜，背后帮助国内帮的大牛所在的单位（称之为单位B)被送礼了，是大仪器最重要的一个组件。有了这个组件，就要买配件，不然礼物没用，之后该单位也批了5000万出来，据说是该单位历来最大的项目。</span></span>
+<br/>
+
+
+<span style="font-size: small;">因为你收了人家的礼物，不买人家的配件不太好，但按规定，配件都很贵，需要招标，而且单位B的人也觉得单位A不很靠谱，希望通过招标来买配件，然后单位A的人直接说不参与招标，这下单位B就没办法了，只好乖乖买单位A的全部配件，据说水分很重，买国外的都没那么贵。</span>
+<br/>
+
+
+<span style="font-size: small;"><br/></span>
+
+
+<span style="font-size: small;">首先，送礼这件事情在严格控制贪腐的国家就不合法， 但这事在法制不健全的中国发生了，然后变成捆绑式销售。单位B花钱还得当单位A是大爷。两个单位还曾经在设计问题上发生冲突，最后妥协。我觉得单位A招数很高，据说送的组件已经做了很久，一直放着，然后现在当大礼送人了，还能捞一笔大生意。另外也是单位B的人不懂技术，才要听人指点，要是单位B的人懂得话，拿了组件就一句谢谢，之后就可以都自己弄了。以前我在国内，也会觉得科学家不是工程师，买别人的东西，自己不研发很应该，但去了现在的单位，看见科学家都为实现自己的目的自己做研发，现在就觉得这样全部买别人的东西不太应该了。这里暴露了两个问题，第一是制度问题，引起送礼以及后面一连串的问题，最后即使有钱也买不了你有钱能买到最好的。第二是人才培养，国内培养出来的人才技能是单面而不是多面，以致单位B很被动，花钱还得当人是大爷。</span>
+<br/>
+
+
+<span style="font-size: small;"><br/></span>
+
+
+<span style="font-size: small;">中国现在在科研上很大手笔，相对于十年前，工资翻了很多倍，虽然物价也在涨，但这个工资的涨幅绝对不符合市场经济。而且给的科研经费理论实验不分，做理论的3年也给几百万。钱既然给了你，用不完也会舍不得退回去，也就使劲的花。请人来做访问很随便，包机票和酒店，做个报告就行，根本不用有什么真正合作。现在大项目很多，拿上亿的经费很容易，只要你会吹你就能拿到钱，曾经有行内专家告诉我，某大项目的首席根本不懂他所领导的项目，还打电话问他。</span>
+<br/>
+
+
+<span style="font-size: small;"><br/></span>
+
+
+<span style="font-size: small;">今次我遇到一个年轻的首席，看上去像70后，知道他是80后后吓了一跳。听说他是当了首席这两年老了很多，在大陆当大教授还要操心秘书该做的事情，例如自己去财务处报销。说到报销，大陆又是一大堆问题，这里不跑题多说。我觉得作为国家领导，你想科学家们为国家挣面子，就给人改善工作环境专心科研，就连报销这么小的事情也要人家亲自去财务处排队，而且不清不楚的规矩（近期亲身经历，另文详谈）往往要人家跑很多趟，看到这里我会觉得领导并不爱科学家们。</span>
+<br/>
+
+
+<span style="font-size: small;"><br/></span>
+
+
+<span style="font-size: small;">刚才提到，这十年工资翻了很多，其实是多了一种制度 - 年薪制。以前那种低薪还依然存在，那是有编制的，意思是工作固定不会被炒鱿鱼，但年薪制是有发表文章的压力。两者的工资差是可以是翻倍甚至更多。我觉得这个制度使人心理不平衡，谁愿意低工资？大家都会选择高工资，但又有很大的压力。现在还有一种更逼人的制度叫“非升即离”，达到一定的年期，你不升职的话就要离开，这个离开的时间大概就是四十多岁，在还房贷，孩子还小的时候。这种压垮人的制度，我觉得实在是体现了对人的不爱。给你钱，就是要把你榨干。你要是爱不是这样，爱是不会靠钱的，还会体贴你的需要，为你考虑，让你可以专心工作。</span>
+<br/>
+
+
+<span style="font-size: small;"> 
+<span style="color: black;"><span style="font-size: xx-small;"> </span></span></span>
+<br/>
+
+
+<span style="font-size: small;"><span style="font-size: small;">有朋友在日本搞汽车工程，就分享了一些国内这行研究和日本的不同。在日本，大学搞这方面研究的会和企业合作，共同开发，但国内会分家，以致国内文章会灌水，为了有好的结果，实验数据有过滤。但是如果和企业合作就不能这样做了，你研究出来成果不好，人家不给你钱的。的确，中国的汽车工业很落后。说起来，韩国学术界也是有同样问题，也是非常多造假（参考文末链接）。曾经和韩国的留学生聊过，不想在韩国读博，也是因为学术造假问题。为什么中韩两个国家这方面又那么像？这个问题留着后面研究。</span></span>
+<br/>
+
+
+<span style="font-size: small;"><br/></span>
+
+
+<span style="font-size: small;">搞科研是不是必定要一大笔钱？从我现在的组看来并不是，他们几个人的小团队研发的小技术是世界少有的，也做出了很创新的成果。 这个技术在中国完全没有，我和国内有关人士交流他们都对我现在单位这个技术很感兴趣。问题在哪？首先，这个技术比起那些大项目是低成本的，也不能上新闻。现在大项目拿钱那么容易，能多拿钱谁都想多拿钱，这些小钱谁要？另外，现在文章压力那么多，搞技术的不知道几年才能出一篇，中国的科学家们根本没心思没精力去想这些小东西。可大科技都是小科技撑起来的，人家日本真正发达，是从低层开始，然后一步一步撑起来，成为世界一流。中国就靠有钱直接就把世界一流买下来了。可是，上面也说过，一些高科技人家不一定卖给你的。从国内现在的情况，我看到的是，<span style="font-size: small;">花钱能买科研，能到一定高度，但你要爬到最高，必须得有自己的技术，不然你花同样的钱都是在别人之下。现有的制度下，那怕你花很多的钱也只能买到次货（好像上面单位A单位B的例子）。</span></span>
+<br/>
+
+
+<span style="font-size: small;"><br/></span>
+
+
+<span style="font-size: small;"><span style="font-size: small;">中国科研还有另外一个问题，特大的项目往往是先定下项目再定科学目标而不是反过来。好像上面单位A单位B的例子，是先有仪器，再定科学目标，这样项目参与者都会为了自己的利益说话，都希望仪器为了服务自己的目的而建设，这样往往不能把仪器发挥得最好。为了挣面子 ，领导都希望有能上新闻的项目，有了项目，下面再慢慢考虑细节和科学目标等事情，这会造成利益冲突。但如果先确立科学目标，再为了符合科学目标去定做仪器，那就不一样了。</span></span>
+<br/>
+
+
+<span style="font-size: small;"><br/></span>
+
+
+<span style="font-size: small;">最近日本和韩国打贸易战，我才知道原来韩国的半导体原料是来自日本。三星是全球半导体的龙头，但原来半导体的原料是高科技。韩国一直从日本进口这个高科技原料，日本不卖韩国这个原料，使韩国经济受创，全国还发起近年来最大规模的罢买日货运动。最近一篇Korea Herald（ <a href="http://www.koreaherald.com/view.php?ud=20190711000653">Why is Korea so dependent on Japanese materials?</a>） 的新闻就分析的很好：</span>
+<br/>
+
+
+<span style="font-size: small;"><br/></span>
+
+
+<span style="font-size: small;"><i>Japan was able to become competitive in the materials by “spending a lot
+ of time and money” to develop basic technologies to overcome its 
+position of being a resource-poor island country. </i></span>
+<br/>
+
+
+<span style="font-size: small;"><br/></span>
+
+
+<span style="font-size: small;"><i>“As a fast-follower, South Korea has been busy catching up in various 
+technologies, thereby neglecting original technologies,” said Lee 
+Hang-koo, a senior researcher at the Korea Institute for Industrial 
+Economics &amp; Trade. <br/><br/>Poor basic science has 
+often been blamed for Korea’s failure to produce a Nobel laureate in 
+science, even as Japan has produced 23.  </i></span>
+<br/>
+
+
+<span style="font-size: small;"><i><br/></i></span>
+
+
+<span style="font-size: small;"><i>
+</i>
+</span>
+<br/>
+
+
+<span style="font-size: small;">第二段也恰恰是中国的情况，中国和韩国的经济发展模式非常近似，两者都是暴发户。对于中国，可能是大国吧，比韩国更想成为"fast-follower"，甚至是带头者，所以就好像韩国那样，往上层投资，忽略基础。韩国卖的半导体越多，日本挣的钱也越多。然而你是靠人家的，人家不卖给你，你就很惨了。中国和韩国，也许现在表面上很光鲜，韩国也已加入发达国家之列，有些地方可能拍得上日本。但问题一来，两者真正实力就露出底牌了。</span>
+<br/>
+
+
+<span style="font-size: small;"><br/></span>
+
+
+<span style="font-size: small;">曾经有朋友说过，觉得中国落后是因为起步慢，我觉得没那么简单。中国是起步慢，但中国的优势是人多，把人都培养成人才，落后的地方不能快速追回来？日本的科学家，数据处理实验都会做，中国还是两者分家，这样的模式下去两者距离只会越来越大。我觉得现在日本的情况就是有才没人（因为少子化），而中国就是有人没才。</span>
+<br/>
+
+
+<span style="font-size: small;"><br/></span>
+
+
+<span style="font-size: small;">日本在明治维新之前（日本现代化，在150年前发生）是比中国还落后的国家。日本在战后不久(1949年）就有第一个本土的诺贝尔物理学奖得奖者-<span style="font-weight: normal;"><span lang="ja">湯川 秀樹</span>(Yukawa)，当时也就现代化后80年。西方国家比日本早发展100年，日本也就不到100年的时间就追上了。最根本的原因是什么？我觉得是思维，人家就看到基础的重要性，大力发展基础，成为今天的科技强国。中国人要是思维模式不改变，再有钱人力再多，时间越长和人家差距只会越大。</span></span>
+<br/>
+
+
+<span style="font-size: small;"><br/></span>
+
+
+<span style="font-size: small;"><span style="font-size: small;">当年苏联崩溃，有些科研项目就停了（由于我只知道一些自己所在行业的例子，为了不曝光身份我就不引用了）。 中国政治前景其实我不看好，加上近几年经济衰退，万一政治发生动荡，或者经济进一步不行，不能再买科研，现在的项目我不知道会怎样。</span></span>
+<br/>
+
+
+<span style="font-size: small;"><br/></span>
+
+
+<span style="font-size: small;">有人问我，上面说那个国内帮国外帮的大项目，支持那一派，我觉得根本就不该搞。既然有那么多钱，我觉得就该投入去搞基础，不是把项目买回来。从底层开始，打好基础，过几代人有望成为领先，但你没有稳固的根基就盖高楼，永远都盖不过人家的。</span>
+<br/>
+
+
+<span style="font-size: small;"><br/></span>
+
+
+<span style="font-size: small;">最后，其实我觉得很愧疚，人家出钱请我去做报告，最后我好像在做间谍套取情报那样.....</span>
+<br/>
+
+
+<span style="font-size: small;"><br/></span>
+
+后记（2019年12月）：
+<br/>
+
+今天看新闻看到韩国科研项目的问题，放在此记录一下
+<br/>
+
+
+<span style='background-color: white; font-family: "georgia" , sans-serif; font-weight: bold; letter-spacing: -0.800000011920929px;'>[News analysis] Plans for Korea’s lunar orbiter were unrealistic and poorly conceived from the start</span>
+<br/>
+
+http://english.hani.co.kr/arti/english_edition/e_national/919133.html
+<br/>
+
+
+<span style='background-color: white; color: #333333; font-family: "arial" , "georgia" , sans-serif;'>“Even a satellite that’s going to be orbiting the earth takes four or five years to develop, so it was nonsense to think we could develop a satellite to orbit the moon in just three years. The project got off on the wrong foot,” a senior KARI official who is familiar with the project’s history told the Hankyoreh over the phone</span>
+<br/>
+
+
+<span style='background-color: white; color: #333333; font-family: "arial" , "georgia" , sans-serif;'><br/></span>
+
+
+<span style='background-color: white; color: #333333; font-family: "arial" , "georgia" , sans-serif;'><span style="caret-color: rgb(0, 0, 0); color: black; font-family: georgia, sans-serif; font-weight: bold; letter-spacing: -0.800000011920929px;">Korean orbiter project in danger of being scrapped altogether due to frequent revisions</span></span>
+<br/>
+
+
+<span style='background-color: white; color: #333333; font-family: "arial" , "georgia" , sans-serif;'>http://english.hani.co.kr/arti/english_edition/e_national/919131.html</span>
+<br/>
+
+
+<span style="font-size: small;"><br/></span>
+
+
+<span style="font-size: small;"><br/></span>
+
+
+<span style="font-size: small;">参考资料：</span>
+<br/>
+
+
+<span style="font-size: small;"><span style="font-weight: normal;"><span style="font-size: small;">韩国学术造假</span></span></span>
+<br/>
+
+
+<div class="pg-title">
+<span style="font-size: small;"><span style="font-weight: normal;">The Problem With Plagiarism in South Korea </span></span></div>
+
+
+<div class="pg-title">
+<span style="font-size: small;"><span style="font-weight: normal;">https://learningenglish.voanews.com/a/the-problem-with-plagiarism-in-south-korea/1204434.html </span></span></div>
+
+
+<span style="font-size: small;"><span style="font-weight: normal;"><span class="hs_cos_wrapper hs_cos_wrapper_meta_field hs_cos_wrapper_type_text" data-hs-cos-general-type="meta_field" data-hs-cos-type="text" id="hs_cos_wrapper_name">South Korea Faces Massive Plagiarism Scandal</span></span></span>
+<br/>
+
+
+<span style="font-size: small;"><span style="font-weight: normal;"><span class="hs_cos_wrapper hs_cos_wrapper_meta_field hs_cos_wrapper_type_text" data-hs-cos-general-type="meta_field" data-hs-cos-type="text" id="hs_cos_wrapper_name">http://www.ithenticate.com/plagiarism-detection-blog/south-korea-faces-massive-plagiarism-scandal#.XcKy-tVS_IU </span></span></span>
+<br/>
+
+
+<div id="td-headline" itemprop="headline">
+<span style="font-size: small;"><span style="font-weight: normal;">Korea’s Plagiarism Problem </span></span></div>
+
+
+<div id="td-headline" itemprop="headline">
+<span style="font-size: small;"><span style="font-weight: normal;">https://thediplomat.com/2014/08/koreas-plagiarism-problem/ </span></span><br/>
+<span style="font-size: small;"><span style="font-weight: normal;"><br/></span></span>
+<span style="font-size: small;"><span style="font-weight: normal;"><br/></span></span></div>
+
+
+<span style="font-size: small;">
+<span style="font-size: small;"> </span></span>
+<br/>
+
+
+<div class="firstHeading" id="firstHeading" lang="en">
+<span style="font-size: small;">
+<span style="font-size: xx-small;">
+<span style="font-size: xx-small;"> </span></span></span></div>
+
+
+<span style="font-size: small;"><br/></span>
+
+
+<br/>
+
+
+<div class="MsoNormal">
+<span style="font-size: small;"><br/></span></div>
+
+
+<span style='background-color: white; font-family: "arial" , "georgia" , sans-serif; font-size: small;'> 
+
+</span>
+
+    <a href="https://yhcqw.github.io/yhcq/">返回主目录</a></br></br></br>
+    </main>
+  
+
+    <script>
+        function toggleMobileMenu() {
+            var menuList = document.querySelector('.mobile-menu-list');
+            menuList.classList.toggle('active');
+        }
+
+        function hideMobileMenu() {
+            var menuList = document.querySelector('.mobile-menu-list');
+            menuList.classList.remove('active');
+        }
+    </script>
+</body>
+</html>
