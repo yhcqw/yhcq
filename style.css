@@ -325,3 +325,95 @@ h6 {
 }
 .h3note:first-child {margin-top:1.2em;}
 .h3note:last-child {margin-bottom:1.2em;}
+
+/*for images*/
+.picture-container {
+    margin-top: 20px
+    text-align: center;
+    margin: 20px;
+}
+
+.picture {
+    width: 80%; /* Adjust the width as needed */
+    max-width: 500px; /* Maximum width of the image */
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+.enlarged-picture {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+
+.enlarged-picture.active {
+    display: block;
+}
+
+.enlarged-picture img {
+    width: 800px; /* Adjust the width as needed */
+    cursor: pointer;
+}
+
+.image_caption, .lead_image_caption, #storytext figcaption, #storypagemaincol p.slideshow_caption {
+    font-family: "Merriweather Sans", Sans-serif;
+    font-weight: 600;
+    line-height: 17px;
+    font-size: 18px;
+    display: block;
+    caption-side: bottom;
+    margin:.1em .5em .7em .1em;
+    text-align: center; /* Center text within its container */
+}
+
+.red {
+    color: red;
+}
+
+p {
+    margin: 20px 0;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.overlay-img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.overlay img {
+    border: 5px solid #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.video-container {
+    text-align: center; /* Center the video horizontally */
+    margin-bottom: 20px
+}
+
+.video-container video {
+    display: inline-block; /* Ensure the video is treated as an inline block element */
+     width: 40%
+}
+
+.video-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+}

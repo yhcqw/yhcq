@@ -4,7 +4,6 @@ from ebooklib import epub
 import shutil
 import os
 import subprocess
-import glob
 #create_art_commands.retrieve_OEBPS()
 
 # Specify the path to your EPUB file
@@ -33,34 +32,12 @@ for file in files:
 #with open("tmp.txt", "w") as new:
 #    for i in new_entries:
 #        new.writelines(i)
-html_files = glob.glob(os.path.join("longdiary_new_html", "*.html")) continue here, and edit pictures caption
 
-create_art_commands.rewrite_new_html_to_upload("longdiary_new_html/2016_nuremberg_trial.html", "longdiary_upload/2016_nuremberg_trial.html","2016_nuremberg_trial")
-
-"""
-html_files = glob.glob(os.path.join("longdiary_html", "*.html"))
-#html_files = [os.path.splitext(os.path.basename(file))[0] for file in html_files]
-for file_path in html_files:
-    new_path = file_path.replace("longdiary_html","longdiary_new_html")
-    title_text, extracted_text = create_art_commands.extract_text_from_html(file_path,"template_longdiary.html",new_path)#convert donwloaded blogger to github(the folder "longdiary_html" contains original blogger html files)
-"""
-"""
-folders = [item for item in os.listdir("longdiary_html_pics") if os.path.isdir(os.path.join("longdiary_html_pics", item))]
-folders = [
-    "2018_tokyo_sovereignty_museum",
-    "2018_yamato_kure",
-    "2019_daejeon_cemetery",
-    "2018_stanford_uni"
-]
-
-
-for folder in folders:
-    print(folder)
-    create_art_commands.download_images_from_html(f"longdiary_new_html/{folder}.html", f"longdiary_html_pics/{folder}")
-"""
-
-#with open("example.html","w") as out:
-#     out.write(extracted_text)
+file_path = 'longdiary_html/駐美大韓帝國公使館.html'  # Replace with your HTML file path
+title_text, extracted_text = create_art_commands.extract_text_from_html(file_path)
+print(title_text)
+with open("example.html","w") as out:
+     out.write(extracted_text)
 """
 shutil.copy("index.html","index_temp.html")
 date_list = [f"{year:04d}{month:02d}" for year in range(1999, 2011) for month in range(1, 13)]

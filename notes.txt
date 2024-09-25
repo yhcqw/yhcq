@@ -1,6 +1,6 @@
 (http://beijingspring.com/c7/xw/wlwz/20121203213558.htm)访问</a>，
 
-
+foder longdiary_html(directly from blogger) longdiary_new_html(with template_longdiary)
 
 articles:
 wenge-201110wangyiying.html 作者为10几岁的小孩被教导抽打地主。当年不懂事，多年后内疚至极。“在斗争大会上，她要是不老实，我们贫下中农喊‘她不老实，顽固’时，你们就用竹鞭子用力抽打她，叫她老老实实。如果她再不老实，就再用力抽打她。你们两兄弟如果不打她，打她时，不用力抽，连你们一起斗争”。”
@@ -14,7 +14,28 @@ extracttitle.py -->titles and pages extracted from tmphtml/ and written into all
 
 writetest.txt -->201101 extracted text
 
+gh auth login
 
-pdfextract.py
+git add .
+git add longdiary_html_pics/march_of_the_living/38.JPG longdiary_html_pics/march_of_the_living/39.JPG 
+git commit -m "Upload multiple images"
+git push origin main
+
+#remove previous 9 jobs
+git reset --hard HEAD~9
+#canel everything
+git reset --hard
 
 
+
+git reset --hard origin/main
+git clean -fd
+git status
+
+
+#check you commits
+git log --oneline
+
+if error: RPC failed; HTTP 400 curl 22 The requested URL returned error: 400 send-pack: unexpected disconnect while reading sideband packet
+git config http.postBuffer 524288000
+git pull && git push

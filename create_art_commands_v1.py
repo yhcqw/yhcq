@@ -447,23 +447,22 @@ def extract_text_from_html(file_path,template,newfile):
     
     return None, None  # Return None if <time class='published'> is not foundp
 
-
-def rewrite_new_html_to_upload(input_file, output_file, folder):
+def rewrite_new_html_to_upload(input_file, output_file,folder):
     # Read the input HTML file
     with open(input_file, 'r', encoding='utf-8') as file:
         html_content = file.read()
 
-    # Use the lxml parser for better handling of HTML
-    soup = BeautifulSoup(html_content, 'lxml')  # Use 'lxml' parser for better HTML handling
+    # Parse the HTML content
+    soup = BeautifulSoup(html_content, 'html.parser')
 
     # Find the <main> tag
     main_tag = soup.find('main')
     if main_tag is not None:
-        # Extract the inner content of <main> (without the <main> tag itself)
-        main_content = main_tag.decode_contents()
+        # Get the content inside <main>
+        main_content = main_tag.decode()  # Get the HTML content as a string
 
-        # Parse the inner content as a new BeautifulSoup object
-        main_soup = BeautifulSoup(main_content, 'lxml')
+        # Parse the content of <main> separately
+        main_soup = BeautifulSoup(main_content, 'html.parser')
 
         # Remove all <div> tags but keep their content
         for div in main_soup.find_all('div'):
@@ -479,23 +478,24 @@ def rewrite_new_html_to_upload(input_file, output_file, folder):
             img_tag = anchor.find('img')
             if img_tag and img_tag['src']:
                 # Create the new image tag
-                new_img_tag = f'<div class="picture-container">\n' \
-                              f'<img class="picture" src="https://yhcqw.github.io/yhcq/longdiary_html_pics/{folder}/{image_count}.JPG"/>\n' \
-                              '</div>\n'
+                a = '<div class="picture-container">\n'
+                b = f'<img class="picture" src="https://yhcqw.github.io/yhcq/longdiary_html_pics/{folder}/{image_count}.JPG"/>\n'
+                c = '</div>\n'
+                new_img_tag = a + b + c
                 # Replace the anchor with the new image tag
-                anchor.replace_with(BeautifulSoup(new_img_tag, 'lxml'))
+                anchor.replace_with(BeautifulSoup(new_img_tag, 'html.parser'))
                 image_count += 1  # Increment the image count
 
-        # Convert back to string and add <br/><br/> after each closing </p> tag
+        # Convert back to string and add <br/><br/> after each closing </p> tag in the main content
         result_main_html = str(main_soup).replace('</p>', '</p><br/><br/>')
 
-        # Clear the existing content in <main> and add modified content back
-        main_tag.clear()
-        main_tag.append(BeautifulSoup(result_main_html, 'lxml'))
+        # Update the main tag with the modified content
+        main_tag.clear()  # Clear the existing content in <main>
+        main_tag.append(BeautifulSoup(result_main_html, 'html.parser'))  # Add the modified content back
 
     # Write the modified HTML to the output file
     with open(output_file, 'w', encoding='utf-8') as file:
-        file.write(str(soup))
+        file.write(str(soup))  # Write the entire modified soup back to the output file
 
     print(f"Cleaned and modified HTML content has been saved to {output_file}")
 
