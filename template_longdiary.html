@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+
+    <style>
+        /* Add your custom styles here */
+
+        .menu-icon {
+            display: none;
+            cursor: pointer;
+        }
+
+        .mobile-menu-list {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 60%; /* Adjust width as needed */
+            background-color: #fff; /* Adjust as needed */
+            padding: 20px;
+            border-right: 1px solid #ccc; /* Adjust as needed */
+            z-index: 1000; /* Ensure it's above other content */
+            flex-direction: column; /* Display items vertically */
+            transition: width 2s;
+        }
+
+        .mobile-menu-list.active {
+            display: block;
+        }
+
+        .mobile-menu {
+            display: none;
+        }
+
+        .menu-title {
+            margin-left: 10px; /* Adjust margin as needed */
+        }
+
+        .menu-icon {
+            margin-right: 10px; /* Adjust margin as needed */
+            cursor: pointer;
+        }
+
+        .mobile-menu-list li {
+            display: block; /* Display list items vertically */a
+        }
+
+  @media only screen and (max-width: 768px) {
+    .menu-icon {
+        display: inline-block;
+        margin-left: 280px; /* Adjust as needed */
+        cursor: pointer;
+    }
+
+    .mobile-menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 10px;
+    }
+
+    .menu-title {
+        margin-right: auto; /* Pushes 目錄 to the far left */
+        margin-left: 10px; /* Adjust margin as needed */
+    }
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <!-- Removed the logo div -->
+            <nav>
+                <ul class="menu">
+                    <li><a href="https://yhcqw.github.io/yhcq/index.html">主页</a></li>
+                    <li><a href="#wenge">文革</a></li>
+                    <li><a href="#mao">毛年代其他</a></li>
+                    <li><a href="#society">社会</a></li>
+                    <li><a href="#people">人物</a></li>
+                    <li><a href="#foreign">外国历史</a></li>
+                    <li><a href="#mis">其他</a></li>
+                    <li><a href="#discussion">明辨是非</a></li>
+		    <li><a href="https://yhcqw.github.io/yhcq/thissite.html">关于本站</a></li>
+		    <li><a href="https://yhcqw.github.io/yhcq/Diary.html">我的日记</a></li>
+		    <li><a href="https://yhcqw.github.io/yhcq/longblog.html">我的长博客</a></li>
+                </ul>
+            </nav>
+
+            <div class="mobile-menu">
+                <div class="menu-title">目錄</div>
+                <div class="menu-icon" onclick="toggleMobileMenu()">&#9776;</div> <!-- Three horizontal lines -->
+                <!-- Move the ul.mobile-menu-list inside the .mobile-menu div -->
+                <ul class="mobile-menu-list">
+                    <li><a href="https://yhcqw.github.io/yhcq/index.html" onclick="hideMobileMenu()">主页</a></li>
+                    <li><a href="#wenge" onclick="hideMobileMenu()">文革</a></li>
+                    <li><a href="#mao" onclick="hideMobileMenu()">毛年代其他</a></li>
+                    <li><a href="#society" onclick="hideMobileMenu()">社会</a></li>
+                    <li><a href="#people" onclick="hideMobileMenu()">人物</a></li>
+                    <li><a href="#foreign" onclick="hideMobileMenu()">外国历史</a></li>
+                    <li><a href="#mis" onclick="hideMobileMenu()">其他</a></li>
+                    <li><a href="#discussion" onclick="hideMobileMenu()">明辨是非</a></li>
+		    <li><a href="thissite.html" onclick="hideMobileMenu()">关于本站</a></li>
+		    <li><a href="Diary.html" onclick="hideMobileMenu()">我的日记</a></li>
+		    <li><a href="https://yhcqw.github.io/yhcq/longblog.html">我的长博客</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+      
+<h3 style="text-align: center";></h3>
+
+ 
+
+    
+    </br><a href="https://yhcqw.github.io/yhcq/">返回主目录</a></br></br></br>
+    </main>
+  
+
+    <script>
+        function toggleMobileMenu() {
+            var menuList = document.querySelector('.mobile-menu-list');
+            menuList.classList.toggle('active');
+        }
+
+        function hideMobileMenu() {
+            var menuList = document.querySelector('.mobile-menu-list');
+            menuList.classList.remove('active');
+        }
+    </script>
+  <div id="overlay" class="overlay">
+     <img id="overlayImg" class="overlay-img" src="" alt="Enlarged image">
+  </div>
+ <script src="../script.js"></script> <!-- Link to your JS file -->
+</body>
+</html>
