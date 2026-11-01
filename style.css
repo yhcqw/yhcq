@@ -1,53 +1,95 @@
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-/*    background-image: url('pictures/lightgreen.jpg');*//*appears as bkg outside text*/
-    background-size: cover;
+  max-width: 760px;
+  margin: 40px auto;
+  padding: 0 20px;
+  line-height: 1.8;
+  color: #222;
+  background: #fff;
 }
 
 .container {
+    max-width: 800px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: center;
-/*    padding: 40px;  /*distance between the menu bar and the top*/
- /*   max-width: 500px*/
+    justify-content: center; /* Adjusted to center items horizontally */
+    padding-top:0px;
+    padding-bottom: 40px;
+ /*   max-width: 768px*/
 }
 
-.text-right {
-    text-align: right;
-}
-
-header {
-/*    background-image: url('pictures/darkblue.webp');
-    background-color: #333;*/
-    color: #000;
-    padding: 5px 0; /* Add padding to space out the content within the header */
-    text-align: center; /* Center align the content in the header */
+.container-search {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: right; /* Adjusted to center items horizontally */
+    padding-top: 5px;
+ /*   max-width: 768px*/
 }
 
 
+.container-mobile-search {
+    display: block
+    visibility: visible
+    z-index: 10;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+ /*   max-width: 768px*/
+}
+
+#search-mobile-box {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#search-mobile-button {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#search-mobile-button:hover {
+  background-color: #0056b3;
+}
+
+/*#search-mobile-results {
+  margin-top: 10px;
+  font-size: 14px;
+}*/
 main {
     background-color:rgb(255, 255, 255);
 /*    padding: 50px; /*space between the main text and the bottom of the menu bar*/
     max-width: 800px; /* Set a maximum width for the main content */
     margin: 0 auto;
-    margin-top: 80px  /*space between the main text and the bottom of the menu bar*/
+    margin-top: 50px  /*space between the main text and the bottom of the menu bar*/
+
 }
 
+/*additional begins*/
 
 nav {
-   padding: 30px; /*distance between the menu bar and the top*/
+   padding: 0px; /*distance between the menu bar and the top*/
+   height: 30px;
 }
 
 /* Menu with Two Horizontal Rows */
 
 /*
 nav {
-    background-color: navy; /* Set background color for the nav element 
-    padding: 20px; /* Add padding to extend the background color 
-    max-width: 800px; /* Set the max width of the menu 
-    margin: 0 auto; /* Center the nav element horizontally 
+    background-color: navy; /* Set background color for the nav element
+    padding: 20px; /* Add padding to extend the background color
+    max-width: 800px; /* Set the max width of the menu
+    margin: 0 auto; /* Center the nav element horizontally
 }
 */
 nav ul {
@@ -72,7 +114,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff; /* White #000 for black */
+    color: #000; /* White #000 for black */
     text-decoration: none;
     font-size: 20px;
    /* font-weight: bold;*/
@@ -80,68 +122,187 @@ nav ul li a {
 }
 
 /* Mobile Menu Styles */
+
+nav ul { /*computer menu*/
+    list-style-type: none;
+    padding: 10;
+    margin: 0;
+  
+}
+
+nav ul li {
+    /*
+    display: inline;
+    margin-right: 20px;*/
+    
+    flex: 1 1 auto; /* Allows items to grow and shrink equally */
+    text-align: center; /* Center align the text in each item */
+    padding: 5px 10px; /* Add padding to space out the items,top and bottom, left and right */
+    box-sizing: border-box; /* Include padding in the width calculation */
+    border-right: 1px solid rgb(224, 224, 224);
+   
+}
+
+nav ul li a{
+    color: white; /* Set the color to black */
+    text-decoration: none;
+    font-size: 20px;
+    display: inline-block;
+    /*font-weight: bold;*/ /*computer menu font*/
+
+}
+
+.mobile-menu-list li a {
+    color: black; /* Set the color to black */
+    text-decoration: none;
+    font-size: 20px;
+    display: inline-block;
+    /*font-weight: bold;*/ /*computer menu font*/
+
+}
 .mobile-menu {
     display: none;
 }
 
 .menu-icon {
-    width: 30px;
-    height: 30px;
-/*    background-image: url('pictures/darkblue.webp');*/
+   /* width: 30px;
+    height: 30px;*/
+
+    font-size: 30px;
+    display: inline-block;
+    margin-left: auto; /*original*/
+    /*    background-color: lightgreen;*/
+   /* background-image: url('pictures/lightgreen.jpg')*/
     cursor: pointer;
 }
 
+/* Container for the image and title+icon */
+.menu-title-container {
+    display: flex; /* Aligns the items horizontally */
+    align-items: center; /* Vertically centers the items */
+    justify-content: flex-start; /* Ensures equal spacing between items */
+    background-color: lightgreen; /* Add background image */
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image */
+    /*padding: 10px; *//* Adds spacing around the content */
+    /*ends*/
+    height: auto;
+}
+
+
+/* Styling for the image */
+.menu-image {
+    width: 80vw;
+    flex-shrink: 0;
+    align-items: left;
+    /*width: 100%;*/ /* Size of the image */
+    /*height: 100%px; *//* Size of the image */
+    margin-right: 0px; /* Space between image and title */
+    height: 100%;/*add**/
+    object-fit: cover;/*add**/
+}
+
+/* Container for the title and icon together */
+.menu-title-icon-container {
+    display: flex; /* Aligns the title and icon horizontally */
+    align-items: center; /* Vertically centers the items */
+    flex-shrink: 1; /* Allow the title and icon to shrink if necessary */
+}
+
+
 .mobile-menu-list {
-    display: none;
-    background-color:rgb(0, 108, 169);
-  /*  background-image: url('pictures/darkblue.webp');*/
+    position: fixed;
+  /*  display: none;*/
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 60%; /* Adjust width as needed */
+    background-color: #fff; /* Adjust as needed */
+    padding: 10px;
+    border-right: 1px solid #ccc; /* Adjust as needed */
+    z-index: 1000; /* Ensure it's above other content */
+    flex-direction: column; /* Display items vertically */
+    /*transition: width 0.3s;*/
+    opacity: 0;
+    pointer-events: none; /*additional*/
+    transition: opacity 0.3s ease-in-out;
+/*    background-color: lightgreen;*/
+   /* background-image: url('pictures/lightgreen.jpg')*/
+}
+
+.mobile-menu-list.active {
+    /*display: flex;  /*originally here*/
+    opacity: 1;
+    pointer-events: auto; /* Interactable *//*additional*/
 }
 
 .mobile-menu-list li {
+    display: block; /* Display list items vertically */
     padding: 10px;
 }
 
-nav {
-    height: 30px;
-}
-
-/* Mobile Responsive Styles */
 @media (max-width: 768px) {
-    nav {
-        background-color:rgb(0, 108, 169);
-       /* background-image: url('pictures/lightgreen.jpg');*/
-    }
+     nav {
+         background-color:rgb(0, 108, 169); /* Set the background image */
+  
+     }
 
+     .menu-title {
+         font-size: 16px; /* Font size of the title */
+         font-weight: bold; /* Makes the title bold */
+         margin-left: 5px;
+         margin-right: 5px; /* Space between title and icon */
+         flex-grow: 1; /* Allows the title to use any extra space */
+         writing-mode: vertical-rl;  /* Makes the text vertical, from right to left */
+         white-space: nowrap; /* Prevents title from breaking into multiple lines */
+         overflow: hidden; /* Ensures the text doesn't overflow */
+         text-overflow: ellipsis; /* Adds ellipsis for overflowing text */
+      }
+     
     .menu {
         display: none;
     }
 
     .mobile-menu {
         display: block;
+        position: fixed;  /* Fix the mobile menu at the top */
+        top: 0; /* Stick the menu to the top */
+        left: 0;
+        width: 100%; /* Full width */
+        padding: 0px;
+        border-right: 1px solid #ccc;
+        z-index: 1000; /
     }
 
     .mobile-menu-list {
         display: block;
+        padding-top: 50px; /
     }
-
-    nav ul {
-        flex-direction: column; /* Stack items vertically on small screens */
-        max-width: 100%;
+    
+    .container-search {
+      display: none;
     }
-
-    nav ul li {
-        width: 100%; /* Full width for each item on small screens */
+    
+    .icon-picture{
+      display: none;
     }
+    
+    main {
+            margin-top: 0px; /* Override margin-top for smaller screens */
+            padding-top: 0px
+            top: 0;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    
+    .container {
+        padding-bottom: 0px;
+     /*   max-width: 768px*/
+    }
+    
 }
 
-.caption {
-  font-family: "PingFang SC", "Microsoft YaHei", "Heiti SC", "SimSun", "sans-serif";
-  font-size: 20px;               /* Adjust the font size */
-  color: blue;                   /* Adjust the text color */
-  text-align: center;            /* Center the text horizontally */
-  display: block;                /* Ensure the element takes up full width */
-  margin: 0 auto;                /* Center the element */
-}
 
 
 .linebreak {
@@ -152,193 +313,137 @@ nav {
 }
 
 
-/*from OEBPS*/
-/*前言正文、后记正文*/
-.preface, .postscript {
-	font-family:"fs","仿宋","仿宋_gb2312","zw",serif;
-}
+/*additional ends*/
+/*.container {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}*/
 
-/*目录页*/
-.contents {
-/*	margin-left:20%;*/
-	padding:0px;
-	line-height:130%;
-	text-align: justify;
-	font-family:"fs","仿宋","仿宋_gb2312","zw",serif;
-	list-style-type:none;
+.content {
+    max-width: 800px;
+    margin: 0 auto; /* Center the container horizontally */
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: left;
 }
+/*
 
+.text-container {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+}*/
 
-
-h1 {
-	line-height:100%;
-	text-align: justify;
-	page-break-before:always;
-	font-weight:bold;
-	font-size:238.2%;/*xx-large;*/
-	font-family: "h1","方正兰亭特黑长_GBK","方正兰亭特黑长简体","方正兰亭特黑长繁体","微软雅黑","黑体","zw",sans-serif;
-	text-shadow:2px 2px 4px gray;	/*#000000;*/
-	/*background-image: url(../Images/backgroundh1.png);
-	background-repeat: no-repeat;*/
-}
-
-h2 {
-	line-height:100%;
-	text-align: justify;
-	page-break-before:always;
-	font-weight:bold;
-	font-size:138.2%;/*x-large;*/
-	font-family: "h2","方正大标宋_GBK","方正大标宋简体","方正大标宋繁体","微软雅黑","黑体","zw",sans-serif;
-	/*text-shadow:2px 2px 4px gray;	/*#000000;*/
-	text-shadow: -1px -1px 3px white,1px 1px 3px gray,-1px -1px white,1px 1px black;
-	/*text-shadow: -1px -1px 3px #ffb69a,1px 1px 3px #922e09,-1px -1px #ffb69a,1px 1px #922e09; */
-	/*text-outline: 2px 2px #ff0000;*/
-	/*background-image: url(../Images/backgroundh2.png);
-	background-repeat: no-repeat;*/
-}
-
-/*副标题*/
-.h2sub, .subtitle {
-/*	color:palevioletred;*/
-	margin: 0;
-	line-height:100%;
-	text-align: justify;
-/*	border-style: none double none solid;
-	border-width: 0px 5px 0px 20px;
-	border-color: mediumvioletred;
-	border-left-color: mediumvioletred;*/
-	font-weight:bold;
-	font-size:105.6%;/*medium;*/
-	font-family:"ht","微软雅黑","黑体","zw",sans-serif;
-}
-
-h3 {
-/*	color:indigo;*/
-	line-height:130%;
-	text-align: justify;
-	font-weight:bold;
-	font-size:123.6%;/*large;*/
-	font-family: "h3","方正华隶_GBK","方正行黑简体","方正行黑繁体","仿宋","仿宋_gb2312","微软雅黑","黑体","zw",sans-serif;
-	margin-top:50;
-	/*margin-bottom:-0.9em;*/
-	text-shadow:2px 2px 4px gray;	/*#000000;*/
-}
-h4 {
-/*	color:gray;*/
-	line-height:130%;
-	text-align: justify;
-	font-weight:bold;
-	font-size:105.6%;/*medium;*/
-	font-family:"ht","幼圆","微软雅黑","黑体","zw",sans-serif;
-	margin-top:0.5em;
-	margin-bottom:0.5em;
-	/*margin-bottom:-0.8em;*/
-}
-h5 {
-	line-height:130%;
-	text-align: justify;
-	font-weight:bold;
-	font-size:100%;/*small;*/
-	font-family:"kt","楷体","楷体_gb2312","zw",sans-serif;
-	margin-top:0.5em;
-	margin-bottom:0.5em;
-	/*margin-bottom:-0.9em;*/
-}
-h6 {
-	line-height:130%;
-	text-align: justify;
-	font-weight:bold;
-	font-size:100%;/*x-small;*/
-	margin-top:0.5em;
-	margin-bottom:0.5em;
-	/*margin-bottom:-0.9em;*/
-}
-/*作者*/
-.author, .reporter {
-/*	color: mediumvioletred;*/
-	line-height:130%;
-	text-align: justify;
-/*	border-style: none double none solid;
-	border-width: 0px 5px 0px 20px;
-	border-color: mediumvioletred;
-	border-left-color: mediumvioletred;*/
-	font-size:80%;/*medium;*/
-	font-family:"kt","楷体","楷体_gb2312","zw",sans-serif;
-}
-/*标题2作者*/
-.h2author {
-	font-family:"kt","楷体","楷体_gb2312","zw",sans-serif;
-	color:white;
-	font-size:80%;/*10.5pt;*/
-	display:block;
-}
-/*标题3作者*/
-.h3author {
-	font-family:"kt","楷体","楷体_gb2312","zw",sans-serif;
-	/*color:white;*/
-	font-size:80%;/*10.5pt;*/
-	/*margin-bottom:1.5em;*/
-	display:block;
-}
-/*篇标题块*/
-.h1note {
-	font-family:"ht","微软雅黑","黑体","zw",sans-serif;
-	font-size:88%;
-}
-.h1note:first-child {margin-top:1.2em;}
-.h1note:last-child {margin-bottom:1.2em;}
-/*编者按*/
-.editornote {
-	margin:0 0 0 4em;
-/*	border-style: none none none solid;
-	border-width: 0px 0px 0px 10px;
-	border-color: lightpink;
-	color: darkred;*/
-	font-family:"kt","楷体","楷体_gb2312","zw",sans-serif;
-	font-size:88%;
-	line-height:125%;
-}
-.editornote:first-child {margin-top:1.2em;}
-.editornote:last-child {margin-bottom:1.2em;}
-/*标题2注*/
-.h2note {
-	margin:0 0 0 4em;
-/*	border-style: none none none solid;
-	border-width: 0px 0px 0px 10px;
-	border-color: lightpink;
-	color: darkred;*/
-	font-family:"ht","微软雅黑","黑体","zw",sans-serif;
-	font-size:88%;
-	line-height:125%;
-}
-.h2note:first-child {margin-top:1.2em;}
-.h2note:last-child {margin-bottom:1.2em;}
-/*标题3注*/
-.h3note {
-/*	margin:0 0 0 4em;*/
-/*	border-style: none none none solid;
-	border-width: 0px 0px 0px 10px;
-	border-color: lightpink;
-	color: darkred;*/
-	font-family:"fs","仿宋","仿宋_gb2312","zw",sans-serif;
-	font-size:88%;
-}
-.h3note:first-child {margin-top:1.2em;}
-.h3note:last-child {margin-bottom:1.2em;}
-
-/*for images*/
 .picture-container {
     margin-top: 20px
     text-align: center;
     margin: 20px;
 }
 
+
+
+/* Adjust size for mobile screens */
+/*
+@media (max-width: 767px) {
+    .responsive-image-icon {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+}
+*/
+
+
+.picture-icon {
+   /* width: 80%;*/ /* Adjust the width as needed */
+    max-width: 1000px; /* Maximum width of the image */
+    max-height: 500px;
+    display: block;
+    margin: 0 auto;
+}
+/*
 .picture {
-    width: 80%; /* Adjust the width as needed */
-    max-width: 500px; /* Maximum width of the image */
+    width: 100%;
+    max-width: 500px; /* 500px */
+ /*   max-height: 500px;*/
+   /* cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+*/
+
+.picture {
+    max-width: 500px;
+    max-height: 500px;
+    width: 100%;
+    height: auto;
     cursor: pointer;
     display: block;
     margin: 0 auto;
+    object-fit: contain;
+    aspect-ratio: auto; /* Allow natural aspect ratio */
+}
+
+/* Adjust portrait images (height > width) */
+@media (min-aspect-ratio: 1/1) {
+    .picture {
+        max-width: auto;
+        max-height: 500px;
+    }
+}
+
+
+/*
+.responsive-iframe {
+    width: 100%;
+    max-width: 700px;
+    height: auto;        
+    display: block;
+    margin: 0 auto;
+}*/
+
+.iframe-container {
+    position: relative;
+    width: 90%;         /* Full width */
+    max-width: 500px;    /* Cap width at 500px */
+    padding-bottom: 75%; /* 4:3 aspect ratio (75% of width) */
+    margin: 0 auto;
+}
+
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;          /* Optional: Remove iframe border */
+}
+
+
+.image-container {
+  text-align: center; /* Centers the image horizontally */
+}
+.picture-maps {
+   /* width: 80%;*/ /* Adjust the width as needed */
+ /*   max-width: 1800px; *//* Maximum width of the image */
+    max-height: 100%;
+    width: 100%
+    max-width:100%
+  /*  cursor: pointer;*/
+  display: inline-block;
 }
 
 .enlarged-picture {
@@ -416,4 +521,115 @@ p {
             flex-direction: column;
             align-items: center;
             margin-top: 50px;
+}
+
+.rotate-left {
+    transform: rotate(-90deg);  /* Rotate 90 degrees to the left (counterclockwise) */
+    transform-origin: center;  /* Rotate around the center of the image */
+}
+
+.image-container {
+    position: relative;
+}
+
+#search-box {
+  width: 300px; /* Adjust width */
+  height: 30px; /* Adjust height */
+  font-size: 16px; /* Adjust font size */
+  padding: 5px 10px; /* Add padding for better spacing */
+  border: 1px solid #ccc; /* Add border */
+  border-radius: 5px; /* Rounded corners */
+}
+
+#search-button {
+  height: 40px; /* Match the height of the search box */
+  padding: 0 15px; /* Add padding for horizontal spacing */
+  font-size: 16px; /* Adjust font size */
+  border: 1px solid #007bff; /* Add border with color */
+  background-color: #007bff; /* Button background color */
+  color: white; /* Text color */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+#search-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+.info-panel {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 400px;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    text-align: center;
+}
+
+
+
+.close-btn {
+/*    background: gray;
+    background-color: gray*/
+    color: black;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.close-btn:hover {
+    background: lightgray;
+}
+
+#close-panel-yuki,
+#close-panel-akitakada,
+#close-panel-higashihiroshima,
+#close-panel-shirokiyama,
+#close-panel-higashihiroshima,
+#close-panel-takehara,
+#close-panel-mihara,
+#close-panel-kamikamagari,
+#close-panel-etajima,
+#close-panel-kurahashi,
+#close-panel-sera,
+#close-panel-onomichi,
+#close-panel-fuchu,
+#close-panel-shinseki,
+#close-panel-shobara,
+#close-panel-ounan,
+#close-panel-izumo,
+#close-panel-okuizumo,
+#close-panel-matsue,
+#close-panel-ota,
+#close-panel-unnan,
+#close-panel-kumakogen,
+#close-panel-iyo,
+#close-panel-ikata,
+#close-panel-seiyo,
+#close-panel-touon,
+#close-panel-ainan,
+#close-panel-yusuhara,
+#close-panel-shimanto,
+#close-panel-sukumo,
+#close-panel-uguru,
+#close-panel-maniwa,
+#close-panel-daizen,
+#close-panel-yamaguchiken,
+#close-panel-kitakyushu,{
+    
+    margin-top: 1px;
+    cursor: pointer;
+    background-color: darkgray; /* Green */
+    border: 1px solid white; /* Darker Green */
+    color: white;
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-size: 10px;
 }
