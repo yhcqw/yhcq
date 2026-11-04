@@ -1,596 +1,431 @@
+/* ==========================================================================
+   yhcq 现代化排版与视觉样式表 (style.css)
+   设计风格：人文书卷质感 / 深蓝藏青主色 / 典雅暗红点缀 / 自动卡片化
+   ========================================================================== */
+
+/* === 1. 基础全局样式与排版 === */
+:root {
+  --bg-page: #fbf9f5;         /* 暖纸张底色，柔和不刺眼 */
+  --bg-card: #FFFFFF;         /* 内容与卡片白底 */
+  --primary: #1E3A8A; /* 典雅深蓝，也可换成暗红 #8B1E1E */
+  /* --primary-navy: #1e3a5f;    /* 典雅文人藏青（主色） */
+  /* --primary-hover: #2b4f7e;   /* 藏青悬停色 */
+  --accent-red: #8b1e2f;      /* 人文暗绛红（重点点缀与激活态） */
+  --text-main: #2d3748;       /* 墨黑正文 */
+  --text-muted: #64748b;      /* 次要灰色元数据 */
+  --border-color: #e2e8f0;    /* 细边框线 */
+  --border-light: #f1f5f9;    /* 浅边框线 */
+  --bg-color: #FBF9F5;
+  --border-color: #E2E8F0;
+}
 
 body {
-  max-width: 760px;
-  margin: 40px auto;
+  max-width: 860px;
+  margin: 20px auto 60px;
   padding: 0 20px;
-  line-height: 1.8;
-  color: #222;
-  background: #fff;
+  line-height: 1.3;
+  color: var(--text-main);
+  background-color: var(--bg-page);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Serif SC", serif;
+  -webkit-font-smoothing: antialiased;
 }
+
+/* === 2. 主内容容器 === */
 
 .container {
-    max-width: 800px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center; /* Adjusted to center items horizontally */
-    padding-top:0px;
-    padding-bottom: 40px;
- /*   max-width: 768px*/
+  max-width: 860px;
+  margin: 0 auto;
+  padding-bottom: 20px;
 }
 
-.container-search {
-    max-width: 800px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: right; /* Adjusted to center items horizontally */
-    padding-top: 5px;
- /*   max-width: 768px*/
+/*add a container of white background to each artiche*/
+article {
+  background-color: var(--bg-card, #ffffff);
+  border: 1px solid var(--border-color, #e2e8f0);
+  border-radius: 8px;
+  padding: 32px 36px;
+  margin: 20px auto 40px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  line-height: 1.5; /* keeps the tighter line spacing */
 }
 
-
-.container-mobile-search {
-    display: block
-    visibility: visible
-    z-index: 10;
-    padding: 10px;
-    border-top: 1px solid #ccc;
- /*   max-width: 768px*/
+/* === 3. 标题与章节层级 === */
+ {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--primary-navy);
+  margin-top: 0;
+  margin-bottom: 24px;
+  letter-spacing: 0.5px;
+  font-family: "Noto Serif SC", Georgia, "Songti SC", serif;
 }
 
-#search-mobile-box {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-#search-mobile-button {
-  width: 100%;
-  padding: 8px;
-  font-size: 16px;
-  background-color: #007BFF;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-#search-mobile-button:hover {
-  background-color: #0056b3;
-}
-
-/*#search-mobile-results {
-  margin-top: 10px;
-  font-size: 14px;
-}*/
-main {
-    background-color:rgb(255, 255, 255);
-/*    padding: 50px; /*space between the main text and the bottom of the menu bar*/
-    max-width: 800px; /* Set a maximum width for the main content */
-    margin: 0 auto;
-    margin-top: 50px  /*space between the main text and the bottom of the menu bar*/
-
-}
-
-/*additional begins*/
-
-nav {
-   padding: 0px; /*distance between the menu bar and the top*/
-   height: 30px;
-}
-
-/* Menu with Two Horizontal Rows */
-
-/*
-nav {
-    background-color: navy; /* Set background color for the nav element
-    padding: 20px; /* Add padding to extend the background color
-    max-width: 800px; /* Set the max width of the menu
-    margin: 0 auto; /* Center the nav element horizontally
-}
-*/
-nav ul {
-/*    background-image: url('pictures/darkblue.webp');*/
-    background-color: rgb(0, 108, 169);
-    list-style-type: none;
-    padding: 20px;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap; /* Allows items to wrap into two rows */
-    justify-content: center; /* Centers items horizontally */
-    max-width: 800px; /* Optional: Set a max width for the menu */
-}
-
-nav ul li {
-    flex: 1 1 auto; /* Allows items to grow and shrink equally */
-    text-align: center; /* Center align the text in each item */
-    padding: 5px 10px; /* Add padding to space out the items,top and bottom, left and right */
-    box-sizing: border-box; /* Include padding in the width calculation */
-    border-right: 1px solid rgb(224, 224, 224); /*separation bar between menu items*/
-
-}
-
-nav ul li a {
-    color: #000; /* White #000 for black */
-    text-decoration: none;
-    font-size: 20px;
-   /* font-weight: bold;*/
-    display: inline-block;
-}
-
-/* Mobile Menu Styles */
-
-nav ul { /*computer menu*/
-    list-style-type: none;
-    padding: 10;
-    margin: 0;
-  
-}
-
-nav ul li {
-    /*
-    display: inline;
-    margin-right: 20px;*/
-    
-    flex: 1 1 auto; /* Allows items to grow and shrink equally */
-    text-align: center; /* Center align the text in each item */
-    padding: 5px 10px; /* Add padding to space out the items,top and bottom, left and right */
-    box-sizing: border-box; /* Include padding in the width calculation */
-    border-right: 1px solid rgb(224, 224, 224);
-   
-}
-
-nav ul li a{
-    color: white; /* Set the color to black */
-    text-decoration: none;
-    font-size: 20px;
-    display: inline-block;
-    /*font-weight: bold;*/ /*computer menu font*/
-
-}
-
-.mobile-menu-list li a {
-    color: black; /* Set the color to black */
-    text-decoration: none;
-    font-size: 20px;
-    display: inline-block;
-    /*font-weight: bold;*/ /*computer menu font*/
-
-}
-.mobile-menu {
-    display: none;
-}
-
-.menu-icon {
-   /* width: 30px;
-    height: 30px;*/
-
-    font-size: 30px;
-    display: inline-block;
-    margin-left: auto; /*original*/
-    /*    background-color: lightgreen;*/
-   /* background-image: url('pictures/lightgreen.jpg')*/
-    cursor: pointer;
-}
-
-/* Container for the image and title+icon */
-.menu-title-container {
-    display: flex; /* Aligns the items horizontally */
-    align-items: center; /* Vertically centers the items */
-    justify-content: flex-start; /* Ensures equal spacing between items */
-    background-color: lightgreen; /* Add background image */
-    background-size: cover; /* Ensures the image covers the entire container */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    background-position: center; /* Centers the image */
-    /*padding: 10px; *//* Adds spacing around the content */
-    /*ends*/
-    height: auto;
-}
-
-
-/* Styling for the image */
-.menu-image {
-    width: 80vw;
-    flex-shrink: 0;
-    align-items: left;
-    /*width: 100%;*/ /* Size of the image */
-    /*height: 100%px; *//* Size of the image */
-    margin-right: 0px; /* Space between image and title */
-    height: 100%;/*add**/
-    object-fit: cover;/*add**/
-}
-
-/* Container for the title and icon together */
-.menu-title-icon-container {
-    display: flex; /* Aligns the title and icon horizontally */
-    align-items: center; /* Vertically centers the items */
-    flex-shrink: 1; /* Allow the title and icon to shrink if necessary */
-}
-
-
-.mobile-menu-list {
-    position: fixed;
-  /*  display: none;*/
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 60%; /* Adjust width as needed */
-    background-color: #fff; /* Adjust as needed */
-    padding: 10px;
-    border-right: 1px solid #ccc; /* Adjust as needed */
-    z-index: 1000; /* Ensure it's above other content */
-    flex-direction: column; /* Display items vertically */
-    /*transition: width 0.3s;*/
-    opacity: 0;
-    pointer-events: none; /*additional*/
-    transition: opacity 0.3s ease-in-out;
-/*    background-color: lightgreen;*/
-   /* background-image: url('pictures/lightgreen.jpg')*/
-}
-
-.mobile-menu-list.active {
-    /*display: flex;  /*originally here*/
-    opacity: 1;
-    pointer-events: auto; /* Interactable *//*additional*/
-}
-
-.mobile-menu-list li {
-    display: block; /* Display list items vertically */
-    padding: 10px;
-}
-
-@media (max-width: 768px) {
-     nav {
-         background-color:rgb(0, 108, 169); /* Set the background image */
-  
-     }
-
-     .menu-title {
-         font-size: 16px; /* Font size of the title */
-         font-weight: bold; /* Makes the title bold */
-         margin-left: 5px;
-         margin-right: 5px; /* Space between title and icon */
-         flex-grow: 1; /* Allows the title to use any extra space */
-         writing-mode: vertical-rl;  /* Makes the text vertical, from right to left */
-         white-space: nowrap; /* Prevents title from breaking into multiple lines */
-         overflow: hidden; /* Ensures the text doesn't overflow */
-         text-overflow: ellipsis; /* Adds ellipsis for overflowing text */
-      }
-     
-    .menu {
-        display: none;
-    }
-
-    .mobile-menu {
-        display: block;
-        position: fixed;  /* Fix the mobile menu at the top */
-        top: 0; /* Stick the menu to the top */
-        left: 0;
-        width: 100%; /* Full width */
-        padding: 0px;
-        border-right: 1px solid #ccc;
-        z-index: 1000; /
-    }
-
-    .mobile-menu-list {
-        display: block;
-        padding-top: 50px; /
-    }
-    
-    .container-search {
-      display: none;
-    }
-    
-    .icon-picture{
-      display: none;
-    }
-    
-    main {
-            margin-top: 0px; /* Override margin-top for smaller screens */
-            padding-top: 0px
-            top: 0;
-            padding-left: 15px;
-            padding-right: 15px;
-        }
-    
-    .container {
-        padding-bottom: 0px;
-     /*   max-width: 768px*/
-    }
-    
-}
-
-
-
-.linebreak {
-  border: none;
-  border-top: 1px solid black;  /* Creates a thin horizontal line */
-  margin: 10px 0;               /* Adjusts space above and below the line */
-  height: 0;                    /* Ensures no extra height */
-}
-
-
-/*additional ends*/
-/*.container {
-    height: 100vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    padding: 20px;
-}*/
-
-.content {
-    max-width: 800px;
-    margin: 0 auto; /* Center the container horizontally */
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    text-align: left;
-}
-/*
-
-.text-container {
-    max-width: 500px;
-    margin: 0 auto;
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    text-align: center;
-}*/
-
-.picture-container {
-    margin-top: 20px
-    text-align: center;
-    margin: 20px;
-}
-
-
-
-/* Adjust size for mobile screens */
-/*
-@media (max-width: 767px) {
-    .responsive-image-icon {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-    }
-}
-*/
-
-
-.picture-icon {
-   /* width: 80%;*/ /* Adjust the width as needed */
-    max-width: 1000px; /* Maximum width of the image */
-    max-height: 500px;
-    display: block;
-    margin: 0 auto;
-}
-/*
-.picture {
-    width: 100%;
-    max-width: 500px; /* 500px */
- /*   max-height: 500px;*/
-   /* cursor: pointer;
-    display: block;
-    margin: 0 auto;
-}
-*/
-
-.picture {
-    max-width: 500px;
-    max-height: 500px;
-    width: 100%;
-    height: auto;
-    cursor: pointer;
-    display: block;
-    margin: 0 auto;
-    object-fit: contain;
-    aspect-ratio: auto; /* Allow natural aspect ratio */
-}
-
-/* Adjust portrait images (height > width) */
-@media (min-aspect-ratio: 1/1) {
-    .picture {
-        max-width: auto;
-        max-height: 500px;
-    }
-}
-
-
-/*
-.responsive-iframe {
-    width: 100%;
-    max-width: 700px;
-    height: auto;        
-    display: block;
-    margin: 0 auto;
-}*/
-
-.iframe-container {
-    position: relative;
-    width: 90%;         /* Full width */
-    max-width: 500px;    /* Cap width at 500px */
-    padding-bottom: 75%; /* 4:3 aspect ratio (75% of width) */
-    margin: 0 auto;
-}
-
-.responsive-iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;          /* Optional: Remove iframe border */
-}
-
-
-.image-container {
-  text-align: center; /* Centers the image horizontally */
-}
-.picture-maps {
-   /* width: 80%;*/ /* Adjust the width as needed */
- /*   max-width: 1800px; *//* Maximum width of the image */
-    max-height: 100%;
-    width: 100%
-    max-width:100%
-  /*  cursor: pointer;*/
-  display: inline-block;
-}
-
-.enlarged-picture {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 9999;
-}
-
-.enlarged-picture.active {
-    display: block;
-}
-
-.enlarged-picture img {
-    width: 800px; /* Adjust the width as needed */
-    cursor: pointer;
-}
-
-.image_caption, .lead_image_caption, #storytext figcaption, #storypagemaincol p.slideshow_caption {
-    font-family: "Merriweather Sans", Sans-serif;
-    font-weight: 600;
-    line-height: 17px;
-    font-size: 18px;
-    display: block;
-    caption-side: bottom;
-    margin:.1em .5em .7em .1em;
-    text-align: center; /* Center text within its container */
-}
-
-.red {
-    color: red;
+/* 分类标题（自动支持 h2, h3, .section-title 以及直接加粗的分类） */
+h2, h3, .section-title, main > strong:first-child {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--primary-navy);
+  border-left: 4px solid var(--accent-red);
+  padding-left: 12px;
+  margin: 36px 0 18px 0;
+  letter-spacing: 0.5px;
 }
 
 p {
-    margin: 20px 0;
+  margin: 16px 0;
+  line-height: 1.8;
 }
 
-.overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
+/* === 4. 目录与文章列表自动卡片化 (无需改动原有 HTML 结构) === */
+main ol, main ul.article-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 0 24px 0;
+  counter-reset: article-counter;
 }
 
-.overlay-img {
-    max-width: 90%;
-    max-height: 90%;
+/* 每一个列表项自动渲染为精美卡片 */
+main ol > li {
+  counter-increment: article-counter;
+  position: relative;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 16px 20px 16px 52px;
+  margin-bottom: 14px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
-.overlay img {
-    border: 5px solid #fff;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+main ol > li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(15, 23, 42, 0.06);
+  border-color: #cbd5e1;
 }
 
-.video-container {
-    text-align: center; /* Center the video horizontally */
-    margin-bottom: 20px
+/* 序号数字徽章 */
+main ol > li::before {
+  content: counter(article-counter);
+  position: absolute;
+  left: 16px;
+  top: 18px;
+  width: 24px;
+  height: 24px;
+  background: #edf2f7;
+  color: #4a5568;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.video-container video {
-    display: inline-block; /* Ensure the video is treated as an inline block element */
-     width: 40%
+/* 文章超链接：去除原本的廉价斜体与纯蓝下划线 */
+main a, main a i, main i a {
+  font-style: normal;
+  text-decoration: underline; /* optional: helps readers identify inline links */
+  color: var(--primary, #1e3a8a);
+  font-size: inherit;
+  font-weight: inherit;
+  transition: color 0.15s ease;
 }
 
-.video-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-top: 50px;
+main a:hover {
+  color: var(--accent-red);
+  text-decoration: underline;
 }
 
-.rotate-left {
-    transform: rotate(-90deg);  /* Rotate 90 degrees to the left (counterclockwise) */
-    transform-origin: center;  /* Rotate around the center of the image */
+/* 简介与导读说明文字（列表项内的换行文字或段落） */
+main ol > li p, main ol > li .article-desc, blockquote {
+  margin: 10px 0 0 0;
+  font-size: 14px;
+  color: #4a5568;
+  line-height: 1.65;
+  background: #f8fafc;
+  border-left: 3px solid #cbd5e1;
+  padding: 8px 12px;
+  border-radius: 0 6px 6px 0;
+  font-style: normal;
+}
+
+/* 分割线美化 */
+.linebreak, hr {
+  border: none;
+  border-top: 1px solid var(--border-color);
+  margin: 32px 0;
+  height: 0;
+}
+
+/* 文章卡片 */
+.article-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 18px 22px;
+  margin-bottom: 16px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.article-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+.card-tags {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+.badge {
+  background: #EDF2F7;
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+.article-title {
+  font-size: 17px;
+  font-weight: 600;
+  color: #1A365D;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+.article-title:hover { color: var(--primary); text-decoration: underline; }
+.article-desc {
+  font-size: 14px;
+  color: #4A5568;
+  background: #F7FAFC;
+  border-left: 3px solid #CBD5E0;
+  padding: 8px 12px;
+  margin: 8px 0 0;
+  border-radius: 0 4px 4px 0;
+}
+
+/* === 5. “明辨是非”（观点对照与辩论卡片）专用样式 === */
+.debate-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 16px 0 24px;
+}
+
+.debate-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 16px 18px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.debate-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(15, 23, 42, 0.06);
+}
+
+.badge {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: #edf2f7;
+  color: #4a5568;
+  margin-bottom: 8px;
+}
+
+.badge-perspective-1 {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.badge-perspective-2 {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+/* === 6. 图片、地图与多媒体容器 (保留并优化原有功能) === */
+.content {
+  max-width: 860px;
+  margin: 0 auto 20px;
+  background-color: var(--bg-card);
+  padding: 24px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  text-align: left;
+}
+
+.picture-container {
+  text-align: center;
+  margin: 24px 0;
+}
+
+.picture {
+  max-width: 500px;
+  max-height: 500px;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.picture-icon {
+  max-width: 1000px;
+  max-height: 500px;
+  display: block;
+  margin: 0 auto;
+}
+
+.iframe-container {
+  position: relative;
+  width: 90%;
+  max-width: 500px;
+  padding-bottom: 75%;
+  margin: 20px auto;
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 6px;
 }
 
 .image-container {
-    position: relative;
+  text-align: center;
+  position: relative;
 }
 
-#search-box {
-  width: 300px; /* Adjust width */
-  height: 30px; /* Adjust height */
-  font-size: 16px; /* Adjust font size */
-  padding: 5px 10px; /* Add padding for better spacing */
-  border: 1px solid #ccc; /* Add border */
-  border-radius: 5px; /* Rounded corners */
+.picture-maps {
+  max-height: 100%;
+  width: 100%;
+  max-width: 100%;
+  display: inline-block;
+  border-radius: 6px;
 }
 
-#search-button {
-  height: 40px; /* Match the height of the search box */
-  padding: 0 15px; /* Add padding for horizontal spacing */
-  font-size: 16px; /* Adjust font size */
-  border: 1px solid #007bff; /* Add border with color */
-  background-color: #007bff; /* Button background color */
-  color: white; /* Text color */
-  border-radius: 5px; /* Rounded corners */
-  cursor: pointer; /* Change cursor to pointer on hover */
+.enlarged-picture {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
 }
 
-#search-button:hover {
-  background-color: #0056b3; /* Darker shade on hover */
+.enlarged-picture.active {
+  display: block;
 }
 
+.enlarged-picture img {
+  width: 800px;
+  max-width: 90vw;
+  cursor: pointer;
+  border-radius: 6px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.image_caption, .lead_image_caption, #storytext figcaption, #storypagemaincol p.slideshow_caption {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--text-muted);
+  display: block;
+  margin: 8px auto 16px;
+  text-align: center;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.overlay-img {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.overlay img {
+  border: 4px solid #fff;
+  border-radius: 6px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.video-container video {
+  display: inline-block;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 6px;
+}
+
+.rotate-left {
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+
+.red {
+  color: var(--accent-red);
+}
+
+/* === 7. 弹窗与控制面板 (修复原文件第625行语法错误) === */
 .info-panel {
-    display: none; /* Hidden by default */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    max-width: 400px;
-    background-color: white;
-    padding: 20px;
-    border: 1px solid #ccc;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    z-index: 10;
-    text-align: center;
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 400px;
+  background-color: white;
+  padding: 20px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+  text-align: center;
 }
-
-
 
 .close-btn {
-/*    background: gray;
-    background-color: gray*/
-    color: black;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-    font-size: 15px;
+  color: #334155;
+  border: none;
+  padding: 6px 14px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 4px;
+  background: #f1f5f9;
+  transition: background 0.2s;
 }
 
 .close-btn:hover {
-    background: lightgray;
+  background: #e2e8f0;
 }
 
 #close-panel-yuki,
 #close-panel-akitakada,
-#close-panel-higashihiroshima,
 #close-panel-shirokiyama,
 #close-panel-higashihiroshima,
 #close-panel-takehara,
@@ -622,14 +457,60 @@ p {
 #close-panel-maniwa,
 #close-panel-daizen,
 #close-panel-yamaguchiken,
-#close-panel-kitakyushu,{
-    
-    margin-top: 1px;
-    cursor: pointer;
-    background-color: darkgray; /* Green */
-    border: 1px solid white; /* Darker Green */
-    color: white;
-    padding: 10px 10px;
-    border-radius: 5px;
-    font-size: 10px;
+#close-panel-kitakyushu {
+  margin-top: 1px;
+  cursor: pointer;
+  background-color: #64748b;
+  border: 1px solid white;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 11px;
+  transition: background-color 0.2s;
+}
+
+#close-panel-yuki:hover,
+#close-panel-akitakada:hover,
+#close-panel-kitakyushu:hover {
+  background-color: #475569;
+}
+
+/* === 8. 响应式移动端适配 === */
+@media (max-width: 768px) {
+  body {
+    padding: 0 12px;
+    margin: 10px auto 40px;
+  }
+  
+  main {
+    padding: 20px 16px;
+    margin-top: 10px;
+    border-radius: 8px;
+  }
+  
+  h1 {
+    font-size: 22px;
+
+  }
+  
+  h2, h3, .section-title {
+    font-size: 18px;
+    margin: 28px 0 14px 0;
+  }
+  
+  main ol > li {
+    padding: 14px 14px 14px 44px;
+  }
+  
+  main ol > li::before {
+    left: 12px;
+    top: 14px;
+    width: 22px;
+    height: 22px;
+    font-size: 11px;
+  }
+  
+  .debate-grid {
+    grid-template-columns: 1fr;
+  }
 }
