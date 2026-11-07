@@ -1,225 +1,198 @@
- tem<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的炎黄春秋笔记</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+  <title>炎黄春秋 - 文革专题</title>
 
-    <style>
-        /* Add your custom styles here */
-
-        .menu-icon {
-            display: none;
-            cursor: pointer;
-        }
-
-        .mobile-menu-list {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 60%; /* Adjust width as needed */
-            background-color: #fff; /* Adjust as needed */
-            padding: 20px;
-            border-right: 1px solid #ccc; /* Adjust as needed */
-            z-index: 1000; /* Ensure it's above other content */
-            flex-direction: column; /* Display items vertically */
-            transition: width 2s;
-        }
-
-        .mobile-menu-list.active {
-            display: block;
-        }
-
-        .mobile-menu {
-            display: none;
-        }
-
-        .menu-title {
-            margin-left: 10px; /* Adjust margin as needed */
-        }
-
-        .menu-icon {
-            margin-right: 10px; /* Adjust margin as needed */
-            cursor: pointer;
-        }
-
-        .mobile-menu-list li {
-            display: block; /* Display list items vertically */a
-        }
-
-  @media only screen and (max-width: 768px) {
-    .menu-icon {
-        display: inline-block;
-        margin-left: 280px; /* Adjust as needed */
-        cursor: pointer;
-    }
-
-    .mobile-menu {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-right: 10px;
-    }
-
-    .menu-title {
-        margin-right: auto; /* Pushes 目錄 to the far left */
-        margin-left: 10px; /* Adjust margin as needed */
-    }
-}
-    </style>
-</head>
 
 <body>
-    <header>
-        <div class="container">
-            <!-- Removed the logo div -->
-            <nav>
-                <ul class="menu">
-                    <li><a href="https://yhcqw.github.io/yhcq/index.html">主页</a></li>
-                    <li><a href="#wenge">文革</a></li>
-                    <li><a href="#mao">毛年代其他</a></li>
-                    <li><a href="#society">社会</a></li>
-                    <li><a href="#people">人物</a></li>
-                    <li><a href="#foreign">外国历史</a></li>
-                    <li><a href="#mis">其他</a></li>
-                    <li><a href="#discussion">明辨是非</a></li>
-		    <li><a href="https://yhcqw.github.io/yhcq/thissite.html">关于本站</a></li>
-		    <li><a href="https://yhcqw.github.io/yhcq/Diary.html">我的日记</a></li>
-		    <li><a href="https://yhcqw.github.io/yhcq/longblog.html">我的长博客</a></li>
-                </ul>
-            </nav>
 
-            <div class="mobile-menu">
-                <div class="menu-title">目錄</div>
-                <div class="menu-icon" onclick="toggleMobileMenu()">&#9776;</div> <!-- Three horizontal lines -->
-                <!-- Move the ul.mobile-menu-list inside the .mobile-menu div -->
-                <ul class="mobile-menu-list">
-                    <li><a href="https://yhcqw.github.io/yhcq/index.html" onclick="hideMobileMenu()">主页</a></li>
-                    <li><a href="#wenge" onclick="hideMobileMenu()">文革</a></li>
-                    <li><a href="#mao" onclick="hideMobileMenu()">毛年代其他</a></li>
-                    <li><a href="#society" onclick="hideMobileMenu()">社会</a></li>
-                    <li><a href="#people" onclick="hideMobileMenu()">人物</a></li>
-                    <li><a href="#foreign" onclick="hideMobileMenu()">外国历史</a></li>
-                    <li><a href="#mis" onclick="hideMobileMenu()">其他</a></li>
-                    <li><a href="#discussion" onclick="hideMobileMenu()">明辨是非</a></li>
-		    <li><a href="thissite.html" onclick="hideMobileMenu()">关于本站</a></li>
-		    <li><a href="Diary.html" onclick="hideMobileMenu()">我的日记</a></li>
-		    <li><a href="https://yhcqw.github.io/yhcq/longblog.html">我的长博客</a></li>
-                </ul>
-            </div>
-        </div>
-    </header>
+  <header id="site-header">
+    <h1>炎黄春秋文存与专题探讨</h1>
+  </header>
 
 
-    <main>
+  <div class="container">
+      <div id="wg" class="section-title">文革专题</div>
+              <div class="article-card">
+                  <div class="card-tags">
+                      <span class="badge">2010年第05期</span>
+                      <span>作者：刘凤梧</span>
+                  </div>
+                  <a href="https://yhcqw.github.io/yhcq/wenge/201005liufengwu.html" class="article-title" target="_blank">《秋瑾案与林昭案的启示》</a>
+                  <div class="article-desc">
+                      对比晚清秋瑾案与文革林昭案的司法审判程序与历史回响，揭示制度与人性的深层启示。<br><br>秋瑾是清末反抗满清统治的侠女，最后被奸人所害。林昭是50年代考上北大的高考状元，因言被定位右派，坐牢时被同牢的人各种撕打掐踢咬抓导致遍体鳞伤，还差点受性侵。被枪决后有关当局还问她妈索偿子弹费。<br>
+秋瑾死后，当时中国并没有把罪推在慈溪头上，而是把直接害死秋瑾的人口诛笔伐。但对于毛年代的罪行，中国就把罪都推在四人帮身上。作者引用了犹太大屠杀，犹太人不是把罪都推在希特拉的身上，而是百折不饶的追捕凶犯。<br>
+追究责任人，有什么重要性？引用作者原话：<br>
+<i>“我们要追究林案的直接责任人，并不是肆意报复。在那个是非混淆的年代，作恶者也不过是主谋们手中一颗任意摆布的棋子。我们应该宽容，但宽容的前提必须是作恶者认罪，不然他们在逃脱之余还会暗中窃笑宽容者的软弱无能。中华民族不是一个勇于忏悔的民族，更少有勇于负责的硬汉，我们不要指望作恶者有一天会良心发现，做出“杀人者，打虎英雄武松也”的壮举，而应该锲而不舍地追究下去，直到全部真相大白于天下!”</i><br>
+如何避免事件重演？<br>
+<i>“我们更不要天真地认为，“扩大化的反右派运动”、“文化大革命”等等虐待人民的各种运动一去不复返了，只要不能确立真正民主自由的政治制度，只要不能将一切迫害善良正直人们的主犯与帮凶绳之以法、警示后人，遇有适当时机，秋瑾、林昭的悲剧重演的机率就会很高。”</i><br><br>
+<i>参考资料</i><br>
+<a href="https://www.youtube.com/watch?v=757iH0EhbYw" target="_blank">纪录片《寻找林昭的灵魂》（胡杰导演）</a><br>
+<a href="https://www.andrewnagorski.com/book/nazi-hunters" target="_blank">The Nazi Hunters(Andrew Nagorski)</a>: 即使纽伦堡审判完结，追捕纳粹罪犯依然继续。此书我最深刻例子是曾经奥地利总统Kurt Waldheim是纳粹一员。<br>
+                  </div>
+              </div>
 
+              <div class="article-card">
+                  <div class="card-tags">
+                      <span class="badge">2010年第03期</span>
+                      <span>作者：读者来信</span>
+                  </div>
+                  <a href="https://yhcqw.github.io/yhcq/wenge/201003duzhelaixin.html" class="article-title" target="_blank">《我的一段回忆》</a>
+                  <div class="article-desc">
+                      作者回忆文革时期在东北边陲一座煤城几个工人反对文化大革命的事件。工人及后逃到苏联，中国经过外交把部分人递解回国判刑，有两人留下苏联。留苏其中一人在改革开放后回国，当了皮革厂厂长，因祸得福。作者写此文目的为纪念死去的人以给他们一点点安慰。<br>
+                  </div>
+              </div>
 
- 
+              <div class="article-card">
+                  <div class="card-tags">
+                      <span class="badge">2010年第03期</span>
+                      <span>作者：王海光</span>
+                  </div>
+                  <a href="https://yhcqw.github.io/yhcq/wenge/201003wanghaiguang.html" class="article-title" target="_blank">《合理想象的妄言》</a>
+                  <div class="article-desc">
+                      作者反驳2009年7月30日《南方周末》发表的文章<a href="https://www.infzm.com/contents/32216" target="_blank">《高层政治纪实作品被曝造假九位前领导人后代集体质疑》</a>，里面一位教授的一句话：“其实‘文革’研究谈不上禁区，只是比较谨慎。”作者列举了大量事实证明文革时研究禁区。<br>
+                  </div>
+              </div>
 
-    
+              <div class="article-card">
+                  <div class="card-tags">
+                      <span class="badge">2009年第08期</span>
+                      <span>作者：赵遐秋</span>
+                  </div>
+                  <a href="https://yhcqw.github.io/yhcq/wenge/200908zhaoxiaqiu.html" class="article-title" target="_blank">《跟风整人的懊悔》</a>
+                  <div class="article-desc">
+                      作者描述了当年为什么成为党的工具，不明白毛年代洗脑的人从这篇文章可以略知一二。
+                  </div>
+              </div>
 
+              <div class="article-card">
+                  <div class="card-tags">
+                      <span class="badge">2010年第01期</span>
+                      <span>作者：高扬</span>
+                  </div>
+                  <a href="https://yhcqw.github.io/yhcq/wenge/201001gaoyang.html" class="article-title" target="_blank">《两次不准革命的经历》</a>
+                  <div class="article-desc">
+                      作者曾经是吉林及河北省书记。第一次革命是1958年反右时代，因为讲真话被相处甚久，彼此了解的同志批斗，感到愤怒，后来下放到工厂锻炼。第二次是文革，当时”坐喷气式飞机“，导致坐骨神经痛，行走困难，多年不愈。1969年，60岁的时候被下放到“五七干校”。经历两次革命后，最后被平反，给他恢复党籍他还不愿意。作者最后点评了自己对“平反“的意见。<br>
+作者在经历不同阶段对当时生活环境描述很细节，如果要拍电影这篇文章可以参考。<br><br>
 
- 
+自己点评：”喷气式飞机“是一种批斗方式，根据<a href="https://zh.wikipedia.org/zh-hant/喷气式" target="_blank">维基百科</a>，会导致”颈脖勒出血痕，腰酸背痛，血脉不畅，四肢僵直“。这是一种极大的侮辱，很多文革时期的刑法，使人身心受损。经历文革的人很多有身体缺陷，后代可以出一分力在医疗生活等帮助他们，不过前提是要知道。另外，经历过的人我相信很多都患有PTSD(post traumatic stress disorder创伤后遗症)，这是可以遗传的。研究这方面心理有什么用？我引用这项研究作者的话<a href="https://www.scientificamerican.com/article/how-parents-rsquo-trauma-leaves-biological-traces-in-children/" target="_blank">How Parents’ Trauma Leaves Biological Traces in Children(Scientific American 2022)</a>：<br><br>
+<i>as we learn more about the ways catastrophic experiences have shaped both those who lived through those horrors and their descendants, we will become better equipped to deal with dangers now and in the future, facing them with resolution and resilience.</i><br>
+                  </div>
+              </div>
 
-    
-<!------------------------------------------------------------------ wenge-begins---------------------------------->
+              <div class="article-card">
+                  <div class="card-tags">
+                      <span class="badge">2010年第03期</span>
+                      <span>作者：张刃</span>
+                  </div>
+                  <a href="https://yhcqw.github.io/yhcq/wenge/201003zhangren.html" class="article-title" target="_blank">《孩子眼中的文革岁月》</a>
+                  <div class="article-desc">
+                      当时家在天津十几岁孩子的亲身经历，家里把一切非革命东西烧尽，目击有人被打致死的血腥场面，闻到跳河自杀尸体发臭，听到被打者惨叫，还有见证自杀不遂终身致残等。作为孩子，作者和其他朋友自发组织去北京串联，最后无功而还。文章还提到张闻天北斗时不屈服，是真汉子。<br>
+                  </div>
+              </div>
 
-<span style="font-family: arial; sans-serif; font-size: 14pt"></br>
-<a href="https://yhcqw.github.io/yhcq/culturalrevolution.html"><b><i>文革： </a> </b></i></span></br>
+              <div class="article-card">
+                  <div class="card-tags">
+                      <span class="badge">2010年第06期</span>
+                      <span>作者：王金屏</span>
+                  </div>
+                  <a href="https://yhcqw.github.io/yhcq/wenge/201006wangjinping.html" class="article-title" target="_blank">《邢志恒之死》</a>
+                  <div class="article-desc">
+                      此文乃<a href="https://yhcqw.github.io/yhcq/wenge/200908zhaoxiaqiu.html" target="_blank">跟风整人的懊悔(赵遐秋)</a>的回应。作者为北大学生，刑志恒是他的高中同学，后来一同上了北。1959年因富农身份受迫害自杀，留下年轻妻子及一堆儿女。<br>
+                  </div>
+              </div>
 
-<!--year-->200908:</br>
-<a href="https://yhcqw.github.io/yhcq/wenge-200908zhaoxiaqiu.html" target="_blank">跟风整人的懊悔(赵遐秋）</a></br>
+              <div class="article-card">
+                  <div class="card-tags">
+                      <span class="badge">2010年第07期</span>
+                      <span>作者：陈兵</span>
+                  </div>
+                  <a href="https://yhcqw.github.io/yhcq/wenge/201007chenbing.html" class="article-title" target="_blank">《北大附中"文革"初期纪事》</a>
+                  <div class="article-desc">
+                      1966年8月被喻为“红八月”，乃文革史上死人最多的一个月。有水的地方就有人自杀，暴尸岸边。二里沟的一条铁路每天血肉横飞。北大附中校园也是重灾区。很多问询的学生变了杀人狂魔，打人最狠。文章分析其心理原因：大家一直没见过他,但总在议论他,此人为何在“文革”前与“文革”中反差如此大?主要是他的心理变态,过去人们笑话他,他很孤独,“文革”的形势给了他机会,他把出身不好的同学当做靶子来发泄,几乎打出人命。像这样的变态者,当时不在少数。“文革”残害了一代人,难道不该好好总结吗？…把当时的史实记载叙说,使人们记住野蛮、落后、愚昧教训,对历史是一种负责。<br>
+                  </div>
+              </div>
 
-作者描述了当年为什么成为党的工具，不明白毛年代洗脑的人从这篇文章可以略知一二。</br>
+              <div class="article-card">
+                  <div class="card-tags">
+                      <span class="badge">2010年第10期</span>
+                      <span>作者：王友琴</span>
+                  </div>
+                  <a href="https://yhcqw.github.io/yhcq/wenge/201010wangyouqin.html" class="article-title" target="_blank">《恐怖的“红八月”》</a>
+                  <div class="article-desc">
+                      了解文革代表作。全文基本是虐待血腥细节，此文并不适合所有人。没有了解过文革的人可能内容是想象不到的恐怖。文章从北大及北大附中打老师开始，红卫兵虐待怀孕老师，孩子出生很快死亡。还有文革出名虐待致死事件 - 北师大附中校长卞仲耘被虐待几小时致死。还有被自杀，真自杀，终身致残等很多案例。把人虐待致死后红卫兵还得浇开水冷水鉴定是否真的死亡，还有其他虐尸情况。其他血腥细节不在此复述。<br>
+                  </div>
+              </div>
 
+              <div class="article-card">
+                  <div class="card-tags">
+                      <span class="badge">2010年第10期</span>
+                      <span>作者：王晶垚</span>
+                  </div>
+                  <a href="https://yhcqw.github.io/yhcq/wenge/201010wangjingyao.html" class="article-title" target="_blank">《关于卞仲耘之死的匿名唁函》</a>
+                  <div class="article-desc">
+                      文革著名打死人事件 - 北师大附属女子中学卞校长被打死一案，目击者披露的一些血腥细节。<br>
+                  </div>
+              </div>
 
-<!--year-->201001:</br>
-<a href="https://yhcqw.github.io/yhcq/wenge-201001gaoyang.html" target="_blank">两次不准革命的经历(高扬）</a></br>
-作者曾经是吉林及河北省书记。第一次革命是1958年反右时代，因为讲真话被相处甚久，彼此了解的同志批斗，感到愤怒，后来下放到工厂锻炼。第二次是文革，当时”坐喷气式飞机“，导致坐骨神经痛，行走困难，多年不愈。1969年，60岁的时候被下放到“五七干校”。经历两次革命后，最后被平反，给他恢复党籍他还不愿意。作者最后点评了自己对“平反“的意见。</br>
-作者在经历不同阶段对当时生活环境描述很细节，如果要拍电影这篇文章可以参考。</br>
+              <div class="article-card">
+                  <div class="card-tags">
+                      <span class="badge">2010年第10期</span>
+                      <span>作者：王炼利</span>
+                  </div>
+                  <a href="https://yhcqw.github.io/yhcq/wenge/201010wanglianli.html" class="article-title" target="_blank">《我们为什么会助纣为虐》</a>
+                  <div class="article-desc">
+                      当年文革大人红卫兵的反思，分析自己为什么会成为红卫兵。<br><br>
+“我们怎么会变成了这样?多年以后，我找出的答案是：那时，所有的人都在害怕，所有的人都怀抱着彻骨的恐惧，都担心厄运会降到自己头上，所有的人都想“避险”，甚至不择手段地“避险”。当发现“行恶”能“嫁祸于人”又能使自己“避险”，一些人就选择了行恶。坐观恶行无动于衷，还算是那个年代的“善行”呢!”<br><br>
+作者害怕自己被定义为牛鬼蛇神，之后就会被鄙视及孤立，所以就参加政治运动。作者最后总结很值得反思，文革到底如何影响到现在呢？<br>
+“堂堂中华，公然以不讲道德为荣、以不讲文明为荣、以不讲礼貌为荣，并作为一种时代提倡的行为，其恶果一直延续到现在——现在的中国还是“礼仪之邦”吗?那属上辈子人和祖上的荣耀，从我们这一代开始，已经不好意思沾光!<br><br>
+现在，造假作假、人骗人、人虐待人的奇闻不绝于耳，造假作假、人骗人、人虐待人已经到了丧尽天良的地步。当丧尽天良的作为也能“普及神州大地”时，作为中国人正该想一想，如果没有1966年开始的那场腰斩了中国传统道德文明的“革命”，如果不是有两代年轻人从小生活在将无知无耻当有趣的社会里，中华民族会遭这样的报应吗?”<br><br>
+《炎黄春秋》这期把三篇文革血腥文章放在一起，有历史纪实，有肇事者反思，也有吊唁信，不同角度令读者更加深入了解文革的暴力，加强思考。<br>
+                  </div>
+              </div>
 
-自己点评：”喷气式飞机“是一种批斗方式，根据<a href="https://zh.wikipedia.org/zh-hant/喷气式" target="_blank">维基百科</a>，会导致”颈脖勒出血痕，腰酸背痛，血脉不畅，四肢僵直“。这是一种极大的侮辱，很多文革时期的刑法，使人身心受损。经历文革的人很多有身体缺陷，后代可以出一分力在医疗生活等帮助他们，不过前提是要知道。另外，经历过的人我相信很多都患有PTSD（post traumatic stress disorder创伤后遗症），这是可以遗传的。研究这方面心理有什么用？我引用这项研究作者的话<a href="https://www.scientificamerican.com/article/how-parents-rsquo-trauma-leaves-biological-traces-in-children/" target="_blank">How Parents’ Trauma Leaves Biological Traces in Children（Scientific American 2022)</a>：</br>
-<i>as we learn more about the ways catastrophic experiences have shaped both those who lived through those horrors and their descendants, we will become better equipped to deal with dangers now and in the future, facing them with resolution and resilience.</i></br>
+              <div class="article-card">
+                  <div class="card-tags">
+                      <span class="badge">2010年第11期</span>
+                      <span>作者：谢承年</span>
+                  </div>
+                  <a href="https://yhcqw.github.io/yhcq/wenge/201011xiechengnian.html" class="article-title" target="_blank">《道县“文革”杀人遗留问题处理经过》</a>
+                  <div class="article-desc">
+                      1967年湖南道县因文革而死的人接近1万。当中凶残分子为了革命把带大自己的人杀掉。本文关于1980年实行的平反工作，包括经济补偿，处理过失分子，伤口愈合。<br><br>
+编者按，对于“伤口愈合”一点，民主化转型过程的transitional justice也有很多研究。对于历史伤痛，受害人都含恨。要把他们的恨释放，需要伤口愈合，例如承认他们的痛，追究责任，教育下一代等。只给钱的话，这是“封口费”，并不能愈合伤口的。除了文革，中国还很多类似需要伤口愈合的事件。<br>
+                  </div>
+              </div>
 
+              <div class="article-card">
+                  <div class="card-tags">
+                      <span class="badge">2011年第07期</span>
+                      <span>作者：程郁</span>
+                  </div>
+                  <a href="https://yhcqw.github.io/yhcq/wenge/201107chengyu.html" class="article-title" target="_blank">《我眼中的广西文革》</a>
+                  <div class="article-desc">
+                      广西文革以曾发生人吃人事件出名。此篇关于一位11小女孩的走难经历。内容并不血腥。虽然是非常悲壮的故事，但里面一个情节实在是看到我疯狂爆笑了出来。<br>
+                  </div>
+              </div>
 
+              <div class="article-card">
+                  <div class="card-tags">
+                      <span class="badge">2011年第10期</span>
+                      <span>作者：王仪瑛</span>
+                  </div>
+                  <a href="https://yhcqw.github.io/yhcq/wenge/201110wangyiying.html" class="article-title" target="_blank">《我打地主堂曾祖母》</a>
+                  <div class="article-desc">
+                      作者当年作为10几岁的小孩被教导抽打地主。当年不懂事，多年后内疚至极。<br><br>
+                     <i> “在斗争大会上，她要是不老实，我们贫下中农喊‘她不老实，顽固’时，你们就用竹鞭子用力抽打她，叫她老老实实。如果她再不老实，就再用力抽打她。你们两兄弟如果不打她，打她时，不用力抽，连你们一起斗争”。  </i><br>
+                  </div>
+              </div>
+  </div>
 
-<!--year-->201003:</br>
-<a href="https://yhcqw.github.io/yhcq/wenge-201003zhangren.html" target="_blank">孩子眼中的文革岁月(张刃)</a></br>
-当时家在天津十几岁孩子的亲身经历，家里把一切非革命东西烧尽，</br>
-目击有人被打致死的血腥场面，闻到跳河自杀尸体发臭，听到被打者惨叫，还有见证自杀不遂终身致残等。作为孩子，作者和其他朋友自发组织去北京串联，最后无功而还。文章还提到张闻天北斗时不屈服，是真汉子。</br>
-
-<!--year-->201006:</br>
-<a href="https://yhcqw.github.io/yhcq/wenge-201006wangjinping.html" target="_blank">邢志恒之死(王金屏）</a></br>
-此文乃<a href="https://yhcqw.github.io/yhcq/wenge-200908zhaoxiaqiu.html" target="_blank">跟风整人的懊悔(赵遐秋）</a>的回应。作者为北大学生，刑志恒是他的高中同学，后来一同上了北。1959年因富农身份受迫害自杀，留下年轻妻子及一堆儿女。</br>
-
-
-<!--year-->201007:</br>
-<a href="https://yhcqw.github.io/yhcq/wenge-201007.html" target="_blank">北大附中"文革"初期纪事 陈兵</a></br>
-1966年8月被喻为“红八月”，乃文革史上死人最多的一个月。有水的地方就有人自杀，暴尸岸边。二里沟的一条铁路每天血肉横飞。北大附中校园也是重灾区。很多问询的学生变了杀人狂魔，打人最狠。文章分析其心理原因：大家一直没见过他,但总在议论他,此人为何在“文革”前与“文革”中反差如此大?主要是他的心理变态,过去人们笑话他,他很孤独,“文革”的形势给了他机会,他把出身不好的同学当做靶子来发泄,几乎打出人命。像这样的变态者,当时不在少数。“文革”残害了一代人,难道不该好好总结吗？…把当时的史实记载叙说,使人们记住野蛮、落后、愚昧教训,对历史是一种负责。</br>
-
-<!--year-->201010:</br>
-<a href="https://yhcqw.github.io/yhcq/wenge-201010wangyouqin.html" target="_blank">恐怖的“红八月”(王友琴)</a></br>
-了解文革代表作。全文基本是虐待血腥细节，此文并不适合所有人。没有了解过文革的人可能内容是想象不到的恐怖。文章从北大及北大附中打老师开始，红卫兵虐待怀孕老师，孩子出生很快死亡。还有文革出名虐待致死事件 - 北师大附中校长卞仲耘被虐待几小时致死。还有被自杀，真自杀，终身致残等很多案例。把人虐待致死后红卫兵还得浇开水冷水鉴定是否真的死亡，还有其他虐尸情况。其他血腥细节不在此复述。</br>
-
-<a href="https://yhcqw.github.io/yhcq/wenge-201010wangjingyao.html" target="_blank">“关于卞仲耘之死的匿名唁函”(王晶垚)</a></br>
-文革著名打死人事件 - 北师大附属女子中学卞校长被打死一案，目击者披露的一些血腥细节。</br>
-
-<a href="https://yhcqw.github.io/yhcq/wenge-201010wanglianli.html" target="_blank">我们为什么会助纣为虐(王炼利)</a></br>
-当年文革大人红卫兵的反思，分析自己为什么会成为红卫兵。</br>
-“我们怎么会变成了这样?多年以后，我找出的答案是：那时，所有的人都在害怕，所有的人都怀抱着彻骨的恐惧，都担心厄运会降到自己头上，所有的人都想“避险”，甚至不择手段地“避险”。当发现“行恶”能“嫁祸于人”又能使自己“避险”，一些人就选择了行恶。坐观恶行无动于衷，还算是那个年代的“善行”呢!”</br>
-作者害怕自己被定义为牛鬼蛇神，之后就会被鄙视及孤立，所以就参加政治运动。作者最后总结很值得反思，文革到底如何影响到现在呢？</br>
-“堂堂中华，公然以不讲道德为荣、以不讲文明为荣、以不讲礼貌为荣，并作为一种时代提倡的行为，其恶果一直延续到现在——现在的中国还是“礼仪之邦”吗?那属上辈子人和祖上的荣耀，从我们这一代开始，已经不好意思沾光!</br>
-现在，造假作假、人骗人、人虐待人的奇闻不绝于耳，造假作假、人骗人、人虐待人已经到了丧尽天良的地步。当丧尽天良的作为也能“普及神州大地”时，作为中国人正该想一想，如果没有1966年开始的那场腰斩了中国传统道德文明的“革命”，如果不是有两代年轻人从小生活在将无知无耻当有趣的社会里，中华民族会遭这样的报应吗?”</br>
-《炎黄春秋》这期把三篇文革血腥文章放在一起，有历史纪实，有肇事者反思，也有吊唁信，不同角度令读者更加深入了解文革的暴力，加强思考。</br>
-
-<!--year-->201011:</br>
-<a href="https://yhcqw.github.io/yhcq/wenge-201011xiechengnian.html" target="_blank">道县“文革”杀人遗留问题处理经过(谢承年)</a></br>
-1967年湖南道县因文革而死的人接近1万。当中凶残分子为了革命把带大自己的人杀掉。本文关于1980年实行的平反工作，包括经济补偿，处理过失分子，伤口愈合。</br>
-编者按，对于“伤口愈合”一点，民主化转型过程的transitional justice也有很多研究。对于历史伤痛，受害人都含恨。要把他们的恨释放，需要伤口愈合，例如承认他们的痛，追究责任，教育下一代等。只给钱的话，这是“封口费”，并不能愈合伤口的。除了文革，中国还很多类似需要伤口愈合的事件。</br>
-
-<!--year-->201107:</br>
-<a href="https://yhcqw.github.io/yhcq/wenge-201107chengyu.html" target="_blank">我眼中的广西文革（程郁）</a></br>
-广西文革以曾发生人吃人事件出名。此篇关于一位11小女孩的走难经历。内容并不血腥。虽然是非常悲壮的故事，但里面一个情节实在是看到我疯狂爆笑了出来。</br>
-
-
-
-<!--year-->201110:</br>
-<a href="https://yhcqw.github.io/yhcq/wenge-201110wangyiying.html" target="_blank">我打地主堂曾祖母(王仪瑛）</a></br>
-作者为10几岁的小孩被教导抽打地主。当年不懂事，多年后内疚至极。</br>“在斗争大会上，她要是不老实，我们贫下中农喊‘她不老实，顽固’时，你们就用竹鞭子用力抽打她，叫她老老实实。如果她再不老实，就再用力抽打她。你们两兄弟如果不打她，打她时，不用力抽，连你们一起斗争”。</br>
-
-
-
-<!------------------------------------------------------------------ wenge-ends---------------------------------->
-
-
-</div>
-		</div> 
-	
-		
-
-
-
-
-
-</body>
-</html>
-    <a href="https://yhcqw.github.io/yhcq/">返回主目录</a></br></br></br>
-    </main>
+  <script src="nav_index.js"></script>
+  <script src="search_script.js"></script>
+  <script src="script.js"></script> <!-- Link to your JS file -->
   
-
-    <script>
-        function toggleMobileMenu() {
-            var menuList = document.querySelector('.mobile-menu-list');
-            menuList.classList.toggle('active');
-        }
-
-        function hideMobileMenu() {
-            var menuList = document.querySelector('.mobile-menu-list');
-            menuList.classList.remove('active');
-        }
-    </script>
 </body>
 </html>

@@ -29,7 +29,7 @@ const menuData = [
     {
         title: "毛泽东年代",
         url: "mao.html",
-        description: "文革意外发生在毛年代的事"
+        description: "文革以外发生在毛年代的事"
     },
     {
         title: "人物",
@@ -52,8 +52,7 @@ const menuData = [
         subItems: [
             { title: "短日记", url: "short_diary.html" },
             { title: "长文章", url: "long_diary.html"},
-            { title: "历史游记", url: "history_journal.html" },
-    
+            { title: "历史游记", url: "history_journal.html" }
         ]
     },
     {
@@ -109,69 +108,79 @@ function renderHeader() {
     headerEl.innerHTML = `
         <style>
             .tab-nav-wrapper {
-                font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-                margin-bottom: 20px;
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+                margin-bottom: 24px;
             }
             .site-title-bar {
                 text-align: center;
-                padding: 12px 0 8px 0;
+                padding: 16px 0 10px 0;
             }
             .site-title-bar a {
                 text-decoration: none;
-                color: #0069A3;
-                font-size: 1.5rem;
-                font-weight: bold;
-                font-family: Georgia, serif;
+                color: #1e3a5f;
+                font-size: 1.6rem;
+                font-weight: 700;
+                font-family: "Noto Serif SC", Georgia, "Songti SC", serif;
+                letter-spacing: 0.5px;
             }
 
             /* === SEARCH AREA === */
             .container-search {
                 text-align: right;
-                padding: 10px 24px;
-                background-color: #ffffff;
-                border: none;
+                padding: 10px 16px;
+                background-color: transparent;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
             }
             #search-box {
-                width: 260px;
-                padding: 8px 12px;
-                font-size: 16px;
+                width: 240px;
+                padding: 7px 14px;
+                font-size: 14px;
                 background-color: #ffffff;
-                border: 1px solid #cbd5e1;
-                border-radius: 4px;
-                vertical-align: middle;
-                font-family: inherit;
+                border: 1px solid #d1d5db;
+                border-radius: 20px;
+                color: #334155;
+                outline: none;
+                transition: all 0.25s ease;
+                box-sizing: border-box;
+            }
+            #search-box:focus {
+                border-color: #1e3a5f;
+                box-shadow: 0 0 0 3px rgba(30, 58, 95, 0.12);
+                background-color: #ffffff;
             }
             #search-button {
-                padding: 8px 16px;
-                font-size: 16px;
-                font-weight: bold;
+                padding: 7px 18px;
+                font-size: 14px;
+                font-weight: 500;
                 color: #ffffff;
-                background-color: #0069A3;
-                border: 1px solid #0069A3;
-                border-radius: 4px;
+                background-color: #1e3a5f;
+                border: none;
+                border-radius: 20px;
                 cursor: pointer;
-                vertical-align: middle;
-                margin-left: 4px;
-                font-family: inherit;
-                transition: background-color 0.2s;
+                margin-left: 6px;
+                transition: all 0.2s ease;
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
             }
             #search-button:hover {
-                background-color: #cc3600;
-                border-color: #cc3600;
+                background-color: #2b4f7e;
+                transform: translateY(-1px);
+                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
             }
             #search-results {
                 text-align: left;
             }
 
-            /* === THE MENU BAR (Matching yhcqw.github.io/yhcq/) === */
+            /* === THE MENU BAR (Modern Scholar Navy) === */
             .botmenu-bar {
-                background-color: #0069A3;
-                border-top: none;
-                border-bottom: 3px solid #005080;
+                background: #1e3a5f;
+                border-radius: 8px;
+                box-shadow: 0 3px 10px rgba(15, 23, 42, 0.08);
                 display: flex;
                 justify-content: center;
                 flex-wrap: wrap;
-                padding: 0;
+                padding: 0 8px;
                 margin: 0;
                 list-style: none;
             }
@@ -181,49 +190,51 @@ function renderHeader() {
             }
             .botmenu-bar > li > a {
                 display: inline-block;
-                padding: 10px 16px;
-                color: #ffffff;
+                padding: 11px 16px;
+                color: #f1f5f9;
                 text-decoration: none;
-                font-size: 16px;           /* Keeping original font size */
-                font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-                font-weight: normal;
-                border-right: 1px solid rgba(255, 255, 255, 0.15);
+                font-size: 15px;
+                font-weight: 500;
+                letter-spacing: 0.3px;
+                border-right: 1px solid rgba(255, 255, 255, 0.1);
                 transition: background-color 0.2s, color 0.2s;
             }
             .botmenu-bar > li:first-child > a {
-                border-left: 1px solid rgba(255, 255, 255, 0.15);
+                border-left: 1px solid rgba(255, 255, 255, 0.1);
             }
             /* Hover & Active States */
             .botmenu-bar > li > a:hover {
-                background-color: #005585;
+                background-color: rgba(255, 255, 255, 0.12);
                 color: #ffffff;
             }
             .botmenu-bar > li.active > a {
-                background-color: #cc3600;
+                background-color: #8b1e2f; /* 典雅暗绛红 */
                 color: #ffffff;
+                font-weight: 600;
             }
             .tab-arrow {
                 font-size: 11px;
-                margin-left: 3px;
+                margin-left: 4px;
+                opacity: 0.8;
             }
 
             /* === HOVER DESCRIPTION TOOLTIP BOX === */
             .tab-tooltip {
                 display: none;
                 position: absolute;
-                bottom: calc(100% + 6px);
+                bottom: calc(100% + 8px);
                 left: 50%;
                 transform: translateX(-50%);
                 width: max-content;
-                max-width: 220px;
-                padding: 6px 10px;
+                max-width: 240px;
+                padding: 8px 12px;
                 background-color: #1e293b;
-                color: #ffffff;
-                font-size: 13px;
+                color: #f8fafc;
+                font-size: 12.5px;
                 font-weight: normal;
-                line-height: 1.4;
-                border-radius: 5px;
-                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+                line-height: 1.5;
+                border-radius: 6px;
+                box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
                 z-index: 1001;
                 pointer-events: none;
                 text-align: center;
@@ -241,21 +252,26 @@ function renderHeader() {
             }
             .botmenu-bar > li:hover > .tab-tooltip {
                 display: block;
+                animation: fadeInTooltip 0.15s ease-in-out;
+            }
+            @keyframes fadeInTooltip {
+                from { opacity: 0; transform: translate(-50%, 4px); }
+                to { opacity: 1; transform: translate(-50%, 0); }
             }
 
             /* === DROPDOWN MENU FOR SUB-ITEMS === */
             .tab-dropdown {
                 display: none;
                 position: absolute;
-                top: 100%;
+                top: calc(100% + 2px);
                 left: 0;
-                min-width: 190px;
+                min-width: 180px;
                 background-color: #ffffff;
-                border: 1px solid #cbd5e1;
-                border-radius: 0 0 4px 4px;
-                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+                border: 1px solid #e2e8f0;
+                border-radius: 8px;
+                box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
                 list-style: none;
-                padding: 4px 0;
+                padding: 6px 0;
                 margin: 0;
                 z-index: 1000;
                 text-align: left;
@@ -263,23 +279,54 @@ function renderHeader() {
             .botmenu-bar > li.has-dropdown:hover .tab-dropdown,
             .botmenu-bar > li.has-dropdown.open .tab-dropdown {
                 display: block;
+                animation: fadeInDropdown 0.2s ease-out;
+            }
+            @keyframes fadeInDropdown {
+                from { opacity: 0; transform: translateY(-4px); }
+                to { opacity: 1; transform: translateY(0); }
             }
             .tab-dropdown li a {
                 display: block;
-                padding: 9px 16px;
-                color: #333333;
+                padding: 10px 18px;
+                color: #334155;
                 text-decoration: none;
-                font-size: 13.5px;
-                border-bottom: 1px solid #f1f5f9;
-            }
-            .tab-dropdown li:last-child a {
-                border-bottom: none;
+                font-size: 14px;
+                transition: background-color 0.15s, color 0.15s;
             }
             .tab-dropdown li a:hover,
             .tab-dropdown li a.active-sub {
-                background-color: #f0f7fb;
-                color: #0069A3;
-                font-weight: bold;
+                background-color: #f1f5f9;
+                color: #1e3a5f;
+                font-weight: 600;
+            }
+
+            /* === MOBILE HORIZONTAL SCROLL NAV === */
+            @media (max-width: 768px) {
+                .botmenu-bar {
+                    flex-wrap: nowrap;
+                    overflow-x: auto;
+                    justify-content: flex-start;
+                    -webkit-overflow-scrolling: touch;
+                    scrollbar-width: none; /* Firefox */
+                    padding: 0 4px;
+                    border-radius: 6px;
+                }
+                .botmenu-bar::-webkit-scrollbar {
+                    display: none; /* Safari and Chrome */
+                }
+                .botmenu-bar > li > a {
+                    white-space: nowrap;
+                    padding: 10px 14px;
+                    font-size: 14px;
+                }
+                .container-search {
+                    padding: 8px 10px;
+                    justify-content: center;
+                }
+                #search-box {
+                    width: 100%;
+                    max-width: 260px;
+                }
             }
         </style>
 
@@ -287,7 +334,7 @@ function renderHeader() {
             ${siteTitle ? `<div class="site-title-bar"><a href="index.html">${siteTitle}</a></div>` : ''}
             
             <div class="container-search">
-                <input type="text" id="search-box" placeholder="输入关键词..." />
+                <input type="text" id="search-box" placeholder="输入关键词搜索..." />
                 <button id="search-button">搜索</button>
                 <div id="search-results"></div>
             </div>
