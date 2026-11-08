@@ -1,196 +1,147 @@
- tem<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的炎黄春秋笔记</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-
-    <style>
-        /* Add your custom styles here */
-
-        .menu-icon {
-            display: none;
-            cursor: pointer;
-        }
-
-        .mobile-menu-list {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 60%; /* Adjust width as needed */
-            background-color: #fff; /* Adjust as needed */
-            padding: 20px;
-            border-right: 1px solid #ccc; /* Adjust as needed */
-            z-index: 1000; /* Ensure it's above other content */
-            flex-direction: column; /* Display items vertically */
-            transition: width 2s;
-        }
-
-        .mobile-menu-list.active {
-            display: block;
-        }
-
-        .mobile-menu {
-            display: none;
-        }
-
-        .menu-title {
-            margin-left: 10px; /* Adjust margin as needed */
-        }
-
-        .menu-icon {
-            margin-right: 10px; /* Adjust margin as needed */
-            cursor: pointer;
-        }
-
-        .mobile-menu-list li {
-            display: block; /* Display list items vertically */a
-        }
-
-  @media only screen and (max-width: 768px) {
-    .menu-icon {
-        display: inline-block;
-        margin-left: 280px; /* Adjust as needed */
-        cursor: pointer;
-    }
-
-    .mobile-menu {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-right: 10px;
-    }
-
-    .menu-title {
-        margin-right: auto; /* Pushes 目錄 to the far left */
-        margin-left: 10px; /* Adjust margin as needed */
-    }
-}
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+  <title>炎黄春秋 - 人物专题</title>
 </head>
-
 <body>
-    <header>
-        <div class="container">
-            <!-- Removed the logo div -->
-            <nav>
-                <ul class="menu">
-                    <li><a href="https://yhcqw.github.io/yhcq/index.html">主页</a></li>
-                    <li><a href="#wenge">文革</a></li>
-                    <li><a href="#mao">毛年代其他</a></li>
-                    <li><a href="#society">社会</a></li>
-                    <li><a href="#people">人物</a></li>
-                    <li><a href="#foreign">外国历史</a></li>
-                    <li><a href="#mis">其他</a></li>
-                    <li><a href="#discussion">明辨是非</a></li>
-		    <li><a href="https://yhcqw.github.io/yhcq/thissite.html">关于本站</a></li>
-		    <li><a href="https://yhcqw.github.io/yhcq/Diary.html">我的日记</a></li>
-		    <li><a href="https://yhcqw.github.io/yhcq/longblog.html">我的长博客</a></li>
-                </ul>
-            </nav>
 
-            <div class="mobile-menu">
-                <div class="menu-title">目錄</div>
-                <div class="menu-icon" onclick="toggleMobileMenu()">&#9776;</div> <!-- Three horizontal lines -->
-                <!-- Move the ul.mobile-menu-list inside the .mobile-menu div -->
-                <ul class="mobile-menu-list">
-                    <li><a href="https://yhcqw.github.io/yhcq/index.html" onclick="hideMobileMenu()">主页</a></li>
-                    <li><a href="#wenge" onclick="hideMobileMenu()">文革</a></li>
-                    <li><a href="#mao" onclick="hideMobileMenu()">毛年代其他</a></li>
-                    <li><a href="#society" onclick="hideMobileMenu()">社会</a></li>
-                    <li><a href="#people" onclick="hideMobileMenu()">人物</a></li>
-                    <li><a href="#foreign" onclick="hideMobileMenu()">外国历史</a></li>
-                    <li><a href="#mis" onclick="hideMobileMenu()">其他</a></li>
-                    <li><a href="#discussion" onclick="hideMobileMenu()">明辨是非</a></li>
-		    <li><a href="thissite.html" onclick="hideMobileMenu()">关于本站</a></li>
-		    <li><a href="Diary.html" onclick="hideMobileMenu()">我的日记</a></li>
-		    <li><a href="https://yhcqw.github.io/yhcq/longblog.html">我的长博客</a></li>
-                </ul>
-            </div>
-        </div>
-    </header>
+  <header id="site-header">
+    <h1>炎黄春秋文存与专题探讨</h1>
+  </header>
 
 
-    <main>
+  <div class="container">
+      <div id="people" class="section-title">人物专题</div>
+              <div class="article-card">
+                  <div class="card-tags">
+                      <span class="badge">2010年第05期</span>
+                      <span>作者：郭宇宽</span>
+                  </div>
+                  <a href="https://yhcqw.github.io/yhcq/people/201005guoyukuan.html" class="article-title" target="_blank">《寻找王佩英》</a>
+                  <div class="article-desc">
+                      王佩英乃大中电器始创人的母亲，当年母亲平反后拿着1000元抚恤金（编者按：注意时抚恤金，不是赔偿金）创业。作者写这篇文章所做的采访很宽难，王佩英当年的同事有些和她的死有关不愿意接受采访，有些被问到关键问题不愿意说。<br><br>
+当年死去时55岁，7个孩子的母亲，因为拥护刘少奇，大声批评毛泽东受尽折磨。她从来不讲一句违心话，知道自己必死无疑在死前和自己的孩子划清界限。因为反革命被关在精神病院，在精神病院，曾被多次毒打，大量喂药。她被打从来不掉一滴眼泪，从来不肯说一句：“刘少奇有罪”。最后公审后，她被一根细绳子拖出去准备枪决，细绳子陷进肉里，使她不能再喊，有说她在卢沟桥被枪决前已经被勒死了。<br><br>
+王佩英不是什么大人物，但一直不违心，还那么公开批评毛泽东，当时身边的人都不理解。<br><br>
+编者按：我听过身边有朋友说，文革都已经平反了，觉得事件就过去了。可是历史经常说“反思”，这点做到了吗？我引用《文革受难者》王友琴写过王佩英的文章节录：<br><br>
+<i>“即使在文革被否定后，也只能以精神病为理由得到平反，而不是明晰宣布：要有言论自由，不能以言论治罪。”<br><br>
+为什么那么多人往死？有关当局并不敢揭示原因。因此，直至今日中国依然没有言论自由。</i><br><br>
+<i>参考资料</i><br>
+<a href="http://ywang.uchicago.edu/history/docs/2009_03_13.pdf" target="_blank">王佩英：一位梳辫子的英雄母亲（王友琴）<a/><br>
+<a href="https://ywang.uchicago.edu/history/victim_ebook_070505.pdf" target="_blank">文革受难者（王友琴）</a><br>
+<a href="https://ccrhm.org" target="_blank">文革受难者纪念园（王友琴）</a>
+                  </div>
+              </div>
 
+              <div class="article-card">
+                  <div class="card-tags">
+                      <span class="badge">2010年第03期</span>
+                      <span>作者：苗振亚</span>
+                  </div>
+                  <a href="https://yhcqw.github.io/yhcq/people/201003miaozhenya.html" class="article-title" target="_blank">《黄克诚在庐山会议上》</a>
+                  <div class="article-desc">
+                      1959年庐山会议上，彭德怀被打下来。黄克诚在会议上支持他也没有好下场。整篇文章，编者最深刻他自己的心理分析：<br><br>
+<i>“在以后的岁月里,黄克诚没有因免官戴罪而痛苦,他“无日得安”的痛苦是,不该因“顾大局”而违心地认罪,违心地作检查,违心地同意大会的“决议草案”。所以会如此,他找出的深层原因是:“许多年来,在内战、长征中,主席的英明、正确已为全党所公认。抗日战争、解放战争和抗美援朝更使全党钦服主席的领导高明。他不时力排众议,而结果常常证明他正确。所以我们已习惯于认为:主席比我们都高明,习惯于服从主席的决定,习惯于接受主席的批评,尽管心里有不同意见,也接受了。虽然这一次实在不能接受,也不应该接受,也强迫自己接受了。”</i>
+                  </div>
+              </div>
 
- 
+              <div class="article-card">
+                  <div class="card-tags">
+                      <span class="badge">2010年第03期</span>
+                      <span>作者：杨国光</span>
+                  </div>
+                  <a href="https://yhcqw.github.io/yhcq/people/201003yangguoguang.html" class="article-title" target="_blank">《周恩来密会左尔格》</a>
+                  <div class="article-desc">
+                      学过二战历史或对间谍有兴趣的大概听过历史上最著名的间谍 - 左尔格（Richard Sorge）。不过对他不是特别了解的不知道原来他在中国待过（1930年），目的是深入研究蒋介石政府，周恩来还接见过他。
+                  </div>
+              </div>
 
-    
+              <div class="article-card">
+                  <div class="card-tags">
+                      <span class="badge">2010年第01期</span>
+                      <span>作者：金凤</span>
+                  </div>
+                  <a href="https://yhcqw.github.io/yhcq/people/201001jinfeng.html" class="article-title" target="_blank">《傅冬的特殊身份和特殊贡献》</a>
+                  <div class="article-desc">
+                      傅冬乃国民党将军傅作义女儿，内容提及到一些比较少知道的历史细节，例如国共内战时美国想支持军阀，分裂中国，还有蒋介石如何打击地方异己部队等。
+                  </div>
+              </div>
 
+              <div class="article-card">
+                  <div class="card-tags">
+                      <span class="badge">2010年第01期</span>
+                      <span>作者：宋裙</span>
+                  </div>
+                  <a href="https://yhcqw.github.io/yhcq/people/201001songqun.html" class="article-title" target="_blank">《彭德怀二三事 兼怀王焰同志》</a>
+                  <div class="article-desc">
+                      真正爱民领导彭德怀，当年要和群众一起坐硬座火车。有街上没得卖的特供茶叶不要，要茶放在市场卖。
+                  </div>
+              </div>
 
- 
+              <div class="article-card">
+                  <div class="card-tags">
+                      <span class="badge">2010年第02期</span>
+                      <span>作者：杨继绳</span>
+                  </div>
+                  <a href="https://yhcqw.github.io/yhcq/people/201002yangjisheng.html" class="article-title" target="_blank">《为国为民心坦荡- 读《李昌传》》</a>
+                  <div class="article-desc">
+                      这篇文章罕有的提到六四(文章用“1989年政治风波”)。当时中共几位老人杜润生，李昌，李瑞，于光远支持学生运动，及后遭受批判。
+                  </div>
+              </div>
 
-    
-<!------------------------------------------------------------------ people-begins---------------------------------->
-<span style="font-family: arial; sans-serif; font-size: 14pt">	 </br>
-<a href="https://yhcqw.github.io/yhcq/people.html"> <b><i>人物： </a> </b></i></span> </br>
+              <div class="article-card">
+                  <div class="card-tags">
+                      <span class="badge">2010年第02期</span>
+                      <span>作者：姜达雅</span>
+                  </div>
+                  <a href="https://yhcqw.github.io/yhcq/people/201002jiangdaya.html" class="article-title" target="_blank">《胡耀邦救了我一家》</a>
+                  <div class="article-desc">
+                      胡耀邦下属姜达雅，赵维田文革期间受到很大迫害，女儿更患了精神分裂，终生致残，作者一度有轻生念头。胡耀邦帮助一家翻案。文章体现了文革残暴，胡耀邦高尚人格，作者一家虽然经历了大灾难，但永不放弃。父亲赵维田52岁转研究方向(国际法)还出了多部著作，两名孩子虽然因为文革当时受教育有限制，最后通过自己努力成才。
+                  </div>
+              </div>
 
-<!--year-->201001:</br>
-<a href="https://yhcqw.github.io/yhcq/people-201001jinfeng.html" target="_blank">傅冬的特殊身份和特殊贡献(金凤）</a></br>
-傅冬乃国民党将军傅作义女儿，内容提及到一些比较少知道的历史细节，例如国共内战时美国想支持军阀，分裂中国，还有蒋介石如何打击地方异己部队等。</br>
+              <div class="article-card">
+                  <div class="card-tags">
+                      <span class="badge">2010年第03期</span>
+                      <span>作者：刘崇文</span>
+                  </div>
+                  <a href="https://yhcqw.github.io/yhcq/people/201003liuchongwen.html" class="article-title" target="_blank">《胡耀邦和我谈下台前后》</a>
+                  <div class="article-desc">
+                      本文讲述胡耀邦怎样努力推动废除中共终身制，免得中国以后会动乱。<br><br>
+文章也讲述了他很多为人哲学，例如有意见只在别人面前讲，不琢磨人，只琢磨事。对于中国官员退位后依然保留权力，他觉得是不放心及不放权。对于一些资本主义国家领导退下来后当平民，他认为这制度中国可以参考，觉得这样民主制度保证了国家稳定。现在中国经常说“西方民主不适合中国”，可看《炎黄春秋》，发现老一辈共产党员经常说民主民主，为什么会有对立的观点？大家对民主，对中国国情的理解有什么不同？
+                  </div>
+              </div>
 
+              <div class="article-card">
+                  <div class="card-tags">
+                      <span class="badge">2010年第10期</span>
+                      <span>作者：谢韬 遗作</span>
+                  </div>
+                  <a href="https://yhcqw.github.io/yhcq/people/201010xietao.html" class="article-title" target="_blank">《我们从哪里来，到哪里去？》</a>
+                  <div class="article-desc">
+                      生于1922年，曾经为人大副校长的谢韬，经历过国民党独裁统治的谢韬，所以年轻时很向往共产党鼓吹民主，反对一党专政。1949年的《共同纲领》表明了国家保障人民民主权利(参见宪法35及36条)。三年过后，中国风云变色，《共同纲领》被抛弃，变了共产党专政。作者说他们年代的人参与民主活动，但并不知道什么是民主，以为民主就是反独裁，陈独秀甚至一度认为无产阶级专政就是无产阶级民主，晚年才明白实际这是个人独裁。作者认为，民众不具备民主意识，那么打倒独裁者后上来的还是独裁者，英法曾有例子，所以要建立民主国家必须对民众进行民主启蒙教育。<br><br>
+好些中国人认为“民主不适合中国”，其实他们是否明白什么是民主？我和一些人交流过，认为民主就是投票。中国那么大实行民主就会乱。民主是什么？我在本网站分享的日记(2024年3月15日，2024年4月5日)和长日记有些个人见解，具体看关键词“民主是什么”。
+                  </div>
+              </div>
 
-<a href="https://yhcqw.github.io/yhcq/people-201001songqun.html" target="_blank">彭德怀二三事 兼怀王焰同志(宋裙)）</a></br>
-真正爱民领导彭德怀，当年要和群众一起坐硬座火车。有街上没得卖的特供茶叶不要，要茶放在市场卖。</br>
+              <div class="article-card">
+                  <div class="card-tags">
+                      <span class="badge">2011年第07期</span>
+                      <span>作者：韩磊</span>
+                  </div>
+                  <a href="https://yhcqw.github.io/yhcq/people/201107hanlei.html" class="article-title" target="_blank">《李锐的坐牢心得》</a>
+                  <div class="article-desc">
+                      单独囚禁对人有极大的心理影响，美国法律规定单独囚禁不能超过21日(但不是每个州都严格遵守)。毛年代的中国，就很多长年单独囚禁的例子，毛泽东的秘书李锐就曾经在秦城监狱单独囚禁8年，能熬过实在是非一般的心理强大。文章记录了他坐牢的所见所闻及如何过日子。例如有次摔倒，得到一瓶龙胆紫水及木棉签，就在狱中写起诗来，名为《龙胆紫集》。
+                  </div>
+              </div>
 
+  </div>
 
-<!--year-->201002:</br>
-<a href="https://yhcqw.github.io/yhcq/people-201002yangjisheng.html" target="_blank">为国为民心坦荡- 读《李昌传》（杨继绳）</a></br>
-这篇文章罕有的提到六四（文章用“1989年政治风波”）。当时中共几位老人杜润生，李昌，李瑞，于光远支持学生运动，及后遭受批判。</br>
-
-
-
-<a href="https://yhcqw.github.io/yhcq/people-201002jiangdaya.html" target="_blank"> 胡耀邦救了我一家 (姜达雅)</a></br>
-胡耀邦下属姜达雅，赵维田文革期间受到很大迫害，女儿更患了精神分裂，终生致残，作者一度有轻生念头。胡耀邦帮助一家翻案。文章体现了文革残暴，胡耀邦高尚人格，作者一家虽然经历了大灾难，但永不放弃。父亲赵维田52岁转研究方向（国际法）还出了多部著作，两名孩子虽然因为文革当时受教育有限制，最后通过自己努力成才。</br>
-
-<!--year-->201003:</br>
-<a href="https://yhcqw.github.io/yhcq/people-201003liuchongwen.html" target="_blank">胡耀邦和我谈下台前后(刘崇文)</a></br>
-本文讲述胡耀邦怎样努力推动废除中共终身制，免得中国以后会动乱。</br>
-文章也讲述了他很多为人哲学，例如有意见只在别人面前讲，不琢磨人，只琢磨事。对于中国官员退位后依然保留权力，他觉得是不放心及不放权。对于一些资本主义国家领导退下来后当平民，他认为这制度中国可以参考，觉得这样民主制度保证了国家稳定。现在中国经常说“西方民主不适合中国”，可看《炎黄春秋》，发现老一辈共产党员经常说民主民主，为什么会有对立的观点？大家对民主，对中国国情的理解有什么不同？</br>
-
-
-<!--year-->201010:</br>
-<a href="https://yhcqw.github.io/yhcq/people-201010xietao.html" target="_blank">我们从哪里来，到哪里去？(谢韬 遗作)</a></br>
-生于1922年，曾经为人大副校长的谢韬，经历过国民党独裁统治的谢韬，所以年轻时很向往共产党鼓吹民主，反对一党专政。1949年的《共同纲领》表明了国家保障人民民主权利（参见宪法35及36条）。三年过后，中国风云变色，《共同纲领》被抛弃，变了共产党专政。作者说他们年代的人参与民主活动，但并不知道什么是民主，以为民主就是反独裁，陈独秀甚至一度认为无产阶级专政就是无产阶级民主，晚年才明白实际这是个人独裁。作者认为，民众不具备民主意识，那么打倒独裁者后上来的还是独裁者，英法曾有例子，所以要建立民主国家必须对民众进行民主启蒙教育。</br>
-好些中国人认为“民主不适合中国”，其实他们是否明白什么是民主？我和一些人交流过，认为民主就是投票。中国那么大实行民主就会乱。民主是什么？我在本网站分享的日记（2024年3月15日，2024年4月5日）和长日记有些个人见解，具体看关键词“民主是什么”。</br>
-
-<!--year-->201107:</br>
-<a href="https://yhcqw.github.io/yhcq/people-201107hanlei.html" target="_blank">李锐的坐牢心得(韩磊)</a></br>
-单独囚禁对人有极大的心理影响，美国法律规定单独囚禁不能超过21日（但不是每个州都严格遵守）。毛年代的中国，就很多长年单独囚禁的例子，毛泽东的秘书李锐就曾经在秦城监狱单独囚禁8年，能熬过实在是非一般的心理强大。文章记录了他坐牢的所见所闻及如何过日子。例如有次摔倒，得到一瓶龙胆紫水及木棉签，就在狱中写起诗来，名为《龙胆紫集》。</br>
-
-</br>
-<!------------------------------------------------------------------ people-ends---------------------------------->
-
-
-</div>
-		</div> 
-	
-		
-
-
-
-
-
-</body>
-</html>
-    <a href="https://yhcqw.github.io/yhcq/">返回主目录</a></br></br></br>
-    </main>
+  <script src="nav_index.js"></script>
+  <script src="search_script.js"></script>
+  <script src="script.js"></script> <!-- Link to your JS file -->
   
-
-    <script>
-        function toggleMobileMenu() {
-            var menuList = document.querySelector('.mobile-menu-list');
-            menuList.classList.toggle('active');
-        }
-
-        function hideMobileMenu() {
-            var menuList = document.querySelector('.mobile-menu-list');
-            menuList.classList.remove('active');
-        }
-    </script>
 </body>
 </html>

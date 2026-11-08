@@ -1,181 +1,94 @@
- tem<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的炎黄春秋笔记</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-
-    <style>
-        /* Add your custom styles here */
-
-        .menu-icon {
-            display: none;
-            cursor: pointer;
-        }
-
-        .mobile-menu-list {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 60%; /* Adjust width as needed */
-            background-color: #fff; /* Adjust as needed */
-            padding: 20px;
-            border-right: 1px solid #ccc; /* Adjust as needed */
-            z-index: 1000; /* Ensure it's above other content */
-            flex-direction: column; /* Display items vertically */
-            transition: width 2s;
-        }
-
-        .mobile-menu-list.active {
-            display: block;
-        }
-
-        .mobile-menu {
-            display: none;
-        }
-
-        .menu-title {
-            margin-left: 10px; /* Adjust margin as needed */
-        }
-
-        .menu-icon {
-            margin-right: 10px; /* Adjust margin as needed */
-            cursor: pointer;
-        }
-
-        .mobile-menu-list li {
-            display: block; /* Display list items vertically */a
-        }
-
-  @media only screen and (max-width: 768px) {
-    .menu-icon {
-        display: inline-block;
-        margin-left: 280px; /* Adjust as needed */
-        cursor: pointer;
-    }
-
-    .mobile-menu {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-right: 10px;
-    }
-
-    .menu-title {
-        margin-right: auto; /* Pushes 目錄 to the far left */
-        margin-left: 10px; /* Adjust margin as needed */
-    }
-}
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+  <title>炎黄春秋 - 其他专题</title>
 </head>
-
 <body>
-    <header>
-        <div class="container">
-            <!-- Removed the logo div -->
-            <nav>
-                <ul class="menu">
-                    <li><a href="https://yhcqw.github.io/yhcq/index.html">主页</a></li>
-                    <li><a href="#wenge">文革</a></li>
-                    <li><a href="#mao">毛年代其他</a></li>
-                    <li><a href="#society">社会</a></li>
-                    <li><a href="#people">人物</a></li>
-                    <li><a href="#foreign">外国历史</a></li>
-                    <li><a href="#mis">其他</a></li>
-                    <li><a href="#discussion">明辨是非</a></li>
-		    <li><a href="https://yhcqw.github.io/yhcq/thissite.html">关于本站</a></li>
-		    <li><a href="https://yhcqw.github.io/yhcq/Diary.html">我的日记</a></li>
-		    <li><a href="https://yhcqw.github.io/yhcq/longblog.html">我的长博客</a></li>
-                </ul>
-            </nav>
 
-            <div class="mobile-menu">
-                <div class="menu-title">目錄</div>
-                <div class="menu-icon" onclick="toggleMobileMenu()">&#9776;</div> <!-- Three horizontal lines -->
-                <!-- Move the ul.mobile-menu-list inside the .mobile-menu div -->
-                <ul class="mobile-menu-list">
-                    <li><a href="https://yhcqw.github.io/yhcq/index.html" onclick="hideMobileMenu()">主页</a></li>
-                    <li><a href="#wenge" onclick="hideMobileMenu()">文革</a></li>
-                    <li><a href="#mao" onclick="hideMobileMenu()">毛年代其他</a></li>
-                    <li><a href="#society" onclick="hideMobileMenu()">社会</a></li>
-                    <li><a href="#people" onclick="hideMobileMenu()">人物</a></li>
-                    <li><a href="#foreign" onclick="hideMobileMenu()">外国历史</a></li>
-                    <li><a href="#mis" onclick="hideMobileMenu()">其他</a></li>
-                    <li><a href="#discussion" onclick="hideMobileMenu()">明辨是非</a></li>
-		    <li><a href="thissite.html" onclick="hideMobileMenu()">关于本站</a></li>
-		    <li><a href="Diary.html" onclick="hideMobileMenu()">我的日记</a></li>
-		    <li><a href="https://yhcqw.github.io/yhcq/longblog.html">我的长博客</a></li>
-                </ul>
-            </div>
-        </div>
-    </header>
+  <header id="site-header">
+    <h1>炎黄春秋文存与专题探讨</h1>
+  </header>
 
 
-    <main>
+  <div class="container">
+      <div id="mis" class="section-title">其他专题</div>
+              <div class="article-card">
+                  <div class="card-tags">
+                      <span class="badge">2010年第04期</span>
+                      <span>作者：江春泽</span>
+                  </div>
+                  <a href="https://yhcqw.github.io/yhcq/mis/201004jiangchunze.html" class="article-title" target="_blank">《在耿飚领导的中央宣传口的日子》</a>
+                  <div class="article-desc">
+                      四人帮被粉碎之后，中央宣传部恢复。作者调去那里工作。整篇文章，编者对作者文末几句话最深刻。<br><br>
+<i>“我感到,作为一个社会科学工作者,如果处在一个封闭的社会环境里,不了解国内外全面的真实的情况,怎么可能探求社会发展的规律呢?又怎么可能超前提出可供操作的决策建议呢?因此,我很珍惜这一工作条件,在繁忙工作之余,抓紧时间多学习多思考,努力充实和提高自己。”</i><br><br>
+我们看国外，是为了全面学习，从别人那里更了解自己问题，明白怎样走更好。这是编者的体会，建此网站也是为了让读者接触不同方面的观点，刺激思考。
+                  </div>
+              </div>
 
+              <div class="article-card">
+                  <div class="card-tags">
+                      <span class="badge">2016年第07期</span>
+                      <span>作者：江平 著名法学家</span>
+                  </div>
+                  <a href="https://yhcqw.github.io/yhcq/mis/201607jiangping.html" class="article-title" target="_blank">《立法回忆》</a>
+                  <div class="article-desc">
+                      1988年7月的人大代表大会曾经提议过新闻法，负责人胡绩伟。当时放松管制声音强，但1989六四后，负责人被撤，新闻法不了了之。作者认为新闻审查太紧，监督就起不了作用。但太松可能使监督走上歪路，所以制定新闻发很必要。
+                  </div>
+              </div>
 
- 
+              <div class="article-card">
+                  <div class="card-tags">
+                      <span class="badge">2010年第01期</span>
+                      <span>作者：冯冠扬</span>
+                  </div>
+                  <a href="https://yhcqw.github.io/yhcq/mis/201001fengguanyang.html" class="article-title" target="_blank">《1978年上访记》</a>
+                  <div class="article-desc">
+                      作者是摘帽右派，但当年判的罪名没有平反。曾经地方上方，但没有人理。最后上访北京，当时以上访为名，买火车票不用钱，公交也不用，吃饭就在饭店检客人吃剩的，睡就在车站。特别提一下，作者在北京最高人民法院上访，虽然接见的人说不能审理地方案件，但写了封信给他带回地方办理。这点很重要，给人很大的安慰作用。但当然，回到地方，人家还是不给你办事。
+                  </div>
+              </div>
 
-    
+              <div class="article-card">
+                  <div class="card-tags">
+                      <span class="badge">2010年第02期</span>
+                      <span>作者：刘向上</span>
+                  </div>
+                  <a href="https://yhcqw.github.io/yhcq/mis/201002liuxiangshang.html" class="article-title" target="_blank">《解放区审判外国人第一案》</a>
+                  <div class="article-desc">
+                      1947年在烟台解放区发生来自国际组织美国人因鲁莽驾驶撞死黄包车司机事件，成为中国第一次审讯外国人。这件事件我学习了政治心理。当时群众情绪高涨，但最后如何可以把犯案者轻判，及后缓刑。方法是把抚恤做好，不要计较多付出的一点点，群众满意了，然后犯罪人表达出足够的悔意就什么都好说。
+                  </div>
+              </div>
 
+              <div class="article-card">
+                  <div class="card-tags">
+                      <span class="badge">2010年第02期</span>
+                      
+                  </div>
+                  <a href="https://yhcqw.github.io/yhcq/mis/201002.html" class="article-title" target="_blank">《读者来信 还历史本来面目》</a>
+                  <div class="article-desc">
+                      以前听人说过，文革政府已经承认错误发动，为什么还要揪着政府不放？我想经历过历史的人更好回答这个问题。此文是读者来信，80多岁经历过文革的退休基层干部。对于刘少奇之死，虽然已经平凡，但他认为一些细节需要厘清，为什么？<br><br>
+<i>“刘少奇之死，已有平反结论，似乎不必再翻旧账，但很多细节，尚有待厘清。例如：对生命垂危的刘少奇在抢救中是善待。还是虐待?有没有大小便在病床上，不给换洗衬裤?刘去世后火化，为何要用“刘卫黄”之名?医疗救治中的干预。是谁在指使?等等。这些疑点的澄清，有助于我们更深刻地吸取历史教训，才能深刻地知道“以人为本，依法治国”的重要。我诚恳地希望，凡是接触过刘少奇冤案的有关人员和刘少奇亲属，应该勇敢地站出来，讲实话，让广大读者了解真相。”</i>
+                  </div>
+              </div>
 
- 
+              <div class="article-card">
+                  <div class="card-tags">
+                      <span class="badge">2010年第11期</span>
+                      <span>作者：朱良</span>
+                  </div>
+                  <a href="https://yhcqw.github.io/yhcq/mis/201011zhuliang.html" class="article-title" target="_blank">《周总理于1973年廖承志访日团》</a>
+                  <div class="article-desc">
+                      本文分析了日本经济和中国相似之处，共同遇到的困难，例如经济高速发展引起的问题。
+                  </div>
+              </div>
 
-    
-<!------------------------------------------------------------------ mis-begins---------------------------------->
-<span style="font-family: arial; sans-serif; font-size: 14pt"></br>
-<a href="https://yhcqw.github.io/yhcq/mis.html"> <b><i>其他：  </a> </b></i></span></br>
+  </div>
 
-
-<!--year-->201001:</br>
-<a href="https://yhcqw.github.io/yhcq//mis-201001fengguanyang.html" target="_blank">1978年上访记(冯冠扬）</a></br>
-作者是摘帽右派，但当年判的罪名没有平反。曾经地方上方，但没有人理。最后上访北京，当时以上访为名，买火车票不用钱，公交也不用，吃饭就在饭店检客人吃剩的，睡就在车站。特别提一下，作者在北京最高人民法院上访，虽然接见的人说不能审理地方案件，但写了封信给他带回地方办理。这点很重要，给人很大的安慰作用。但当然，回到地方，人家还是不给你办事。</br>
-
-
-
-<!--year-->201002:</br>
-<a href="https://yhcqw.github.io/yhcq//mis-201002liuxiangshang.html" target="_blank">解放区审判外国人第一案(刘向上)</a></br>
-1947年在烟台解放区发生来自国际组织美国人因鲁莽驾驶撞死黄包车司机事件，成为中国第一次审讯外国人。这件事件我学习了政治心理。当时群众情绪高涨，但最后如何可以把犯案者轻判，及后缓刑。方法是把抚恤做好，不要计较多付出的一点点，群众满意了，然后犯罪人表达出足够的悔意就什么都好说。</br>
-
-<a href="https://yhcqw.github.io/yhcq/mis-201002.html" target="_blank">读者来信 还历史本来面目</a></br>
-以前听人说过，文革政府已经承认错误发动，为什么还要揪着政府不放？我想经历过历史的人更好回答这个问题。此文是读者来信，80多岁经历过文革的退休基层干部。对于刘少奇之死，虽然已经平凡，但他认为一些细节需要厘清，为什么？</br>
-“刘少奇之死，已有平反结论，似乎不必再翻旧账，但很多细节，尚有待厘清。例如：对生命垂危的刘少奇在抢救中是善待。还是虐待?有没有大小便在病床上，不给换洗衬裤?刘去世后火化，为何要用“刘卫黄”之名?医疗救治中的干预。是谁在指使?等等。这些疑点的澄清，有助于我们更深刻地吸取历史教训，才能深刻地知道“以人为本，依法治国”的重要。我诚恳地希望，凡是接触过刘少奇冤案的有关人员和刘少奇亲属，应该勇敢地站出来，讲实话，让广大读者了解真相。”</br>
-
-<!--year-->201011:</br>
-<a href="https://yhcqw.github.io/yhcq/mis-201011zhuliang.html" target="_blank">周总理于1973年廖承志访日团(朱良)</a></br>
-本文分析了日本经济和中国相似之处，共同遇到的困难，例如经济高速发展引起的问题。</br>
-
-<!------------------------------------------------------------------ mis-ends---------------------------------->
-
-
-</div>
-		</div> 
-	
-		
-
-
-
-
-
-</body>
-</html>
-    <a href="https://yhcqw.github.io/yhcq/">返回主目录</a></br></br></br>
-    </main>
+  <script src="nav_index.js"></script>
+  <script src="search_script.js"></script>
+  <script src="script.js"></script> <!-- Link to your JS file -->
   
-
-    <script>
-        function toggleMobileMenu() {
-            var menuList = document.querySelector('.mobile-menu-list');
-            menuList.classList.toggle('active');
-        }
-
-        function hideMobileMenu() {
-            var menuList = document.querySelector('.mobile-menu-list');
-            menuList.classList.remove('active');
-        }
-    </script>
 </body>
 </html>
