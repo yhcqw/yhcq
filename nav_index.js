@@ -8,51 +8,51 @@ const siteTitle = ""; // Leave as "" if you don't want a title above the tabs
 const menuData = [
     {
         title: "主页",
-        url: "index.html",
+        url: "https://yhcqw.github.io/yhcq/index.html",
         description: "返回网站首页"
     },
     {
         title: "社会/民主",
-        url: "society.html",
+        url: "https://yhcqw.github.io/yhcq/society.html",
         description: "激发思考的文章，专家的意见很多时候和一般人直观相反，例如民主，言论自由等等"
     },
     {
         title: "明辨是非",
-        url: "debate.html",
+        url: "https://yhcqw.github.io/yhcq/debate.html",
         description: "通过辩论了解对方观点，明白真理"
     },
     {
         title: "文革",
-        url: "wenge.html",
+        url: "https://yhcqw.github.io/yhcq/wenge.html",
         description: "近代中国最沉重的一章，本栏加入外国类似事例，帮助读者明白学习文革的意义"
     },
     {
         title: "毛泽东年代",
-        url: "mao.html",
+        url: "https://yhcqw.github.io/yhcq/mao.html",
         description: "文革以外发生在毛年代的事"
     },
     {
         title: "人物",
-        url: "people.html",
+        url: "https://yhcqw.github.io/yhcq/people.html",
         description: "关于历史人物"
     },
     {
         title: "外国历史",
-        url: "foreign_history.html",
+        url: "https://yhcqw.github.io/yhcq/foreign_history.html",
         description: "发生于外国，值得我们学习的事情"
     },
     {
         title: "其他",
-        url: "mis.html",
+        url: "https://yhcqw.github.io/yhcq/mis.html",
         description: "其他类型文章"
     },
     {
         title: "我的文章",
         description: "短日记关于我平时看的新闻，长文章是我一些观察或记录，历史游记是我去过一些历史地方的记录",
         subItems: [
-            { title: "短日记", url: "short_diary.html" },
-            { title: "长文章", url: "long_diary.html"},
-            { title: "历史游记", url: "history_journal.html" }
+            { title: "短日记", url: "https://yhcqw.github.io/yhcq/short_diary.html" },
+            { title: "长文章", url: "https://yhcqw.github.io/yhcq/long_diary.html"},
+            { title: "历史游记", url: "https://yhcqw.github.io/yhcq/history_journal.html" }
         ]
     },
     {
